@@ -1,5 +1,5 @@
-Package: placeholder
-Type: Book
+Package: ds4biomed
+Type: Data Science for the Biomedical Sciences
 Title: Does not matter.
 Version: 0.0.1
 Imports: bookdown
