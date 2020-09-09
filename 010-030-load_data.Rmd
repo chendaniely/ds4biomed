@@ -1,0 +1,11 @@
+# Load Data
+
+Some _significant_ applications are demonstrated in this chapter.
+
+## Example one
+
+## Example two
+
+## Additional resources
+
+- r4ds Data Import: https://r4ds.had.co.nz/data-import.html

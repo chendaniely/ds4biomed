@@ -1,0 +1,187 @@
+# Spreadsheets
+
+## Introduction
+
+If you worked with data, chances are you have used spreadsheets before.
+In an introductory data analytics class,
+spreadsheet programs give the learners a visual of the dataset encased around
+a program that lets the user manipulate the data.
+That is, spreadsheet programs create a graphical user interface
+(GUI, pronounced like "gooey") for one's data.
+
+A GUI allows the user to quickly explore and look at their data;
+The ability to click on things can never be underestimated.
+However, the convenience of clickable graphical elements come at the price
+of flexibility when more complex and nuanced tasks are needed.
+
+<button class="accordion">Exercise 1 Question</button>
+:::{.panel}
+You are one of the researchers assigned to a
+pharmacokinetics study of a phase 3 clinical trial for
+Hepatitis C.
+You have 3 patients who need to have their blood drawn and various vitals recorded:
+
+1. **Gemma Dunn**: Blood drawn at **8am**; Heart rate **65bpm**; Respiratory rate: **12bpm**; Blood pressure **128/78 mmHg**; Pulse Ox **98%**; Temperature **96.8F**
+2. **Priscilla Holding**: Blood drawn at **8:20am**; Heart rate **75bpm**; Respiratory rate: **18bpm**; Blood pressure **130/85 mmHg**; Pulse Ox **95%**; Temperature **97.0F**
+3. **Aniya Warner**:  Blood drawn at **8:40am**; Heart rate **63bpm**; Respiratory rate: **13bpm**; Blood pressure **115/73 mmHg**; Pulse Ox **98%**; Temperature **96.5F**
+
+How would you input these values into a spreadsheet?
+:::
+
+<button class="accordion">Exercise 1 Possible Results</button>
+:::{.panel}
+**Input values without units**
+
+Units might be understood and assumed
+
+| Name              | Time | Blood Pressure | Heart Rate | Respiratory Rate | Pulse Ox | Temperature |
+|-------------------|------|----------------|------------|------------------|----------|-------------|
+| Gemma Dunn        | 8:00 | 128/78         | 65         | 12               | 98       | 96.8        |
+| Priscilla Holding | 8:20 | 130/85         | 75         | 18               | 95       | 97.0        |
+| Aniya Warner      | 8:40 | 115/73         | 63         | 13               | 98       | 96.5        |
+
+**Add units to values**
+
+| Name              | Time   | Blood Pressure | Heart Rate | Respiratory Rate | Pulse Ox | Temperature |
+|-------------------|--------|----------------|------------|------------------|----------|-------------|
+| Gemma Dunn        | 8:00am | 128/78         | 65         | 12               | 98%      | 96.8F       |
+| Priscilla Holding | 8:20am | 130/85         | 75         | 18               | 95%      | 97.0F       |
+| Aniya Warner      | 8:40am | 115/73         | 63         | 13               | 98%      | 96.5F       |
+
+**Split names into 2 columns**
+
+| First Name | Last Name | Time   | Blood Pressure | Heart Rate | Respiratory Rate | Pulse Ox | Temperature |
+|------------|-----------|--------|----------------|------------|------------------|----------|-------------|
+| Gemma      | Dunn      | 8:00am | 128/78         | 65         | 12               | 98       | 96.8F       |
+| Priscilla  | Holding   | 8:20am | 130/85         | 75         | 18               | 95       | 97.0F       |
+| Aniya      | Warner    | 8:40am | 115/73         | 63         | 13               | 98       | 96.5F       |
+
+**Placing unit information in the columns**
+
+| First Name | Last Name | Time   | Blood Pressure (bpm) | Heart Rate (bpm) | Respiratory Rate (bpm) | Pulse Ox (%) | Temperature (F) |
+|------------|-----------|--------|----------------------|------------------|------------------------|--------------|-----------------|
+| Gemma      | Dunn      | 8:00am | 128/78               | 65               | 12                     | 98           | 96.8F           |
+| Priscilla  | Holding   | 8:20am | 130/85               | 75               | 18                     | 95           | 97.0F           |
+| Aniya      | Warner    | 8:40am | 115/73               | 63               | 13                     | 98           | 96.5F           |
+:::
+
+<button class="accordion">Exercise 1 Solution</button>
+:::{.panel}
+
+| first_name | last_name | time | diastolic | systolic | heart_rate | respiratory_rate | pulse_ox | temperature | temperature_unit |
+|------------|-----------|------|-----------|----------|------------|------------------|----------|-------------|------------------|
+| Gemma      | Dunn      | 8:00 | 128       | 78       | 65         | 12               | 98       | 96.8        | F                |
+| Priscilla  | Holding   | 8:20 | 130       | 85       | 75         | 18               | 95       | 97.0        | F                |
+| Aniya      | Warner    | 8:40 | 115       | 73       | 63         | 13               | 98       | 96.5        | F                |
+:::
+
+When you're manually entering data,
+it's hard to know how much to breakdown values into separate columns.
+As a general rule of thumb,
+having more columns in your data is much better than having a single column containing multiple bits of information.
+In the case of blood pressure values we should have separate columns for the diastolic and systolic values,
+instead of a single column containing both.
+This gives us a lot more flexibility later on if we only want to look at one of the values,
+and also gives us the flexibility to combine them into a single reading if needed.
+Since we're manually entering values,
+reporting the blood pressure value in a single column runs the risk of formatting issues
+such as `120/80`, `120 / 80`, `120 80`, etc.
+
+<button class="accordion">Exercise 2 Question</button>
+:::{.panel}
+Now, let's say you performed these tasks multiple times over the course of 72 hours.
+You know at the end of the PK study, you want to be able to look to see if there were any drastic changes to the patient's vitals.
+Here's a sample of more data,
+does knowing what you want to look at
+
+Example additional reading 1:
+
+Taken on same day
+
+1. **Gemma Dunn**: Blood drawn at **8am**; Heart rate **65bpm**; Respiratory rate: **12bpm**; Blood pressure **128/78 mmHg**; Pulse Ox **98%**; Temperature **96.8F**
+2. **Priscilla Holding**: Blood drawn at **8:20am**; Heart rate **75bpm**; Respiratory rate: **18bpm**; Blood pressure **130/85 mmHg**; Pulse Ox **95%**; Temperature **97.0F**
+3. **Aniya Warner**:  Blood drawn at **8:40am**; Heart rate **63bpm**; Respiratory rate: **13bpm**; Blood pressure **115/73 mmHg**; Pulse Ox **98%**; Temperature **96.5F**
+
+Example additional reading 2:
+
+Taken on the next day
+
+1. **Gemma Dunn**: Blood drawn at **8am**; Heart rate **65bpm**; Respiratory rate: **12bpm**; Blood pressure **128/78 mmHg**; Pulse Ox **98%**; Temperature **96.8F**
+2. **Priscilla Holding**: Blood drawn at **8:20am**; Heart rate **75bpm**; Respiratory rate: **18bpm**; Blood pressure **130/85 mmHg**; Pulse Ox **95%**; Temperature **97.0F**
+3. **Aniya Warner**:  Blood drawn at **8:40am**; Heart rate **127bpm**; Respiratory rate: **36bpm**; Blood pressure **115/73 mmHg**; Pulse Ox **98%**; Temperature **96.5F**
+:::
+
+In general, each row in your dataset represents a single observation.
+In our case, our observational unit is person and time.
+It may be common to have multiple readings on a single row,
+where you have different columns representing each reading (TODO THIS ISN"T CLEAR).
+There is nothing wrong with having a time1, time2, heart_rate1, hear_rate2, etc, columns per se,
+but when you're thinking longer term for data visualization and analysis,
+you would have to process your data futher.
+
+Having said that, since this is a manual data entry process,
+if it is easier to enter and check your data inputs in a certain format,
+then that would be the better data format for the use case.
+As long as you have a plan for later steps in the data processing,
+then choose the format that makes the current task easier.
+
+**With proper planning, there is no such thing as "messy" data.**
+
+<button class="accordion">Exercise 3 Question</button>
+:::{.panel}
+The protocol asks to report an adverse event if any of the patient's vitals
+become abnormally elevated. How do you mark any abnormal observations?
+:::
+
+The benefit of spreadsheet programs, is that it gives you a graphical view of your dataset.
+This means it's very easy to add colors and other visual markers to data values to make them stand out more.
+However, one of the take aways in exercise 1 was to be mindful of storing multiple bits of information in a single cell.
+If we add colors to a cell, we know have multiple bits of information stored in a single cell,
+the value, and the color that represents something else.
+A better approach in this case to make a more "shareabele" dataset,
+would be to create a separate column that indicates
+a "bad" or "good" value.
+This would be easier when each row is a separate patient reading,
+where you can create a flag about a "bad" observation.
+
+You can take this to an even further extreme where each row is just a patient, time, reading type, and reading value,
+where you can really flag a "bad" value,
+but this would make the data entry process very difficult.
+
+<button class="accordion">Exercise 4 Question</button>
+:::{.panel}
+During the examination you ask the patient if they are feeling any discomfort and
+why they are breathing so heavily,
+and they tell you they were stretching and doing yoga poses to "get the blood moving".
+How do you document this in your data?
+:::
+
+When working with observational data, it's common to have a separate open text field to put in notes.
+
+## Summary
+
+- Spreadsheet programs serve as a graphical user interface to ones data
+- GUIs are very convenient, but come at the cost of flexibility
+- Spreadsheets have a legitimate place in the data science process
+- Not all tasks are best suited in a spreadsheet program
+
+## Additional resources
+
+- Data carpentry spreadsheet lesson: https://datacarpentry.org/spreadsheet-ecology-lesson/
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>

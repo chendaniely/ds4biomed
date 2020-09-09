@@ -1,0 +1,4 @@
+# Analysis
+
+An introduction to analysis.
+Summary statistics, and linear models.
