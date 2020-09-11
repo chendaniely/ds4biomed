@@ -1,4 +1,4 @@
-# Spreadsheets
+# Spreadsheets {#spreadsheets}
 
 ## Introduction
 

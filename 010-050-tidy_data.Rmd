@@ -1,3 +1,38 @@
 # Clean Data (Tidy)
 
-We have finished a nice book.
+Now that we have seen how to import a dataset as a dataframe object,
+we can start the process of "cleaning" it.
+We saw in the "Spreadsheets" Chapter (\@ref(spreadsheets)) that data could come in different
+formats and "shapes" that serve different purposes.
+Our Goal now is to start the process of making our dataset "clean
+by making it more amenable to different visualization and modeling methods.
+Cleaning, processing, wrangling, tidying, etc are all synonyms you may have heard being used
+for this process
+(others include screaming, cursing, and walking away).
+
+```{r, echo=FALSE, fig.cap="\"Data Cowboy\" by Allison Horst."}
+knitr::include_graphics("https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/data_cowboy.png")
+```
+
+## What is tidy data?
+
+A more formal definition for "clean" data.
+
+Let's you work towards something.
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+```
+
+## Column headers are values, not variable names
+
+## Multiple variables stored in one column
+
+## Variables are stored in both rows and columns
+
+## Additional Resources
+
+Tidy data paper: https://vita.had.co.nz/papers/tidy-data.html
+
+More code heavy R documentation on tidy data: https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html
+
