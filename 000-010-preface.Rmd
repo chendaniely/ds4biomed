@@ -2,16 +2,74 @@
 
 ## Who is this book for {-}
 
+This book is for people who work in the biomedical sciences.
+This includes the clinicians (MDs, DOs, DVMs RNs, PAs, etc),
+researchers, and
+analysists who work with data.
+
 ### The Personas {-}
 
+As a part of a research study, we have identified 5 different groups (i.e., personas)
+in the biomedical sciences who this set of materials are for.
+The 5 personas have 2 main groups,
+those who have no programming and/or data experience, and those who do.
+
+TODO: link to preliminary findings / paper
+
+#### No programming and/or data background
+
+(TODO give them names)
+
+##### Persona 1
+
+##### Persona 2
+
+#### Has programming and/or data background
+
+##### Persona 3
+
+##### Persona 4
+
+##### Persona 5
+
 ## What to expect {-}
+
+The materials provided here can be used in multiple ways:
+
+1. Part of a live teaching session (either remotely or in person)
+2. Asynchronously for self-paced learning
+3. Reference material
 
 ## Acknoledgements {-}
 
 ## Dedication {-}
 
+To the R, Python, and Carpentries communities. 
+
 ## About the Authors {-}
 
-### Daniel Chen {-}
+The initial work was done as a part of Daniel Chen's dissertation with Anne Brown as his committee chair.
 
-### Anne Brown {-}
+### Daniel Chen, MPH {-}
+
+PhD student at Virginia Tech (VT) in Genetics, Bioinformatics, and Computational Biology (GBCB)
+working with Anne Brown and DataBridge studying
+data science education and pedagogy for medical practitioners.
+
+### Anne Brown, PhD {-}
+
+Anne Brown holds a PhD degree in Biochemistry.
+Anne’s specific expertise is in
+using high performance computing for molecular dynamics simulations and
+virtual screening,
+focusing on molecular mechanisms,
+protein structure-function relationships,
+and drug design.
+She is also involved in the training and mentorship of undergraduate research students in these areas.
+Anne collaborates with faculty and students on the integration of computational thinking and
+discipline-specific computational tools relevant to science informatics tools
+(bioinformatics, cheminformatics, etc)
+into their research or classroom.
+In addition,
+she consults on and help researchers wit
+data analysis, data publishing, and data visualization. 
