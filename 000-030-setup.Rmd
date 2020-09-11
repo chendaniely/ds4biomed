@@ -1,10 +1,31 @@
 # Setup {-#setup}
 
-## Spreadsheet {-}
-
-## R {-}
-
-## Python {-}
-
 ## Datasets {-}
 
+## Spreadsheet {-}
+
+Microsoft Excel and Google Sheets are the more common types of spreadsheet software used.
+If you do not have Excel, there are other free options availiable:
+
+- LibreOffice (Free and open source): https://www.libreoffice.org/
+- FreeOffice (Free but closed source): https://www.freeoffice.com/en/
+
+All of these programs can read and write Excel and comma delineated (CSV) files,
+which you can use to follow along.
+
+## Programming language
+
+Only one of the below languages need to be installed.
+
+### R {-}
+
+We will be using R and RStudio for the workshop.
+The links to install R can be found here: https://cloud.r-project.org/.
+For Windows users, please install both the `base` version as well as `Rtools`.
+
+Rstudio can be downloaded from the follow location: https://rstudio.com/products/rstudio/download/
+
+### Python {-}
+
+We will be using the Anaconda distribution for Python.
+The download links and instructions can be found here: https://docs.anaconda.com/anaconda/install/.
