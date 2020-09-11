@@ -1,5 +1,13 @@
 # Code of Conduct {-#coc}
 
+Example CoC from the Carpentries:
+
+https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html
+
 ## Contributors {-}
 
+As contributors and maintainers of this project, we pledge to follow the CoC.
+
 ## Workshops attendees {-}
+
+As workshop instructors and attendees, you pledge to follow the CoC.
