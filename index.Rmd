@@ -1,6 +1,8 @@
 --- 
 title: "Data Science for the Biomedical Sciences"
-author: "Daniel Chen, MPH\nAnne Brown, PhD"
+author:
+  - Daniel Chen, MPH
+  - Anne Brown, PhD
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
