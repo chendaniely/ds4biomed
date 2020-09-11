@@ -2,6 +2,11 @@
 
 ## Who is this book for {-}
 
+```{r, echo=FALSE, fig.cap="Personas drawn by Julia Chen"}
+knitr::include_graphics("./images/preface/the_gang.png")
+```
+
+
 This book is for people who work in the biomedical sciences.
 This includes the clinicians (MDs, DOs, DVMs RNs, PAs, etc),
 researchers, and
