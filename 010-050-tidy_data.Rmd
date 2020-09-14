@@ -26,13 +26,63 @@ library(tidyverse)
 
 ## Column headers are values, not variable names
 
+```{r}
+tumor <- read_csv("./data/tumorgrowth_long.csv")
+```
+
+```{r}
+tumor
+```
+
+```{r}
+tumor_tidy <- tumor %>%
+  pivot_longer(`0`:`28`)
+tumor_tidy
+```
+
+```{r}
+tumor_tidy <- tumor %>%
+  pivot_longer(`0`:last_col())
+tumor_tidy
+```
+
+
+```{r}
+tumor_tidy <- tumor %>%
+  pivot_longer(c(-Group, -Grp, -ID))
+tumor_tidy
+```
+
+```{r}
+tumor_tidy <- tumor %>%
+  pivot_longer(c(-Group, -Grp, -ID), names_to = "day", values_to = "size")
+tumor_tidy
+```
+
+```{r}
+tumor_tidy %>%
+  group_by(Group, day) %>%
+  summarize(avg_size = mean(size, na.rm = TRUE)) %>%
+  mutate(day = as.numeric(day)) %>%
+  arrange(Group, day)
+```
+
 ## Multiple variables stored in one column
+
+```{r}
+tb <- read_csv("./data/tb_long.csv")
+tb
+```
 
 ## Variables are stored in both rows and columns
 
 ## Additional Resources
 
-Tidy data paper: https://vita.had.co.nz/papers/tidy-data.html
+Tidy data paper:
+https://vita.had.co.nz/papers/tidy-data.html
 
-More code heavy R documentation on tidy data: https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html
+More code heavy R documentation on tidy data:
+https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html
 
+r4ds Tidy Data Chapter:
+https://r4ds.had.co.nz/tidy-data.html
