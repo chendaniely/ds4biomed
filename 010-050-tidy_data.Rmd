@@ -1,3 +1,8 @@
+
+```{r}
+knitr::opts_chunk$set(comment = "")
+```
+
 # Clean Data (Tidy)
 
 Now that we have seen how to import a dataset as a dataframe object,
