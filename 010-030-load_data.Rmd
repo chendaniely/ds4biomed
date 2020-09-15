@@ -1,6 +1,21 @@
+<!--
+---
+output: 
+  html_document:
+    includes:
+      in_header: header.html
+---
+-->
+
 # Load Data
 
 Some _significant_ applications are demonstrated in this chapter.
+
+<!---LEARNR EX 1-->
+<!--
+<iframe style="margin:0 auto; min-width: 100%;" id="myIframe1" class="interactive" src="https://chendaniely.shinyapps.io/ds4biomed-exercises" scrolling="no" frameborder="no"></iframe>
+-->
+<!---------------->
 
 ## Example one
 
@@ -9,3 +24,9 @@ Some _significant_ applications are demonstrated in this chapter.
 ## Additional resources
 
 - r4ds Data Import: https://r4ds.had.co.nz/data-import.html
+
+<!--
+<script>
+  iFrameResize({}, ".interactive");
+</script>
+-->
