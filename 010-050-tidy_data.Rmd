@@ -34,28 +34,10 @@ tumor <- read_csv("./data/tumorgrowth_long.csv")
 tumor
 ```
 
-```{r}
-tumor_tidy <- tumor %>%
-  pivot_longer(`0`:`28`)
-tumor_tidy
-```
 
 ```{r}
 tumor_tidy <- tumor %>%
-  pivot_longer(`0`:last_col())
-tumor_tidy
-```
-
-
-```{r}
-tumor_tidy <- tumor %>%
-  pivot_longer(c(-Group, -Grp, -ID))
-tumor_tidy
-```
-
-```{r}
-tumor_tidy <- tumor %>%
-  pivot_longer(c(-Group, -Grp, -ID), names_to = "day", values_to = "size")
+  pivot_longer(`0`:last_col(), names_to = "day", values_to = "size")
 tumor_tidy
 ```
 
