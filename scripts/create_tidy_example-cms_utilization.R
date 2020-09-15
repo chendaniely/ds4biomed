@@ -60,7 +60,7 @@ process_gender_sheet <- function(fp, gender) {
 }
 
 process_sheets <- function(fp, genders = c("Males", "Females")) {
-  mf <- purrr::map_df(c("Males", "Females"), ~ process_gender_sheet(fp, .))
+  mf <- purrr::map_df(genders, ~ process_gender_sheet(fp, .))
   return(mf)
 }
 
