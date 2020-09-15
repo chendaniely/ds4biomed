@@ -74,7 +74,35 @@ tb <- read_csv("./data/tb_long.csv")
 tb
 ```
 
+```{r}
+tb_long <- tb %>%
+  pivot_longer(starts_with(c('m', 'f')))
+tb_long
+```
+
+```{r}
+tb_tidy <- tb_long %>%
+  separate(name, into = c("sex", "age_group"), sep = 1)
+tb_tidy
+```
+
 ## Variables are stored in both rows and columns
+
+```{r}
+cms <- read_csv("./data/cms_utilization.csv")
+```
+
+```{r}
+cms_long <- cms %>%
+  pivot_longer(`2007`:last_col(), names_to = "year")
+cms_long
+```
+
+```{r}
+cms_tidy <- cms_long %>%
+  pivot_wider(names_from = variable, values_from = value)
+cms_tidy
+```
 
 ## Additional Resources
 
