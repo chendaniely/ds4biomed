@@ -13,6 +13,16 @@ pre code {
   white-space: inherit;
 }
 
+#question {
+  font-weight: bold;
+}
+
+#solution {
+  font-weight: bold;
+}
+
+/* https://www.w3schools.com/colors/colors_x11.asp
+*/
 .accordion {
   background-color: #eee;
   color: #444;
@@ -30,9 +40,33 @@ pre code {
   background-color: #ccc;
 }
 
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
+.panel-question {
+  padding: 18px 18px;
+  /*display: none; */
+  background-color: #fafafa;
   overflow: hidden;
+  border-style: solid;
+  border-color: #eee;
+}
+
+.panel-solution {
+  padding: 18px 18px;
+  /*display: none; */
+  background-color: #fafafa;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #eee;
+}
+
+.tldr {
+  padding: 20px;
+  /*display: none; */
+  background-color: #faebd7;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #faebd7;
+}
+
+p.tldr {
+  font-weight: bold;
 }

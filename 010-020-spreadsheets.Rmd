@@ -1,3 +1,20 @@
+```{r, include=FALSE}
+library(magrittr)
+library(knitr)
+library(readr)
+library(reactable)
+library(dplyr)
+library(readxl)
+
+knitr::opts_chunk$set(echo=FALSE,
+                      message=FALSE
+)
+
+my_reacttable <- function(data, ...) {
+  reactable(data = data, compact = TRUE, resizable = TRUE, bordered = TRUE, highlight = TRUE, ...)
+}
+```
+
 # Spreadsheets {#spreadsheets}
 
 ## Introduction
@@ -14,72 +31,144 @@ The ability to click on things can never be underestimated.
 However, the convenience of clickable graphical elements come at the price
 of flexibility when more complex and nuanced tasks are needed.
 
-<button class="accordion">Exercise 1 Question</button>
-:::{.panel}
+<button class="accordion" id="question">Exercise 1 Question</button>
+:::{.panel-question}
 You are one of the researchers assigned to a
 pharmacokinetics study of a phase 3 clinical trial for
 Hepatitis C.
 You have 3 patients who need to have their blood drawn and various vitals recorded:
 
-1. **Gemma Dunn**: Blood drawn at **8am**; Heart rate **65bpm**; Respiratory rate: **12bpm**; Blood pressure **128/78 mmHg**; Pulse Ox **98%**; Temperature **96.8F**
-2. **Priscilla Holding**: Blood drawn at **8:20am**; Heart rate **75bpm**; Respiratory rate: **18bpm**; Blood pressure **130/85 mmHg**; Pulse Ox **95%**; Temperature **97.0F**
-3. **Aniya Warner**:  Blood drawn at **8:40am**; Heart rate **63bpm**; Respiratory rate: **13bpm**; Blood pressure **115/73 mmHg**; Pulse Ox **98%**; Temperature **96.5F**
+1. **Gemma Dunn**:
+    - Blood drawn at **8am**
+    - Heart rate **65bpm**
+    - Respiratory rate: **12bpm**
+    - Blood pressure **128/78 mmHg**
+    - Pulse Ox **98%**
+    - Temperature **96.8F**
+2. **Priscilla Holding**:
+    - Blood drawn at **8:20am**
+    - Heart rate **75bpm**
+    - Respiratory rate: **18bpm**
+    - Blood pressure **130/85 mmHg**
+    - Pulse Ox **95%**
+    - Temperature **97.0F**
+3. **Aniya Warner**
+    - Blood drawn at **8:40am**
+    - Heart rate **63bpm**
+    - Respiratory rate: **13bpm**
+    - Blood pressure **115/73 mmHg**
+    - Pulse Ox **98%**
+    - Temperature **96.5F**
 
 How would you input these values into a spreadsheet?
 :::
 
-<button class="accordion">Exercise 1 Possible Results</button>
-:::{.panel}
-**Input values without units**
+<button class="accordion" id="solution">Exercise 1 Possible Results</button>
+:::{.panel-solution}
+**1. Input values without units**
 
-Units might be understood and assumed
+```{r}
+readr::read_csv("./data/spreadsheets/exercise-010-010.csv") %>%
+  my_reacttable()
+```
 
-| Name              | Time | Blood Pressure | Heart Rate | Respiratory Rate | Pulse Ox | Temperature |
-|-------------------|------|----------------|------------|------------------|----------|-------------|
-| Gemma Dunn        | 8:00 | 128/78         | 65         | 12               | 98       | 96.8        |
-| Priscilla Holding | 8:20 | 130/85         | 75         | 18               | 95       | 97.0        |
-| Aniya Warner      | 8:40 | 115/73         | 63         | 13               | 98       | 96.5        |
+Units might be understood and assumed.
+If there is an already established convention on units and
+if there is a code book specifying the units, you may not need to have the unit information in the dataset itself.
+In this case, if the units were swapped between Fahrenheit and Celsius,
+we would be able to detect that since body temperatures values would only make sense with a particular unit.
 
-**Add units to values**
+**2. Add units to values**
 
-| Name              | Time   | Blood Pressure | Heart Rate | Respiratory Rate | Pulse Ox | Temperature |
-|-------------------|--------|----------------|------------|------------------|----------|-------------|
-| Gemma Dunn        | 8:00am | 128/78         | 65         | 12               | 98%      | 96.8F       |
-| Priscilla Holding | 8:20am | 130/85         | 75         | 18               | 95%      | 97.0F       |
-| Aniya Warner      | 8:40am | 115/73         | 63         | 13               | 98%      | 96.5F       |
+```{r}
+readr::read_csv("./data/spreadsheets/exercise-010-020.csv") %>%
+  my_reacttable()
+```
 
-**Split names into 2 columns**
+One way to incorporate units would be to place them directly with the value.
+This would make sure you do not forget logging the unit in a different column,
+and would make the individual values more self sufficient.
+The downside here is the unit information turns the value in the cell into a charactr/string/text value
+and you won't be able to do any numeric calculations without removing the unit from the value.
+Also the column will hold 2 bits of information,
+the value and the unit.
+In general, you want each cell to only hold 1 bit of information.
 
-| First Name | Last Name | Time   | Blood Pressure | Heart Rate | Respiratory Rate | Pulse Ox | Temperature |
-|------------|-----------|--------|----------------|------------|------------------|----------|-------------|
-| Gemma      | Dunn      | 8:00am | 128/78         | 65         | 12               | 98       | 96.8F       |
-| Priscilla  | Holding   | 8:20am | 130/85         | 75         | 18               | 95       | 97.0F       |
-| Aniya      | Warner    | 8:40am | 115/73         | 63         | 13               | 98       | 96.5F       |
+**3. Split names into 2 columns**
 
-**Placing unit information in the columns**
+```{r}
+readr::read_csv("./data/spreadsheets/exercise-010-030.csv") %>%
+  my_reacttable()
+```
 
-| First Name | Last Name | Time   | Blood Pressure (bpm) | Heart Rate (bpm) | Respiratory Rate (bpm) | Pulse Ox (%) | Temperature (F) |
-|------------|-----------|--------|----------------------|------------------|------------------------|--------------|-----------------|
-| Gemma      | Dunn      | 8:00am | 128/78               | 65               | 12                     | 98           | 96.8F           |
-| Priscilla  | Holding   | 8:20am | 130/85               | 75               | 18                     | 95           | 97.0F           |
-| Aniya      | Warner    | 8:40am | 115/73               | 63               | 13                     | 98           | 96.5F           |
+Splitting the name into first and last names will make searching, sorting, and finding observations easier.
+It also prevents manual user entry from specifying the name in different formats
+(first name last name versus last name, first name).
+However, be mindful of how non-english names would be entered when entering data this way.
+
+**4. Placing unit information in the columns**
+
+```{r}
+readr::read_csv("./data/spreadsheets/exercise-010-040.csv") %>%
+  my_reacttable()
+```
+
+You can choose to place the unit information in the column names themselves.
+This would make it clearer what the units for a particular value are without having to look up and log a separate column.
+Chances are that the units will not change across values,
+so it would be highly repetitive to keep the information in a separate column.
+However, be ware of making the column names too pretty.
+In general, you want to avoid special characters and spaces in your column names,
+and if possible keep everything in a single case (e.g., all lower case).
+This prevents having errors with leading and trailing spaces (e.g., "last name " and " last name ") when searching for column names,
+as well as not having to worry about the differences between "Last Name", "last name", "lastName", "last_name", etc.
+
+
 :::
 
-<button class="accordion">Exercise 1 Solution</button>
-:::{.panel}
+<button class="accordion" id="solution">Exercise 1 Solution</button>
+:::{.panel-solution}
 
-| first_name | last_name | time | diastolic | systolic | heart_rate | respiratory_rate | pulse_ox | temperature | temperature_unit |
-|------------|-----------|------|-----------|----------|------------|------------------|----------|-------------|------------------|
-| Gemma      | Dunn      | 8:00 | 128       | 78       | 65         | 12               | 98       | 96.8        | F                |
-| Priscilla  | Holding   | 8:20 | 130       | 85       | 75         | 18               | 95       | 97.0        | F                |
-| Aniya      | Warner    | 8:40 | 115       | 73       | 63         | 13               | 98       | 96.5        | F                |
+```{r}
+readr::read_csv("./data/spreadsheets/exercise-010-050.csv",
+                col_types = cols(
+                  first_name = col_character(),
+                  last_name = col_character(),
+                  time = col_time(format = ""),
+                  diastolic = col_double(),
+                  systolic = col_double(),
+                  heart_rate = col_double(),
+                  respiratory_rate = col_double(),
+                  pulse_ox = col_double(),
+                  temperature = col_double(),
+                  temperature_unit = col_character()
+                )) %>%
+  my_reacttable()
+```
+
+This solution isn't perfect,
+but it has a lot of features of good spreadsheet data.
+
+1. All the column names are lower-cased and does not contain spaces or special characters
+2. Each cell in a column only contains 1 bit of information
+   (separate first and last names, blood pressure values in separate columns, units not part of the value)
+
+What's currently not obviously clear is whether or not time is recorded in 12-hour or 24-hour time,
+this may be more evident as we fill in more data.
+I realized when I loaded this dataset into R,
+that the `temerature_unit` column of `F` values are read in as `FALSE` values by default.
+I could either write the data import code in such a way to accommodate for this default behavior (which I did),
+or choose to rename the `temperature` column as `temp_f` so we have the unit information
+directly in the column name.
+
 :::
 
 When you're manually entering data,
 it's hard to know how much to breakdown values into separate columns.
 As a general rule of thumb,
 having more columns in your data is much better than having a single column containing multiple bits of information.
-In the case of blood pressure values we should have separate columns for the diastolic and systolic values,
+In the case of blood pressure values,
+we should have separate columns for the diastolic and systolic values,
 instead of a single column containing both.
 This gives us a lot more flexibility later on if we only want to look at one of the values,
 and also gives us the flexibility to combine them into a single reading if needed.
@@ -87,37 +176,161 @@ Since we're manually entering values,
 reporting the blood pressure value in a single column runs the risk of formatting issues
 such as `120/80`, `120 / 80`, `120 80`, etc.
 
-<button class="accordion">Exercise 2 Question</button>
-:::{.panel}
+<button class="accordion" id="question">Exercise 2 Question</button>
+:::{.panel-question}
 Now, let's say you performed these tasks multiple times over the course of 72 hours.
 You know at the end of the PK study, you want to be able to look to see if there were any drastic changes to the patient's vitals.
 Here's a sample of more data,
-does knowing what you want to look at
+does knowing what you want to look at change how you setup your data collection?
 
-Example additional reading 1:
+**Example additional reading 1:**
 
-Taken on same day
+Taken on **same** day 12 hours from the first reading:
 
-1. **Gemma Dunn**: Blood drawn at **8am**; Heart rate **65bpm**; Respiratory rate: **12bpm**; Blood pressure **128/78 mmHg**; Pulse Ox **98%**; Temperature **96.8F**
-2. **Priscilla Holding**: Blood drawn at **8:20am**; Heart rate **75bpm**; Respiratory rate: **18bpm**; Blood pressure **130/85 mmHg**; Pulse Ox **95%**; Temperature **97.0F**
-3. **Aniya Warner**:  Blood drawn at **8:40am**; Heart rate **63bpm**; Respiratory rate: **13bpm**; Blood pressure **115/73 mmHg**; Pulse Ox **98%**; Temperature **96.5F**
+1. **Gemma Dunn**:
+    - Blood drawn at **8pm**
+    - Heart rate **65bpm**
+    - Respiratory rate: **12bpm**
+    - Blood pressure **128/78 mmHg**
+    - Pulse Ox **98%**
+    - Temperature **96.8F**
+2. **Priscilla Holding**:
+    - Blood drawn at **8:20pm**
+    - Heart rate **75bpm**
+    - Respiratory rate: **18bpm**
+    - Blood pressure **130/85 mmHg**
+    - Pulse Ox **95%**
+    - Temperature **97.0F**
+3. **Aniya Warner**:
+    - Blood drawn at **8:40pm**
+    - Heart rate **63bpm**
+    - Respiratory rate: **13bpm**
+    - Blood pressure **115/73 mmHg**
+    - Pulse Ox **98%**
+    - Temperature **96.5F**
 
-Example additional reading 2:
+**Example additional reading 2:**
 
-Taken on the next day
+Taken on the **next** day 24 hours from the first reading:
 
-1. **Gemma Dunn**: Blood drawn at **8am**; Heart rate **65bpm**; Respiratory rate: **12bpm**; Blood pressure **128/78 mmHg**; Pulse Ox **98%**; Temperature **96.8F**
-2. **Priscilla Holding**: Blood drawn at **8:20am**; Heart rate **75bpm**; Respiratory rate: **18bpm**; Blood pressure **130/85 mmHg**; Pulse Ox **95%**; Temperature **97.0F**
-3. **Aniya Warner**:  Blood drawn at **8:40am**; Heart rate **127bpm**; Respiratory rate: **36bpm**; Blood pressure **115/73 mmHg**; Pulse Ox **98%**; Temperature **96.5F**
+1. **Gemma Dunn**:
+    - Blood drawn at **8am**
+    - Heart rate **65bpm**
+    - Respiratory rate: **12bpm**
+    - Blood pressure **128/78 mmHg**
+    - Pulse Ox **98%**
+    - Temperature **96.8F**
+2. **Priscilla Holding**:
+    - Blood drawn at **8:20am**
+    - Heart rate **75bpm**
+    - Respiratory rate: **18bpm**
+    - Blood pressure **130/85 mmHg**
+    - Pulse Ox **95%**
+    - Temperature **97.0F**
+3. **Aniya Warner**:
+    - Blood drawn at **8:40am**
+    - Heart rate **127bpm**
+    - Respiratory rate: **36bpm**
+    - Blood pressure **115/73 mmHg**
+    - Pulse Ox **98%**
+    - Temperature **96.5F**
+:::
+
+<button class="accordion" id="solution">Exercise 2 Possible Results</button>
+:::{.panel-solution}
+
+**1. Separate tables for each patient**
+
+Table for Gemma:
+```{r}
+e2t1 <- readr::read_csv("./data/spreadsheets/exercise-020-010.csv")
+e2t1 %>%
+  my_reacttable()
+```
+
+Table For Priscilla:
+```{r}
+e2t2 <- readr::read_csv("./data/spreadsheets/exercise-020-020.csv")
+e2t2 %>%
+  my_reacttable()
+```
+
+Table for Aniya:
+```{r}
+e2t3 <- readr::read_csv("./data/spreadsheets/exercise-020-030.csv")
+e2t3%>%
+  my_reacttable()
+```
+
+One way to input these new readings is to create a separate table for each person.
+This could be done as a separate file or separate sheets in an Excel workbook.
+This has the benefit of being easy to run calculations on a single person,
+but you would need to process the data to get overall summaries.
+
+**2. Multiple sections in the same table**
+
+```{r}
+all <- dplyr::bind_rows(e2t1, e2t2, e2t3) %>%
+  dplyr::arrange(day, time)
+```
+
+
+```{r}
+all %>% 
+  dplyr::arrange(first_name, day, time) %>%
+  tibble::add_row(.before = 4) %>%
+  tibble::add_row(.before = 4) %>%
+  tibble::add_row(.before = 9) %>%
+  tibble::add_row(.before = 9) %>%
+  my_reacttable(defaultPageSize = 20)
+```
+
+This is very similar to the previous example,
+but instead of having separate files for each person,
+there's some kind of separation in the main spreadsheet to distinguish between individuals.
+This allows us to calculate group statistics for a particular column (assuming the blank rows are accounted for)
+and we can save temporary calculations on a patient-by-patient basis.
+While this may be a format that is useful during the data collection phase,
+the empty rows between data values can cause data import problems.
+One-off calculations below the tables or to the side can also disrupt data import.
+
+**3. Values across the rows**
+
+```{r}
+dplyr::bind_cols(e2t1, e2t2, e2t3, .name_repair = "minimal") %>%
+  my_reacttable()
+```
+
+
+:::
+
+<button class="accordion" id="solution">Exercise 2 Solution</button>
+:::{.panel-solution}
+**Single table of all patients in chronological order**
+
+```{r}
+all %>%
+  my_reacttable()
+```
+
+Having all the data in a single dataset allows for the greatest amount of post data collection analysis.
+You don't need the additional step of combining and joining tables together since all the values will be available.
+It gives you the flexibility to filter results on values or observations of interest for whatever calculation is needed.
+The chronological order is just for data entry but the data can be re-arranged as necessary (e.g., by patient name)
 :::
 
 In general, each row in your dataset represents a single observation.
-In our case, our observational unit is person and time.
+In our case, our observational unit is person and time,
+so each row contains a set of readings for a given person and time.
 It may be common to have multiple readings on a single row,
 where you have different columns representing each reading (TODO THIS ISN"T CLEAR).
 There is nothing wrong with having a time1, time2, heart_rate1, hear_rate2, etc, columns per se,
 but when you're thinking longer term for data visualization and analysis,
-you would have to process your data futher.
+you would have to process your data further.
+
+:::{.tldr}
+With proper planning, there is no such thing as "messy" data.
+:::
 
 Having said that, since this is a manual data entry process,
 if it is easier to enter and check your data inputs in a certain format,
@@ -125,38 +338,169 @@ then that would be the better data format for the use case.
 As long as you have a plan for later steps in the data processing,
 then choose the format that makes the current task easier.
 
-**With proper planning, there is no such thing as "messy" data.**
-
-<button class="accordion">Exercise 3 Question</button>
-:::{.panel}
+<button class="accordion" id="question">Exercise 3 Question</button>
+:::{.panel-question}
 The protocol asks to report an adverse event if any of the patient's vitals
 become abnormally elevated. How do you mark any abnormal observations?
+
+Elevated vitals include:
+
+- Blood pressure greater than or equal to 140/90
+- Resting heart rate greater than or equal to 90
+- Resting respiratory rate over 20
+- Pulse ox under 95
+- temperature over 100 degress Farenheight
+
+Note that the language is specific about "greater than or equal to" versus "over".
+:::
+<button class="accordion" id="solution">Exercise 3 Possible solution</button>
+:::{.panel-solution}
+
+**Color code the values of interest**
+
+```{r}
+all %>%
+  my_reacttable(
+    columns = list(
+      diastolic = colDef(style = function(value) {
+        if (value >= 140) {
+          color <- "#F00000"
+        } else {
+          color <- "#000000"
+        }
+        list(color = color, fontWeight = "bold")
+      }),
+      systolic = colDef(style = function(value) {
+        if (value >= 90) {
+          color <- "#F00000"
+        } else {
+          color <- "#000000"
+        }
+        list(color = color, fontWeight = "bold")
+      }),
+      heart_rate = colDef(style = function(value) {
+        if (value >= 90) {
+          color <- "#F00000"
+        } else {
+          color <- "#000000"
+        }
+        list(color = color, fontWeight = "bold")
+      }),
+      respiratory_rate = colDef(style = function(value) {
+        if (value >= 20) {
+          color <- "#F00000"
+        } else {
+          color <- "#000000"
+        }
+        list(color = color, fontWeight = "bold")
+      }),
+      pulse_ox = colDef(style = function(value) {
+        if (value < 95) {
+          color <- "#F00000"
+        } else {
+          color <- "#000000"
+        }
+        list(color = color, fontWeight = "bold")
+      }),
+      temp_f = colDef(style = function(value) {
+        if (value > 100) {
+          color <- "#F00000"
+        } else {
+          color <- "#000000"
+        }
+        list(color = color, fontWeight = "bold")
+      })
+    ))
+```
+
+Using colors to make values of interest stand out is a common way to "flag" cells.
+It can be done either manually in a spread sheet program,
+or by writing a conditional statement to color values.
+In essence, you are turning the spreadsheet of data into a data visualization that behave similarly to a heatmap diagram.
+However, one of the main takeaways from Exercise 1,
+was to not have multiple bits of information encoded into a single cell.
+By putting a color value representing a "good" or "bad" value,
+we now assigned multiple bits of information to a single cell.
+
+This may further problems later on when loading Excel spreadsheets since the color information may show up as additional
+characters or not.
+At best you have to process the color information from the stored value in your dataset,
+and at worst, you have also lost a bit of information in your dataset that you tried to encode.
+
+:::
+<button class="accordion" id="solution">Exercise 3 Solution</button>
+:::{.panel-solution}
+
+**Separate column to indicate status**
+
+```{r}
+all %>%
+  dplyr::mutate(
+    report = dplyr::case_when(
+      diastolic >= 140 ~ "yes",
+      systolic >= 90 ~ "yes",
+      heart_rate >= 90 ~"yes",
+      respiratory_rate >= 20 ~ "yes",
+      pulse_ox < 95 ~ "yes",
+      temp_f > 100 ~ "yes",
+      TRUE ~ "no"
+    )
+  ) %>%
+  dplyr::select(report, everything()) %>%
+  my_reacttable()
+```
+
+A much better way would be to create a separate column that denotes whether or not an observation would need to be reported or not.
+This way each column only holds one bit of information,
+is easily transferable between programs,
+and you won't loose any information as the data gets passed around.
+You can then use this column in either the spreadsheet program and/or programming language to filter results.
 :::
 
 The benefit of spreadsheet programs, is that it gives you a graphical view of your dataset.
 This means it's very easy to add colors and other visual markers to data values to make them stand out more.
-However, one of the take aways in exercise 1 was to be mindful of storing multiple bits of information in a single cell.
+However, one of the takeaways in exercise 1 was to be mindful of storing multiple bits of information in a single cell.
 If we add colors to a cell, we know have multiple bits of information stored in a single cell,
 the value, and the color that represents something else.
-A better approach in this case to make a more "shareabele" dataset,
+A better approach in this case to make a more "shareable" dataset,
 would be to create a separate column that indicates
 a "bad" or "good" value.
 This would be easier when each row is a separate patient reading,
 where you can create a flag about a "bad" observation.
 
+:::{.tldr}
+Treat your dataset as data, not as a data visualization.
+:::
+
 You can take this to an even further extreme where each row is just a patient, time, reading type, and reading value,
 where you can really flag a "bad" value,
 but this would make the data entry process very difficult.
 
-<button class="accordion">Exercise 4 Question</button>
-:::{.panel}
+<button class="accordion" id="question">Exercise 4 Question</button>
+:::{.panel-question}
 During the examination you ask the patient if they are feeling any discomfort and
 why they are breathing so heavily,
 and they tell you they were stretching and doing yoga poses to "get the blood moving".
 How do you document this in your data?
 :::
+<button class="accordion" id="solution">Exercise 4 Solution</button>
+:::{.panel-solution}
+When actually doing data collection, it's impossible to predict everything and
+it's common to have a separate open text field to put in notes.
+:::
 
-When working with observational data, it's common to have a separate open text field to put in notes.
+It's good to have some kind of notes section for you to enter in so all the comments and notes travel with the data,
+and not somewhere else that could be easily lost or forgotten.
+The better your dataset can self document,
+the less chance of mistakes during the data processing and analysis phase.
+There are times when a dataset is provided without a codebook,
+or values in the dataset get interpreted in the wrong way.
+
+As long as you are consistent *within a particular column* (and ideally within the entire dataset),
+moden programming langauges can work with data encoded as `"yes"`/`"no"` or `"true"`/`"false"` or
+`"< 18"`/`"18-25`"/`"26-30"`/`"31+"` etc and do not need to be numerically encoded as `0`, `1`, `2`, etc.
+This makes the dataset much more self-documenting and does not need to rely on a separate codebook file.
+
 
 ## Summary
 

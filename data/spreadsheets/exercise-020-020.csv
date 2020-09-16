@@ -1,0 +1,4 @@
+first_name,last_name,day,time,diastolic,systolic,heart_rate,respiratory_rate,pulse_ox,temp_f
+Priscilla,Holding,1,8:20,130,85,75,18,95,97
+Priscilla,Holding,1,20:20,132,84,77,19,97,101.4
+Priscilla,Holding,2,8:20,135,80,76,15,98,98.1
