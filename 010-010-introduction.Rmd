@@ -1,2 +1,4 @@
 # Introduction
 
+glossery of technical terms: https://glosario.carpentries.org/en/
+
