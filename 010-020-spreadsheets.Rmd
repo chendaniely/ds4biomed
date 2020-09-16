@@ -455,6 +455,10 @@ This way each column only holds one bit of information,
 is easily transferable between programs,
 and you won't loose any information as the data gets passed around.
 You can then use this column in either the spreadsheet program and/or programming language to filter results.
+
+If you absolute need colored cells in your spreadsheet or dataset,
+then this new column would be a good place to use color since the multiple bits of information in the cell
+will encode the same information.
 :::
 
 The benefit of spreadsheet programs, is that it gives you a graphical view of your dataset.
