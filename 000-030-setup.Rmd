@@ -13,7 +13,7 @@ If you do not have Excel, there are other free options availiable:
 All of these programs can read and write Excel and comma delineated (CSV) files,
 which you can use to follow along.
 
-## Programming language
+## Programming language {-}
 
 Only one of the below languages need to be installed.
 
