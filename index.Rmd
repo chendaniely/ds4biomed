@@ -16,6 +16,9 @@ description: "Materials to teach data science for the biomedical sciences"
 
 # Welcome {-}
 
+```{r echo=FALSE, fig.align="center", fig.cap="Data Science for the Biomedical Science cover photo of a snake with a DNA double helix body by Julia Chen."}
+knitr::include_graphics(here::here("./images/cover/Snake_title_cropped.png"))
+```
 
 
 ```{r include=FALSE}
