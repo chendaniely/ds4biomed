@@ -1,42 +1,5 @@
 # Preface {-#preface}
 
-## Who is this book for {-}
-
-```{r, echo=FALSE, fig.cap="Personas drawn by Julia Chen"}
-knitr::include_graphics("./images/preface/the_gang.png")
-```
-
-
-This book is for people who work in the biomedical sciences.
-This includes the clinicians (MDs, DOs, DVMs RNs, PAs, etc),
-researchers, and
-analysists who work with data.
-
-### The Personas {-}
-
-As a part of a research study, we have identified 5 different groups (i.e., personas)
-in the biomedical sciences who this set of materials are for.
-The 5 personas have 2 main groups,
-those who have no programming and/or data experience, and those who do.
-
-TODO: link to preliminary findings / paper
-
-#### No programming and/or data background
-
-(TODO give them names)
-
-##### Persona 1
-
-##### Persona 2
-
-#### Has programming and/or data background
-
-##### Persona 3
-
-##### Persona 4
-
-##### Persona 5
-
 ## What to expect {-}
 
 The materials provided here can be used in multiple ways:
