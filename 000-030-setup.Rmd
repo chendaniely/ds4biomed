@@ -1,4 +1,16 @@
+```{r}
+knitr::opts_chunk$set(
+  fig.align="center"
+)
+```
+
 # Setup {-#setup}
+
+To prepare to follow along, you will need to have
+the datasets downloaded,
+some spreadsheet program (e.g., Excel),
+and a programming language (e.g., R) installed.
+See the below sections for how to get everything set up 
 
 ## Datasets {-}
 
@@ -15,17 +27,71 @@ which you can use to follow along.
 
 ## Programming language {-}
 
-Only one of the below languages need to be installed.
+Below you will find the installation instructions for setting up the programming language we will be using (e.g., R) along with its programming environment (e.g., RStudio)
 
 ### R {-}
 
 We will be using R and RStudio for the workshop.
+If you would like a video installation tutorial,
+please see the
+[R section of The Carpentries workshop template](https://carpentries.github.io/workshop-template/#r)
+.
+
 The links to install R can be found here: https://cloud.r-project.org/.
+Navigate to the correct operating system.
+
+```{r}
+knitr::include_graphics("./images/setup/website-r_download.PNG")
+```
+
+For mac users, download the `.pkg` file under the "Latest release" section
+
+```{r}
+knitr::include_graphics("./images/setup/website-r_download-mac.PNG")
+```
+
 For Windows users, please install both the `base` version as well as `Rtools`.
 
-Rstudio can be downloaded from the follow location: https://rstudio.com/products/rstudio/download/
+```{r}
+knitr::include_graphics("./images/setup/website-r_download-windows.PNG")
+```
 
+#### RStudio {-}
+
+After you have installed R, you can install RStudio.
+We will use RStudio as the integrated development environment (IDE) to write and work with R code.
+Rstudio can be downloaded from the following location: https://rstudio.com/products/rstudio/download/
+
+#### Installing R packages {-}
+
+Once we have 
+Within RStudio, there will be a "Packages" tab in the bottom right panel.
+Click on the "Install" button.
+
+```{r}
+knitr::include_graphics("./images/setup/rstudio-packages_tab.PNG")
+```
+
+In the pop-up window type in "tidyverse" and click "install".
+
+```{r}
+knitr::include_graphics("./images/setup/rstudio-install_packages.PNG")
+```
+
+The Console section of RStudio will begin installing the "tidyverse" package we will be using.
+
+#### Testing your installation {-}
+
+When the installation is finished, you can check if the package was installed properly and will load
+by scrolling down the "Packages" tab and clicking the checkbox next to "tidyverse".
+
+```{r}
+knitr::include_graphics("./images/setup/rstudio-check_tidyverse.PNG")
+```
+
+<!-- commenting out python section to since we are not using it yet
 ### Python {-}
 
 We will be using the Anaconda distribution for Python.
 The download links and instructions can be found here: https://docs.anaconda.com/anaconda/install/.
+-->
