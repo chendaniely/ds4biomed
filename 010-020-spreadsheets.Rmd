@@ -17,6 +17,12 @@ my_reacttable <- function(data, ...) {
 
 # Spreadsheets {#spreadsheets}
 
+## Learning Objectives
+
+
+1. Identify when spreadsheets are useful
+2. Assess when a task should not be done in a spreadsheet software
+
 ## Introduction
 
 If you worked with data, chances are you have used spreadsheets before.
