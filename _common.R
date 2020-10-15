@@ -1,3 +1,5 @@
+options(crayon.enabled = FALSE)
+
 set.seed(42)
 
 knitr::opts_chunk$set(
