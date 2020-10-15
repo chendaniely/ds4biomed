@@ -3,3 +3,6 @@ language:
   ui:
     chapter_name: "Chapter "
 delete_merged_file: true
+new_session: yes # does knit-merge instead of merge-knit
+
+before_chapter_script: "_common.R"

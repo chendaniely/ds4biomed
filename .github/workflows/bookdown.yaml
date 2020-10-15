@@ -41,7 +41,7 @@ jobs:
           R -e 'renv::restore()'
 
       - name: Build site
-        run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
+        run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE, new_session = TRUE)'
 
       - name: Install npm
         uses: actions/setup-node@v1

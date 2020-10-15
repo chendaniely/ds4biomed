@@ -1,6 +1,7 @@
 ```{r}
 knitr::opts_chunk$set(
-  fig.align="center"
+  fig.align="center",
+  echo=FALSE
 )
 ```
 
