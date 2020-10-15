@@ -1,32 +1,195 @@
-<!--
----
-output: 
-  html_document:
-    includes:
-      in_header: header.html
----
--->
-
 # Load Data
 
-Some _significant_ applications are demonstrated in this chapter.
 
-<!---LEARNR EX 1-->
-<!--
-<iframe style="margin:0 auto; min-width: 100%;" id="myIframe1" class="interactive" src="https://chendaniely.shinyapps.io/ds4biomed-exercises" scrolling="no" frameborder="no"></iframe>
--->
-<!---------------->
+## Learning Objectives
 
-## Example one
 
-## Example two
 
-## Additional resources
+TODO: talk about where to type code and how to execute code.
 
-- r4ds Data Import: https://r4ds.had.co.nz/data-import.html
+Loading data into R is the first step!
 
-<!--
-<script>
-  iFrameResize({}, ".interactive");
-</script>
--->
+First we need to load up a package to make loading data sets easier.
+We will be using the `tidyverse` set of packages for all of our data processing needs in R.
+^[This is not the only way you can process data in R, but from experience, it seems to be the easier way to learn R due to its consistency, community, and learning materials.]
+
+
+We first will load up the `tidyverse` packages using the `library` function.
+
+```{r}
+library(tidyverse)
+```
+
+Now we can use all the functions within the Tidyverse to do our data processing.
+If you are following along and you run a piece of code and end up with an `could not find function` error,
+make sure you typed `library(tidyverse)` correctly and executed the line of code.
+
+TODO: talk about file paths, windows paths, *nix paths, relative and absolute directories.
+
+Exercises 1-2:
+
+Absolute and relative paths.
+
+```
+asci path diagram for windows and mac
+```
+
+## Reading text files (CSV)
+
+Now that we know how to find our files, let's load up our first data set. 
+
+```{r}
+read_csv("data/medicaldata_tumorgrowth.csv")
+```
+
+Loading a data set is great, but we need a convenient way to refer to the data set.
+We don't want to re-load the data set every time we want to perform an action on it.
+We can take this loaded data set and **assign** it to a **variable**.
+We can do this with the **assignment** **operator**, `<-`.
+Note the way it is typed, a less than symbol (`<`) followed immediately by the dash (`-`) without any spaces in between.
+The right side of the assignment operator, `<-`, will be executed and then **assigned** to the variable on the left.
+
+```{r}
+tumor <- read_csv("data/medicaldata_tumorgrowth.csv")
+```
+Notice this time we no longer see the dataset being printed.
+The "Environment" tab in the RStudio panel will now have an entry for the variable you used.
+Clicking on the right data set icon will open a view of your dataset,
+clicking on the arrow will show you the column-by-column text representation (technically it's called the `structure`).
+
+To look at our dataset we can execute *just* the variable we assigned the dataset to.
+
+```{r}
+tumor
+```
+
+This tabular dataset that has now been loaded into R is called a **data frame** **object** (or simply **dataframe**),
+the `tidyverse` uses a `tibble`.
+For the most part, a `data.frame` object will behave like a `tibble` object.
+
+### Reading Excel files
+
+To read an excel file we will need a separate library that can handle Excel files.
+
+```{r}
+library(readxl)
+```
+
+The `readxl` library gives us access to the `read_excel` function which we can use to read in an Excel file.
+
+```{r}
+tumor_xl <- read_excel("data/medicaldata_tumorgrowth.xlsx")
+```
+
+And we can view the loaded Excel file just like before.
+
+```{r}
+tumor_xl
+```
+
+If you are ever lost as to what object you are working with, you can use the `class` function in R to tell you.
+
+```{r}
+class(tumor)
+```
+
+```{r}
+class(tumor_xl)
+```
+
+Once you have see a `"tbl_df"` or `"data.frame"` you can be sure that the dataframe processing functions
+we'll learn will work.
+
+Take away: Once you load a dataset and end up with either a `data.frame` or `tibble` object you can continue using
+the same data processing methods we cover in these materials.
+
+## Selecting columns
+
+```{r}
+tumor
+```
+
+
+```{r}
+select(tumor, Size)
+```
+
+```{r}
+select(tumor, Group, Day, Size)
+```
+
+### The `%>%` pipe operator
+
+```{r}
+tumor %>%
+  select(Size)
+```
+
+```{r}
+tumor %>%
+  select(Group, Day, Size)
+```
+
+## Filtering rows
+
+```{r}
+tumor %>%
+  filter(Group == 1)
+```
+
+```{r}
+tumor %>%
+  filter(Group == 1, Day == 0)
+```
+
+```{r}
+tumor %>%
+  filter(Group == 1 & Day == 0)
+```
+
+```{r}
+tumor %>%
+  filter(Day == 0 | Day == 13)
+```
+
+
+## Subsetting rows and columns
+
+You combine the operations!
+
+```{r}
+tumor %>%
+  select(Group, Day, Size) %>%
+  filter(Size > 2000)
+```
+
+The same un-piped code looks like this:
+
+```{r}
+filter(select(tumor, Group, Day, Size), Size > 2000)
+```
+
+
+## Saving out data
+
+Saving out your data frame objects is the first step in creating pipelines.
+Even if all you do is read in data, filter it, and write out the subsetted dataset for another usecase,
+you have created your first pipeline.
+Now, you have a repeatable way of perforaming the same action when your input dataset is updated or changed.
+
+End the chapter with writing out files,
+and talk about "naming things"
+
+```{r}
+filtered <- tumor %>%
+  select(Group, ID, Day, Size) %>%
+  filter(Day == 0 | Day == 13)
+```
+
+```{r}
+filtered
+```
+
+```{r}
+write_csv(filtered, "data/tumor_filtered.csv")
+```
