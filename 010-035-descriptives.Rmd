@@ -1,0 +1,94 @@
+# Descriptive Calculations
+
+## Introduction {#descriptives-intro}
+
+## Learning Objectives {#descriptives-lo}
+
+## Building the pipeline
+
+New script, clear your environment, re-load your libraries
+
+```{r, results='hide'}
+library(tidyverse)
+```
+
+```{r}
+tumor_subset <- read_csv("data/tumor_filtered.csv")
+```
+
+```{r}
+tumor_subset
+```
+
+## Summary statistics
+
+```{r}
+tumor_subset %>%
+  filter(Day == 0) %>%
+  pull(Size)
+```
+
+```{r}
+tumor_subset %>%
+  filter(Day == 0) %>%
+  pull(Size) %>%
+  mean()
+  
+```
+
+```{r}
+tumor_subset %>%
+  filter(Group == 1, Day == 0) %>%
+  pull(Size) %>%
+  mean()
+```
+
+```{r}
+tumor_subset %>%
+  filter(Group == 2, Day == 0) %>%
+  pull(Size) %>%
+  mean()
+```
+
+```{r}
+tumor_subset %>%
+  filter(Group == 3, Day == 0) %>%
+  pull(Size) %>%
+  mean()
+```
+
+```{r}
+tumor_subset %>%
+  filter(Group == 4, Day == 0) %>%
+  pull(Size) %>%
+  mean()
+```
+
+```{r}
+tumor_subset %>%
+  pull(Group) %>%
+  unique()
+```
+
+## Groupby operations
+
+```{r}
+tumor_subset %>%
+  filter(Day == 0) %>%
+  group_by(Group) %>%
+  summarize(avg_size = mean(Size))
+  
+```
+
+```{r}
+tumor_subset %>%
+  group_by(Group, Day) %>%
+  summarize(avg_size = mean(Size),
+            sd_size = sd(Size),
+            q1 = quantile(Size, probs = .25)
+            )
+```
+
+## Summary {#descriptives-summary}
+
+## Additional Resources {#descriptives-resources}
