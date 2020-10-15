@@ -17,13 +17,13 @@ my_reacttable <- function(data, ...) {
 
 # Spreadsheets {#spreadsheets}
 
-## Learning Objectives
+## Learning Objectives {#spreadsheets-lo}
 
 
 1. Identify when spreadsheets are useful
 2. Assess when a task should not be done in a spreadsheet software
 
-## Introduction
+## Introduction {#spreadsheets-intro}
 
 If you worked with data, chances are you have used spreadsheets before.
 In an introductory data analytics class,
@@ -512,14 +512,14 @@ moden programming langauges can work with data encoded as `"yes"`/`"no"` or `"tr
 This makes the dataset much more self-documenting and does not need to rely on a separate codebook file.
 
 
-## Summary
+## Summary {#spreadsheets-summary}
 
 - Spreadsheet programs serve as a graphical user interface to ones data
 - GUIs are very convenient, but come at the cost of flexibility
 - Spreadsheets have a legitimate place in the data science process
 - Not all tasks are best suited in a spreadsheet program
 
-## Additional resources
+## Additional resources {#spreadsheets-resources}
 
 - Data carpentry spreadsheet lesson: https://datacarpentry.org/spreadsheet-ecology-lesson/
 

@@ -1,7 +1,7 @@
 # Load Data
 
 
-## Learning Objectives
+## Learning Objectives {#load-data-intro}
 
 
 
@@ -67,7 +67,7 @@ This tabular dataset that has now been loaded into R is called a **data frame** 
 the `tidyverse` uses a `tibble`.
 For the most part, a `data.frame` object will behave like a `tibble` object.
 
-### Reading Excel files
+## Reading Excel files
 
 To read an excel file we will need a separate library that can handle Excel files.
 
@@ -193,3 +193,7 @@ filtered
 ```{r}
 write_csv(filtered, "data/tumor_filtered.csv")
 ```
+
+## Summary {#load-data-summary}
+
+## Additional Resources {#load-data-resources}

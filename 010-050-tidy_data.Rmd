@@ -19,6 +19,8 @@ for this process
 knitr::include_graphics("https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/data_cowboy.png")
 ```
 
+## Introduction {#tidy-intro}
+
 ## What is tidy data?
 
 A more formal definition for "clean" data.
@@ -91,7 +93,9 @@ cms_tidy <- cms_long %>%
 cms_tidy
 ```
 
-## Additional Resources
+## Summary {#tidy-summary}
+
+## Additional Resources  {#tidy-resources}
 
 Tidy data paper:
 https://vita.had.co.nz/papers/tidy-data.html

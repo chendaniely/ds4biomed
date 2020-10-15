@@ -1,4 +1,8 @@
-# Making Calculations
+# Descriptive Calculations
+
+## Introduction {#descriptives-intro}
+
+## Learning Objectives {#descriptives-lo}
 
 ## Building the pipeline
 
@@ -15,6 +19,8 @@ tumor_subset <- read_csv("data/tumor_filtered.csv")
 ```{r}
 tumor_subset
 ```
+
+## Summary statistics
 
 ```{r}
 tumor_subset %>%
@@ -82,3 +88,7 @@ tumor_subset %>%
             q1 = quantile(Size, probs = .25)
             )
 ```
+
+## Summary {#descriptives-summary}
+
+## Additional Resources {#descriptives-resources}
