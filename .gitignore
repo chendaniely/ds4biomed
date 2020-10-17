@@ -5,3 +5,9 @@ _publish.R
 _book
 _bookdown_files
 rsconnect
+
+# datasets saved out in the lesson that do not need to be tracked
+data/tumor_filtered.csv
+
+# bookdown::render_book(".") output
+ds4biomed.rds
