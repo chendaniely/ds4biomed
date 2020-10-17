@@ -1,0 +1,10 @@
+first_name,last_name,day,time,diastolic,systolic,heart_rate,respiratory_rate,pulse_ox,temp_f
+Gemma,Dunn,1,08:00:00,128,78,65,12,98,96.8
+Priscilla,Holding,1,08:20:00,130,85,75,18,95,97
+Aniya,Warner,1,08:40:00,115,73,63,13,98,96.5
+Gemma,Dunn,1,20:00:00,116,66,67,13,98,97.1
+Priscilla,Holding,1,20:20:00,132,84,77,19,97,101.4
+Aniya,Warner,1,20:40:00,110,71,61,14,98,97.2
+Gemma,Dunn,2,08:00:00,124,72,66,12,97,97.3
+Priscilla,Holding,2,08:20:00,135,80,76,15,98,98.1
+Aniya,Warner,2,08:40:00,142,91,101,22,96,99.8

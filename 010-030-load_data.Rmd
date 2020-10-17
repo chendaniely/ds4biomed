@@ -1,11 +1,8 @@
 # Load Data
 
+## Learning Objectives {#load-data-lo}
 
-## Learning Objectives {#load-data-intro}
-
-
-
-TODO: talk about where to type code and how to execute code.
+## Introduction {#load-data-intro}
 
 Loading data into R is the first step!
 
@@ -13,34 +10,157 @@ First we need to load up a package to make loading data sets easier.
 We will be using the `tidyverse` set of packages for all of our data processing needs in R.
 ^[This is not the only way you can process data in R, but from experience, it seems to be the easier way to learn R due to its consistency, community, and learning materials.]
 
-
 We first will load up the `tidyverse` packages using the `library` function.
 
 ```{r}
 library(tidyverse)
 ```
 
+The first time you load up the `tidyverse` library,
+there will be some output that lists the packages `tidyverse` loads,
+along with any functions that share the same name as other functions (i.e., conflicts).
+As long as you are mindful about starting a new RStudio session before you work,
+you can ignore this output for now.
+
 Now we can use all the functions within the Tidyverse to do our data processing.
 If you are following along and you run a piece of code and end up with an `could not find function` error,
 make sure you typed `library(tidyverse)` correctly and executed the line of code.
 
-TODO: talk about file paths, windows paths, *nix paths, relative and absolute directories.
+## Find your files
 
-Exercises 1-2:
-
-Absolute and relative paths.
+Let the below figures represent a `ds4biomed` folder on your Desktop on Windows and Mac, respectively.
 
 ```
-asci path diagram for windows and mac
+C:\
+  |- Users\
+    |- Daniel\
+      |- Desktop\
+      | |- ds4biomed\
+      |  |- data\
+      |    |- medicaldata_tumorgrowth.csv
+      |  |- output\
+      |  |- 01-load_data.R
+      |  |- README.md
+      |  |- ds4biomed.Rproj
+      |
+      |-
 ```
+
+```
+/
+  |- Users/
+    |- Daniel/
+      |- Desktop/
+        |- ds4biomed/
+          |- data/
+            |- medicaldata_tumorgrowth.csv
+          |- output/
+          |- 01-load_data.R
+          |- README.md
+          |- ds4biomed.Rproj
+```
+
+Suppose we are "in" the `ds4biomed` folder,
+where we can see the `data` and `output` folders
+along with the
+`01-load_data.R`, `README.md`, and `ds4biomed.Rproj` files.
+
+We can reference our `medicaldata_tumorgrowth.csv` file inside the `data` folder as: `data/medicaldata_tumorgrowth.csv`.
+That is, we can use the backslash, `/` to move into folders.
+We can write `data/medicaldata_tumorgrowth.csv` because we are "starting from" the `ds4biomed` folder.
+This is called a **relative path** because the location of the `csv` file is relative to the `ds4biomed` starting point (aka **working directory**).
+If we want to refer to any arbitrary filer or folder on the computer, we can specify the **full path** of the file.
+The full path will start with a drive letter on windows,
+`C:\Users\Daniel\Desktop\ds4biomed\data\medicaldata_tumorgrowth.csv`,
+and a `/` on a Mac,
+`/Users/Daniel/Desktop/ds4biomed/data/medicaldata_tumorgrowth.csv`.
+
+Suppose we create an `analysis` folder for our `01-load_data.R` script so that our folder structure looks like this
+(only the mac version is shown in the example below):
+
+```
+/
+  |- Users/
+    |- Daniel/
+      |- Desktop/
+        |- ds4biomed/
+          |- data/
+            |- medicaldata_tumorgrowth.csv
+          |- output/
+          |- analysis
+            |- 01-load_data.R
+          |- README.md
+          |- ds4biomed.Rproj
+```
+
+Now, if our **working directory** is now in the `analysis` folder,
+we need a way to reference one folder up to the `ds4biomed` folder *and then* back down to the `data` folder.
+The way we can **relatively** reference the previous folder is with 2 dots, `..`, `../data/medicaldata_tumorgrowth.csv`
+
+
+<button class="accordion" id="question">Exercise 1 Question</button>
+:::{.panel-question}
+Given the following example folder structure
+
+```
+/
+  |- Users/
+    |- Daniel/
+      |- projects/
+      | |- chart_review/
+      |   |- data/
+      |     |- patients.csv
+      |   |- analysis/
+      |     |- demographics.R
+      | |- rct_m22-0305
+          |- data/
+            |- patients.csv
+```
+
+Let's say we are currently in the `chart_review/analysis` folder, working on our `demographics.R`.
+
+1. Write the **relative path** to the `patients.csv` file in the `rct_m22-0305` folder.
+2. Write the **absolute path** to the `patients.csv` file in the `chart_review` folder.
+:::
+
+
+### Paths in Windows
+
+When you are looking at file paths in the Windows Explorer,
+you will notice that all Windows paths will use the backslash, `\`,
+instead of the forward slash, `/` to refer to files.
+In a lot of programming languages, including R, the `\` is a special character,
+so if you want to use `\` for file paths in Windows, you will have to use 2 backslashes, e.g., `..\\data\\patients.csv\\`.
+However, you can still use the regular `/` in Windows to refer to folders just like other **operating systems**.
+
+## Set your working directory
+
+So far, we have been talking about a "starting point" or "working directory",
+when we have been referring to files around our computer.
+In order to quickly and reliably set your working directory,
+we use **RStudio Projects** (Section \@ref(rstudio-projects)).
+
 
 ## Reading text files (CSV)
 
-Now that we know how to find our files, let's load up our first data set. 
+Now that we know how to find our files, let's load up our first data set.
+When trying to type in a file path,
+you can hit the `<TAB>` key to autocomplete the files.
+This will help you with a lot of potential spelling mistakes.
 
 ```{r}
 read_csv("data/medicaldata_tumorgrowth.csv")
 ```
+
+**Debug help:**
+- If the above code returns a `could not find function "read_csv"`
+  make sure you have loaded up the proper library with `library(tidyverse)`
+- If the above code returns a `does not exist in current working directory`,
+  make sure the working directory it lists is your expected "starting point" (i.e., working directory),
+  and make sure the file path is spelled correctly.
+
+`read_csv` will show us the columns that were read in,
+as well as the **data type** of that column (e.g., character, double -- a number).
 
 Loading a data set is great, but we need a convenient way to refer to the data set.
 We don't want to re-load the data set every time we want to perform an action on it.
@@ -52,6 +172,7 @@ The right side of the assignment operator, `<-`, will be executed and then **ass
 ```{r}
 tumor <- read_csv("data/medicaldata_tumorgrowth.csv")
 ```
+
 Notice this time we no longer see the dataset being printed.
 The "Environment" tab in the RStudio panel will now have an entry for the variable you used.
 Clicking on the right data set icon will open a view of your dataset,
@@ -69,7 +190,7 @@ For the most part, a `data.frame` object will behave like a `tibble` object.
 
 ## Reading Excel files
 
-To read an excel file we will need a separate library that can handle Excel files.
+To read an excel file we will need a separate library that can handle Excel files, `readxl`.
 
 ```{r}
 library(readxl)
@@ -103,16 +224,38 @@ we'll learn will work.
 Take away: Once you load a dataset and end up with either a `data.frame` or `tibble` object you can continue using
 the same data processing methods we cover in these materials.
 
+<button class="accordion" id="question">Exercise 2 Question</button>
+:::{.panel-question}
+1. Make sure you have the `ds4biomed` RStudio project open
+2. Load up the `exercise-010-050.csv` file under `data > spreadsheets` (you can use the relative path or full path).
+3. Save this dataframe object to the variable, `spreadsheet_df`
+:::
+
+<button class="accordion" id="solution">Exercise 2 Solution</button>
+:::{.panel-question}
+```{r}
+spreadsheet_df <- read_csv("data/spreadsheets/exercise-010-050.csv")
+```
+:::
+
 ## Selecting columns
+
+Here is the tumor dataset we are working with.
 
 ```{r}
 tumor
 ```
 
+In order to subset the columns of our dataset, we can use the `select` function.
+The **first** **argument** of the `select` function is the dataset we want to select columns from.
+Then, the other arguments are the columns we want to select.
+
 
 ```{r}
 select(tumor, Size)
 ```
+
+If we want multiple columns (or to re-order columns) we can specify each column we want selected.
 
 ```{r}
 select(tumor, Group, Day, Size)
@@ -120,32 +263,66 @@ select(tumor, Group, Day, Size)
 
 ### The `%>%` pipe operator
 
+A common way `tidyverse` code gets written is using the `%>%` operator.
+The `%>%` takes the object on the left, and passes that into the first argument to the function on the right.
+We can re-write the above select statements as follows.
+R interprets the code in the exact same way.
+
 ```{r}
 tumor %>%
   select(Size)
 ```
+
+The way we pronounce the pipe, `%>%` is "then".
+So the above statement is read "tumor, then, select size".
 
 ```{r}
 tumor %>%
   select(Group, Day, Size)
 ```
 
+The benefits of the pipe may not be as apparent now,
+but when we start chaining multiple data sets together,
+it'll make the code a little more readable.
+
 ## Filtering rows
+
+Now that we know how to select columns on our dataframe,
+we can now learn how to filter the rows.
+
+To filter rows, we can use the `filter` function.
+The first argument of `filter` is the dataframe object (the same pattern as the `select` function),
+and the other arguments are statements that return some `TRUE` or `FALSE` value (this is known as a **boolean** condition).
+
+For example if we want to filter the `tumor` dataset such that the `Group` value is `1` we can filter the rows using that condition.
+
+```{r}
+filter(tumor, Group == 1)
+```
+
+We can write the "pipe" version as such:
 
 ```{r}
 tumor %>%
   filter(Group == 1)
 ```
 
+If we want to combine multiple conditions, where `Group` is `1` **and** `Day` is `0`,
+we can put each statement as a separate parameter into the `filter` function.
+
 ```{r}
 tumor %>%
   filter(Group == 1, Day == 0)
 ```
 
+We can also use the `&` for the **and** operator.
+
 ```{r}
 tumor %>%
   filter(Group == 1 & Day == 0)
 ```
+
+Or use the `|` for the **or** operator.
 
 ```{r}
 tumor %>%
@@ -153,9 +330,12 @@ tumor %>%
 ```
 
 
-## Subsetting rows and columns
+## Subsetting columns and rows
 
-You combine the operations!
+To subset on both columns **and** rows,
+we call the corresponding subseting function one after the other.
+Here we are taking the `tumor` column, then `select`ing the `Group`, `Day` and `Size` columns, then
+`filter`ing the rows where the `Size` is greater than `2000`.
 
 ```{r}
 tumor %>%
@@ -163,7 +343,8 @@ tumor %>%
   filter(Size > 2000)
 ```
 
-The same un-piped code looks like this:
+This is an example where the pipe, `%>%` makes the code a little easier to **read**.
+We can "un-pipe" our code and  it looks like this:
 
 ```{r}
 filter(select(tumor, Group, Day, Size), Size > 2000)
@@ -173,12 +354,12 @@ filter(select(tumor, Group, Day, Size), Size > 2000)
 ## Saving out data
 
 Saving out your data frame objects is the first step in creating pipelines.
-Even if all you do is read in data, filter it, and write out the subsetted dataset for another usecase,
+Even if all you do is read in data, filter it, and write out the subsetted dataset for another use case,
 you have created your first pipeline.
-Now, you have a repeatable way of perforaming the same action when your input dataset is updated or changed.
+Now, you have a repeatable way of performing the same action when your input dataset is updated or changed.
 
-End the chapter with writing out files,
-and talk about "naming things"
+Let's say we want to work with a filtered version of our `tumor` dataset,
+we can first write the code to subset the data we want.
 
 ```{r}
 filtered <- tumor %>%
@@ -190,10 +371,43 @@ filtered <- tumor %>%
 filtered
 ```
 
+We can then write out the datafrme to a file (in this case a CSV text file),
+using the same file pathing string format as we loaded a dataset earlier.
+
 ```{r}
 write_csv(filtered, "data/tumor_filtered.csv")
 ```
 
+One thing to be mindful of is most programs and computer languages don't like having spaces in file names.
+In general, you'll end up typing more characters dealing with spaces in file names,
+instead of using an underscore, `_`, or dash, `-`.
+Also as a general rule, keeping files in lower-case will prevent a lot of potential spelling mistakes.
+
+<button class="accordion" id="question">Exercise 3 Question</button>
+:::{.panel-question}
+1. Read in all the patient data from the spreadsheets chapter (chapter \@ref(spreadsheets)) found in `data > spreadsheets > all.csv`
+2. `select` the `first_name`, `last_name`, `day`, `time`, and `temp_f` columns.
+3. `filter` the rows such that the person's name is "Aniya Warner"
+4. Save the filtered dataset into the `output` folder named `aniya_warner.csv`.
+:::
+
 ## Summary {#load-data-summary}
 
 ## Additional Resources {#load-data-resources}
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>

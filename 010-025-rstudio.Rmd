@@ -84,7 +84,7 @@ Other options to consider is to also **uncheck** the first 2 options, "Restore m
 as those options will make sure RStudio starts off completely empty without loading *anything*,
 including previously opened projects and documents.
 
-## RStudio projects
+## RStudio projects {#rstudio-projects}
 
 The top right corner of the RStudio panel will show the current RStudio project that is open.
 By default it will say `Project (None)`.
