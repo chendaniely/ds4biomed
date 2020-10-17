@@ -278,6 +278,8 @@ but you would need to process the data to get overall summaries.
 ```{r}
 all <- dplyr::bind_rows(e2t1, e2t2, e2t3) %>%
   dplyr::arrange(day, time)
+
+write_csv(all, "./data/spreadsheets/all.csv")
 ```
 
 
