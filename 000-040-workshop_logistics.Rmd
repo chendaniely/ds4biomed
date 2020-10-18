@@ -25,10 +25,11 @@ This would be your RStudio window if programming and following along in R.
 If possible one of the remaining quarters of your screen is the instructor's screen share,
 and the remaining quarter is for asking questions and chat.
 
-```{r}
-knitr::include_graphics("https://carpentries.org/images/blog/2020/06/screen_layouts/01-student-with_participantlist.jpg")
-```
-
 Please see this blog post on how to set your screen up for the workshop:
 
 https://carpentries.org/blog/2020/06/online-workshop-logistics-and_screen-layouts/
+
+
+```{r, fig.cap="Screen shot of layout a monitor windoer into components so the instructor's screen share is viewable along with the student's working environemnt with room for notes and chat."}
+knitr::include_graphics("https://carpentries.org/images/blog/2020/06/screen_layouts/01-student-with_participantlist.jpg")
+```
