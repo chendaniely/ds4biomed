@@ -30,22 +30,24 @@ make sure you typed `library(tidyverse)` correctly and executed the line of code
 
 Let the below figures represent a `ds4biomed` folder on your Desktop on Windows and Mac, respectively.
 
+:::{.row}
+:::{.column}
 ```
 C:\
   |- Users\
     |- Daniel\
       |- Desktop\
-      | |- ds4biomed\
-      |  |- data\
-      |    |- medicaldata_tumorgrowth.csv
-      |  |- output\
-      |  |- 01-load_data.R
-      |  |- README.md
-      |  |- ds4biomed.Rproj
-      |
-      |-
+        |- ds4biomed\
+         |- data\
+         |    |- medicaldata_tumorgrowth.csv
+         |- output\
+         |- 01-load_data.R
+         |- README.md
+         |- ds4biomed.Rproj
 ```
+:::
 
+:::{.column}
 ```
 /
   |- Users/
@@ -53,12 +55,14 @@ C:\
       |- Desktop/
         |- ds4biomed/
           |- data/
-            |- medicaldata_tumorgrowth.csv
+          |    |- medicaldata_tumorgrowth.csv
           |- output/
           |- 01-load_data.R
           |- README.md
           |- ds4biomed.Rproj
 ```
+:::
+:::
 
 Suppose we are "in" the `ds4biomed` folder,
 where we can see the `data` and `output` folders
@@ -85,10 +89,10 @@ Suppose we create an `analysis` folder for our `01-load_data.R` script so that o
       |- Desktop/
         |- ds4biomed/
           |- data/
-            |- medicaldata_tumorgrowth.csv
+          |    |- medicaldata_tumorgrowth.csv
           |- output/
           |- analysis
-            |- 01-load_data.R
+          |    |- 01-load_data.R
           |- README.md
           |- ds4biomed.Rproj
 ```
@@ -100,24 +104,24 @@ The way we can **relatively** reference the previous folder is with 2 dots, `..`
 
 <button class="accordion" id="question">Exercise 1 Question</button>
 :::{.panel-question}
-Given the following example folder structure
+Given the following example folder structure where we have a `chart_review` and `rct_m22-0305` folder in our `projects` folder:
 
 ```
 /
   |- Users/
     |- Daniel/
       |- projects/
-      | |- chart_review/
-      |   |- data/
-      |     |- patients.csv
-      |   |- analysis/
-      |     |- demographics.R
-      | |- rct_m22-0305
-          |- data/
-            |- patients.csv
+        |-chart_review/
+        |    |- data/
+        |    |    |- patients.csv
+        |    |- analysis/
+        |         |- demographics.R # you are working here
+        |- rct_m22-0305
+             |- data/
+                  |- patients.csv
 ```
 
-Let's say we are currently in the `chart_review/analysis` folder, working on our `demographics.R`.
+Let's say we are currently in the `chart_review/analysis` folder, working on our `demographics.R` as denoted by the `#`.
 
 1. Write the **relative path** to the `patients.csv` file in the `rct_m22-0305` folder.
 2. Write the **absolute path** to the `patients.csv` file in the `chart_review` folder.

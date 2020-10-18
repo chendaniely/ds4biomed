@@ -1,8 +1,5 @@
 ```{r, include=FALSE}
-knitr::opts_chunk$set(
-  fig.align="center",
-  echo=FALSE
-)
+knitr::opts_chunk$set(echo=FALSE)
 ```
 
 # Setup {-#setup}
@@ -41,19 +38,19 @@ please see the
 The links to install R can be found here: https://cloud.r-project.org/.
 Navigate to the correct operating system.
 
-```{r}
+```{r, fig.cap='Screenshot of the "Download and Install R" section.'}
 knitr::include_graphics("./images/setup/website-r_download.PNG")
 ```
 
 For mac users, download the `.pkg` file under the "Latest release" section
 
-```{r}
+```{r, fig.cap="Section of the Mac download page to download the Mac .pkg file."}
 knitr::include_graphics("./images/setup/website-r_download-mac.PNG")
 ```
 
 For Windows users, please install both the `base` version as well as `Rtools`.
 
-```{r}
+```{r, fig.cap="Section of the Windows download page to download both the base and Rtools installers."}
 knitr::include_graphics("./images/setup/website-r_download-windows.PNG")
 ```
 
@@ -69,13 +66,13 @@ Once we have
 Within RStudio, there will be a "Packages" tab in the bottom right panel.
 Click on the "Install" button.
 
-```{r}
+```{r, fig.cap="Zoom of the Rstudio Packages tab in the bottom right quadrant showing the Install button."}
 knitr::include_graphics("./images/setup/rstudio-packages_tab.PNG")
 ```
 
 In the pop-up window type in "tidyverse" and click "install".
 
-```{r}
+```{r, fig.cap="Install Packages dialog box after clicking the Install button showing how to install tidyverse library."}
 knitr::include_graphics("./images/setup/rstudio-install_packages.PNG")
 ```
 
@@ -86,7 +83,7 @@ The Console section of RStudio will begin installing the "tidyverse" package we 
 When the installation is finished, you can check if the package was installed properly and will load
 by scrolling down the "Packages" tab and clicking the checkbox next to "tidyverse".
 
-```{r}
+```{r, fig.cap="RStudio Packages tab in the bottom right quadrant with the tidyverse library checked off."}
 knitr::include_graphics("./images/setup/rstudio-check_tidyverse.PNG")
 ```
 
