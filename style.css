@@ -40,9 +40,21 @@ pre code {
   background-color: #ccc;
 }
 
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 .panel-question {
   padding: 18px 18px;
-  /*display: none; */
+  display: block;
   background-color: #fafafa;
   overflow: hidden;
   border-style: solid;
@@ -51,7 +63,7 @@ pre code {
 
 .panel-solution {
   padding: 18px 18px;
-  /*display: none; */
+  display: none;
   background-color: #fafafa;
   overflow: hidden;
   border-style: solid;
@@ -60,7 +72,7 @@ pre code {
 
 .tldr {
   padding: 20px;
-  /*display: none; */
+  display: block;
   background-color: #faebd7;
   overflow: hidden;
   border-style: solid;
