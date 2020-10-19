@@ -1,0 +1,4 @@
+first_name,last_name,day,time,diastolic,systolic,heart_rate,respiratory_rate,pulse_ox,temp_f
+Gemma,Dunn,1,8:00,128,78,65,12,98,96.8
+Gemma,Dunn,1,20:00,116,66,67,13,98,97.1
+Gemma,Dunn,2,8:00,124,72,66,12,97,97.3
