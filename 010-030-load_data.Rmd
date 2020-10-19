@@ -240,7 +240,7 @@ the same data processing methods we cover in these materials.
 :::
 
 <button class="accordion" id="solution">Exercise 2 Solution</button>
-:::{.panel-question}
+:::{.panel-solution}
 ```{r}
 spreadsheet_df <- read_csv("data/spreadsheets/exercise-010-050.csv")
 ```
