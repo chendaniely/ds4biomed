@@ -10,6 +10,10 @@ First we need to load up a package to make loading data sets easier.
 We will be using the `tidyverse` set of packages for all of our data processing needs in R.
 ^[This is not the only way you can process data in R, but from experience, it seems to be the easier way to learn R due to its consistency, community, and learning materials.]
 
+```{r, echo=FALSE, fig.cap="\"Tidyverse Celestial\" by Allison Horst. \"tidyverse\" hex sticker in space surrounded by other tidyverse package hex logos."}
+knitr::include_graphics("https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/tidyverse_celestial.png")
+```
+
 We first will load up the `tidyverse` packages using the `library` function.
 
 ```{r}
