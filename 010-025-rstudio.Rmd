@@ -4,7 +4,7 @@ library(knitr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# RStudio + R
+# R + RStudio
 
 ## Introduction {#rstudio-intro}
 
