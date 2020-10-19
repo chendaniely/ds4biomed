@@ -8,7 +8,15 @@ The materials provided here can be used in multiple ways:
 2. Asynchronously for self-paced learning
 3. Reference material
 
-## Acknoledgements {-}
+## Acknowledgements {-}
+
+### Who drew the illustrations?
+
+#### Allison Horst, PhD
+
+You can find her illusatrations here: https://github.com/allisonhorst/stats-illustrations
+
+#### Julia Chen, RN-BSN CCRN
 
 ## Dedication {-}
 
