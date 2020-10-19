@@ -1,0 +1,12 @@
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE)
+```
+
+# Additional resources
+
+## Communities
+
+```{r, fig.cap="\"Welcome to rstats Twitter\" by Allison Horst. Mind blown at the welcome mat to a door entrance into the sunshine and rainbow world of rstats, RLadies, datavis, rOpenSci, and WeAreRLadies world"}
+knitr::include_graphics("https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/welcome_to_rstats_twitter.png")
+```
+
