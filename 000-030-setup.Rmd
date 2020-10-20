@@ -87,6 +87,64 @@ by scrolling down the "Packages" tab and clicking the checkbox next to "tidyvers
 knitr::include_graphics("./images/setup/rstudio-check_tidyverse.PNG")
 ```
 
+## Binder {-}
+
+You can click one of the Binder badges to launch a programming environment for you in the cloud.
+
+### R + RStudio {-}
+
+You may click one of the RStudio Binder badges to launch an RStudio instance.
+
+- RStudio (complete): [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chendaniely/ds4biomed/learner?urlpath=rstudio)
+  - This may take a longer time to load, but everything should be set up.
+- RStudio (partial): [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio)
+  - This may take less time to load, but you need to install some more packages on your own and download the lesson datasets.
+
+To setup the partial RStudio environment,
+you need to run the following commands in the bottom left "Console" panel.
+
+```r
+install.packages("remotes")
+```
+
+```{r, fig.cap="Screenshot of running install.packages(\"remotes\")."}
+knitr::include_graphics("./images/binder/binder-install-remotes.PNG")
+```
+
+Then type the following to install the `medicaldata` package for some of the medical datasets we will be using.
+
+```r
+remotes::install_github("higgi13425/medicaldata")
+```
+
+```{r, fig.cap="Screenshot of running remotes::install_github(\"higgi13425/medicaldata\")."}
+knitr::include_graphics("./images/binder/binder-install-medicaldata.PNG")
+```
+
+To download the data files go to the top right corner and click the `Project (None)` drop down,
+and select `New Project...`
+
+```{r, fig.cap="Screenshot of creating a new RStudio project."}
+knitr::include_graphics("./images/binder/binder-new_project.PNG")
+```
+
+Then select `Version Control` > `Git` and paste in `https://github.com/chendaniely/ds4biomed.git` for the `Repository URL`.
+You can leave the rest of the parameters as their defaults,
+and then click `Create Project`.
+
+```{r, fig.cap="Screenshot of the Clone Git Repository page."}
+knitr::include_graphics("./images/binder/binder-clone_git_repo.PNG")
+```
+
+When this process finishes,
+the bottom right quadrant's "File" tab should show the `ds4biomed` folder and you should see the `data` folder listed.
+
+```{r, fig.cap="Screenshot showing the folders after downloading the lesson materials."}
+knitr::include_graphics("./images/binder/binder-after_clone.PNG")
+```
+
+
+
 <!-- commenting out python section to since we are not using it yet
 ### Python {-}
 
