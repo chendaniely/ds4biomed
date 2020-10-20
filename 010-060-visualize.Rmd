@@ -1,3 +1,153 @@
 # Visualization (Intro)
 
-An introduction to visualizations.
+```{r}
+library(medicaldata)
+```
+
+Describe the blood storage dataset
+
+```{r}
+blood <- medicaldata::blood_storage
+blood
+```
+
+```{r, echo=TRUE, include=FALSE}
+library(tidyverse)
+```
+
+
+What is the variable (i.e., column) of interest?
+What is the "response" variable (i.e., dependent variable)
+
+- predictor, independent variable, x
+- response, dependent variable, y, outcome
+
+Binary outcome that signals biochemical recurrence of prostate canser,
+0 = No recurrence
+
+```{r}
+library(ggplot2)
+```
+
+Basic descrive plot
+
+```{r}
+blood %>%
+  group_by(Recurrence) %>%
+  summarize(count = n())
+```
+
+
+```{r}
+ggplot(blood) + geom_bar(aes(x = Recurrence))
+```
+
+Something to think about: we have highly unbalanced classes.
+This might be something to think about when you fit models and only look at blind performance metrics
+
+100 patients, 99 healthy, 1 sick. If my model classifies healthy *every time*.
+It's still 99% correct.
+
+Tvol - Tumor volumne
+
+```{r}
+ggplot(blood) + geom_bar(aes(x = TVol))
+```
+
+```{r}
+ggplot(blood) + geom_histogram(aes(x = Age))
+```
+
+```{r}
+ggplot(blood) + geom_histogram(aes(x = Age), bins = 50)
+```
+
+```{r}
+ggplot(blood) + geom_histogram(aes(x = Age), bins = 10)
+```
+
+```{r}
+ggplot(blood) + geom_boxplot(aes(x = as.factor(TVol), y = Age))
+```
+
+```{r}
+ggplot(blood) + geom_violin(aes(x = as.factor(TVol), y = Age)) +
+  geom_point(aes(x = as.factor(TVol), y = Age))
+```
+
+```{r}
+ggplot(blood) + geom_violin(aes(x = as.factor(TVol), y = Age)) +
+  geom_jitter(aes(x = as.factor(TVol), y = Age))
+```
+
+We use the same astetic layer
+
+```{r}
+ggplot(blood, aes(x = as.factor(TVol), y = Age)) +
+  geom_violin() +
+  geom_jitter()
+```
+
+
+```{r}
+ggplot(blood) + geom_point(aes(x = PVol, y = PreopPSA))
+```
+
+
+
+```{r}
+ggplot(blood) +
+  geom_point(aes(x = PVol, y = PreopPSA, color = as.factor(sGS)))
+```
+
+```{r}
+ggplot(blood) +
+  geom_point(aes(x = PVol, y = PreopPSA, color = as.factor(sGS))) +
+  facet_wrap(~ RBC.Age.Group)
+```
+
+```{r}
+ggplot(blood) +
+  geom_point(aes(x = PVol, y = PreopPSA, color = as.factor(FamHx))) +
+  facet_grid(RBC.Age.Group ~ Recurrence)
+```
+
+Exercise:
+
+1. Load the cytomegalovirus dataset, assign it to the variable `cmv`
+
+```{r, eval=FALSE}
+___ <- medicaldata::cytomegalovirus
+```
+
+```{r}
+cmv <- medicaldata::cytomegalovirus
+```
+
+
+2. Bar chart of the `cmv` response variable
+
+```{r, eval=FALSE}
+ggplot(cmv) +
+  ____(aes(x = ____))
+```
+
+```{r}
+ggplot(cmv) +
+  geom_bar(aes(x = cmv))
+```
+
+3. bar plot of `prior.transplant`, colored by `cmv` values
+
+```{r, eval=FALSE}
+ggplot(____, aes(as.factor(____))) +
+  geom_bar(aes(fill = as.factor(____)))
+```
+
+4. facet by both `donor.cmv` and `recipient.cmv`
+
+```{r, eval=FALSE}
+ggplot(cmv, aes(as.factor(prior.transplant))) +
+  geom_bar(aes(fill = as.factor(cmv))) +
+  ____(____ ~ ____)
+```
