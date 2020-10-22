@@ -146,7 +146,7 @@ $y = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + e + 
 $\hat{y} = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + \beta_5x_5$
 
 $log(\frac{p}{1 - p}) = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + \beta_5x_5)$
-$\frac{p}{1 - p} = odds = e^{\text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + \beta_5x_5)}$
+$\frac{p}{1 - p} = odds = e^{(\text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + \beta_5x_5)}$
 
 $\beta = log(OR) \leftrightarrow e^{\beta} = OR$
 
