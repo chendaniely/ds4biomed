@@ -137,12 +137,15 @@ $y = mx + b$
 
 $y = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + e + \beta_5x_5 + e$
 
-- `\beta_1`: `Age`
-- `\beta_2`: `PVol`
-- `\beta_3`: `PreopPSA`
-- `\beta_4`: `TVol2`
-- `\beta_5`: `TVol3`
+- $\beta_1$: `Age`
+- $\beta_2$: `PVol`
+- $\beta_3$: `PreopPSA`
+- $\beta_4$: `TVol2`
+- $\beta_5$: `TVol3`
 
-$\hat{y} = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + e + \beta_5x_5$
+$\hat{y} = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + \beta_5x_5$
 
-$\text{odds}(\hat{y}) = e^{\hat{y}} = e^{\text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + e + \beta_5x_5$)
+$log(\frac{p}{1 - p}) = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + \beta_5x_5)$
+$\frac{p}{1 - p} = odds = e^{\text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + \beta_5x_5)}$
+
+$\beta = log(OR) \leftrightarrow e^{\beta} = OR$
