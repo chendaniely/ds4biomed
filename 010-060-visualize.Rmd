@@ -1,3 +1,327 @@
 # Visualization (Intro)
 
-An introduction to visualizations.
+## Introduction {#vis-intro-intro}
+
+```{r, echo=TRUE, message=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(medicaldata)
+```
+
+[Blood storage dataset description](https://github.com/higgi13425/medicaldata/blob/master/description_docs/blood_storage_desc.pdf)
+
+> [A retrospective cohort study of] 316 men who had undergone radical prostatectomy and recieved tranfusion during or within 30 days of the surgical prodedure
+> and had available PSA follow-up data.
+> The outcome [of interest] was time to biochemical cancer recurrence.
+> Study evaluated the association between red blood cells storage duration and biochemical prostate cancer recurrence after radical prostatectomy.
+> Specifically, tested was the hypothesis that perioperative transfution of allogenetic RBCs stored for a prolonged period is associated with earlier biochemical recurrence of prostate cancer after prostatectomy.
+
+```{r}
+blood <- medicaldata::blood_storage
+head(blood) # use head to look at the first 6 rows
+```
+
+```{r}
+class(blood)
+```
+
+
+```{r}
+# get just the column names for a dataset
+names(blood)
+```
+
+
+## Data Types
+
+While exploring a dataset, you want to know what each variable's role in the analysis will be.
+
+- What is the variable (i.e., column) of interest?
+  - response, dependent, y, outcome
+- which are your predictor variables?
+  - predictor, independent variable, x
+
+For each variable, you want to know what possible values it can take on.
+
+```{r, echo=FALSE, fig.cap="\"Continuous Discrete\" by Allison Horst."}
+knitr::include_graphics("https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/other-stats-artwork/continuous_discrete.png")
+```
+
+```{r, echo=FALSE, fig.cap="\"Nominal Ordinal Binary\" by Allison Horst."}
+knitr::include_graphics("https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/other-stats-artwork/nominal_ordinal_binary.png")
+```
+
+
+The type of information a variable holds will dictate the summary statistics you can make,
+the visualizations you can create,
+and the models you can fit.
+
+Ordinal and discrete variables should be converted into `factor` variables in R.
+A `factor` is R's way of naming a **categorical** variable.
+This is different from a **character string**, e.g., a person's name.
+
+```{r}
+recurrence_freq <- blood %>%
+  group_by(Recurrence) %>%
+  summarize(count = n())
+recurrence_freq
+```
+
+## Grammar of Graphics
+
+```{r, echo=FALSE, fig.cap="The idea behind the grammar of graphics is to decompose graphics into its constitudent layers: data, mapping, statistics, scales, geometries, facets, coordinates, and theme. by Thomas Lin Pedersen."}
+knitr::include_graphics("./images/ggplot2/ggplot-grammar_layers.png")
+```
+
+## Data + geometries
+
+```{r}
+# add a data layer
+ggplot(data = blood)
+```
+
+```{r}
+# add a data later with an asthetic mapping
+ggplot(data = blood, mapping = aes(x = Recurrence))
+```
+
+
+```{r}
+# add a geometry layer
+# by default the stat layer for geom_bar will count values
+ggplot(data = blood, mapping = aes(x = Recurrence)) + geom_bar()
+```
+
+If we have a pre-calculated set of values, we want to tell `geom_bar` to use the `"identity"` statistic.
+
+```{r}
+recurrence_freq
+```
+
+```{r}
+ggplot(data = recurrence_freq, mapping = aes(x = Recurrence, y = count)) +
+  geom_bar(stat = "identity")
+```
+
+Something to think about: we have highly unbalanced classes.
+This might be something to think about when you fit models and only look at blind performance metrics
+
+100 patients, 99 healthy, 1 sick. If my model classifies healthy *every time*.
+It's still 99% correct.
+
+### Layer values
+
+If a value does not exist in a particular layer,
+ggplot will try to use data from the previous layer
+
+```{r}
+# everything in the base layer
+ggplot(data = recurrence_freq, mapping = aes(x = Recurrence, y = count)) +
+  geom_bar(stat = "identity")
+```
+
+```{r}
+# move astetic mapping to geom layer
+ggplot(data = recurrence_freq) +
+  geom_bar(mapping = aes(x = Recurrence, y = count), stat = "identity")
+```
+
+```{r}
+# move data to geom layer
+ggplot() +
+  geom_bar(data = recurrence_freq, mapping = aes(x = Recurrence, y = count), stat = "identity")
+```
+
+This means we can add more layers with different data sets if we want to.
+
+## Geometries
+
+### Univariate
+
+#### Continuous
+
+```{r}
+ggplot(blood, aes(x = Age)) + geom_histogram()
+```
+
+```{r}
+ggplot(blood, aes(x = Age)) + geom_histogram(bins = 10)
+```
+
+### Bivariate
+
+The `TVol` column represents the Tumor volumne as an ordinal variable
+
+- 1 = Low
+- 2 = Medicum
+- 3 = Extensive
+
+However, the way it is encoded in the dataset is as a (discrete) numeric variable,
+even though it actually represents a categorical variable.
+To convert the numeric column (or any column) into a categorical **factor** we can use the `as.factor` function.
+
+```{r}
+# Does not show TVol properly
+ggplot(blood) + geom_boxplot(aes(x = TVol, y = Age))
+```
+
+```{r}
+# please a box plot for each value of TVol as a factor
+ggplot(blood) + geom_boxplot(aes(x = as.factor(TVol), y = Age))
+```
+
+We can also use a violin plot, to better show the distribution of the dataset,
+instead of using a boxplot.
+
+And we can also overlay a different geometry on top.
+
+```{r}
+ggplot(blood) + 
+  geom_violin(aes(x = as.factor(TVol), y = Age)) +
+  geom_point(aes(x = as.factor(TVol), y = Age))
+```
+
+```{r}
+ggplot(blood) +
+  geom_violin(aes(x = as.factor(TVol), y = Age)) +
+  geom_jitter(aes(x = as.factor(TVol), y = Age))
+```
+
+We can move around our data layers to save some typing,
+and have the geometry layer use the same data and mapping layer.
+
+```{r}
+ggplot(blood, aes(x = as.factor(TVol), y = Age)) +
+  geom_violin() +
+  geom_jitter()
+```
+
+## Other Astetic mappings
+
+We can also set other asthetic mappings, e.g., color
+
+- `PVol`: Prostate volumn in grams (g)
+- `PreopPSA`: Preoperative prostate specification antigen (PSA) in ng/mL
+- `sGS`: Surgical cleason score
+  - 1 = Not assigned
+  - 2 = No residual disease or score 0-6
+  - 3 = Score 7
+  - 4 = Score 8-10
+
+```{r}
+ggplot(blood) +
+  geom_point(aes(x = PVol, y = PreopPSA, color = sGS))
+```
+
+Again, we have a numeric variable that is really an ordinal categorical variable
+
+```{r}
+ggplot(blood) +
+  geom_point(aes(x = PVol, y = PreopPSA, color = as.factor(sGS)))
+```
+
+
+## Facets
+
+Facets allow us to re-plot the same figure by separate groups.
+Think of this as the `group_by` version for plotting.
+
+
+```{r}
+# use facet wrap for a single variable
+ggplot(blood) +
+  geom_point(aes(x = PVol, y = PreopPSA, color = as.factor(sGS))) +
+  facet_wrap(~ RBC.Age.Group)
+```
+
+```{r}
+# use facet grid for 2 variables
+ggplot(blood) +
+  geom_point(aes(x = PVol, y = PreopPSA, color = as.factor(FamHx))) +
+  facet_grid(RBC.Age.Group ~ Recurrence)
+```
+
+## Themes
+
+```{r}
+g <- ggplot(blood) +
+  geom_point(aes(x = PVol, y = PreopPSA, color = as.factor(FamHx))) +
+  facet_grid(RBC.Age.Group ~ Recurrence)
+g
+```
+
+```{r}
+g + theme_minimal()
+```
+
+Using ggthemes
+
+```{r}
+library(ggthemes)
+```
+
+```{r}
+g + theme_wsj()
+```
+
+```{r}
+g + theme_fivethirtyeight()
+```
+
+
+```{r}
+g + theme_excel()
+```
+
+
+Exercise:
+
+1. Load the cytomegalovirus dataset, assign it to the variable `cmv`
+
+```{r, eval=FALSE}
+___ <- medicaldata::cytomegalovirus
+```
+
+```{r}
+cmv <- medicaldata::cytomegalovirus
+```
+
+
+2. Bar chart of the `cmv` response variable
+
+```{r, eval=FALSE}
+ggplot(cmv) +
+  ____(aes(x = ____))
+```
+
+```{r}
+ggplot(cmv) +
+  geom_bar(aes(x = cmv))
+```
+
+3. bar plot of `prior.transplant`, colored by `cmv` values
+
+```{r, eval=FALSE}
+ggplot(____, aes(as.factor(____))) +
+  geom_bar(aes(fill = as.factor(____)))
+```
+
+4. facet by both `donor.cmv` and `recipient.cmv`
+
+```{r, eval=FALSE}
+ggplot(cmv, aes(as.factor(prior.transplant))) +
+  geom_bar(aes(fill = as.factor(cmv))) +
+  ____(____ ~ ____)
+```
+
+## Additional Resources
+
+- Ggplot2 reference
+  - https://ggplot2.tidyverse.org/reference/index.html
+- R Graphics Cookbook
+  - 1st edition: http://www.cookbook-r.com/Graphs/
+  - 2nd edition: https://r-graphics.org/
+- Thomas Lin Pedersen ggplot workshop
+  - Slides: https://github.com/thomasp85/ggplot2_workshop
+  - Part 1: https://www.youtube.com/watch?v=h29g21z0a68
+  - Part 2: https://www.youtube.com/watch?v=0m4yywqNPVY
