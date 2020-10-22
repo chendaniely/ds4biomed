@@ -102,10 +102,10 @@
     },
     "broom": {
       "Package": "broom",
-      "Version": "0.7.0",
+      "Version": "0.7.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "2ca5ae42f3bfd149504d63c833c2be26"
+      "Hash": "a90dad034a7accd7c1baa603b1455962"
     },
     "callr": {
       "Package": "callr",
@@ -144,10 +144,10 @@
     },
     "cpp11": {
       "Package": "cpp11",
-      "Version": "0.2.1",
+      "Version": "0.2.2",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "c4c83167f43ca762a9fa998d4fead3ae"
+      "Hash": "f28776fbc53c699a788792a89c4465a6"
     },
     "crayon": {
       "Package": "crayon",
@@ -247,6 +247,13 @@
       "Repository": "CRAN",
       "Hash": "4ded8b439797f7b1693bd3d238d0106b"
     },
+    "ggthemes": {
+      "Package": "ggthemes",
+      "Version": "4.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "dfa67ccc3fb199f102a34d557ec1ff45"
+    },
     "glue": {
       "Package": "glue",
       "Version": "1.4.2",
@@ -326,10 +333,10 @@
     },
     "knitr": {
       "Package": "knitr",
-      "Version": "1.29",
+      "Version": "1.30",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "e5f4c41c17df8cdf7b0df12117c0d99a"
+      "Hash": "eed7ee0d02eee88d53881cdc92457c62"
     },
     "labeling": {
       "Package": "labeling",
@@ -382,8 +389,8 @@
       "RemoteRepo": "medicaldata",
       "RemoteUsername": "higgi13425",
       "RemoteRef": "HEAD",
-      "RemoteSha": "a4fc7acbef9bf89017f129c49a0869b757b2b8b7",
-      "Hash": "05fa0a1a1e317e5ce8232dc0f33fb3dd"
+      "RemoteSha": "3b6f373355f72837fe4f29120b5677867632562e",
+      "Hash": "4487ae444cfbaa2d19afe90436c6bbae"
     },
     "mgcv": {
       "Package": "mgcv",
@@ -422,10 +429,10 @@
     },
     "openssl": {
       "Package": "openssl",
-      "Version": "1.4.2",
+      "Version": "1.4.3",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "b3209c62052922b6c629544d94c8fa8a"
+      "Hash": "a399e4773075fc2375b71f45fca186c4"
     },
     "pillar": {
       "Package": "pillar",
@@ -504,6 +511,13 @@
       "Repository": "CRAN",
       "Hash": "97def703420c8ab10d8f0e6c72101e02"
     },
+    "rJava": {
+      "Package": "rJava",
+      "Version": "0.9-13",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "cfcca6464c6d145e28924800b5bd7f44"
+    },
     "reactR": {
       "Package": "reactR",
       "Version": "0.4.3",
@@ -569,10 +583,10 @@
     },
     "rmarkdown": {
       "Package": "rmarkdown",
-      "Version": "2.3",
+      "Version": "2.4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "202260e1b2c410edc086d5b8f1ed946e"
+      "Hash": "ec8febc2bd653b754d5b03c9d4b996bb"
     },
     "rprojroot": {
       "Package": "rprojroot",
@@ -667,10 +681,10 @@
     },
     "tinytex": {
       "Package": "tinytex",
-      "Version": "0.25",
+      "Version": "0.26",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "a4b9662282097d1033c60420dcb83350"
+      "Hash": "db6477efcfbffcd9b3758c3c2882cf58"
     },
     "utf8": {
       "Package": "utf8",
@@ -702,10 +716,10 @@
     },
     "withr": {
       "Package": "withr",
-      "Version": "2.2.0",
+      "Version": "2.3.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "ecd17882a0b4419545691e095b74ee89"
+      "Hash": "7307d79f58d1885b38c4f4f1a8cb19dd"
     },
     "xfun": {
       "Package": "xfun",
@@ -713,6 +727,20 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "5016afba2a931ac92bbb3c6feb03d2c8"
+    },
+    "xlsx": {
+      "Package": "xlsx",
+      "Version": "0.6.4.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "de18b0753cd6537a486adaca967875c1"
+    },
+    "xlsxjars": {
+      "Package": "xlsxjars",
+      "Version": "0.6.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "4c4b3bc29a916f33f1298dd951133351"
     },
     "xml2": {
       "Package": "xml2",
