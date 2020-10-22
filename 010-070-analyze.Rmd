@@ -1,4 +1,148 @@
-# Analysis
+
+# Analysis Intro
 
 An introduction to analysis.
-Summary statistics, and linear models.
+
+Learning how to read output.
+
+## Logistic Regression
+
+```{r, echo=TRUE, message=FALSE}
+library(medicaldata)
+library(tidyverse)
+```
+
+```{r}
+blood <- blood_storage
+```
+
+
+Variable of interest: `Recurrence`. It is a binary variable that only has 2 possible values.
+
+```{r}
+blood %>%
+  group_by(Recurrence) %>%
+  summarize(count = n())
+```
+
+Logistic regression is linear regression using the logit function as a transformation.
+
+$\text{logit}(p) = log(\frac{p}{1 - p})$
+
+Since it is a form of a linear regression, it is known as a **generalized linear regression** method (GLM).
+We can use the `glm` function in R.
+
+### Model 1
+
+```{r}
+mod1 <- glm(Recurrence ~ Age, data = blood, family = "binomial")
+```
+
+```{r}
+mod1
+```
+
+```{r}
+summary(mod1)
+```
+
+```{r}
+library(broom)
+```
+
+```{r}
+res1 <- tidy(mod1)
+res1
+```
+
+Whatever we do after fitting the model, we have to undo the logit function for interpretation.
+Otherwise all the values have to be interpreted as "log-odds" which is not intutitive.
+
+However, "odds" is intuitive, so we only really need to undo the "log".
+We do this by exponentiation.
+
+```{r}
+res1 %>%
+  mutate(odds = exp(estimate))
+```
+
+For every 1 unit increase in `Age`, the **odds** of going from 0 to 1 in our response increases by 1.02 times.
+That is, the **odds** of earlier biochemical recurrence of prostate cancer after prostatectomy increases by 1.02 times for every unit increase in age.
+
+### Model 2
+
+- `PVol`: Prostate volumn in grams (g)
+- `PreopPSA`: Preoperative prostate specification antigen (PSA) in ng/mL
+
+```{r}
+mod2 <- glm(Recurrence ~ Age + PVol + PreopPSA, data = blood, family = "binomial")
+summary(mod2)
+```
+
+```{r}
+mod2 %>%
+  tidy() %>%
+  mutate(odds = exp(estimate))
+```
+
+That is, the **odds** of earlier biochemical recurrence of prostate cancer after prostatectomy increases by 1.10 times for every unit increase in `PreopPSA`, all else equal.
+
+```{r}
+ggplot(blood, aes(x = PreopPSA)) +
+  geom_histogram()
+```
+
+### Model 3
+
+
+- `TVol` Tumor volume
+  - 1 = Low
+  - 2 = Medium
+  - 3 = Extensive
+
+```{r}
+mod3 <- glm(Recurrence ~ Age + PVol + PreopPSA + TVol, data = blood, family = "binomial")
+summary(mod3)
+```
+
+How do you interpret "one unit increase in `Tvol` (Tumor volume), it is a categorical variable.
+It's "ordinal" so you may be able to get away with the interpretation,
+but there is no way the value can be `1.5`.
+
+How do we handle categorical variables? We use `as.factor`.
+
+```{r}
+mod3_factor <- glm(Recurrence ~ Age + PVol + PreopPSA + as.factor(TVol), data = blood, family = "binomial")
+summary(mod3_factor)
+```
+
+Notice one of the factors was dropped, this is called the reference variable.
+We converted our categorical variable into a set of **dummy variables** (aka one-hot encoding).
+
+```{r}
+model.matrix(mod3_factor) %>%
+  head()
+```
+
+```{r}
+mod3_factor %>%
+  tidy() %>%
+  mutate(odds = exp(estimate))
+```
+
+That is, the **odds** of earlier biochemical recurrence of prostate cancer after prostatectomy increases by 22.6 times when the patient has a `TVol` (tumor volume) of "Extensive" when compared to "Low".
+All else equal.
+
+$y = mx + b$
+
+$y = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + e + \beta_5x_5 + e$
+
+- `\beta_1`: `Age`
+- `\beta_2`: `PVol`
+- `\beta_3`: `PreopPSA`
+- `\beta_4`: `TVol2`
+- `\beta_5`: `TVol3`
+
+$\hat{y} = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + e + \beta_5x_5$
+
+$\text{odds}(\hat{y}) = e^{\hat{y}} = e^{\text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + e + \beta_5x_5$)
