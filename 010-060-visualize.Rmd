@@ -274,29 +274,20 @@ g + theme_excel()
 ```
 
 
-Exercise:
-
+<button class="accordion" id="question">Exercise 1 Question</button>
+:::{.panel-question}
 1. Load the cytomegalovirus dataset, assign it to the variable `cmv`
 
 ```{r, eval=FALSE}
-___ <- medicaldata::cytomegalovirus
+library(medicaldata)
+___ <- cytomegalovirus
 ```
-
-```{r}
-cmv <- medicaldata::cytomegalovirus
-```
-
 
 2. Bar chart of the `cmv` response variable
 
 ```{r, eval=FALSE}
 ggplot(cmv) +
   ____(aes(x = ____))
-```
-
-```{r}
-ggplot(cmv) +
-  geom_bar(aes(x = cmv))
 ```
 
 3. bar plot of `prior.transplant`, colored by `cmv` values
@@ -313,6 +304,24 @@ ggplot(cmv, aes(as.factor(prior.transplant))) +
   geom_bar(aes(fill = as.factor(cmv))) +
   ____(____ ~ ____)
 ```
+:::
+
+<button class="accordion" id="solution">Exercise 1 Solution</button>
+:::{.panel-solution}
+```{r}
+cmv <- medicaldata::cytomegalovirus
+
+ggplot(cmv) +
+  geom_bar(aes(x = cmv))
+
+ggplot(cmv, aes(as.factor(prior.transplant))) +
+  geom_bar(aes(fill = as.factor(cmv)))
+
+ggplot(cmv, aes(as.factor(prior.transplant))) +
+  geom_bar(aes(fill = as.factor(cmv))) +
+  facet_grid(donor.cmv ~ recipient.cmv)
+```
+:::
 
 ## Additional Resources
 

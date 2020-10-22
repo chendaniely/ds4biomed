@@ -146,6 +146,72 @@ $y = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + e + 
 $\hat{y} = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + \beta_5x_5$
 
 $log(\frac{p}{1 - p}) = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + \beta_5x_5)$
-$\frac{p}{1 - p} = odds = e^{\text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + \beta_5x_5)}$
+$\frac{p}{1 - p} = odds = e^{(\text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + \beta_5x_5)}$
 
 $\beta = log(OR) \leftrightarrow e^{\beta} = OR$
+
+
+<button class="accordion" id="question">Exercise 1 Question</button>
+:::{.panel-question}
+1. Load the cytomegalovirus dataset from the `medicaldata` library,
+assign it to the variable `cmv`
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(medicaldata)
+____
+```
+
+2. Fit a model using the `cmv` dataframe, and the `cmv` variable as the reponse variable.
+Save the model to the variable, `mod`
+
+```{r, eval=FALSE}
+mod <- glm(____, data = ____,  family = "binomial")
+```
+
+3. Use the `summary` function to look at the model output
+
+```{r, eval=FALSE}
+ggplot(____, aes(as.factor(____))) +
+  geom_bar(aes(fill = as.factor(____)))
+```
+
+4. Use the `tidy` function from the `broom` package to get just the coefficients table.
+Save this table to the variable `betas`
+
+```{r, eval=FALSE}
+library(broom)
+____ <- ____(____)
+```
+
+5. Convert the `estimate` column into an `or` column using the `mutate` function and exponentiating the column values with the `exp` function.
+
+```{r, eval=FALSE}
+betas %>%
+  ____(____ = ____(____))
+```
+
+6. Interpret one of your ORs
+:::
+
+<button class="accordion" id="solution">Exercise 1 Solution</button>
+:::{.panel-solution}
+```{r}
+library(medicaldata)
+cmv <- cytomegalovirus
+
+mod <- glm(cmv ~ as.factor(diagnosis) + time.to.transplant + as.factor(recipient.cmv) + as.factor(donor.cmv),
+           data = cmv,
+           family = "binomial")
+
+summary(mod)
+
+library(broom)
+betas <- mod %>%
+  tidy()
+betas
+
+betas %>%
+  mutate(or = exp(estimate))
+```
+:::
