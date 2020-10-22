@@ -150,10 +150,10 @@ ggplot(blood, aes(x = Age)) + geom_histogram(bins = 10)
 
 ### Bivariate
 
-The `TVol` column represents the Tumor volumne as an ordinal variable
+The `TVol` column represents the Tumor volume as an ordinal variable
 
 - 1 = Low
-- 2 = Medicum
+- 2 = Medium
 - 3 = Extensive
 
 However, the way it is encoded in the dataset is as a (discrete) numeric variable,
@@ -200,9 +200,9 @@ ggplot(blood, aes(x = as.factor(TVol), y = Age)) +
 
 We can also set other asthetic mappings, e.g., color
 
-- `PVol`: Prostate volumn in grams (g)
+- `PVol`: Prostate volume in grams (g)
 - `PreopPSA`: Preoperative prostate specification antigen (PSA) in ng/mL
-- `sGS`: Surgical cleason score
+- `sGS`: Surgical Gleason score
   - 1 = Not assigned
   - 2 = No residual disease or score 0-6
   - 3 = Score 7
