@@ -102,7 +102,7 @@ knitr::include_graphics("./images/setup/rstudio-check_tidyverse.PNG")
 
 You can click one of the Binder badges to launch a programming environment for you in the cloud.
 
-### R + RStudio {-}
+### R + RStudio {- #r-rstudio-binder}
 
 You may click one of the RStudio Binder badges to launch an RStudio instance.
 
