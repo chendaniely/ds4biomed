@@ -12,6 +12,17 @@ See the below sections for how to get everything set up
 
 ## Datasets {-}
 
+You can find all the datasets needed from the workshop from the book's GitHub Page:
+
+https://github.com/chendaniely/ds4biomed
+
+You can click on the "Code" dropdown and select "Download Zip" to download the data and files for the lesson materials.
+
+```{r}
+knitr::include_graphics("./images/setup/github-download_zip.PNG")
+```
+
+
 ## Spreadsheet {-}
 
 Microsoft Excel and Google Sheets are the more common types of spreadsheet software used.
@@ -91,7 +102,7 @@ knitr::include_graphics("./images/setup/rstudio-check_tidyverse.PNG")
 
 You can click one of the Binder badges to launch a programming environment for you in the cloud.
 
-### R + RStudio {-}
+### R + RStudio {- #r-rstudio-binder}
 
 You may click one of the RStudio Binder badges to launch an RStudio instance.
 
@@ -142,8 +153,6 @@ the bottom right quadrant's "File" tab should show the `ds4biomed` folder and yo
 ```{r, fig.cap="Screenshot showing the folders after downloading the lesson materials."}
 knitr::include_graphics("./images/binder/binder-after_clone.PNG")
 ```
-
-
 
 <!-- commenting out python section to since we are not using it yet
 ### Python {-}

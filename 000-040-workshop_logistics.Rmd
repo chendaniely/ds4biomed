@@ -33,3 +33,12 @@ https://carpentries.org/blog/2020/06/online-workshop-logistics-and_screen-layout
 ```{r, fig.cap="Screen shot of layout a monitor windoer into components so the instructor's screen share is viewable along with the student's working environemnt with room for notes and chat."}
 knitr::include_graphics("https://carpentries.org/images/blog/2020/06/screen_layouts/01-student-with_participantlist.jpg")
 ```
+
+## Pin Video {-}
+
+Depending on how the live workshop is being run,
+you may need to "pin" the presenter's video screen to keep it in focus during the workshop.
+
+```{r}
+knitr::include_graphics("./images/zoom/pin_screen.PNG")
+```
