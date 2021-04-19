@@ -721,20 +721,6 @@
       "Repository": "CRAN",
       "Hash": "5016afba2a931ac92bbb3c6feb03d2c8"
     },
-    "xlsx": {
-      "Package": "xlsx",
-      "Version": "0.6.4.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "de18b0753cd6537a486adaca967875c1"
-    },
-    "xlsxjars": {
-      "Package": "xlsxjars",
-      "Version": "0.6.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "4c4b3bc29a916f33f1298dd951133351"
-    },
     "xml2": {
       "Package": "xml2",
       "Version": "1.3.2",
