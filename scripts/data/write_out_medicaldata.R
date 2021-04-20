@@ -1,10 +1,10 @@
 library(medicaldata)
 library(readr)
-library(xlsx)
 library(magrittr)
+library(openxlsx)
 
 medicaldata::tumorgrowth %>%
   readr::write_csv("./data/medicaldata_tumorgrowth.csv")
 
 medicaldata::tumorgrowth %>%
-  xlsx::write.xlsx("./data/medicaldata_tumorgrowth.xlsx", row.names = FALSE)
+  openxlsx::write.xlsx("./data/medicaldata_tumorgrowth.xlsx")
