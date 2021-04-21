@@ -521,8 +521,20 @@ This makes the dataset much more self-sufficient and does not need to rely on a 
 
 ## Additional resources {#spreadsheets-resources}
 
-- Data carpentry spreadsheet lesson: https://datacarpentry.org/spreadsheet-ecology-lesson/
-- Data Organization in Spreadsheets, Karl W. Broman & Kara H. Woo: https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989
+- [Data carpentry spreadsheet lesson](https://datacarpentry.org/spreadsheet-ecology-lesson/)
+- [Data Organization in Spreadsheets, Karl W. Broman & Kara H. Woo](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989): 
+  1. Be consistent
+  2. Choose good names for things
+  3. Write dates as YYYY-MM-DD
+  4. No empty cells
+  5. Put just one thing in a cell
+  6. Make it a rectangle
+  7. Create a data dictionary
+  8. No calculations in the raw data files
+  9. Do not use font color or highlighting as data
+  10. Make backups
+  11. Use data validation to avoid errors
+  12. Save the data in plain text files
 
 <script>
 var acc = document.getElementsByClassName("accordion");
