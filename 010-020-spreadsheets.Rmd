@@ -5,6 +5,7 @@ library(readr)
 library(reactable)
 library(dplyr)
 library(readxl)
+library(lubridate)
 
 knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
 
@@ -274,6 +275,16 @@ but you would need to process the data to get overall summaries.
 **2. Multiple sections in the same table**
 
 ```{r}
+# make sure all time cols are date formatted before binding
+e2t1 <- e2t1 %>%
+  dplyr::mutate(time = format(time, format="%H:%M:%S"))
+
+e2t2 <- e2t2 %>%
+  dplyr::mutate(time = format(time, format="%H:%M:%S"))
+
+e2t3 <- e2t3 %>%
+  dplyr::mutate(time = format(time, format="%H:%M:%S"))
+
 all <- dplyr::bind_rows(e2t1, e2t2, e2t3) %>%
   dplyr::arrange(day, time)
 
