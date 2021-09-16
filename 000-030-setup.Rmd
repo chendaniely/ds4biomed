@@ -16,7 +16,7 @@ You can find all the datasets needed from the workshop from the book's GitHub Pa
 
 https://github.com/chendaniely/ds4biomed
 
-You can click on the "Code" dropdown and select "Download Zip" to download the data and files for the lesson materials.
+You can click on the "Code" drop-down and select "Download Zip" to download the data and files for the lesson materials.
 
 ```{r}
 knitr::include_graphics("./images/setup/github-download_zip.PNG")
@@ -26,7 +26,7 @@ knitr::include_graphics("./images/setup/github-download_zip.PNG")
 ## Spreadsheet {-}
 
 Microsoft Excel and Google Sheets are the more common types of spreadsheet software used.
-If you do not have Excel, there are other free options availiable:
+If you do not have Excel, there are other free options available:
 
 - LibreOffice (Free and open source): https://www.libreoffice.org/
 - FreeOffice (Free but closed source): https://www.freeoffice.com/en/
@@ -104,7 +104,7 @@ knitr::include_graphics("./images/binder/binder-install-medicaldata.PNG")
 #### Testing your R installation {-}
 
 When the installation is finished, you can check if the package was installed properly and will load
-by scrolling down the "Packages" tab and clicking the checkbox next to "tidyverse".
+by scrolling down the "Packages" tab and clicking the check-box next to "tidyverse".
 
 ```{r, fig.cap="RStudio Packages tab in the bottom right quadrant with the tidyverse library checked off."}
 knitr::include_graphics("./images/setup/rstudio-check_tidyverse.PNG")
@@ -132,7 +132,7 @@ but you can install and use that instead of JupyterLab, if you wish.
 Install Python 3 by running the Anaconda Installer,
 using all of the defaults for installation **except, make sure to check Add Anaconda to my PATH environment variable**.
 
-You can also follow the [Software-Carpentry Python stetup instructions](https://carpentries.github.io/workshop-template/#python)
+You can also follow the [Software-Carpentry Python setup instructions](https://carpentries.github.io/workshop-template/#python)
 -->
 
 
@@ -165,10 +165,10 @@ import statsmodels
 
 You can then execute and load the packages by pressing the right-triangle "play" button towards the top.
 What you should see is a number increment to the left of the code block you typed in the code.
-If you see a "*" it means it is still execuring the code.
+If you see a "*" it means it is still executing the code.
 
 ```{r, fig.cap="Executing code in a jupyter notebook that loads up Python packages. The code block will increment if the code has completed executing"}
-knitr::include_graphics("./images/setup/binder-python_r.PNG")
+knitr::include_graphics("./images/setup/binder-check_python-red.PNG")
 ```
 
 
