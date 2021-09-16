@@ -96,3 +96,11 @@ p.tldr {
   display: table;
   clear: both;
 }
+
+.rBlock {
+  background-color: #e6f7ff;
+}
+
+.pyBlock {
+  background-color: #ffffe6;
+}

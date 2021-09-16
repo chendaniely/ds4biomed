@@ -36,8 +36,9 @@ which you can use to follow along.
 
 ## Programming language {-}
 
-Below you will find the installation instructions for setting up the programming language we will be using (e.g., R) along with its programming environment (e.g., RStudio)
+Below you will find the installation instructions for setting up the programming language we will be using (e.g., R, Python) along with its programming environment (e.g., RStudio, Jupyter)
 
+::::: {.rBlock}
 ### R {-}
 
 We will be using R and RStudio for the workshop.
@@ -81,48 +82,16 @@ Click on the "Install" button.
 knitr::include_graphics("./images/setup/rstudio-packages_tab.PNG")
 ```
 
-In the pop-up window type in "tidyverse" and click "install".
+In the pop-up window type in "tidyverse remotes" and click "install".
 
 ```{r, fig.cap="Install Packages dialog box after clicking the Install button showing how to install tidyverse library."}
 knitr::include_graphics("./images/setup/rstudio-install_packages.PNG")
 ```
 
-The Console section of RStudio will begin installing the "tidyverse" package we will be using.
-
-#### Testing your installation {-}
-
-When the installation is finished, you can check if the package was installed properly and will load
-by scrolling down the "Packages" tab and clicking the checkbox next to "tidyverse".
-
-```{r, fig.cap="RStudio Packages tab in the bottom right quadrant with the tidyverse library checked off."}
-knitr::include_graphics("./images/setup/rstudio-check_tidyverse.PNG")
-```
-
-## Binder {-}
-
-You can click one of the Binder badges to launch a programming environment for you in the cloud.
-
-### R + RStudio {- #r-rstudio-binder}
-
-You may click one of the RStudio Binder badges to launch an RStudio instance.
-
-- RStudio (complete): [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chendaniely/ds4biomed/learner?urlpath=rstudio)
-  - This may take a longer time to load, but everything should be set up.
-- RStudio (partial): [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio)
-  - This may take less time to load, but you need to install some more packages on your own and download the lesson datasets.
-
-To setup the partial RStudio environment,
-you need to run the following commands in the bottom left "Console" panel.
-
-```r
-install.packages("remotes")
-```
-
-```{r, fig.cap="Screenshot of running install.packages(\"remotes\")."}
-knitr::include_graphics("./images/binder/binder-install-remotes.PNG")
-```
-
-Then type the following to install the `medicaldata` package for some of the medical datasets we will be using.
+The Console section of RStudio will begin installing the `tidyverse` package we will be using.
+The `remotes` package will be used to install the `medicaldata` package for some of the medical datasets we will be using.
+On the left side you should see a "Console" tab.
+To install the `medicaldata` package type in:
 
 ```r
 remotes::install_github("higgi13425/medicaldata")
@@ -132,31 +101,104 @@ remotes::install_github("higgi13425/medicaldata")
 knitr::include_graphics("./images/binder/binder-install-medicaldata.PNG")
 ```
 
-To download the data files go to the top right corner and click the `Project (None)` drop down,
-and select `New Project...`
+#### Testing your R installation {-}
 
-```{r, fig.cap="Screenshot of creating a new RStudio project."}
-knitr::include_graphics("./images/binder/binder-new_project.PNG")
+When the installation is finished, you can check if the package was installed properly and will load
+by scrolling down the "Packages" tab and clicking the checkbox next to "tidyverse".
+
+```{r, fig.cap="RStudio Packages tab in the bottom right quadrant with the tidyverse library checked off."}
+knitr::include_graphics("./images/setup/rstudio-check_tidyverse.PNG")
 ```
+:::::
 
-Then select `Version Control` > `Git` and paste in `https://github.com/chendaniely/ds4biomed.git` for the `Repository URL`.
-You can leave the rest of the parameters as their defaults,
-and then click `Create Project`.
-
-```{r, fig.cap="Screenshot of the Clone Git Repository page."}
-knitr::include_graphics("./images/binder/binder-clone_git_repo.PNG")
-```
-
-When this process finishes,
-the bottom right quadrant's "File" tab should show the `ds4biomed` folder and you should see the `data` folder listed.
-
-```{r, fig.cap="Screenshot showing the folders after downloading the lesson materials."}
-knitr::include_graphics("./images/binder/binder-after_clone.PNG")
-```
-
-<!-- commenting out python section to since we are not using it yet
+::::: {.pyBlock}
 ### Python {-}
 
 We will be using the Anaconda distribution for Python.
 The download links and instructions can be found here: https://docs.anaconda.com/anaconda/install/.
+
+You can accept all the default options for the installation.
+The Anaconda installation direction has this to say about the advanced options presented during the installation:
+
+> Choose whether to add Anaconda to your PATH environment variable. We recommend not adding Anaconda to the PATH environment variable, since this can interfere with other software. Instead, use Anaconda software by opening Anaconda Navigator or the Anaconda Prompt from the Start Menu.
+
+> Choose whether to register Anaconda as your default Python. Unless you plan on installing and running multiple versions of Anaconda or multiple versions of Python, accept the default and leave this box checked.
+
+The end of the installer gives you the option to install the PyCharm Integrated Development Environment.
+We will not be using PyCharm for the workshop,
+but you can install and use that instead of JupyterLab, if you wish.
+
+<!--
+Install Python 3 by running the Anaconda Installer,
+using all of the defaults for installation **except, make sure to check Add Anaconda to my PATH environment variable**.
+
+You can also follow the [Software-Carpentry Python stetup instructions](https://carpentries.github.io/workshop-template/#python)
 -->
+
+
+#### Testing your Python installation {-}
+
+For Windows + Mac, Anaconda comes with the "Anaconda Navigator" application.
+It's normal for it to take a while the first time you launch it.
+If you open it, you should be given the option to launch JupyterLab
+
+```{r, fig.cap="Screenshot of Anaconda Navigator. This is an easier and graphical way to view your different Pyhon enviornments, and launch various deveopment environments for Python."}
+knitr::include_graphics("./images/setup/anaconda-navigator.PNG")
+```
+
+Once you have opened jupyter lab, you can use the file browser on the left side
+to open the ds4biomed folder that you have downloaded and unziped/extracted.
+Click the "Python 3" button under "Notebook" to launch a Python notebook.
+
+```{r, fig.cap="Screenshot of JupyterLab"}
+knitr::include_graphics("./images/setup/binder-python_r.PNG")
+```
+
+To check that the packages we need are working,
+Type the following commands into the open cell block
+
+```python
+import pandas as pd
+import seaborn as sns
+import statsmodels
+```
+
+You can then execute and load the packages by pressing the right-triangle "play" button towards the top.
+What you should see is a number increment to the left of the code block you typed in the code.
+If you see a "*" it means it is still execuring the code.
+
+```{r, fig.cap="Executing code in a jupyter notebook that loads up Python packages. The code block will increment if the code has completed executing"}
+knitr::include_graphics("./images/setup/binder-python_r.PNG")
+```
+
+
+:::::
+
+## Binder (For Installation Issues) {-}
+
+If you are having installation issues,
+there is a Binder instance with all the packages and datasets setup that you can use
+in a browser.
+You can click one of the Binder badges to launch a programming environment for you in the cloud.
+
+Note that these instances can take a very long time to start up and install everything, it can take anywhere from 1 minute to over 30 minutes depending
+on how long the last time someone has used a binder instance.
+
+One caveat with Binder is that each instance does not persist any data.
+So if you are idle for too long, or close out of the tab,
+all the work you did within Binder will be lost.
+
+You will need to either copy/paste your work to a place on your computer,
+or export the files out of Binder if you wish to have files saved.
+
+::::: {.rBlock}
+### R + RStudio {- #r-rstudio-binder}
+
+- R + RStudio: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chendaniely/ds4biomed/learner?urlpath=rstudio)
+:::::
+
+::::: {.pyBlock}
+### Python + Jupyter {- #python-jupyter-binder}
+
+- Python + JupyterLab: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chendaniely/ds4biomed/learner)
+:::::
