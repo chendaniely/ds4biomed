@@ -9,18 +9,28 @@ Then you can click "Download ZIP" to download the files.
 
 ## Binder cloud environment
 
-If you cannot get R + Rstudio installed on your computer to follow along with the lesson materials.
-We have provided a binder instance that has everything set up for you.
-The downside is that it will take a *very* long time to spin up and you will need to manually export any files you create.
+If you are having installation issues,
+there is a Binder instance with all the packages and datasets setup that you can use
+in a browser.
+You can click one of the Binder badges to launch a programming environment for you in the cloud.
 
-Please see the binder section in the lesson materials for more information about useage and setup: https://ds4biomed.tech/setup.html#binder
+Note that these instances can take a very long time to start up and install everything, it can take anywhere from 1 minute to over 30 minutes depending
+on how long the last time someone has used a binder instance.
 
-- Complete RStudio environment: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chendaniely/ds4biomed/learner?urlpath=rstudio)<- click that
-- Semi-complete RStudio environment: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio)
-  - This environment may load faster, but you need to do some additional set up.
-  - Please follow these instructions to finish the setup:
-  - https://ds4biomed.tech/setup.html#binder
+One caveat with Binder is that each instance does not persist any data.
+So if you are idle for too long, or close out of the tab,
+all the work you did within Binder will be lost.
 
+You will need to either copy/paste your work to a place on your computer,
+or export the files out of Binder if you wish to have files saved.
+
+### R + RStudio
+
+- R + RStudio: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chendaniely/ds4biomed/learner?urlpath=rstudio)
+
+### Python + Jupyter
+
+- Python + JupyterLab: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chendaniely/ds4biomed/learner)
 
 ## Technical notes
 
