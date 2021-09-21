@@ -8,6 +8,8 @@ rsconnect
 
 # datasets saved out in the lesson that do not need to be tracked
 data/tumor_filtered.csv
+data/tumor_filtered_py.csv
+
 
 # bookdown::render_book(".") output
 ds4biomed.rds
