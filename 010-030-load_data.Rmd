@@ -266,7 +266,6 @@ tumor_xl <- read_excel("data/medicaldata_tumorgrowth.xlsx")
 
 ::::: {.pyBlock}
 ###### Python {-}
-
 ```{python}
 tumor_xl = pd.read_excel("data/medicaldata_tumorgrowth.xlsx")
 ```
@@ -283,7 +282,6 @@ tumor_xl
 
 ::::: {.pyBlock}
 ###### Python {-}
-
 ```{python}
 tumor_xl
 ```
@@ -305,12 +303,20 @@ class(tumor_xl)
 
 ::::: {.pyBlock}
 ###### Python {-}
-```{python}
+```{python, eval=FALSE}
 type(tumor)
 ```
 
-```{python}
+```
+<class 'pandas.core.frame.DataFrame'>
+```
+
+```{python, eval=FALSE}
 type(tumor_xl)
+```
+
+```
+<class 'pandas.core.frame.DataFrame'>
 ```
 :::::
 
