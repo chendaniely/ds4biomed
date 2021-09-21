@@ -1,10 +1,8 @@
 on:
-  push:
+  pull_request:
     branches:
-      - '!main'
-      - '!master'
-      - '!learner'
-      - '*'
+      - main
+      - master
 
 name: bookdown_pr
 
