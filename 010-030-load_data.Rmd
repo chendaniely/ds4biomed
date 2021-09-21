@@ -249,6 +249,8 @@ For the most part, a `data.frame` object will behave like a `tibble` object.
 
 ## Reading Excel files
 
+::::: {.rBlock}
+###### R
 To read an excel file we will need a separate library that can handle Excel files, `readxl`.
 
 ```{r}
@@ -260,6 +262,16 @@ The `readxl` library gives us access to the `read_excel` function which we can u
 ```{r}
 tumor_xl <- read_excel("data/medicaldata_tumorgrowth.xlsx")
 ```
+:::::
+
+::::: {.pyBlock}
+###### Python
+
+```{python}
+tumor_xl = pd.read_excel("data/medicaldata_tumorgrowth.xlsx")
+```
+
+::::::
 
 And we can view the loaded Excel file just like before.
 
