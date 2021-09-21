@@ -7,13 +7,16 @@
 Loading data into R is the first step!
 
 First we need to load up a package to make loading data sets easier.
-We will be using the `tidyverse` set of packages for all of our data processing needs in R.
+We will be using the `tidyverse` set of packages for all of our data processing needs in R
 ^[This is not the only way you can process data in R, but from experience, it seems to be the easier way to learn R due to its consistency, community, and learning materials.]
+and the `pandas` library in Python.
 
 ```{r, echo=FALSE, fig.cap="\"Tidyverse Celestial\" by Allison Horst. \"tidyverse\" hex sticker in space surrounded by other tidyverse package hex logos."}
 knitr::include_graphics("https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/tidyverse_celestial.png")
 ```
 
+::::: {.rBlock}
+###### R {-}
 We first will load up the `tidyverse` packages using the `library` function.
 
 ```{r}
@@ -29,6 +32,15 @@ you can ignore this output for now.
 Now we can use all the functions within the Tidyverse to do our data processing.
 If you are following along and you run a piece of code and end up with an `could not find function` error,
 make sure you typed `library(tidyverse)` correctly and executed the line of code.
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+
+```{python}
+import pandas as pd
+```
+:::::
 
 ## Find your files
 
@@ -146,7 +158,9 @@ However, you can still use the regular `/` in Windows to refer to folders just l
 So far, we have been talking about a "starting point" or "working directory",
 when we have been referring to files around our computer.
 In order to quickly and reliably set your working directory,
-we use **RStudio Projects** (Section \@ref(rstudio-projects)).
+
+we use **RStudio Projects** (Section \@ref(rstudio-projects)),
+or Jupyter Lab
 
 
 ## Reading text files (CSV)
@@ -156,9 +170,22 @@ When trying to type in a file path,
 you can hit the `<TAB>` key to autocomplete the files.
 This will help you with a lot of potential spelling mistakes.
 
+::::: {.rBlock}
+###### R {-}
+
 ```{r}
 read_csv("data/medicaldata_tumorgrowth.csv")
 ```
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+
+```{python}
+pd.read_csv("data/medicaldata_tumorgrowth.csv")
+```
+:::::
+
 
 **Debug help:**
 - If the above code returns a `could not find function "read_csv"`
@@ -177,9 +204,21 @@ We can do this with the **assignment** **operator**, `<-`.
 Note the way it is typed, a less than symbol (`<`) followed immediately by the dash (`-`) without any spaces in between.
 The right side of the assignment operator, `<-`, will be executed and then **assigned** to the variable on the left.
 
+::::: {.rBlock}
+###### R {-}
+
 ```{r}
 tumor <- read_csv("data/medicaldata_tumorgrowth.csv")
 ```
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+
+```{python}
+tumor = pd.read_csv("data/medicaldata_tumorgrowth.csv")
+```
+:::::
 
 Notice this time we no longer see the dataset being printed.
 The "Environment" tab in the RStudio panel will now have an entry for the variable you used.
@@ -188,9 +227,21 @@ clicking on the arrow will show you the column-by-column text representation (te
 
 To look at our dataset we can execute *just* the variable we assigned the dataset to.
 
+::::: {.rBlock}
+###### R {-}
+
 ```{r}
 tumor
 ```
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+
+```{python}
+tumor
+```
+:::::
 
 This tabular dataset that has now been loaded into R is called a **data frame** **object** (or simply **dataframe**),
 the `tidyverse` uses a `tibble`.

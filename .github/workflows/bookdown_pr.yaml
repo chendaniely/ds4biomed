@@ -1,10 +1,10 @@
 on:
-  push:
+  pull_request:
     branches:
       - main
       - master
 
-name: bookdown
+name: bookdown_pr
 
 jobs:
   build:
@@ -75,4 +75,4 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
           npm install netlify-cli -g
-          netlify deploy --prod --dir _book
+          netlify deploy --dir _book
