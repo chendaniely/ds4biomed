@@ -99,8 +99,16 @@ p.tldr {
 
 .rBlock {
   background-color: #e6f7ff;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .pyBlock {
   background-color: #ffffe6;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
