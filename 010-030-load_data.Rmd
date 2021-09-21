@@ -250,7 +250,7 @@ For the most part, a `data.frame` object will behave like a `tibble` object.
 ## Reading Excel files
 
 ::::: {.rBlock}
-###### R
+###### R {-}
 To read an excel file we will need a separate library that can handle Excel files, `readxl`.
 
 ```{r}
@@ -265,22 +265,35 @@ tumor_xl <- read_excel("data/medicaldata_tumorgrowth.xlsx")
 :::::
 
 ::::: {.pyBlock}
-###### Python
+###### Python {-}
 
 ```{python}
 tumor_xl = pd.read_excel("data/medicaldata_tumorgrowth.xlsx")
 ```
-
 ::::::
 
 And we can view the loaded Excel file just like before.
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 tumor_xl
 ```
+:::::
 
-If you are ever lost as to what object you are working with, you can use the `class` function in R to tell you.
+::::: {.pyBlock}
+###### Python {-}
 
+```{python}
+tumor_xl
+```
+:::::
+
+If you are ever lost as to what object you are working with, you can use the `class` function in R
+or the `type` function in Python to tell you.
+
+::::: {.rBlock}
+###### R {-}
 ```{r}
 class(tumor)
 ```
@@ -288,8 +301,20 @@ class(tumor)
 ```{r}
 class(tumor_xl)
 ```
+::::::
 
-Once you have see a `"tbl_df"` or `"data.frame"` you can be sure that the dataframe processing functions
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+type(tumor)
+```
+
+```{python}
+type(tumor_xl)
+```
+::::::
+
+Once you have see a `"tbl_df"` or `"data.frame"` (R) or `<class 'pandas.core.frame.DataFrame'>` (Python) you can be sure that the dataframe processing functions
 we'll learn will work.
 
 Take away: Once you load a dataset and end up with either a `data.frame` or `tibble` object you can continue using
@@ -313,10 +338,22 @@ spreadsheet_df <- read_csv("data/spreadsheets/exercise-010-050.csv")
 
 Here is the tumor dataset we are working with.
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 tumor
 ```
+:::::
 
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tumor
+```
+:::::
+
+::::: {.rBlock}
+###### R {-}
 In order to subset the columns of our dataset, we can use the `select` function.
 The **first** **argument** of the `select` function is the dataset we want to select columns from.
 Then, the other arguments are the columns we want to select.
@@ -331,7 +368,25 @@ If we want multiple columns (or to re-order columns) we can specify each column 
 ```{r}
 select(tumor, Group, Day, Size)
 ```
+:::::
 
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tumor["Size"]
+```
+
+```{python}
+tumor[["Group", "Day", "Size"]]
+```
+
+```{python}
+tumor[["Size"]]
+```
+:::::
+
+::::: {.rBlock}
+###### R {-}
 ### The `%>%` pipe operator
 
 A common way `tidyverse` code gets written is using the `%>%` operator.
@@ -355,6 +410,7 @@ tumor %>%
 The benefits of the pipe may not be as apparent now,
 but when we start chaining multiple data sets together,
 it'll make the code a little more readable.
+:::::
 
 ## Filtering rows
 
