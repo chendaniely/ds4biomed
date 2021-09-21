@@ -270,7 +270,7 @@ tumor_xl <- read_excel("data/medicaldata_tumorgrowth.xlsx")
 ```{python}
 tumor_xl = pd.read_excel("data/medicaldata_tumorgrowth.xlsx")
 ```
-::::::
+:::::
 
 And we can view the loaded Excel file just like before.
 
@@ -301,7 +301,7 @@ class(tumor)
 ```{r}
 class(tumor_xl)
 ```
-::::::
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -312,7 +312,7 @@ type(tumor)
 ```{python}
 type(tumor_xl)
 ```
-::::::
+:::::
 
 Once you have see a `"tbl_df"` or `"data.frame"` (R) or `<class 'pandas.core.frame.DataFrame'>` (Python) you can be sure that the dataframe processing functions
 we'll learn will work.
