@@ -13,6 +13,8 @@ editor_options:
 
 New script, clear your environment, re-load your libraries
 
+::::: {.rBlock}
+###### R {-}
 ```{r, results='hide'}
 library(tidyverse)
 ```
@@ -24,6 +26,7 @@ tumor_subset <- read_csv("data/tumor_filtered.csv")
 ```{r}
 tumor_subset
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -37,6 +40,8 @@ tumor_subset
 
 ## Summary statistics
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 tumor_subset %>%
   filter(Day == 0) %>%
@@ -50,6 +55,7 @@ tumor_subset %>%
   mean()
   
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -68,6 +74,9 @@ tumor_subset.loc[tumor_subset["Day"] == 0, "Size"].mean()
 )
 ```
 :::::
+
+::::: {.rBlock}
+###### R {-}
 
 ```{r}
 tumor_subset %>%
@@ -102,6 +111,7 @@ tumor_subset %>%
   pull(Group) %>%
   unique()
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -143,6 +153,8 @@ tumor_subset %>%
 
 ## Groupby operations
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 tumor_subset %>%
   filter(Day == 0) %>%
@@ -150,6 +162,7 @@ tumor_subset %>%
   summarize(avg_size = mean(Size))
   
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -190,6 +203,8 @@ import numpy as np
 ```
 :::::
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 tumor_subset %>%
   group_by(Group, Day) %>%
@@ -198,6 +213,7 @@ tumor_subset %>%
             q1 = quantile(Size, probs = .25)
             )
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
