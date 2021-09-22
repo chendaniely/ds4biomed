@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Descriptive Calculations
 
 ## Introduction {#descriptives-intro}
@@ -20,6 +25,16 @@ tumor_subset <- read_csv("data/tumor_filtered.csv")
 tumor_subset
 ```
 
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+import pandas as pd
+
+tumor_subset = pd.read_csv("data/tumor_filtered.csv")
+tumor_subset
+```
+:::::
+
 ## Summary statistics
 
 ```{r}
@@ -35,6 +50,24 @@ tumor_subset %>%
   mean()
   
 ```
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tumor_subset.loc[tumor_subset["Day"] == 0, "Size"]
+```
+
+```{python}
+tumor_subset.loc[tumor_subset["Day"] == 0, "Size"].mean()
+```
+
+```{python}
+(tumor_subset
+  .loc[tumor_subset["Day"] == 0, "Size"]
+  .mean()
+)
+```
+:::::
 
 ```{r}
 tumor_subset %>%
@@ -70,6 +103,44 @@ tumor_subset %>%
   unique()
 ```
 
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+(tumor_subset
+  .loc[tumor_subset["Group"] == 1, "Size"]
+  .mean()
+)
+```
+
+```{python}
+(tumor_subset
+  .loc[tumor_subset["Group"] == 2, "Size"]
+  .mean()
+)
+```
+
+```{python}
+(tumor_subset
+  .loc[tumor_subset["Group"] == 3, "Size"]
+  .mean()
+)
+```
+
+```{python}
+(tumor_subset
+  .loc[tumor_subset["Group"] == 4, "Size"]
+  .mean()
+)
+```
+
+```{python}
+(tumor_subset
+  .loc[:, "Group"]
+  .unique()
+)
+```
+:::::
+
 ## Groupby operations
 
 ```{r}
@@ -80,6 +151,45 @@ tumor_subset %>%
   
 ```
 
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+(tumor_subset
+  .loc[tumor_subset["Day"] == 0]
+  .groupby("Group")
+  .mean()
+)
+```
+
+```{python}
+(tumor_subset
+  .loc[tumor_subset["Day"] == 0]
+  .groupby("Group")
+  ["Size"]
+  .mean()
+)
+```
+
+```{python}
+import numpy as np
+
+(tumor_subset
+  .loc[tumor_subset["Day"] == 0]
+  .groupby("Group")
+  ["Size"]
+  .agg(avg_size = np.mean)
+)
+```
+
+```{python}
+(tumor_subset
+  .loc[tumor_subset["Day"] == 0]
+  .groupby("Group")
+  .agg(avg_size = ("Size", np.mean))
+)
+```
+:::::
+
 ```{r}
 tumor_subset %>%
   group_by(Group, Day) %>%
@@ -88,6 +198,28 @@ tumor_subset %>%
             q1 = quantile(Size, probs = .25)
             )
 ```
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+(tumor_subset
+  .groupby(["Group", "Day"])
+  .agg(avg_size = ("Size", np.mean),
+       std_size = ("Size", np.std),
+       q25_size = ("Size", lambda x: np.quantile(x, q=.25)))
+)
+```
+
+```{python}
+(tumor_subset
+  .groupby(["Group", "Day"])
+  .agg(avg_size = ("Size", np.mean),
+       std_size = ("Size", np.std),
+       q25_size = ("Size", lambda x: np.quantile(x, q=.25)))
+  .reset_index()
+)
+```
+:::::
 
 ## Summary {#descriptives-summary}
 
