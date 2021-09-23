@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 
 ```{r}
 knitr::opts_chunk$set(comment = "")
@@ -151,6 +156,20 @@ library(tidyverse)
 tumor <- read_csv("./data/tumorgrowth_long.csv")
 ```
 
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+import pandas as pd
+
+tumor = pd.read_csv("./data/tumorgrowth_long.csv")
+```
+
+```{python, echo=FALSE}
+pd.options.display.max_columns = 10 # only used for dataframe display
+pd.options.display.max_rows = 20
+```
+:::::
+
 This dataset comes from the [`medicaldata` R package](https://github.com/higgi13425/medicaldata),
 curated by Dr. Peter Higgins, M.D. in the
 [IBD Research Group at the University of Michigan Medical School](http://www.med.umich.edu/higginslab/).
@@ -168,6 +187,13 @@ You can read more about the dataset and study in the codebook for
 ```{r}
 tumor
 ```
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tumor
+```
+:::::
 
 Here we have the "column headers are values, not variable names" issue just like the PEW religion dataset.
 The "day" variable is represented as separate columns in our dataset.
@@ -187,6 +213,15 @@ tumor_tidy <- tumor %>%
   pivot_longer(`0`:last_col(), names_to = "day", values_to = "size")
 tumor_tidy
 ```
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tumor_tidy = tumor.melt(id_vars=["Group", "Grp", "ID"],
+                        var_name="day",
+                        value_name="size")
+```
+:::::
 
 Another representation the relationship between wide and long data can be seen here from Garrick Aden-Buie's "tidyexplain" repository.
 
@@ -209,6 +244,42 @@ tumor_tidy %>%
   mutate(day = as.numeric(day)) %>% # treat the day as a number
   arrange(Group, day) # sort the values by group and day
 ```
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+avg_mean = (tumor_tidy
+  .groupby(["Group", "day"])
+  .agg(avg_size=("size", "mean"))
+  .reset_index()
+  .assign(day=pd.to_numeric(tumor_tidy["day"]))
+  .sort_values(["Group", "day"])
+)
+
+avg_mean.info()
+```
+
+```{python}
+avg_mean
+```
+
+```{python}
+# can also do this (might see this more often)
+avg_mean = (tumor_tidy
+  .groupby(["Group", "day"])
+  .agg(avg_size=("size", "mean"))
+  .reset_index()
+)
+
+avg_mean["day"] = pd.to_numeric(avg_mean["day"])
+avg_mean = avg_mean.sort_values(["Group", "day"])
+```
+
+```{python}
+avg_mean
+```
+:::::
+
 
 <button class="accordion" id="question">Exercise 1 Question</button>
 :::{.panel-question}
@@ -260,23 +331,48 @@ tb <- read_csv("./data/tb_long.csv")
 tb
 ```
 
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tb = pd.read_csv("./data/tb_long.csv")
+tb
+```
+:::::
+
 Our first step is to make our data long using the `pivot_longer` function.
 Here we are using a different method to select our columns using the `starts_with` selector.
 You can also use the previous range selector as well.
 
 ```{r}
-tb_long <- tb %>%
+tb_tidy <- tb %>%
   pivot_longer(starts_with(c('m', 'f')))
-tb_long
+tb_tidy
 ```
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tb_tidy = tb.melt(id_vars=["country", "year"])
+tb_tidy
+```
+:::::
 
 Now that we have the "long" dataset, we can use the `separate` function to separate out the information in that column.
 
 ```{r}
-tb_tidy <- tb_long %>%
+tb_tidy <- tb_tidy %>%
   separate(name, into = c("sex", "age_group"), sep = 1)
 tb_tidy
 ```
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tb_tidy["sex"] = tb_tidy["variable"].str.slice(start=0, stop=1) # can also do .str.get(0)
+tb_tidy["age_group"] = tb_tidy["variable"].str.slice(start=1)
+tb_tidy
+```
+:::::
 
 Technically the `pivot_longer` function provides the ability to do the pivot and separation in a single step,
 but this way we see the parts broken down into separate components.
@@ -319,6 +415,14 @@ cms <- read_csv("./data/cms_utilization.csv")
 cms
 ```
 
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+cms = pd.read_csv("./data/cms_utilization.csv")
+cms
+```
+:::::
+
 We can make our data "long" just like before.
 
 ```{r}
@@ -326,6 +430,19 @@ cms_long <- cms %>%
   pivot_longer(`2007`:last_col(), names_to = "year")
 cms_long
 ```
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+cms.columns
+```
+
+```{python}
+cms_long = cms.melt(id_vars=['state', 'state_fips', 'variable', 'sex', 'age_group', 'num_chronic'],
+                     var_name="year")
+cms_long
+```
+:::::
 
 Now when we want to use the `pivot_wider` function, we want to specify the column we want to pivot.
 During this process, every unique value in this column will become a separate column.
@@ -336,6 +453,32 @@ cms_tidy <- cms_long %>%
   pivot_wider(names_from = variable, values_from = value)
 cms_tidy
 ```
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+cms_long.columns
+```
+
+```{python}
+cms_tidy = cms_long.pivot(index=['state', 'state_fips', 'sex', 'age_group', 'num_chronic', 'year'],
+                     columns="variable",
+                     values="value")
+
+cms_tidy
+```
+
+
+```{python}
+cms_tidy = (cms_long
+              .pivot(index=['state', 'state_fips', 'sex', 'age_group', 'num_chronic', 'year'],
+                     columns="variable",
+                     values="value")
+              .reset_index()
+)
+cms_tidy
+```
+:::::
 
 ## Summary {#tidy-summary}
 
