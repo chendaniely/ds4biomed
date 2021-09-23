@@ -151,10 +151,14 @@ since it has more **rows** and is longer to print on the screen.
 Let's go through an example by loading up the `tidyverse` library and our dataset.
 Note that the code below has suppressed the message output from loading the library and reading in the dataset.
 
+::::: {.rBlock}
+###### R {-}
+
 ```{r, message=FALSE}
 library(tidyverse)
 tumor <- read_csv("./data/tumorgrowth_long.csv")
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -184,9 +188,12 @@ It shows the treatment group for a particular sample and its size ($mm^3$) over 
 You can read more about the dataset and study in the codebook for
 ["Mixed-Effects Modeling of Tumor Growth in Animal Xenograft Experiments"](https://github.com/higgi13425/medicaldata/blob/master/description_docs/tumorgrowth_desc.pdf)
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 tumor
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -200,6 +207,8 @@ The "day" variable is represented as separate columns in our dataset.
 In order to "tidy" our dataset we can use the `pivot_longer` function.
 This operation is sometimes also referred to as `gather` or `melt`.
 
+::::: {.rBlock}
+###### R {-}
 We pass `pivot_longer` the data set we want to tidy, `tumor`.
 Then, we want to select the columns that represent a variable to turned into a column.
 Here we can use a fancier way to refer to a range of columns (this is known as **`tidyselect`**) to select all the columns
@@ -213,6 +222,7 @@ tumor_tidy <- tumor %>%
   pivot_longer(`0`:last_col(), names_to = "day", values_to = "size")
 tumor_tidy
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -237,6 +247,8 @@ knitr::include_graphics("https://github.com/gadenbuie/tidyexplain/raw/master/ima
 Now that we have "tidied" our dataset, we can now calculate descriptive statistics.
 For example, we can ask how does the is the average tumor volume change for each treatment group across the days?
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 tumor_tidy %>%
   group_by(Group, day) %>%
@@ -244,6 +256,7 @@ tumor_tidy %>%
   mutate(day = as.numeric(day)) %>% # treat the day as a number
   arrange(Group, day) # sort the values by group and day
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -325,11 +338,14 @@ knitr::include_graphics("./images/tidy/tidy_paper-table_10-tb_tidy_process.PNG")
 
 Let's go through this example from the paper ourselves.
 
+::::: {.rBlock}
+###### R {-}
 ```{r, message=FALSE}
 # read the tb dataset
 tb <- read_csv("./data/tb_long.csv")
 tb
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -339,6 +355,8 @@ tb
 ```
 :::::
 
+::::: {.rBlock}
+###### R {-}
 Our first step is to make our data long using the `pivot_longer` function.
 Here we are using a different method to select our columns using the `starts_with` selector.
 You can also use the previous range selector as well.
@@ -348,6 +366,7 @@ tb_tidy <- tb %>%
   pivot_longer(starts_with(c('m', 'f')))
 tb_tidy
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -357,6 +376,8 @@ tb_tidy
 ```
 :::::
 
+::::: {.rBlock}
+###### R {-}
 Now that we have the "long" dataset, we can use the `separate` function to separate out the information in that column.
 
 ```{r}
@@ -364,6 +385,7 @@ tb_tidy <- tb_tidy %>%
   separate(name, into = c("sex", "age_group"), sep = 1)
 tb_tidy
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -410,10 +432,13 @@ knitr::include_graphics("./images/tidy/tidy_paper-table_12-weather_tidy.PNG")
 
 We can load up the CMS utilization dataset that gives us CMS utilization rates by state, demographics, year, and measurement.
 
+::::: {.rBlock}
+###### R {-}
 ```{r, message=FALSE}
 cms <- read_csv("./data/cms_utilization.csv")
 cms
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -425,11 +450,14 @@ cms
 
 We can make our data "long" just like before.
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 cms_long <- cms %>%
   pivot_longer(`2007`:last_col(), names_to = "year")
 cms_long
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
@@ -448,11 +476,14 @@ Now when we want to use the `pivot_wider` function, we want to specify the colum
 During this process, every unique value in this column will become a separate column.
 The next thing we need to provide is the column that will be used to fill in the body of the cells when the column is pivoted.
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 cms_tidy <- cms_long %>%
   pivot_wider(names_from = variable, values_from = value)
 cms_tidy
 ```
+:::::
 
 ::::: {.pyBlock}
 ###### Python {-}
