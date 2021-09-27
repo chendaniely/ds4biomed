@@ -1,0 +1,122 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+# Working with multiple datasets
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(janitor)
+```
+
+```{r}
+encounters <- read_csv("data/synthea/encounters.csv") %>%
+  clean_names()
+
+encounters_mi <- encounters %>%
+  filter(str_to_lower(description) %in%
+           str_to_lower(c("Cardiac Arrest", "Myocardial Infarction"))
+         )
+encounters_mi
+```
+
+Q: How old was the patient at the time of a "heart attack"?
+
+```{r}
+patients <- read_csv("data/synthea/patients.csv") %>%
+  clean_names()
+
+patients
+```
+
+## Joins
+
+https://r4ds.had.co.nz/relational-data.html
+
+- `inner_join()`: includes all rows in x and y.
+
+```{r, echo=FALSE}
+knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/3abea0b730526c3f053a3838953c35a0ccbe8980/7f29b/diagrams/join-inner.png")
+```
+
+- `left_join()`: includes all rows in x.
+- `right_join()`: includes all rows in y.
+- `full_join()`: includes all rows in x or y.
+
+```{r, echo=FALSE}
+knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/9c12ca9e12ed26a7c5d2aa08e36d2ac4fb593f1e/79980/diagrams/join-outer.png")
+```
+
+```{r, echo=FALSE}
+knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/aeab386461820b029b7e7606ccff1286f623bae1/ef0d4/diagrams/join-venn.png")
+```
+
+
+```{r}
+encounters_pt <- encounters_mi %>%
+  left_join(patients, by = c("patient" = "id"))
+encounters_pt
+```
+
+### Keep track of the number of rows
+
+```{r}
+knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/6faac3e996263827cb57fc5803df6192541a9a4b/c7d74/diagrams/join-one-to-many.png")
+```
+
+
+```{r}
+nrow(encounters_mi)
+```
+
+```{r}
+nrow(patients)
+```
+
+```{r}
+dim(encounters_pt)
+```
+
+```{r}
+nrow(encounters_pt)
+```
+
+### Formally test your assumptions
+
+```{r}
+stopifnot(nrow(encounters_mi) == nrow(encounters_pt)) # test your work
+```
+
+```{r, error=TRUE}
+stopifnot(nrow(encounters_mi) == 100) # test your work
+```
+
+```{r}
+knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/d37530bbf7749f48c02684013ae72b2996b07e25/37510/diagrams/join-many-to-many.png")
+```
+
+### Different types of joins
+
+```{r}
+pt_encounters <- patients %>%
+  left_join(encounters_mi, by = c("id" = "patient"))
+pt_encounters
+```
+
+```{r}
+inner_join(encounters_mi, patients, by = c("patient" = "id"))
+```
+
+```{r}
+full_join(encounters_mi, patients, by = c("patient" = "id"))
+```
+
+## Databases
+
+```{r}
+library(tidyverse)
+library(RSQLite)
+```
+
