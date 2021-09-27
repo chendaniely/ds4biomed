@@ -120,3 +120,68 @@ library(tidyverse)
 library(RSQLite)
 ```
 
+https://cran.r-project.org/web/packages/RSQLite/vignettes/RSQLite.html
+
+```{r}
+patients <- read_csv("data/synthea/patients.csv")
+encounters <- read_csv("data/synthea/encounters.csv")
+```
+
+```{r}
+patients %>%
+  filter(MARITAL == "M") %>%
+  select(Id, BIRTHDATE, DEATHDATE, MARITAL) %>%
+  head(5)
+```
+
+```{r}
+con <- dbConnect(SQLite(), "data/synthea/synthea.sqlite")
+dbListTables(con)
+```
+
+
+```{r}
+patients_db <- tbl(con, "patients")
+
+patients_db %>%
+  filter(MARITAL == "M") %>%
+  select(Id, BIRTHDATE, DEATHDATE, MARITAL) %>%
+  head(5)
+```
+
+```{r}
+dbGetQuery(con, 'SELECT * FROM patients LIMIT 5')
+```
+
+```{r}
+dbGetQuery(con, 'SELECT Id, BIRTHDATE, DEATHDATE, MARITAL FROM patients WHERE MARITAL = "M" LIMIT 5')
+```
+
+```{r}
+dbGetQuery(con, 'SELECT Id, BIRTHDATE, DEATHDATE, MARITAL FROM patients WHERE MARITAL = :x LIMIT 5', 
+           params = list(x = "M"))
+```
+
+```{r}
+patients_db %>%
+  group_by(MARITAL, RACE, ETHNICITY, GENDER) %>%
+  summarize(count = n()) %>%
+  arrange(-count)
+```
+
+```{r}
+patients_db %>%
+  group_by(MARITAL, RACE, ETHNICITY, GENDER) %>%
+  summarize(count = n()) %>%
+  arrange(-count) %>%
+  show_query()
+```
+
+```{r}
+dbGetQuery(con,
+           "SELECT `MARITAL`, `RACE`, `ETHNICITY`, `GENDER`, COUNT(*) AS `count`
+FROM `patients`
+GROUP BY `MARITAL`, `RACE`, `ETHNICITY`, `GENDER`
+ORDER BY -`count`")
+```
+
