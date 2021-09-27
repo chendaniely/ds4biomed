@@ -102,10 +102,15 @@
     },
     "bookdown": {
       "Package": "bookdown",
-      "Version": "0.24",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "3837766a1e1b527af25fa3e2d12a2800"
+      "Version": "0.24.1",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "rstudio",
+      "RemoteRepo": "bookdown",
+      "RemoteRef": "main",
+      "RemoteSha": "7ce6dc65b39ffe846e2ff88c160a69f2348a5a92",
+      "Hash": "2a8e4c901053ba3d86099e7b0aaacd86"
     },
     "broom": {
       "Package": "broom",
@@ -151,10 +156,10 @@
     },
     "cpp11": {
       "Package": "cpp11",
-      "Version": "0.3.1",
+      "Version": "0.4.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "e02edab2bc389c5e4b12949b13df44f2"
+      "Hash": "40ba3fd26c8f61d8d14d334bc7761df9"
     },
     "crayon": {
       "Package": "crayon",
@@ -186,10 +191,10 @@
     },
     "digest": {
       "Package": "digest",
-      "Version": "0.6.27",
+      "Version": "0.6.28",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "a0cbe758a531d054b537d16dff4d58a1"
+      "Hash": "49b5c6e230bfec487b8917d5a0c77cca"
     },
     "dplyr": {
       "Package": "dplyr",
@@ -333,10 +338,10 @@
     },
     "hms": {
       "Package": "hms",
-      "Version": "1.1.0",
+      "Version": "1.1.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "e4bf161ccb74a2c1c0e8ac63bbe332b4"
+      "Hash": "5b8a2dd0fdbe2ab4f6081e6c7be6dfca"
     },
     "htmltools": {
       "Package": "htmltools",
@@ -373,6 +378,13 @@
       "Repository": "CRAN",
       "Hash": "7ab57a6de7f48a8dc84910d1eca42883"
     },
+    "janitor": {
+      "Package": "janitor",
+      "Version": "2.1.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "6de84a8c67fb247e721166049c84695f"
+    },
     "jquerylib": {
       "Package": "jquerylib",
       "Version": "0.1.4",
@@ -403,17 +415,17 @@
     },
     "lattice": {
       "Package": "lattice",
-      "Version": "0.20-44",
+      "Version": "0.20-45",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "f36bf1a849d9106dc2af72e501f9de41"
+      "Hash": "b64cdbb2b340437c4ee047a1f4c4377b"
     },
     "lifecycle": {
       "Package": "lifecycle",
-      "Version": "1.0.0",
+      "Version": "1.0.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "3471fb65971f1a7b2d4ae7848cf2db8d"
+      "Hash": "a6b6d352e3ed897373ab19d8395c98d0"
     },
     "lubridate": {
       "Package": "lubridate",
@@ -438,10 +450,10 @@
     },
     "mgcv": {
       "Package": "mgcv",
-      "Version": "1.8-36",
+      "Version": "1.8-37",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "93cc747b0e1ad882a4570463c3575c23"
+      "Hash": "42ee1ee3259845fd07819f58022a3532"
     },
     "mime": {
       "Package": "mime",
@@ -487,10 +499,10 @@
     },
     "pillar": {
       "Package": "pillar",
-      "Version": "1.6.2",
+      "Version": "1.6.3",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "43f228eb4b49093d1c8a5c93cae9efe9"
+      "Hash": "3323bc1a0988d63b5c65771ba0d3935d"
     },
     "pkgconfig": {
       "Package": "pkgconfig",
@@ -673,6 +685,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "3838071b66e0c566d55cc26bd6e27bf4"
+    },
+    "snakecase": {
+      "Package": "snakecase",
+      "Version": "0.11.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "4079070fc210c7901c0832a3aeab894f"
     },
     "stringi": {
       "Package": "stringi",
