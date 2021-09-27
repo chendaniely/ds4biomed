@@ -9,3 +9,4 @@ dependencies:
   - seaborn
   - jupyterlab
   - openpyxl
+  - sebp::scikit-survival
