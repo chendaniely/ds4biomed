@@ -1,3 +1,19 @@
-install.packages("tidyverse")
-install.packages("remotes")
+pkgs <- c("tidyverse",
+          "remotes",
+          "RSQLite",
+          "janitor",
+          "survival",
+          "survminer",
+          "tidycensus",
+          "tidymodels",
+          "themis",
+          "writexl",
+          "ggthemes",
+          "fs",
+          "skimr",
+          "rmarkdown",
+          "knitr"
+         )
+install.packages(pkgs)
 remotes::install_github("higgi13425/medicaldata")
+remotes::install_github("thomasp85/patchwork")
