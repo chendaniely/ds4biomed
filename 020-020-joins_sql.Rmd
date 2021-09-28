@@ -6,30 +6,36 @@ editor_options:
 
 # Working with multiple datasets
 
+::::: {.rBlock}
+###### R {-}
 ```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(janitor)
+
+encounters <- read_csv("data/synthea/encounters.csv") %>%
+  clean_names()
 ```
 
 ```{r}
-encounters <- read_csv("data/synthea/encounters.csv") %>%
-  clean_names()
-
 encounters_mi <- encounters %>%
   filter(str_to_lower(description) %in%
            str_to_lower(c("Cardiac Arrest", "Myocardial Infarction"))
          )
 encounters_mi
 ```
+:::::
 
 Q: How old was the patient at the time of a "heart attack"?
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 patients <- read_csv("data/synthea/patients.csv") %>%
   clean_names()
 
 patients
 ```
+:::::
 
 ## Joins
 
@@ -62,11 +68,12 @@ encounters_pt
 
 ### Keep track of the number of rows
 
-```{r}
+```{r, echo=FALSE}
 knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/6faac3e996263827cb57fc5803df6192541a9a4b/c7d74/diagrams/join-one-to-many.png")
 ```
 
-
+::::: {.rBlock}
+###### R {-}
 ```{r}
 nrow(encounters_mi)
 ```
@@ -82,9 +89,12 @@ dim(encounters_pt)
 ```{r}
 nrow(encounters_pt)
 ```
+:::::
 
 ### Formally test your assumptions
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 stopifnot(nrow(encounters_mi) == nrow(encounters_pt)) # test your work
 ```
@@ -92,13 +102,16 @@ stopifnot(nrow(encounters_mi) == nrow(encounters_pt)) # test your work
 ```{r, error=TRUE}
 stopifnot(nrow(encounters_mi) == 100) # test your work
 ```
+:::::
 
-```{r}
+```{r, echo=FALSE}
 knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/d37530bbf7749f48c02684013ae72b2996b07e25/37510/diagrams/join-many-to-many.png")
 ```
 
 ### Different types of joins
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 pt_encounters <- patients %>%
   left_join(encounters_mi, by = c("id" = "patient"))
@@ -112,16 +125,22 @@ inner_join(encounters_mi, patients, by = c("patient" = "id"))
 ```{r}
 full_join(encounters_mi, patients, by = c("patient" = "id"))
 ```
+:::::
 
 ## Databases
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 library(tidyverse)
 library(RSQLite)
 ```
+:::::
 
 https://cran.r-project.org/web/packages/RSQLite/vignettes/RSQLite.html
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 patients <- read_csv("data/synthea/patients.csv")
 encounters <- read_csv("data/synthea/encounters.csv")
@@ -133,13 +152,18 @@ patients %>%
   select(Id, BIRTHDATE, DEATHDATE, MARITAL) %>%
   head(5)
 ```
+:::::
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 con <- dbConnect(SQLite(), "data/synthea/synthea.sqlite")
 dbListTables(con)
 ```
+:::::
 
-
+::::: {.rBlock}
+###### R {-}
 ```{r}
 patients_db <- tbl(con, "patients")
 
@@ -148,7 +172,10 @@ patients_db %>%
   select(Id, BIRTHDATE, DEATHDATE, MARITAL) %>%
   head(5)
 ```
+:::::
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 dbGetQuery(con, 'SELECT * FROM patients LIMIT 5')
 ```
@@ -161,14 +188,20 @@ dbGetQuery(con, 'SELECT Id, BIRTHDATE, DEATHDATE, MARITAL FROM patients WHERE MA
 dbGetQuery(con, 'SELECT Id, BIRTHDATE, DEATHDATE, MARITAL FROM patients WHERE MARITAL = :x LIMIT 5', 
            params = list(x = "M"))
 ```
+:::::
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 patients_db %>%
   group_by(MARITAL, RACE, ETHNICITY, GENDER) %>%
   summarize(count = n()) %>%
   arrange(-count)
 ```
+:::::
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 patients_db %>%
   group_by(MARITAL, RACE, ETHNICITY, GENDER) %>%
@@ -176,7 +209,10 @@ patients_db %>%
   arrange(-count) %>%
   show_query()
 ```
+:::::
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 dbGetQuery(con,
            "SELECT `MARITAL`, `RACE`, `ETHNICITY`, `GENDER`, COUNT(*) AS `count`
@@ -184,4 +220,4 @@ FROM `patients`
 GROUP BY `MARITAL`, `RACE`, `ETHNICITY`, `GENDER`
 ORDER BY -`count`")
 ```
-
+:::::
