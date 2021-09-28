@@ -21,7 +21,7 @@ blood <- blood_storage
 
 ```{r}
 blood$Recurrence <- as.factor(blood$Recurrence)
-blood$RBC.Age.Group <- as.factor(RBC.Age.Group)
+blood$RBC.Age.Group <- as.factor(blood$RBC.Age.Group)
 ```
 
 ### glm: Model 1
