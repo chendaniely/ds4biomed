@@ -1,3 +1,8 @@
+bookdown::bs4_book:
+  css: bs4_style.css
+  theme:
+    primary: "#096B72"
+  repo: https://github.com/chendaniely/ds4biomed/
 bookdown::gitbook:
   includes:
     in_header: [google_analytics.html]

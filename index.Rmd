@@ -5,12 +5,13 @@ author:
   - Anne Brown, PhD
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output: bookdown::bs4_book
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: chendaniely/ds4biomed
+cover-image: images/cover/Snake_title_cropped.png
 description: "Materials to teach data science for the biomedical sciences"
 ---
 
