@@ -5,13 +5,15 @@ editor_options:
 ---
 # 30-Day Readmittance
 
+::::: {.rBlock}
+###### R {-}
+
 ```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
-```
 
-```{r}
 encounters <- read_csv("data/synthea//encounters.csv")
 ```
+:::::
 
 <button class="accordion" id="question">Exercise 1 Question</button>
 :::{.panel-question}
@@ -80,6 +82,9 @@ and came back to the ED for a heart attack within 30 days.
 1. How is a "heart attack" define in the data?
 2. What columns do we need to answer that question?
 
+::::: {.rBlock}
+###### R {-}
+
 ```{r}
 names(encounters)
 ```
@@ -105,9 +110,12 @@ encounters %>%
 encounters_col_sub <- encounters %>%
   select(id:patient, encounterclass, description, reasondescription)
 ```
-
+:::::
 
 3. Filter encounters by "heat attack"
+
+::::: {.rBlock}
+###### R {-}
 
 ```{r}
 encounters_col_sub %>%
@@ -133,24 +141,30 @@ mi_encounters <- encounters_col_sub %>%
 ```{r}
 mi_encounters
 ```
+:::::
 
 4. Count the number of patients to get number of "heart attack" encounters
+
+::::: {.rBlock}
+###### R {-}
 
 ```{r}
 mi_encounters %>%
   count(patient) %>%
   arrange(-n)
 ```
+:::::
 
 5. We only want patients who have multiple ED "heart attack" encounters
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 mi_encounters %>%
   count(patient) %>%
   arrange(-n) %>%
   filter(n > 1)
 ```
-
 
 ```{r}
 pt_mi_repeat_ids <- mi_encounters %>%
@@ -163,21 +177,28 @@ pt_mi_repeat_ids <- mi_encounters %>%
 ```{r}
 pt_mi_repeat_ids
 ```
+:::::
 
 6. Filter the encounters for patients of interest.
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 pt_encounter_mi <- encounters_col_sub %>%
   filter(patient %in% pt_mi_repeat_ids) %>%
   arrange(patient, start, stop)
 pt_encounter_mi
 ```
+:::::
 
 7. Only care about the "heart attack" events.
 
 There's 2 ways you might think of doing this.
 
 7a. Filter on "emergency" and "urgentcare" `encounterclass`
+
+::::: {.rBlock}
+###### R {-}
 
 ```{r}
 pt_encounter_mi %>% distinct(encounterclass)
@@ -187,9 +208,12 @@ pt_encounter_mi %>% distinct(encounterclass)
 pt_encounter_mi %>%
   filter(encounterclass == "emergency" | encounterclass == "urgentcare")
 ```
+:::::
 
 7b. Filter `description` on our "heart attack" terms.
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 mi_terms
 ```
@@ -199,8 +223,12 @@ pt_enconter_mi_only <- pt_encounter_mi %>%
   filter(str_to_lower(description) %in% mi_terms)
 pt_enconter_mi_only
 ```
+:::::
 
 ## Working with dates
+
+::::: {.rBlock}
+###### R {-}
 
 ```{r, warning=FALSE, message=FALSE}
 library(lubridate)
@@ -211,18 +239,25 @@ library(lubridate)
 ```{r}
 ymd("2020-04-28")
 ```
+:::::
 
 ### Converting to datetime objects
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 pt_enconter_mi_only %>%
   mutate(stop_dt = ymd_hms(stop),
          start_dt = ymd_hms(start))
 ```
+:::::
 
 ### Datetime calculations
 
 8. Calculate time of ED visits.
+
+::::: {.rBlock}
+###### R {-}
 
 ```{r}
 pt_enconter_mi_only %>%
@@ -231,12 +266,16 @@ pt_enconter_mi_only %>%
   select(-start, -stop) %>%
   mutate(entounter_length = stop_dt - start_dt)
 ```
+:::::
 
 ### Lead and lag time
 
 9. Calculate time between ED visits.
 
 Keep in mind if you are going to a `lead` or a `lag`.
+
+::::: {.rBlock}
+###### R {-}
 
 ```{r}
 pt_enconter_mi_only %>%
@@ -247,10 +286,14 @@ pt_enconter_mi_only %>%
          next_encounter_start = lead(start_dt),
          next_encounter_time = next_encounter_start - stop_dt)
 ```
+:::::
 
 ## Grouped column mutations
 
 We want the calculations to happen for each patient separately.
+
+::::: {.rBlock}
+###### R {-}
 
 ```{r}
 pt_enconter_mi_only <- pt_enconter_mi_only %>%
@@ -272,25 +315,36 @@ mi_reencounter <- pt_enconter_mi_only %>%
 ```{r}
 mi_reencounter
 ```
+:::::
 
 ## Find 30-day readmittance
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 mi_reencounter %>%
   filter(next_encounter_time < 30)
 ```
+:::::
 
 5 years:
+
+::::: {.rBlock}
+###### R {-}
 
 ```{r}
 mi_reencounter %>%
   filter(next_encounter_time < 365.25 * 5)
 ```
+:::::
 
 10 years
+
+::::: {.rBlock}
+###### R {-}
 
 ```{r}
 mi_reencounter %>%
   filter(next_encounter_time < 365.25 * 10)
 ```
-
+:::::

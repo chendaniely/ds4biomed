@@ -155,6 +155,28 @@ tb_tidy %>%
 ```
 
 ```{r}
-tb_tidy %>%
+tb_tidy <- tb_tidy %>%
   mutate(age_cat = map_chr(age_group, clean_age_group))
+
+tb_tidy
 ```
+
+## Use processed columns
+
+```{r}
+library(ggplot2)
+```
+
+```{r}
+year_sex_age_count <-tb_tidy %>%
+  group_by(year, sex, age_cat) %>%
+  summarize(sum = sum(value, na.rm = TRUE)) %>%
+  ungroup()
+year_sex_age_count
+```
+
+```{r}
+ggplot(year_sex_age_count, aes(x = age_cat, y = sum, fill = sex)) +
+  geom_bar(stat="identity", position = "dodge")
+```
+
