@@ -1,0 +1,224 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# Machine Learning (tidymodels)
+
+https://conf20-intro-ml.netlify.app/
+
+## Logistic Regression
+
+```{r}
+library(tidyverse)
+library(medicaldata)
+library(broom)
+```
+
+```{r}
+blood <- blood_storage
+```
+
+```{r}
+blood$Recurrence <- as.factor(blood$Recurrence)
+blood$RBC.Age.Group <- as.factor(RBC.Age.Group)
+```
+
+### glm: Model 1
+
+```{r}
+mod <- glm(Recurrence ~ RBC.Age.Group, data = blood, family = "binomial")
+summary(mod)
+```
+
+```{r}
+mod %>%
+  broom::tidy() %>%
+  mutate(or = exp(estimate))
+```
+
+### glm: Model 2
+
+```{r}
+Recurrence ~ Age + PVol + PreopPSA + as.factor(TVol) + as.factor(RBC.Age.Group)
+
+mod <- glm(Recurrence ~ Age + PVol + PreopPSA + as.factor(TVol) + as.factor(RBC.Age.Group), data = blood, family = "binomial")
+summary(mod)
+
+mod %>%
+  broom::tidy() %>%
+  mutate(or = exp(estimate))
+```
+
+## Tidymodels
+
+```{r}
+library(tidymodels)
+```
+
+
+https://www.tmwr.org/
+
+```{r}
+model <- logistic_reg()
+```
+
+```{r}
+model %>% translate()
+```
+
+```{r}
+model_fit <- model %>%
+  fit(Recurrence ~ Age + PVol + PreopPSA + as.factor(TVol) + as.factor(RBC.Age.Group), data = blood)
+
+```
+
+```{r}
+model_fit %>%
+  broom::tidy() %>%
+  mutate(or = exp(estimate))
+```
+
+### Make a prediction
+
+There are many problems with this.
+Also class imbalance is coming into play.
+
+```{r}
+blood_sample <- blood %>% dplyr::sample_n(10)
+
+blood_sample
+
+predict(model_fit, blood_sample)
+```
+
+## Train Test Split
+
+```{r}
+set.seed(42)
+blood_split <- initial_split(blood, prop = 0.80, strata = Recurrence)
+blood_train <- training(blood_split)
+blood_test  <-  testing(blood_split)
+```
+
+```{r}
+model <- logistic_reg()
+
+model_fit <- model %>%
+  fit(Recurrence ~ Age + PVol + PreopPSA + as.factor(TVol) + as.factor(RBC.Age.Group),
+      data = blood_train)
+
+summary(model_fit$fit)
+
+model_fit %>%
+  broom::tidy() %>%
+  mutate(or = exp(estimate))
+
+model_predict <- predict(model_fit, blood_test)
+```
+
+```{r}
+model_predict
+```
+
+## Get class predictions and probabilties
+
+https://towardsdatascience.com/modelling-binary-logistic-regression-using-tidymodels-library-in-r-part-1-c1bdce0ac055
+
+```{r}
+model_predict %>%
+  count(`.pred_class`)
+
+model_predict
+```
+
+```{r}
+model_predict_class <- predict(model_fit, blood_test)
+model_predict_class
+```
+
+```{r}
+model_predict_prop <- predict(model_fit, blood_test, type = "prob")
+model_predict_prop
+```
+
+```{r}
+blood_results <- bind_cols(model_predict_class, model_predict_prop, blood_test %>% select(Recurrence)) %>%
+  tidyr::drop_na()
+blood_results
+```
+
+## Model Metrics and Evaluation
+
+```{r}
+conf_mat(blood_results, truth = Recurrence, estimate = .pred_class)
+accuracy(blood_results, truth = Recurrence, estimate = .pred_class)
+sens(blood_results, truth = Recurrence, estimate = .pred_class)
+specificity(blood_results, truth = Recurrence, estimate = .pred_class)
+precision(blood_results, truth = Recurrence, estimate = .pred_class)
+recall(blood_results, truth = Recurrence, estimate = .pred_class)
+
+my_metrics <- metric_set(sensitivity, specificity)
+my_metrics(blood_results, truth = Recurrence, estimate = .pred_class)
+
+```
+
+```{r}
+roc_auc(blood_results, truth = Recurrence, estimate = .pred_1)
+
+roc_curve(blood_results, truth = Recurrence, estimate = .pred_0) %>%
+  autoplot()
+```
+
+## Feature Engineering
+
+```{r}
+library(themis)
+```
+
+```{r}
+blood <- blood_storage
+```
+
+```{r}
+blood$Recurrence <- as.factor(blood$Recurrence)
+```
+
+```{r}
+blood_split <- initial_split(blood, prop = 0.80, strata = Recurrence)
+blood_train <- training(blood_split)
+blood_test  <- testing(blood_split)
+```
+
+```{r}
+simple_blood <- 
+  recipe(Recurrence ~ Age + PVol + PreopPSA + TVol + RBC.Age.Group,
+         data = blood_train) %>%
+  step_mutate(TVol = as.factor(TVol),
+              RBC.Age.Group = as.factor(RBC.Age.Group),
+              role = "predictor"
+              ) %>%
+  step_dummy(all_nominal_predictors()) %>%
+  step_zv(all_predictors()) %>%
+  themis::step_downsample(Recurrence)
+simple_blood
+```
+
+```{r}
+logistic_model <- logistic_reg() %>%
+  set_engine("glm")
+
+logistic_wflow2 <- 
+  workflow() %>% 
+  add_model(logistic_model) %>%
+  add_recipe(simple_blood)
+
+logistic_fit <- fit(logistic_wflow2, blood_train)
+
+logistic_fit %>% extract_recipe(estimated = TRUE)
+
+logistic_fit %>% tidy() %>% mutate(or = exp(estimate))
+
+predict(logistic_fit, blood_test)
+```
+
