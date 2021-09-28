@@ -8,7 +8,7 @@ p code {
 pre {
   word-break: normal;
   word-wrap: normal;
-  max-height: 500px;
+  max-height: 350px;
   overflow-y: auto;
 }
 pre code {
