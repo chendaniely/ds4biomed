@@ -2,6 +2,8 @@ name: ds4biomed
 channels:
   - conda-forge
 dependencies:
+  - gdal
+  - udunits2
   - numpy
   - matplotlib
   - pandas
