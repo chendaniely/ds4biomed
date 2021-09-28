@@ -1,0 +1,186 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# APIs (Application Programming Interface)
+
+## Leading Causes of Deaths
+
+```{r}
+library(tidyverse)
+
+lcod <- read_csv("data/NCHS_-_Leading_Causes_of_Death__United_States.csv")
+lcod
+```
+
+Exercise
+
+1. Filter the dataset to just look at the year 2017
+2. Get the unique list of Causes from the `113 Cause Name` columns
+3. Get the values for the `All Causes` death counts
+
+
+```{r}
+lcod_2017 <- lcod %>%
+  filter(Year == 2017)
+```
+
+```{r}
+lcod_2017 %>%
+  pull(`113 Cause Name`) %>%
+  unique()
+```
+
+
+```{r}
+lcod_2017_all <- lcod_2017 %>%
+  filter(`113 Cause Name`== "All Causes")
+```
+
+## Adjusted Counts
+
+- Reference population
+- `count / population at risk * 100,000`
+- Cannot compare values with different reference populations
+
+- mortality data: https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm#Mortality_Multiple
+- file format: https://github.com/tommaho/VS13MORT.DUSMCPUB-Parser
+- Median age: https://www.statsamerica.org/sip/rank_list.aspx?rank_label=pop46&ct=S09
+
+Let's go do population adjusted rates instead
+
+## Census API
+
+```{r}
+library(tidycensus)
+```
+
+- Get your API key: https://api.census.gov/data/key_signup.html
+
+```{r, eval=FALSE}
+census_api_key("YOUR API KEY GOES HERE", install = TRUE)
+```
+
+### Find the tables you need
+
+```{r}
+acs5_2010_vars <- load_variables(2010, "acs5", cache = TRUE)
+acs5_2010_vars
+```
+
+```{r}
+acs5_2010_vars_age <- acs5_2010_vars %>%
+  filter(stringr::str_detect(concept, "AGE")) %>%
+  filter(concept == "SEX BY AGE")
+```
+
+### Download the data
+
+```{r}
+census_dat <- get_acs(geography = "state",
+                        variables = "B01001_003",
+                        year = 2010)
+census_dat
+```
+
+```{r}
+census_dat %>%
+  mutate(lablel = "B01001_003")
+```
+
+### Write a function
+
+```{r}
+download_census <- function(var_name, label) {
+  census_dat <- get_acs(geography = "state",
+                        variables = var_name,
+                        year = 2010)
+  census_dat <- census_dat %>%
+    mutate(label = label)
+  return(census_dat)
+}
+```
+
+```{r}
+census_tbl <- download_census("B01001_003","Estimate!!Total!!Male!!Under 5 years")
+census_tbl
+```
+
+### Download and Tidy Data
+
+```{r, cache=TRUE}
+census <- purrr::map2_df(acs5_2010_vars_age$name,
+                         acs5_2010_vars_age$label,
+                         download_census)
+```
+
+```{r}
+census %>%
+  distinct(label)
+```
+
+
+```{r}
+census_age <- census %>%
+  filter(stringr::str_detect(label, "!!Male!!") | stringr::str_detect(label, "!!Female!!")) %>%
+  separate(label, into = c("estimate_text", "total", "gender", "age_group"), sep="!!") %>%
+  select(-estimate_text, -total)
+```
+
+### Population counts
+
+```{r}
+pop_state_age <- census_age %>%
+  group_by(NAME, age_group) %>%
+  summarize(pop = sum(estimate)) %>%
+  ungroup()
+```
+
+```{r}
+pop_state_age
+```
+
+```{r}
+# check to see if we got everything
+census_age$age_group %>%
+  unique() %>%
+  length() * 52
+```
+
+```{r}
+# save if you want
+# write_csv("data/census_state_age_group.csv")
+```
+
+## Population Adjusted Death
+
+```{r}
+pop_state <- pop_state_age %>%
+  group_by(NAME) %>%
+  summarize(pop = sum(pop)) %>%
+  ungroup()
+```
+
+```{r}
+pop_state
+```
+
+
+```{r}
+cod_state_pop <- inner_join(lcod_2017_all, pop_state, by = c("State" = "NAME"))
+dim(cod_state_pop)
+```
+
+```{r}
+cod_state_pop
+```
+
+```{r}
+cod_state_pop <- cod_state_pop %>%
+  mutate(death_rate_adj_pop = (Deaths / pop) * 100000)
+```
+
+```{r}
+cod_state_pop
+```
