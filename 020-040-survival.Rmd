@@ -1,0 +1,166 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# Survival Analysis
+
+https://www.emilyzabor.com/tutorials/survival_analysis_in_r_tutorial.html
+
+over estimating survival if you don't take into account censoring
+
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+cancer <- read_csv("data/survival/veterans_lung_cancer.csv")
+```
+
+```{r}
+cancer
+```
+
+- `S(t)`: the *survival probability* of surviving beyond time, `t` givin they have survived until now.
+
+```{r}
+library(survival)
+```
+
+The survival object uses the `Surv` function.
+The `+` denotes a censored subject.
+
+```{r}
+Surv(cancer$survival_in_days, cancer$status)
+```
+
+Create the survival curve
+
+```{r}
+sf1 <- survfit(Surv(cancer$survival_in_days, cancer$status) ~ 1, data = cancer)
+sf1
+```
+
+```{r}
+names(sf1)
+```
+
+- `time`: time inverval start and endpoints
+- `surv`: sruvival prbability at each `time`
+
+```{r}
+library(survminer)
+```
+
+```{r}
+ggsurvplot(
+  fit = sf1, 
+  xlab = "Days", 
+  ylab = "Overall survival probability")
+```
+
+```{r}
+summary(sf1, times = 365.25)
+```
+
+## Between Groups
+
+```{r}
+sf2 <- survfit(Surv(survival_in_days, status) ~ treatment, data = cancer)
+summary(sf2, times = 365.25)
+```
+
+```{r}
+ggsurvplot(
+  fit = sf2, 
+  data = cancer,
+  xlab = "Days", 
+  ylab = "Overall survival probability",
+  risk.table = TRUE)
+```
+
+## Multiple variables
+
+```{r}
+sf3 <- survfit(Surv(survival_in_days, status) ~ prior_therapy, data = cancer)
+```
+
+```{r}
+ggsurvplot(
+  fit = sf3, 
+  data = cancer,
+  risk.table = TRUE,
+  conf.int = TRUE)
+```
+
+```{r}
+sf4 <- survfit(Surv(survival_in_days, status) ~ treatment + prior_therapy, data = cancer)
+
+summary(sf4, times = 365.25)
+
+ggsurvplot(
+  fit = sf4, 
+  data = cancer)
+```
+
+## Cox Regression
+
+`h(t)`: *hazard*, the instantaneous rate at which events occur
+
+```{r}
+coxph(Surv(survival_in_days, status) ~ treatment + prior_therapy, data = cancer)
+```
+
+### Hazard Ratio
+
+```{r}
+library(broom)
+```
+
+
+```{r}
+coxph(Surv(survival_in_days, status) ~ treatment + prior_therapy, data = cancer) %>%
+  tidy() %>%
+  mutate(hr = exp(estimate))
+```
+
+Taken from Emily's page (for now)
+https://www.emilyzabor.com/tutorials/survival_analysis_in_r_tutorial.html
+
+```
+The quantity of interest from a Cox regression model is a hazard ratio (HR). The HR represents the ratio of hazards between two groups at any particular point in time.
+
+The HR is interpreted as the instantaneous rate of occurrence of the event of interest in those who are still at risk for the event. It is not a risk, though it is commonly interpreted as such.
+
+If you have a regression parameter β
+(from column estimate in our coxph) then HR = exp(β)
+
+.
+
+A HR < 1 indicates reduced hazard of death whereas a HR > 1 indicates an increased hazard of death.
+
+our treatmenttest = 1.03 implies that around 1 times as many test are dying as standard, at any given time.
+out prior_therapyyes = 0.865 implies that around 0.865 times as many yesprior are dying as noprior, at any given time.
+
+```
+
+
+```{r}
+fit <- survfit(Surv(survival_in_days, status) ~ treatment + prior_therapy, data = cancer)
+```
+
+
+```{r}
+ggsurvplot(data = cancer, 
+           fit = fit,
+           risk.table = TRUE,
+           fun = "cumhaz",
+           legend = "bottom", 
+           legend.title = "",
+           xlab = "Months",
+           xscale = 30.4,
+           break.x.by = 182.4
+           )
+```
+
