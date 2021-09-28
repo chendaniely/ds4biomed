@@ -127,6 +127,66 @@ full_join(encounters_mi, patients, by = c("patient" = "id"))
 ```
 :::::
 
+### Age at time of heart attack
+
+::::: {.rBlock}
+###### R {-}
+```{r}
+library(lubridate)
+
+today()
+```
+
+```{r}
+current_date = ymd("2020-04-28")
+current_date
+```
+:::::
+
+#### Date arithmetic
+
+::::: {.rBlock}
+###### R {-}
+```{r}
+# age "today"
+mi_encounters_pt <- encounters_pt %>%
+  select(id, start, stop, patient, description, reasondescription, birthdate, deathdate) %>%
+  mutate(age_today_duration = birthdate %--% current_date,
+         age_years_today = trunc(as.duration(age_today_duration) / dyears(1))
+         )
+```
+
+```{r}
+# age at event
+mi_encounters_pt <- mi_encounters_pt %>%
+  mutate(age_event_duration = birthdate %--% start,
+         age_years_event = trunc(as.duration(age_event_duration) / dyears(1))
+  )
+```
+:::::
+
+::::: {.rBlock}
+###### R {-}
+```{r}
+library(ggplot2)
+
+ggplot(mi_encounters_pt, aes(x = age_years_event)) +
+  geom_histogram(bins = 10)
+```
+
+```{r}
+ggplot(mi_encounters_pt, aes(x = age_years_event, fill=description)) +
+  geom_histogram(bins = 10)
+```
+
+```{r}
+ggplot(mi_encounters_pt, aes(x = age_years_event)) +
+  geom_histogram(bins = 10) +
+  facet_wrap(~ description)
+```
+:::::
+
+
 ## Databases
 
 ::::: {.rBlock}
@@ -154,6 +214,8 @@ patients %>%
 ```
 :::::
 
+### Database connection
+
 ::::: {.rBlock}
 ###### R {-}
 ```{r}
@@ -161,6 +223,8 @@ con <- dbConnect(SQLite(), "data/synthea/synthea.sqlite")
 dbListTables(con)
 ```
 :::::
+
+### Database tables
 
 ::::: {.rBlock}
 ###### R {-}
@@ -174,6 +238,8 @@ patients_db %>%
 ```
 :::::
 
+### SQL
+
 ::::: {.rBlock}
 ###### R {-}
 ```{r}
@@ -184,11 +250,15 @@ dbGetQuery(con, 'SELECT * FROM patients LIMIT 5')
 dbGetQuery(con, 'SELECT Id, BIRTHDATE, DEATHDATE, MARITAL FROM patients WHERE MARITAL = "M" LIMIT 5')
 ```
 
+#### Pass variables to SQL
+
 ```{r}
 dbGetQuery(con, 'SELECT Id, BIRTHDATE, DEATHDATE, MARITAL FROM patients WHERE MARITAL = :x LIMIT 5', 
            params = list(x = "M"))
 ```
 :::::
+
+### Show SQL query
 
 ::::: {.rBlock}
 ###### R {-}
