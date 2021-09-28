@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - gdal
+  - udunits
   - numpy
   - matplotlib
   - pandas
