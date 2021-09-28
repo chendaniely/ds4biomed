@@ -64,10 +64,15 @@ census_api_key("YOUR API KEY GOES HERE", install = TRUE)
 
 ### Find the tables you need
 
-```{r}
+```{r, eval=FALSE}
 acs5_2010_vars <- load_variables(2010, "acs5", cache = TRUE)
 acs5_2010_vars
 ```
+
+```{r}
+acs5_2010_vars <- read_csv("data/census/acs5_2010_vars.csv")
+```
+
 
 ```{r}
 acs5_2010_vars_age <- acs5_2010_vars %>%
@@ -77,11 +82,15 @@ acs5_2010_vars_age <- acs5_2010_vars %>%
 
 ### Download the data
 
-```{r}
+```{r, eval=FALSE}
 census_dat <- get_acs(geography = "state",
                         variables = "B01001_003",
                         year = 2010)
 census_dat
+```
+
+```{r}
+census_dat <- read_csv("data/census/state-B01001_003-2010.csv")
 ```
 
 ```{r}
@@ -102,18 +111,28 @@ download_census <- function(var_name, label) {
 }
 ```
 
-```{r}
+```{r, eval=FALSE}
 census_tbl <- download_census("B01001_003","Estimate!!Total!!Male!!Under 5 years")
 census_tbl
 ```
 
+```{r}
+census_tbl <- read_csv("data/census/B01001_003-state-2010.csv")
+```
+
+
 ### Download and Tidy Data
 
-```{r, cache=TRUE}
+```{r, cache=TRUE, eval=FALSE}
 census <- purrr::map2_df(acs5_2010_vars_age$name,
                          acs5_2010_vars_age$label,
                          download_census)
 ```
+
+```{r}
+census <- read_csv("data/census/B01001-state-2010.csv")
+```
+
 
 ```{r}
 census %>%

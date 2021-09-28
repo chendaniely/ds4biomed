@@ -1,0 +1,2549 @@
+GEOID,NAME,variable,estimate,moe,label
+01,Alabama,B01001_001,4712651,NA,Estimate!!Total
+02,Alaska,B01001_001,691189,NA,Estimate!!Total
+04,Arizona,B01001_001,6246816,NA,Estimate!!Total
+05,Arkansas,B01001_001,2872684,NA,Estimate!!Total
+06,California,B01001_001,36637290,NA,Estimate!!Total
+08,Colorado,B01001_001,4887061,NA,Estimate!!Total
+09,Connecticut,B01001_001,3545837,NA,Estimate!!Total
+10,Delaware,B01001_001,881278,NA,Estimate!!Total
+11,District of Columbia,B01001_001,584400,NA,Estimate!!Total
+12,Florida,B01001_001,18511620,NA,Estimate!!Total
+13,Georgia,B01001_001,9468815,NA,Estimate!!Total
+15,Hawaii,B01001_001,1333591,NA,Estimate!!Total
+16,Idaho,B01001_001,1526797,NA,Estimate!!Total
+17,Illinois,B01001_001,12745359,NA,Estimate!!Total
+18,Indiana,B01001_001,6417398,NA,Estimate!!Total
+19,Iowa,B01001_001,3016267,NA,Estimate!!Total
+20,Kansas,B01001_001,2809329,NA,Estimate!!Total
+21,Kentucky,B01001_001,4285828,NA,Estimate!!Total
+22,Louisiana,B01001_001,4429940,NA,Estimate!!Total
+23,Maine,B01001_001,1327665,NA,Estimate!!Total
+24,Maryland,B01001_001,5696423,NA,Estimate!!Total
+25,Massachusetts,B01001_001,6477096,NA,Estimate!!Total
+26,Michigan,B01001_001,9952687,NA,Estimate!!Total
+27,Minnesota,B01001_001,5241914,NA,Estimate!!Total
+28,Mississippi,B01001_001,2941991,NA,Estimate!!Total
+29,Missouri,B01001_001,5922314,NA,Estimate!!Total
+30,Montana,B01001_001,973739,NA,Estimate!!Total
+31,Nebraska,B01001_001,1799125,NA,Estimate!!Total
+32,Nevada,B01001_001,2633331,NA,Estimate!!Total
+33,New Hampshire,B01001_001,1313939,NA,Estimate!!Total
+34,New Jersey,B01001_001,8721577,NA,Estimate!!Total
+35,New Mexico,B01001_001,2013122,NA,Estimate!!Total
+36,New York,B01001_001,19229752,NA,Estimate!!Total
+37,North Carolina,B01001_001,9271178,NA,Estimate!!Total
+38,North Dakota,B01001_001,659858,NA,Estimate!!Total
+39,Ohio,B01001_001,11512431,NA,Estimate!!Total
+40,Oklahoma,B01001_001,3675339,NA,Estimate!!Total
+41,Oregon,B01001_001,3761925,NA,Estimate!!Total
+42,Pennsylvania,B01001_001,12612705,NA,Estimate!!Total
+44,Rhode Island,B01001_001,1056389,NA,Estimate!!Total
+45,South Carolina,B01001_001,4511428,NA,Estimate!!Total
+46,South Dakota,B01001_001,799462,NA,Estimate!!Total
+47,Tennessee,B01001_001,6234968,NA,Estimate!!Total
+48,Texas,B01001_001,24311891,NA,Estimate!!Total
+49,Utah,B01001_001,2657236,NA,Estimate!!Total
+50,Vermont,B01001_001,624258,NA,Estimate!!Total
+51,Virginia,B01001_001,7841754,NA,Estimate!!Total
+53,Washington,B01001_001,6561297,NA,Estimate!!Total
+54,West Virginia,B01001_001,1840802,NA,Estimate!!Total
+55,Wisconsin,B01001_001,5637947,NA,Estimate!!Total
+56,Wyoming,B01001_001,545579,NA,Estimate!!Total
+72,Puerto Rico,B01001_001,3762322,NA,Estimate!!Total
+01,Alabama,B01001_002,2285905,956,Estimate!!Total!!Male
+02,Alaska,B01001_002,358919,630,Estimate!!Total!!Male
+04,Arizona,B01001_002,3108234,471,Estimate!!Total!!Male
+05,Arkansas,B01001_002,1408945,1229,Estimate!!Total!!Male
+06,California,B01001_002,18223157,1043,Estimate!!Total!!Male
+08,Colorado,B01001_002,2448492,975,Estimate!!Total!!Male
+09,Connecticut,B01001_002,1724834,357,Estimate!!Total!!Male
+10,Delaware,B01001_002,427218,133,Estimate!!Total!!Male
+11,District of Columbia,B01001_002,276101,147,Estimate!!Total!!Male
+12,Florida,B01001_002,9050155,1400,Estimate!!Total!!Male
+13,Georgia,B01001_002,4626914,2590,Estimate!!Total!!Male
+15,Hawaii,B01001_002,668202,217,Estimate!!Total!!Male
+16,Idaho,B01001_002,764429,734,Estimate!!Total!!Male
+17,Illinois,B01001_002,6250352,1021,Estimate!!Total!!Male
+18,Indiana,B01001_002,3155214,1233,Estimate!!Total!!Male
+19,Iowa,B01001_002,1488998,891,Estimate!!Total!!Male
+20,Kansas,B01001_002,1391010,793,Estimate!!Total!!Male
+21,Kentucky,B01001_002,2105483,1382,Estimate!!Total!!Male
+22,Louisiana,B01001_002,2165456,1094,Estimate!!Total!!Male
+23,Maine,B01001_002,649666,451,Estimate!!Total!!Male
+24,Maryland,B01001_002,2754058,754,Estimate!!Total!!Male
+25,Massachusetts,B01001_002,3132249,563,Estimate!!Total!!Male
+26,Michigan,B01001_002,4884438,892,Estimate!!Total!!Male
+27,Minnesota,B01001_002,2601448,800,Estimate!!Total!!Male
+28,Mississippi,B01001_002,1427843,1089,Estimate!!Total!!Male
+29,Missouri,B01001_002,2895638,1141,Estimate!!Total!!Male
+30,Montana,B01001_002,487959,672,Estimate!!Total!!Male
+31,Nebraska,B01001_002,890558,663,Estimate!!Total!!Male
+32,Nevada,B01001_002,1331625,518,Estimate!!Total!!Male
+33,New Hampshire,B01001_002,648504,455,Estimate!!Total!!Male
+34,New Jersey,B01001_002,4244502,485,Estimate!!Total!!Male
+35,New Mexico,B01001_002,992833,729,Estimate!!Total!!Male
+36,New York,B01001_002,9300854,1169,Estimate!!Total!!Male
+37,North Carolina,B01001_002,4519289,1430,Estimate!!Total!!Male
+38,North Dakota,B01001_002,332932,529,Estimate!!Total!!Male
+39,Ohio,B01001_002,5616436,1148,Estimate!!Total!!Male
+40,Oklahoma,B01001_002,1816749,1049,Estimate!!Total!!Male
+41,Oregon,B01001_002,1862256,687,Estimate!!Total!!Male
+42,Pennsylvania,B01001_002,6138935,948,Estimate!!Total!!Male
+44,Rhode Island,B01001_002,509859,409,Estimate!!Total!!Male
+45,South Carolina,B01001_002,2195677,910,Estimate!!Total!!Male
+46,South Dakota,B01001_002,400246,557,Estimate!!Total!!Male
+47,Tennessee,B01001_002,3039629,1188,Estimate!!Total!!Male
+48,Texas,B01001_002,12058770,2259,Estimate!!Total!!Male
+49,Utah,B01001_002,1334860,502,Estimate!!Total!!Male
+50,Vermont,B01001_002,307670,297,Estimate!!Total!!Male
+51,Virginia,B01001_002,3849352,1636,Estimate!!Total!!Male
+53,Washington,B01001_002,3267488,716,Estimate!!Total!!Male
+54,West Virginia,B01001_002,904625,747,Estimate!!Total!!Male
+55,Wisconsin,B01001_002,2795908,751,Estimate!!Total!!Male
+56,Wyoming,B01001_002,277850,430,Estimate!!Total!!Male
+72,Puerto Rico,B01001_002,1803918,NA,Estimate!!Total!!Male
+01,Alabama,B01001_003,154287,569,Estimate!!Total!!Male!!Under 5 years
+02,Alaska,B01001_003,26714,233,Estimate!!Total!!Male!!Under 5 years
+04,Arizona,B01001_003,236518,411,Estimate!!Total!!Male!!Under 5 years
+05,Arkansas,B01001_003,100110,620,Estimate!!Total!!Male!!Under 5 years
+06,California,B01001_003,1300849,740,Estimate!!Total!!Male!!Under 5 years
+08,Colorado,B01001_003,173902,544,Estimate!!Total!!Male!!Under 5 years
+09,Connecticut,B01001_003,105318,199,Estimate!!Total!!Male!!Under 5 years
+10,Delaware,B01001_003,28476,88,Estimate!!Total!!Male!!Under 5 years
+11,District of Columbia,B01001_003,16463,74,Estimate!!Total!!Male!!Under 5 years
+12,Florida,B01001_003,552027,785,Estimate!!Total!!Male!!Under 5 years
+13,Georgia,B01001_003,351811,896,Estimate!!Total!!Male!!Under 5 years
+15,Hawaii,B01001_003,44737,183,Estimate!!Total!!Male!!Under 5 years
+16,Idaho,B01001_003,60968,335,Estimate!!Total!!Male!!Under 5 years
+17,Illinois,B01001_003,431211,514,Estimate!!Total!!Male!!Under 5 years
+18,Indiana,B01001_003,221612,535,Estimate!!Total!!Male!!Under 5 years
+19,Iowa,B01001_003,101153,526,Estimate!!Total!!Male!!Under 5 years
+20,Kansas,B01001_003,100765,502,Estimate!!Total!!Male!!Under 5 years
+21,Kentucky,B01001_003,142230,628,Estimate!!Total!!Male!!Under 5 years
+22,Louisiana,B01001_003,155698,546,Estimate!!Total!!Male!!Under 5 years
+23,Maine,B01001_003,36243,207,Estimate!!Total!!Male!!Under 5 years
+24,Maryland,B01001_003,186225,407,Estimate!!Total!!Male!!Under 5 years
+25,Massachusetts,B01001_003,187996,216,Estimate!!Total!!Male!!Under 5 years
+26,Michigan,B01001_003,314019,454,Estimate!!Total!!Male!!Under 5 years
+27,Minnesota,B01001_003,179512,353,Estimate!!Total!!Male!!Under 5 years
+28,Mississippi,B01001_003,106515,559,Estimate!!Total!!Male!!Under 5 years
+29,Missouri,B01001_003,197907,547,Estimate!!Total!!Male!!Under 5 years
+30,Montana,B01001_003,30531,328,Estimate!!Total!!Male!!Under 5 years
+31,Nebraska,B01001_003,65834,316,Estimate!!Total!!Male!!Under 5 years
+32,Nevada,B01001_003,96732,365,Estimate!!Total!!Male!!Under 5 years
+33,New Hampshire,B01001_003,36772,236,Estimate!!Total!!Male!!Under 5 years
+34,New Jersey,B01001_003,279434,203,Estimate!!Total!!Male!!Under 5 years
+35,New Mexico,B01001_003,72947,360,Estimate!!Total!!Male!!Under 5 years
+36,New York,B01001_003,592250,577,Estimate!!Total!!Male!!Under 5 years
+37,North Carolina,B01001_003,318634,715,Estimate!!Total!!Male!!Under 5 years
+38,North Dakota,B01001_003,21319,275,Estimate!!Total!!Male!!Under 5 years
+39,Ohio,B01001_003,369367,632,Estimate!!Total!!Male!!Under 5 years
+40,Oklahoma,B01001_003,130917,528,Estimate!!Total!!Male!!Under 5 years
+41,Oregon,B01001_003,119993,434,Estimate!!Total!!Male!!Under 5 years
+42,Pennsylvania,B01001_003,371755,416,Estimate!!Total!!Male!!Under 5 years
+44,Rhode Island,B01001_003,30148,265,Estimate!!Total!!Male!!Under 5 years
+45,South Carolina,B01001_003,150860,457,Estimate!!Total!!Male!!Under 5 years
+46,South Dakota,B01001_003,29099,309,Estimate!!Total!!Male!!Under 5 years
+47,Tennessee,B01001_003,205473,600,Estimate!!Total!!Male!!Under 5 years
+48,Texas,B01001_003,972112,1019,Estimate!!Total!!Male!!Under 5 years
+49,Utah,B01001_003,130971,244,Estimate!!Total!!Male!!Under 5 years
+50,Vermont,B01001_003,16698,210,Estimate!!Total!!Male!!Under 5 years
+51,Virginia,B01001_003,258706,963,Estimate!!Total!!Male!!Under 5 years
+53,Washington,B01001_003,218403,364,Estimate!!Total!!Male!!Under 5 years
+54,West Virginia,B01001_003,53226,431,Estimate!!Total!!Male!!Under 5 years
+55,Wisconsin,B01001_003,181588,436,Estimate!!Total!!Male!!Under 5 years
+56,Wyoming,B01001_003,19115,242,Estimate!!Total!!Male!!Under 5 years
+72,Puerto Rico,B01001_003,120911,NA,Estimate!!Total!!Male!!Under 5 years
+01,Alabama,B01001_004,157712,2070,Estimate!!Total!!Male!!5 to 9 years
+02,Alaska,B01001_004,25393,751,Estimate!!Total!!Male!!5 to 9 years
+04,Arizona,B01001_004,222414,2547,Estimate!!Total!!Male!!5 to 9 years
+05,Arkansas,B01001_004,99973,1840,Estimate!!Total!!Male!!5 to 9 years
+06,California,B01001_004,1265861,5470,Estimate!!Total!!Male!!5 to 9 years
+08,Colorado,B01001_004,172622,2253,Estimate!!Total!!Male!!5 to 9 years
+09,Connecticut,B01001_004,115611,1617,Estimate!!Total!!Male!!5 to 9 years
+10,Delaware,B01001_004,28436,865,Estimate!!Total!!Male!!5 to 9 years
+11,District of Columbia,B01001_004,13091,577,Estimate!!Total!!Male!!5 to 9 years
+12,Florida,B01001_004,541272,3769,Estimate!!Total!!Male!!5 to 9 years
+13,Georgia,B01001_004,348451,3129,Estimate!!Total!!Male!!5 to 9 years
+15,Hawaii,B01001_004,40899,990,Estimate!!Total!!Male!!5 to 9 years
+16,Idaho,B01001_004,58047,1131,Estimate!!Total!!Male!!5 to 9 years
+17,Illinois,B01001_004,438963,2726,Estimate!!Total!!Male!!5 to 9 years
+18,Indiana,B01001_004,226225,2178,Estimate!!Total!!Male!!5 to 9 years
+19,Iowa,B01001_004,100512,1421,Estimate!!Total!!Male!!5 to 9 years
+20,Kansas,B01001_004,102192,1620,Estimate!!Total!!Male!!5 to 9 years
+21,Kentucky,B01001_004,142679,1729,Estimate!!Total!!Male!!5 to 9 years
+22,Louisiana,B01001_004,153262,1975,Estimate!!Total!!Male!!5 to 9 years
+23,Maine,B01001_004,38069,956,Estimate!!Total!!Male!!5 to 9 years
+24,Maryland,B01001_004,185701,1795,Estimate!!Total!!Male!!5 to 9 years
+25,Massachusetts,B01001_004,197362,2172,Estimate!!Total!!Male!!5 to 9 years
+26,Michigan,B01001_004,334277,2983,Estimate!!Total!!Male!!5 to 9 years
+27,Minnesota,B01001_004,176510,1688,Estimate!!Total!!Male!!5 to 9 years
+28,Mississippi,B01001_004,106783,1787,Estimate!!Total!!Male!!5 to 9 years
+29,Missouri,B01001_004,197473,2071,Estimate!!Total!!Male!!5 to 9 years
+30,Montana,B01001_004,31054,835,Estimate!!Total!!Male!!5 to 9 years
+31,Nebraska,B01001_004,63555,1151,Estimate!!Total!!Male!!5 to 9 years
+32,Nevada,B01001_004,92110,1794,Estimate!!Total!!Male!!5 to 9 years
+33,New Hampshire,B01001_004,39692,931,Estimate!!Total!!Male!!5 to 9 years
+34,New Jersey,B01001_004,289618,2709,Estimate!!Total!!Male!!5 to 9 years
+35,New Mexico,B01001_004,70360,1486,Estimate!!Total!!Male!!5 to 9 years
+36,New York,B01001_004,596146,3663,Estimate!!Total!!Male!!5 to 9 years
+37,North Carolina,B01001_004,318568,3099,Estimate!!Total!!Male!!5 to 9 years
+38,North Dakota,B01001_004,20012,660,Estimate!!Total!!Male!!5 to 9 years
+39,Ohio,B01001_004,384938,3080,Estimate!!Total!!Male!!5 to 9 years
+40,Oklahoma,B01001_004,128549,1694,Estimate!!Total!!Male!!5 to 9 years
+41,Oregon,B01001_004,120083,1928,Estimate!!Total!!Male!!5 to 9 years
+42,Pennsylvania,B01001_004,389841,3236,Estimate!!Total!!Male!!5 to 9 years
+44,Rhode Island,B01001_004,32094,964,Estimate!!Total!!Male!!5 to 9 years
+45,South Carolina,B01001_004,147843,2105,Estimate!!Total!!Male!!5 to 9 years
+46,South Dakota,B01001_004,26709,769,Estimate!!Total!!Male!!5 to 9 years
+47,Tennessee,B01001_004,207541,2246,Estimate!!Total!!Male!!5 to 9 years
+48,Texas,B01001_004,942931,4537,Estimate!!Total!!Male!!5 to 9 years
+49,Utah,B01001_004,120678,1283,Estimate!!Total!!Male!!5 to 9 years
+50,Vermont,B01001_004,17940,581,Estimate!!Total!!Male!!5 to 9 years
+51,Virginia,B01001_004,255907,2205,Estimate!!Total!!Male!!5 to 9 years
+53,Washington,B01001_004,215161,2461,Estimate!!Total!!Male!!5 to 9 years
+54,West Virginia,B01001_004,52463,967,Estimate!!Total!!Male!!5 to 9 years
+55,Wisconsin,B01001_004,185898,2094,Estimate!!Total!!Male!!5 to 9 years
+56,Wyoming,B01001_004,18909,654,Estimate!!Total!!Male!!5 to 9 years
+72,Puerto Rico,B01001_004,129843,1915,Estimate!!Total!!Male!!5 to 9 years
+01,Alabama,B01001_005,163081,2055,Estimate!!Total!!Male!!10 to 14 years
+02,Alaska,B01001_005,26357,751,Estimate!!Total!!Male!!10 to 14 years
+04,Arizona,B01001_005,227579,2563,Estimate!!Total!!Male!!10 to 14 years
+05,Arkansas,B01001_005,100014,1780,Estimate!!Total!!Male!!10 to 14 years
+06,California,B01001_005,1339624,5545,Estimate!!Total!!Male!!10 to 14 years
+08,Colorado,B01001_005,165015,2214,Estimate!!Total!!Male!!10 to 14 years
+09,Connecticut,B01001_005,123801,1588,Estimate!!Total!!Male!!10 to 14 years
+10,Delaware,B01001_005,28829,882,Estimate!!Total!!Male!!10 to 14 years
+11,District of Columbia,B01001_005,13447,574,Estimate!!Total!!Male!!10 to 14 years
+12,Florida,B01001_005,584017,3807,Estimate!!Total!!Male!!10 to 14 years
+13,Georgia,B01001_005,343283,3221,Estimate!!Total!!Male!!10 to 14 years
+15,Hawaii,B01001_005,42095,985,Estimate!!Total!!Male!!10 to 14 years
+16,Idaho,B01001_005,60044,1141,Estimate!!Total!!Male!!10 to 14 years
+17,Illinois,B01001_005,454358,2750,Estimate!!Total!!Male!!10 to 14 years
+18,Indiana,B01001_005,230613,2252,Estimate!!Total!!Male!!10 to 14 years
+19,Iowa,B01001_005,103642,1386,Estimate!!Total!!Male!!10 to 14 years
+20,Kansas,B01001_005,100517,1724,Estimate!!Total!!Male!!10 to 14 years
+21,Kentucky,B01001_005,148171,1815,Estimate!!Total!!Male!!10 to 14 years
+22,Louisiana,B01001_005,156560,2141,Estimate!!Total!!Male!!10 to 14 years
+23,Maine,B01001_005,42190,972,Estimate!!Total!!Male!!10 to 14 years
+24,Maryland,B01001_005,195516,1788,Estimate!!Total!!Male!!10 to 14 years
+25,Massachusetts,B01001_005,210284,2177,Estimate!!Total!!Male!!10 to 14 years
+26,Michigan,B01001_005,358061,2946,Estimate!!Total!!Male!!10 to 14 years
+27,Minnesota,B01001_005,183642,1762,Estimate!!Total!!Male!!10 to 14 years
+28,Mississippi,B01001_005,106313,1776,Estimate!!Total!!Male!!10 to 14 years
+29,Missouri,B01001_005,204681,2061,Estimate!!Total!!Male!!10 to 14 years
+30,Montana,B01001_005,31897,766,Estimate!!Total!!Male!!10 to 14 years
+31,Nebraska,B01001_005,62012,1216,Estimate!!Total!!Male!!10 to 14 years
+32,Nevada,B01001_005,91301,1749,Estimate!!Total!!Male!!10 to 14 years
+33,New Hampshire,B01001_005,46004,959,Estimate!!Total!!Male!!10 to 14 years
+34,New Jersey,B01001_005,302240,2706,Estimate!!Total!!Male!!10 to 14 years
+35,New Mexico,B01001_005,70954,1395,Estimate!!Total!!Male!!10 to 14 years
+36,New York,B01001_005,635432,3566,Estimate!!Total!!Male!!10 to 14 years
+37,North Carolina,B01001_005,313067,3068,Estimate!!Total!!Male!!10 to 14 years
+38,North Dakota,B01001_005,20646,617,Estimate!!Total!!Male!!10 to 14 years
+39,Ohio,B01001_005,402954,3208,Estimate!!Total!!Male!!10 to 14 years
+40,Oklahoma,B01001_005,128553,1681,Estimate!!Total!!Male!!10 to 14 years
+41,Oregon,B01001_005,123276,1995,Estimate!!Total!!Male!!10 to 14 years
+42,Pennsylvania,B01001_005,409310,3210,Estimate!!Total!!Male!!10 to 14 years
+44,Rhode Island,B01001_005,33280,917,Estimate!!Total!!Male!!10 to 14 years
+45,South Carolina,B01001_005,150917,2038,Estimate!!Total!!Male!!10 to 14 years
+46,South Dakota,B01001_005,29140,791,Estimate!!Total!!Male!!10 to 14 years
+47,Tennessee,B01001_005,215443,2143,Estimate!!Total!!Male!!10 to 14 years
+48,Texas,B01001_005,925668,4429,Estimate!!Total!!Male!!10 to 14 years
+49,Utah,B01001_005,111443,1324,Estimate!!Total!!Male!!10 to 14 years
+50,Vermont,B01001_005,20087,603,Estimate!!Total!!Male!!10 to 14 years
+51,Virginia,B01001_005,260562,2363,Estimate!!Total!!Male!!10 to 14 years
+53,Washington,B01001_005,223346,2466,Estimate!!Total!!Male!!10 to 14 years
+54,West Virginia,B01001_005,57706,1049,Estimate!!Total!!Male!!10 to 14 years
+55,Wisconsin,B01001_005,194681,2133,Estimate!!Total!!Male!!10 to 14 years
+56,Wyoming,B01001_005,18236,622,Estimate!!Total!!Male!!10 to 14 years
+72,Puerto Rico,B01001_005,144892,1916,Estimate!!Total!!Male!!10 to 14 years
+01,Alabama,B01001_006,104632,528,Estimate!!Total!!Male!!15 to 17 years
+02,Alaska,B01001_006,17011,229,Estimate!!Total!!Male!!15 to 17 years
+04,Arizona,B01001_006,139383,287,Estimate!!Total!!Male!!15 to 17 years
+05,Arkansas,B01001_006,62107,530,Estimate!!Total!!Male!!15 to 17 years
+06,California,B01001_006,867657,528,Estimate!!Total!!Male!!15 to 17 years
+08,Colorado,B01001_006,104643,411,Estimate!!Total!!Male!!15 to 17 years
+09,Connecticut,B01001_006,79317,200,Estimate!!Total!!Male!!15 to 17 years
+10,Delaware,B01001_006,19264,99,Estimate!!Total!!Male!!15 to 17 years
+11,District of Columbia,B01001_006,9056,95,Estimate!!Total!!Male!!15 to 17 years
+12,Florida,B01001_006,376067,880,Estimate!!Total!!Male!!15 to 17 years
+13,Georgia,B01001_006,214667,1037,Estimate!!Total!!Male!!15 to 17 years
+15,Hawaii,B01001_006,27018,93,Estimate!!Total!!Male!!15 to 17 years
+16,Idaho,B01001_006,36173,355,Estimate!!Total!!Male!!15 to 17 years
+17,Illinois,B01001_006,287189,414,Estimate!!Total!!Male!!15 to 17 years
+18,Indiana,B01001_006,143834,468,Estimate!!Total!!Male!!15 to 17 years
+19,Iowa,B01001_006,65187,405,Estimate!!Total!!Male!!15 to 17 years
+20,Kansas,B01001_006,62559,684,Estimate!!Total!!Male!!15 to 17 years
+21,Kentucky,B01001_006,91335,638,Estimate!!Total!!Male!!15 to 17 years
+22,Louisiana,B01001_006,99269,472,Estimate!!Total!!Male!!15 to 17 years
+23,Maine,B01001_006,28187,289,Estimate!!Total!!Male!!15 to 17 years
+24,Maryland,B01001_006,127680,363,Estimate!!Total!!Male!!15 to 17 years
+25,Massachusetts,B01001_006,136684,295,Estimate!!Total!!Male!!15 to 17 years
+26,Michigan,B01001_006,233199,428,Estimate!!Total!!Male!!15 to 17 years
+27,Minnesota,B01001_006,115638,372,Estimate!!Total!!Male!!15 to 17 years
+28,Mississippi,B01001_006,67234,555,Estimate!!Total!!Male!!15 to 17 years
+29,Missouri,B01001_006,130150,506,Estimate!!Total!!Male!!15 to 17 years
+30,Montana,B01001_006,21062,442,Estimate!!Total!!Male!!15 to 17 years
+31,Nebraska,B01001_006,39569,205,Estimate!!Total!!Male!!15 to 17 years
+32,Nevada,B01001_006,56843,295,Estimate!!Total!!Male!!15 to 17 years
+33,New Hampshire,B01001_006,29509,206,Estimate!!Total!!Male!!15 to 17 years
+34,New Jersey,B01001_006,193821,306,Estimate!!Total!!Male!!15 to 17 years
+35,New Mexico,B01001_006,46430,337,Estimate!!Total!!Male!!15 to 17 years
+36,New York,B01001_006,418824,958,Estimate!!Total!!Male!!15 to 17 years
+37,North Carolina,B01001_006,195998,798,Estimate!!Total!!Male!!15 to 17 years
+38,North Dakota,B01001_006,14082,261,Estimate!!Total!!Male!!15 to 17 years
+39,Ohio,B01001_006,256980,523,Estimate!!Total!!Male!!15 to 17 years
+40,Oklahoma,B01001_006,80397,544,Estimate!!Total!!Male!!15 to 17 years
+41,Oregon,B01001_006,78766,350,Estimate!!Total!!Male!!15 to 17 years
+42,Pennsylvania,B01001_006,274096,513,Estimate!!Total!!Male!!15 to 17 years
+44,Rhode Island,B01001_006,22321,211,Estimate!!Total!!Male!!15 to 17 years
+45,South Carolina,B01001_006,96466,535,Estimate!!Total!!Male!!15 to 17 years
+46,South Dakota,B01001_006,17825,252,Estimate!!Total!!Male!!15 to 17 years
+47,Tennessee,B01001_006,133742,593,Estimate!!Total!!Male!!15 to 17 years
+48,Texas,B01001_006,572382,976,Estimate!!Total!!Male!!15 to 17 years
+49,Utah,B01001_006,65642,273,Estimate!!Total!!Male!!15 to 17 years
+50,Vermont,B01001_006,13635,174,Estimate!!Total!!Male!!15 to 17 years
+51,Virginia,B01001_006,166066,774,Estimate!!Total!!Male!!15 to 17 years
+53,Washington,B01001_006,143420,399,Estimate!!Total!!Male!!15 to 17 years
+54,West Virginia,B01001_006,35986,347,Estimate!!Total!!Male!!15 to 17 years
+55,Wisconsin,B01001_006,125272,428,Estimate!!Total!!Male!!15 to 17 years
+56,Wyoming,B01001_006,11799,213,Estimate!!Total!!Male!!15 to 17 years
+72,Puerto Rico,B01001_006,89083,NA,Estimate!!Total!!Male!!15 to 17 years
+01,Alabama,B01001_007,71526,688,Estimate!!Total!!Male!!18 and 19 years
+02,Alaska,B01001_007,11068,354,Estimate!!Total!!Male!!18 and 19 years
+04,Arizona,B01001_007,94765,420,Estimate!!Total!!Male!!18 and 19 years
+05,Arkansas,B01001_007,43312,792,Estimate!!Total!!Male!!18 and 19 years
+06,California,B01001_007,579103,859,Estimate!!Total!!Male!!18 and 19 years
+08,Colorado,B01001_007,72827,810,Estimate!!Total!!Male!!18 and 19 years
+09,Connecticut,B01001_007,50900,302,Estimate!!Total!!Male!!18 and 19 years
+10,Delaware,B01001_007,13336,97,Estimate!!Total!!Male!!18 and 19 years
+11,District of Columbia,B01001_007,11691,566,Estimate!!Total!!Male!!18 and 19 years
+12,Florida,B01001_007,258920,1001,Estimate!!Total!!Male!!18 and 19 years
+13,Georgia,B01001_007,149217,1780,Estimate!!Total!!Male!!18 and 19 years
+15,Hawaii,B01001_007,17705,121,Estimate!!Total!!Male!!18 and 19 years
+16,Idaho,B01001_007,22928,473,Estimate!!Total!!Male!!18 and 19 years
+17,Illinois,B01001_007,191076,1013,Estimate!!Total!!Male!!18 and 19 years
+18,Indiana,B01001_007,99794,621,Estimate!!Total!!Male!!18 and 19 years
+19,Iowa,B01001_007,47017,537,Estimate!!Total!!Male!!18 and 19 years
+20,Kansas,B01001_007,44873,759,Estimate!!Total!!Male!!18 and 19 years
+21,Kentucky,B01001_007,62055,879,Estimate!!Total!!Male!!18 and 19 years
+22,Louisiana,B01001_007,67601,728,Estimate!!Total!!Male!!18 and 19 years
+23,Maine,B01001_007,19081,314,Estimate!!Total!!Male!!18 and 19 years
+24,Maryland,B01001_007,83540,713,Estimate!!Total!!Male!!18 and 19 years
+25,Massachusetts,B01001_007,100095,474,Estimate!!Total!!Male!!18 and 19 years
+26,Michigan,B01001_007,157372,1185,Estimate!!Total!!Male!!18 and 19 years
+27,Minnesota,B01001_007,76334,504,Estimate!!Total!!Male!!18 and 19 years
+28,Mississippi,B01001_007,48465,961,Estimate!!Total!!Male!!18 and 19 years
+29,Missouri,B01001_007,89307,781,Estimate!!Total!!Male!!18 and 19 years
+30,Montana,B01001_007,14582,431,Estimate!!Total!!Male!!18 and 19 years
+31,Nebraska,B01001_007,27329,368,Estimate!!Total!!Male!!18 and 19 years
+32,Nevada,B01001_007,35110,374,Estimate!!Total!!Male!!18 and 19 years
+33,New Hampshire,B01001_007,19530,270,Estimate!!Total!!Male!!18 and 19 years
+34,New Jersey,B01001_007,116848,410,Estimate!!Total!!Male!!18 and 19 years
+35,New Mexico,B01001_007,31438,605,Estimate!!Total!!Male!!18 and 19 years
+36,New York,B01001_007,289732,839,Estimate!!Total!!Male!!18 and 19 years
+37,North Carolina,B01001_007,138952,1146,Estimate!!Total!!Male!!18 and 19 years
+38,North Dakota,B01001_007,11923,312,Estimate!!Total!!Male!!18 and 19 years
+39,Ohio,B01001_007,171894,939,Estimate!!Total!!Male!!18 and 19 years
+40,Oklahoma,B01001_007,57099,554,Estimate!!Total!!Male!!18 and 19 years
+41,Oregon,B01001_007,52694,493,Estimate!!Total!!Male!!18 and 19 years
+42,Pennsylvania,B01001_007,195819,866,Estimate!!Total!!Male!!18 and 19 years
+44,Rhode Island,B01001_007,18249,158,Estimate!!Total!!Male!!18 and 19 years
+45,South Carolina,B01001_007,71969,766,Estimate!!Total!!Male!!18 and 19 years
+46,South Dakota,B01001_007,12492,482,Estimate!!Total!!Male!!18 and 19 years
+47,Tennessee,B01001_007,88033,484,Estimate!!Total!!Male!!18 and 19 years
+48,Texas,B01001_007,381937,1382,Estimate!!Total!!Male!!18 and 19 years
+49,Utah,B01001_007,43904,439,Estimate!!Total!!Male!!18 and 19 years
+50,Vermont,B01001_007,10996,158,Estimate!!Total!!Male!!18 and 19 years
+51,Virginia,B01001_007,120615,1570,Estimate!!Total!!Male!!18 and 19 years
+53,Washington,B01001_007,94684,502,Estimate!!Total!!Male!!18 and 19 years
+54,West Virginia,B01001_007,26785,486,Estimate!!Total!!Male!!18 and 19 years
+55,Wisconsin,B01001_007,83180,476,Estimate!!Total!!Male!!18 and 19 years
+56,Wyoming,B01001_007,8514,323,Estimate!!Total!!Male!!18 and 19 years
+72,Puerto Rico,B01001_007,59044,89,Estimate!!Total!!Male!!18 and 19 years
+01,Alabama,B01001_008,37621,1517,Estimate!!Total!!Male!!20 years
+02,Alaska,B01001_008,6585,599,Estimate!!Total!!Male!!20 years
+04,Arizona,B01001_008,46566,1749,Estimate!!Total!!Male!!20 years
+05,Arkansas,B01001_008,21126,1149,Estimate!!Total!!Male!!20 years
+06,California,B01001_008,300126,3895,Estimate!!Total!!Male!!20 years
+08,Colorado,B01001_008,36623,1512,Estimate!!Total!!Male!!20 years
+09,Connecticut,B01001_008,26102,1030,Estimate!!Total!!Male!!20 years
+10,Delaware,B01001_008,6774,689,Estimate!!Total!!Male!!20 years
+11,District of Columbia,B01001_008,4857,481,Estimate!!Total!!Male!!20 years
+12,Florida,B01001_008,135948,3281,Estimate!!Total!!Male!!20 years
+13,Georgia,B01001_008,71184,1678,Estimate!!Total!!Male!!20 years
+15,Hawaii,B01001_008,11525,1126,Estimate!!Total!!Male!!20 years
+16,Idaho,B01001_008,9494,719,Estimate!!Total!!Male!!20 years
+17,Illinois,B01001_008,96401,2100,Estimate!!Total!!Male!!20 years
+18,Indiana,B01001_008,50764,1686,Estimate!!Total!!Male!!20 years
+19,Iowa,B01001_008,24773,1096,Estimate!!Total!!Male!!20 years
+20,Kansas,B01001_008,21668,1179,Estimate!!Total!!Male!!20 years
+21,Kentucky,B01001_008,30575,1205,Estimate!!Total!!Male!!20 years
+22,Louisiana,B01001_008,36055,1252,Estimate!!Total!!Male!!20 years
+23,Maine,B01001_008,9498,620,Estimate!!Total!!Male!!20 years
+24,Maryland,B01001_008,40919,1499,Estimate!!Total!!Male!!20 years
+25,Massachusetts,B01001_008,50776,1698,Estimate!!Total!!Male!!20 years
+26,Michigan,B01001_008,76491,1945,Estimate!!Total!!Male!!20 years
+27,Minnesota,B01001_008,36741,1195,Estimate!!Total!!Male!!20 years
+28,Mississippi,B01001_008,23445,948,Estimate!!Total!!Male!!20 years
+29,Missouri,B01001_008,44739,1478,Estimate!!Total!!Male!!20 years
+30,Montana,B01001_008,7500,600,Estimate!!Total!!Male!!20 years
+31,Nebraska,B01001_008,13622,739,Estimate!!Total!!Male!!20 years
+32,Nevada,B01001_008,18166,1003,Estimate!!Total!!Male!!20 years
+33,New Hampshire,B01001_008,10722,836,Estimate!!Total!!Male!!20 years
+34,New Jersey,B01001_008,58555,1595,Estimate!!Total!!Male!!20 years
+35,New Mexico,B01001_008,16201,911,Estimate!!Total!!Male!!20 years
+36,New York,B01001_008,154602,2903,Estimate!!Total!!Male!!20 years
+37,North Carolina,B01001_008,71270,2147,Estimate!!Total!!Male!!20 years
+38,North Dakota,B01001_008,6444,491,Estimate!!Total!!Male!!20 years
+39,Ohio,B01001_008,82925,1949,Estimate!!Total!!Male!!20 years
+40,Oklahoma,B01001_008,27851,1174,Estimate!!Total!!Male!!20 years
+41,Oregon,B01001_008,25802,1222,Estimate!!Total!!Male!!20 years
+42,Pennsylvania,B01001_008,96069,1984,Estimate!!Total!!Male!!20 years
+44,Rhode Island,B01001_008,10328,750,Estimate!!Total!!Male!!20 years
+45,South Carolina,B01001_008,37431,1486,Estimate!!Total!!Male!!20 years
+46,South Dakota,B01001_008,6393,523,Estimate!!Total!!Male!!20 years
+47,Tennessee,B01001_008,45249,1538,Estimate!!Total!!Male!!20 years
+48,Texas,B01001_008,196463,3474,Estimate!!Total!!Male!!20 years
+49,Utah,B01001_008,18236,949,Estimate!!Total!!Male!!20 years
+50,Vermont,B01001_008,6837,472,Estimate!!Total!!Male!!20 years
+51,Virginia,B01001_008,61487,1934,Estimate!!Total!!Male!!20 years
+53,Washington,B01001_008,51001,1853,Estimate!!Total!!Male!!20 years
+54,West Virginia,B01001_008,12941,726,Estimate!!Total!!Male!!20 years
+55,Wisconsin,B01001_008,43816,1436,Estimate!!Total!!Male!!20 years
+56,Wyoming,B01001_008,4423,453,Estimate!!Total!!Male!!20 years
+72,Puerto Rico,B01001_008,31658,979,Estimate!!Total!!Male!!20 years
+01,Alabama,B01001_009,34192,1217,Estimate!!Total!!Male!!21 years
+02,Alaska,B01001_009,6392,522,Estimate!!Total!!Male!!21 years
+04,Arizona,B01001_009,45513,1940,Estimate!!Total!!Male!!21 years
+05,Arkansas,B01001_009,21070,934,Estimate!!Total!!Male!!21 years
+06,California,B01001_009,289213,4349,Estimate!!Total!!Male!!21 years
+08,Colorado,B01001_009,38882,1345,Estimate!!Total!!Male!!21 years
+09,Connecticut,B01001_009,24418,1154,Estimate!!Total!!Male!!21 years
+10,Delaware,B01001_009,6910,610,Estimate!!Total!!Male!!21 years
+11,District of Columbia,B01001_009,4477,523,Estimate!!Total!!Male!!21 years
+12,Florida,B01001_009,130943,2590,Estimate!!Total!!Male!!21 years
+13,Georgia,B01001_009,67903,2109,Estimate!!Total!!Male!!21 years
+15,Hawaii,B01001_009,11055,821,Estimate!!Total!!Male!!21 years
+16,Idaho,B01001_009,10390,688,Estimate!!Total!!Male!!21 years
+17,Illinois,B01001_009,92093,2194,Estimate!!Total!!Male!!21 years
+18,Indiana,B01001_009,49982,1675,Estimate!!Total!!Male!!21 years
+19,Iowa,B01001_009,22444,988,Estimate!!Total!!Male!!21 years
+20,Kansas,B01001_009,21636,1057,Estimate!!Total!!Male!!21 years
+21,Kentucky,B01001_009,32059,1064,Estimate!!Total!!Male!!21 years
+22,Louisiana,B01001_009,34482,1464,Estimate!!Total!!Male!!21 years
+23,Maine,B01001_009,8331,565,Estimate!!Total!!Male!!21 years
+24,Maryland,B01001_009,39217,1317,Estimate!!Total!!Male!!21 years
+25,Massachusetts,B01001_009,48868,1731,Estimate!!Total!!Male!!21 years
+26,Michigan,B01001_009,71309,1975,Estimate!!Total!!Male!!21 years
+27,Minnesota,B01001_009,36740,1343,Estimate!!Total!!Male!!21 years
+28,Mississippi,B01001_009,24434,1227,Estimate!!Total!!Male!!21 years
+29,Missouri,B01001_009,42824,1199,Estimate!!Total!!Male!!21 years
+30,Montana,B01001_009,7487,674,Estimate!!Total!!Male!!21 years
+31,Nebraska,B01001_009,13981,842,Estimate!!Total!!Male!!21 years
+32,Nevada,B01001_009,18469,998,Estimate!!Total!!Male!!21 years
+33,New Hampshire,B01001_009,8688,566,Estimate!!Total!!Male!!21 years
+34,New Jersey,B01001_009,56284,1480,Estimate!!Total!!Male!!21 years
+35,New Mexico,B01001_009,15430,881,Estimate!!Total!!Male!!21 years
+36,New York,B01001_009,141941,2915,Estimate!!Total!!Male!!21 years
+37,North Carolina,B01001_009,70482,1898,Estimate!!Total!!Male!!21 years
+38,North Dakota,B01001_009,6460,575,Estimate!!Total!!Male!!21 years
+39,Ohio,B01001_009,80087,1739,Estimate!!Total!!Male!!21 years
+40,Oklahoma,B01001_009,28821,1251,Estimate!!Total!!Male!!21 years
+41,Oregon,B01001_009,26544,1236,Estimate!!Total!!Male!!21 years
+42,Pennsylvania,B01001_009,92362,2237,Estimate!!Total!!Male!!21 years
+44,Rhode Island,B01001_009,8893,690,Estimate!!Total!!Male!!21 years
+45,South Carolina,B01001_009,34912,1287,Estimate!!Total!!Male!!21 years
+46,South Dakota,B01001_009,6277,575,Estimate!!Total!!Male!!21 years
+47,Tennessee,B01001_009,43753,1294,Estimate!!Total!!Male!!21 years
+48,Texas,B01001_009,189818,3415,Estimate!!Total!!Male!!21 years
+49,Utah,B01001_009,22858,1032,Estimate!!Total!!Male!!21 years
+50,Vermont,B01001_009,5107,489,Estimate!!Total!!Male!!21 years
+51,Virginia,B01001_009,59460,1871,Estimate!!Total!!Male!!21 years
+53,Washington,B01001_009,46350,1686,Estimate!!Total!!Male!!21 years
+54,West Virginia,B01001_009,13831,843,Estimate!!Total!!Male!!21 years
+55,Wisconsin,B01001_009,40663,1563,Estimate!!Total!!Male!!21 years
+56,Wyoming,B01001_009,4012,419,Estimate!!Total!!Male!!21 years
+72,Puerto Rico,B01001_009,29984,979,Estimate!!Total!!Male!!21 years
+01,Alabama,B01001_010,93485,1822,Estimate!!Total!!Male!!22 to 24 years
+02,Alaska,B01001_010,17403,710,Estimate!!Total!!Male!!22 to 24 years
+04,Arizona,B01001_010,132930,2271,Estimate!!Total!!Male!!22 to 24 years
+05,Arkansas,B01001_010,56684,1400,Estimate!!Total!!Male!!22 to 24 years
+06,California,B01001_010,821685,5446,Estimate!!Total!!Male!!22 to 24 years
+08,Colorado,B01001_010,104615,1681,Estimate!!Total!!Male!!22 to 24 years
+09,Connecticut,B01001_010,63347,1310,Estimate!!Total!!Male!!22 to 24 years
+10,Delaware,B01001_010,17246,784,Estimate!!Total!!Male!!22 to 24 years
+11,District of Columbia,B01001_010,15998,789,Estimate!!Total!!Male!!22 to 24 years
+12,Florida,B01001_010,352153,3739,Estimate!!Total!!Male!!22 to 24 years
+13,Georgia,B01001_010,197821,2451,Estimate!!Total!!Male!!22 to 24 years
+15,Hawaii,B01001_010,29573,1336,Estimate!!Total!!Male!!22 to 24 years
+16,Idaho,B01001_010,35974,1039,Estimate!!Total!!Male!!22 to 24 years
+17,Illinois,B01001_010,259276,2735,Estimate!!Total!!Male!!22 to 24 years
+18,Indiana,B01001_010,126773,1946,Estimate!!Total!!Male!!22 to 24 years
+19,Iowa,B01001_010,63001,1307,Estimate!!Total!!Male!!22 to 24 years
+20,Kansas,B01001_010,62154,1477,Estimate!!Total!!Male!!22 to 24 years
+21,Kentucky,B01001_010,84203,1550,Estimate!!Total!!Male!!22 to 24 years
+22,Louisiana,B01001_010,97320,1752,Estimate!!Total!!Male!!22 to 24 years
+23,Maine,B01001_010,22526,848,Estimate!!Total!!Male!!22 to 24 years
+24,Maryland,B01001_010,114045,1667,Estimate!!Total!!Male!!22 to 24 years
+25,Massachusetts,B01001_010,131019,2019,Estimate!!Total!!Male!!22 to 24 years
+26,Michigan,B01001_010,188104,2388,Estimate!!Total!!Male!!22 to 24 years
+27,Minnesota,B01001_010,109445,1728,Estimate!!Total!!Male!!22 to 24 years
+28,Mississippi,B01001_010,59076,1379,Estimate!!Total!!Male!!22 to 24 years
+29,Missouri,B01001_010,119712,1807,Estimate!!Total!!Male!!22 to 24 years
+30,Montana,B01001_010,20509,868,Estimate!!Total!!Male!!22 to 24 years
+31,Nebraska,B01001_010,39807,1019,Estimate!!Total!!Male!!22 to 24 years
+32,Nevada,B01001_010,53182,1283,Estimate!!Total!!Male!!22 to 24 years
+33,New Hampshire,B01001_010,23320,908,Estimate!!Total!!Male!!22 to 24 years
+34,New Jersey,B01001_010,157212,1823,Estimate!!Total!!Male!!22 to 24 years
+35,New Mexico,B01001_010,41916,1137,Estimate!!Total!!Male!!22 to 24 years
+36,New York,B01001_010,392584,3388,Estimate!!Total!!Male!!22 to 24 years
+37,North Carolina,B01001_010,186059,2402,Estimate!!Total!!Male!!22 to 24 years
+38,North Dakota,B01001_010,19124,758,Estimate!!Total!!Male!!22 to 24 years
+39,Ohio,B01001_010,216666,2241,Estimate!!Total!!Male!!22 to 24 years
+40,Oklahoma,B01001_010,82627,1556,Estimate!!Total!!Male!!22 to 24 years
+41,Oregon,B01001_010,75964,1569,Estimate!!Total!!Male!!22 to 24 years
+42,Pennsylvania,B01001_010,239533,2556,Estimate!!Total!!Male!!22 to 24 years
+44,Rhode Island,B01001_010,21179,873,Estimate!!Total!!Male!!22 to 24 years
+45,South Carolina,B01001_010,90526,1601,Estimate!!Total!!Male!!22 to 24 years
+46,South Dakota,B01001_010,17127,825,Estimate!!Total!!Male!!22 to 24 years
+47,Tennessee,B01001_010,119615,1932,Estimate!!Total!!Male!!22 to 24 years
+48,Texas,B01001_010,534134,4306,Estimate!!Total!!Male!!22 to 24 years
+49,Utah,B01001_010,75316,1123,Estimate!!Total!!Male!!22 to 24 years
+50,Vermont,B01001_010,10851,569,Estimate!!Total!!Male!!22 to 24 years
+51,Virginia,B01001_010,168253,2688,Estimate!!Total!!Male!!22 to 24 years
+53,Washington,B01001_010,138655,1985,Estimate!!Total!!Male!!22 to 24 years
+54,West Virginia,B01001_010,33346,957,Estimate!!Total!!Male!!22 to 24 years
+55,Wisconsin,B01001_010,115392,1970,Estimate!!Total!!Male!!22 to 24 years
+56,Wyoming,B01001_010,12793,609,Estimate!!Total!!Male!!22 to 24 years
+72,Puerto Rico,B01001_010,73237,1209,Estimate!!Total!!Male!!22 to 24 years
+01,Alabama,B01001_011,151445,710,Estimate!!Total!!Male!!25 to 29 years
+02,Alaska,B01001_011,26540,375,Estimate!!Total!!Male!!25 to 29 years
+04,Arizona,B01001_011,228446,533,Estimate!!Total!!Male!!25 to 29 years
+05,Arkansas,B01001_011,95926,654,Estimate!!Total!!Male!!25 to 29 years
+06,California,B01001_011,1390894,809,Estimate!!Total!!Male!!25 to 29 years
+08,Colorado,B01001_011,182586,585,Estimate!!Total!!Male!!25 to 29 years
+09,Connecticut,B01001_011,103014,231,Estimate!!Total!!Male!!25 to 29 years
+10,Delaware,B01001_011,28461,88,Estimate!!Total!!Male!!25 to 29 years
+11,District of Columbia,B01001_011,29015,89,Estimate!!Total!!Male!!25 to 29 years
+12,Florida,B01001_011,583193,914,Estimate!!Total!!Male!!25 to 29 years
+13,Georgia,B01001_011,328444,1291,Estimate!!Total!!Male!!25 to 29 years
+15,Hawaii,B01001_011,49562,125,Estimate!!Total!!Male!!25 to 29 years
+16,Idaho,B01001_011,53177,434,Estimate!!Total!!Male!!25 to 29 years
+17,Illinois,B01001_011,453217,656,Estimate!!Total!!Male!!25 to 29 years
+18,Indiana,B01001_011,211520,658,Estimate!!Total!!Male!!25 to 29 years
+19,Iowa,B01001_011,97136,378,Estimate!!Total!!Male!!25 to 29 years
+20,Kansas,B01001_011,95411,663,Estimate!!Total!!Male!!25 to 29 years
+21,Kentucky,B01001_011,142160,677,Estimate!!Total!!Male!!25 to 29 years
+22,Louisiana,B01001_011,158466,746,Estimate!!Total!!Male!!25 to 29 years
+23,Maine,B01001_011,35752,258,Estimate!!Total!!Male!!25 to 29 years
+24,Maryland,B01001_011,188606,502,Estimate!!Total!!Male!!25 to 29 years
+25,Massachusetts,B01001_011,211262,336,Estimate!!Total!!Male!!25 to 29 years
+26,Michigan,B01001_011,301279,471,Estimate!!Total!!Male!!25 to 29 years
+27,Minnesota,B01001_011,183789,478,Estimate!!Total!!Male!!25 to 29 years
+28,Mississippi,B01001_011,96628,820,Estimate!!Total!!Male!!25 to 29 years
+29,Missouri,B01001_011,196219,624,Estimate!!Total!!Male!!25 to 29 years
+30,Montana,B01001_011,31284,414,Estimate!!Total!!Male!!25 to 29 years
+31,Nebraska,B01001_011,62046,414,Estimate!!Total!!Male!!25 to 29 years
+32,Nevada,B01001_011,99828,260,Estimate!!Total!!Male!!25 to 29 years
+33,New Hampshire,B01001_011,35691,275,Estimate!!Total!!Male!!25 to 29 years
+34,New Jersey,B01001_011,274454,231,Estimate!!Total!!Male!!25 to 29 years
+35,New Mexico,B01001_011,69257,577,Estimate!!Total!!Male!!25 to 29 years
+36,New York,B01001_011,668369,712,Estimate!!Total!!Male!!25 to 29 years
+37,North Carolina,B01001_011,297273,893,Estimate!!Total!!Male!!25 to 29 years
+38,North Dakota,B01001_011,23992,389,Estimate!!Total!!Male!!25 to 29 years
+39,Ohio,B01001_011,365035,725,Estimate!!Total!!Male!!25 to 29 years
+40,Oklahoma,B01001_011,129340,647,Estimate!!Total!!Male!!25 to 29 years
+41,Oregon,B01001_011,130230,502,Estimate!!Total!!Male!!25 to 29 years
+42,Pennsylvania,B01001_011,386216,710,Estimate!!Total!!Male!!25 to 29 years
+44,Rhode Island,B01001_011,33209,285,Estimate!!Total!!Male!!25 to 29 years
+45,South Carolina,B01001_011,148836,723,Estimate!!Total!!Male!!25 to 29 years
+46,South Dakota,B01001_011,27452,425,Estimate!!Total!!Male!!25 to 29 years
+47,Tennessee,B01001_011,207037,797,Estimate!!Total!!Male!!25 to 29 years
+48,Texas,B01001_011,904214,1639,Estimate!!Total!!Male!!25 to 29 years
+49,Utah,B01001_011,115182,407,Estimate!!Total!!Male!!25 to 29 years
+50,Vermont,B01001_011,17093,156,Estimate!!Total!!Male!!25 to 29 years
+51,Virginia,B01001_011,269631,1069,Estimate!!Total!!Male!!25 to 29 years
+53,Washington,B01001_011,235608,554,Estimate!!Total!!Male!!25 to 29 years
+54,West Virginia,B01001_011,54751,436,Estimate!!Total!!Male!!25 to 29 years
+55,Wisconsin,B01001_011,183744,583,Estimate!!Total!!Male!!25 to 29 years
+56,Wyoming,B01001_011,19965,383,Estimate!!Total!!Male!!25 to 29 years
+72,Puerto Rico,B01001_011,124728,NA,Estimate!!Total!!Male!!25 to 29 years
+01,Alabama,B01001_012,142261,707,Estimate!!Total!!Male!!30 to 34 years
+02,Alaska,B01001_012,22836,342,Estimate!!Total!!Male!!30 to 34 years
+04,Arizona,B01001_012,208095,470,Estimate!!Total!!Male!!30 to 34 years
+05,Arkansas,B01001_012,88728,583,Estimate!!Total!!Male!!30 to 34 years
+06,California,B01001_012,1280511,696,Estimate!!Total!!Male!!30 to 34 years
+08,Colorado,B01001_012,176796,595,Estimate!!Total!!Male!!30 to 34 years
+09,Connecticut,B01001_012,101293,271,Estimate!!Total!!Male!!30 to 34 years
+10,Delaware,B01001_012,25445,101,Estimate!!Total!!Male!!30 to 34 years
+11,District of Columbia,B01001_012,24796,107,Estimate!!Total!!Male!!30 to 34 years
+12,Florida,B01001_012,545356,1188,Estimate!!Total!!Male!!30 to 34 years
+13,Georgia,B01001_012,321315,1070,Estimate!!Total!!Male!!30 to 34 years
+15,Hawaii,B01001_012,43234,134,Estimate!!Total!!Male!!30 to 34 years
+16,Idaho,B01001_012,49580,349,Estimate!!Total!!Male!!30 to 34 years
+17,Illinois,B01001_012,428916,596,Estimate!!Total!!Male!!30 to 34 years
+18,Indiana,B01001_012,202342,604,Estimate!!Total!!Male!!30 to 34 years
+19,Iowa,B01001_012,91276,443,Estimate!!Total!!Male!!30 to 34 years
+20,Kansas,B01001_012,88144,538,Estimate!!Total!!Male!!30 to 34 years
+21,Kentucky,B01001_012,138012,597,Estimate!!Total!!Male!!30 to 34 years
+22,Louisiana,B01001_012,136441,864,Estimate!!Total!!Male!!30 to 34 years
+23,Maine,B01001_012,35730,293,Estimate!!Total!!Male!!30 to 34 years
+24,Maryland,B01001_012,172958,475,Estimate!!Total!!Male!!30 to 34 years
+25,Massachusetts,B01001_012,196385,509,Estimate!!Total!!Male!!30 to 34 years
+26,Michigan,B01001_012,290038,624,Estimate!!Total!!Male!!30 to 34 years
+27,Minnesota,B01001_012,168243,493,Estimate!!Total!!Male!!30 to 34 years
+28,Mississippi,B01001_012,88918,829,Estimate!!Total!!Male!!30 to 34 years
+29,Missouri,B01001_012,179626,547,Estimate!!Total!!Male!!30 to 34 years
+30,Montana,B01001_012,28408,381,Estimate!!Total!!Male!!30 to 34 years
+31,Nebraska,B01001_012,57395,325,Estimate!!Total!!Male!!30 to 34 years
+32,Nevada,B01001_012,94736,256,Estimate!!Total!!Male!!30 to 34 years
+33,New Hampshire,B01001_012,36216,270,Estimate!!Total!!Male!!30 to 34 years
+34,New Jersey,B01001_012,273658,261,Estimate!!Total!!Male!!30 to 34 years
+35,New Mexico,B01001_012,60250,540,Estimate!!Total!!Male!!30 to 34 years
+36,New York,B01001_012,613340,593,Estimate!!Total!!Male!!30 to 34 years
+37,North Carolina,B01001_012,303974,934,Estimate!!Total!!Male!!30 to 34 years
+38,North Dakota,B01001_012,20240,215,Estimate!!Total!!Male!!30 to 34 years
+39,Ohio,B01001_012,338653,751,Estimate!!Total!!Male!!30 to 34 years
+40,Oklahoma,B01001_012,117079,736,Estimate!!Total!!Male!!30 to 34 years
+41,Oregon,B01001_012,127647,451,Estimate!!Total!!Male!!30 to 34 years
+42,Pennsylvania,B01001_012,356067,508,Estimate!!Total!!Male!!30 to 34 years
+44,Rhode Island,B01001_012,30213,258,Estimate!!Total!!Male!!30 to 34 years
+45,South Carolina,B01001_012,139075,619,Estimate!!Total!!Male!!30 to 34 years
+46,South Dakota,B01001_012,23649,330,Estimate!!Total!!Male!!30 to 34 years
+47,Tennessee,B01001_012,198765,864,Estimate!!Total!!Male!!30 to 34 years
+48,Texas,B01001_012,851445,1545,Estimate!!Total!!Male!!30 to 34 years
+49,Utah,B01001_012,102878,326,Estimate!!Total!!Male!!30 to 34 years
+50,Vermont,B01001_012,16752,175,Estimate!!Total!!Male!!30 to 34 years
+51,Virginia,B01001_012,254437,997,Estimate!!Total!!Male!!30 to 34 years
+53,Washington,B01001_012,219353,466,Estimate!!Total!!Male!!30 to 34 years
+54,West Virginia,B01001_012,55497,451,Estimate!!Total!!Male!!30 to 34 years
+55,Wisconsin,B01001_012,172992,475,Estimate!!Total!!Male!!30 to 34 years
+56,Wyoming,B01001_012,17067,427,Estimate!!Total!!Male!!30 to 34 years
+72,Puerto Rico,B01001_012,118641,NA,Estimate!!Total!!Male!!30 to 34 years
+01,Alabama,B01001_013,151232,2331,Estimate!!Total!!Male!!35 to 39 years
+02,Alaska,B01001_013,23268,829,Estimate!!Total!!Male!!35 to 39 years
+04,Arizona,B01001_013,212938,2427,Estimate!!Total!!Male!!35 to 39 years
+05,Arkansas,B01001_013,90836,1644,Estimate!!Total!!Male!!35 to 39 years
+06,California,B01001_013,1327600,5548,Estimate!!Total!!Male!!35 to 39 years
+08,Colorado,B01001_013,181354,2189,Estimate!!Total!!Male!!35 to 39 years
+09,Connecticut,B01001_013,115899,1944,Estimate!!Total!!Male!!35 to 39 years
+10,Delaware,B01001_013,28601,805,Estimate!!Total!!Male!!35 to 39 years
+11,District of Columbia,B01001_013,21428,835,Estimate!!Total!!Male!!35 to 39 years
+12,Florida,B01001_013,594879,4730,Estimate!!Total!!Male!!35 to 39 years
+13,Georgia,B01001_013,345818,3168,Estimate!!Total!!Male!!35 to 39 years
+15,Hawaii,B01001_013,44964,1302,Estimate!!Total!!Male!!35 to 39 years
+16,Idaho,B01001_013,48572,1156,Estimate!!Total!!Male!!35 to 39 years
+17,Illinois,B01001_013,436266,3596,Estimate!!Total!!Male!!35 to 39 years
+18,Indiana,B01001_013,213862,2248,Estimate!!Total!!Male!!35 to 39 years
+19,Iowa,B01001_013,91095,1418,Estimate!!Total!!Male!!35 to 39 years
+20,Kansas,B01001_013,88398,1412,Estimate!!Total!!Male!!35 to 39 years
+21,Kentucky,B01001_013,144841,1948,Estimate!!Total!!Male!!35 to 39 years
+22,Louisiana,B01001_013,139640,1742,Estimate!!Total!!Male!!35 to 39 years
+23,Maine,B01001_013,42120,936,Estimate!!Total!!Male!!35 to 39 years
+24,Maryland,B01001_013,191256,2245,Estimate!!Total!!Male!!35 to 39 years
+25,Massachusetts,B01001_013,212549,2276,Estimate!!Total!!Male!!35 to 39 years
+26,Michigan,B01001_013,323816,2620,Estimate!!Total!!Male!!35 to 39 years
+27,Minnesota,B01001_013,173369,1950,Estimate!!Total!!Male!!35 to 39 years
+28,Mississippi,B01001_013,90929,1751,Estimate!!Total!!Male!!35 to 39 years
+29,Missouri,B01001_013,187886,2138,Estimate!!Total!!Male!!35 to 39 years
+30,Montana,B01001_013,28090,833,Estimate!!Total!!Male!!35 to 39 years
+31,Nebraska,B01001_013,55471,1072,Estimate!!Total!!Male!!35 to 39 years
+32,Nevada,B01001_013,101328,1683,Estimate!!Total!!Male!!35 to 39 years
+33,New Hampshire,B01001_013,43392,994,Estimate!!Total!!Male!!35 to 39 years
+34,New Jersey,B01001_013,306853,2506,Estimate!!Total!!Male!!35 to 39 years
+35,New Mexico,B01001_013,61511,1166,Estimate!!Total!!Male!!35 to 39 years
+36,New York,B01001_013,641462,4767,Estimate!!Total!!Male!!35 to 39 years
+37,North Carolina,B01001_013,325743,3026,Estimate!!Total!!Male!!35 to 39 years
+38,North Dakota,B01001_013,18657,526,Estimate!!Total!!Male!!35 to 39 years
+39,Ohio,B01001_013,372756,2616,Estimate!!Total!!Male!!35 to 39 years
+40,Oklahoma,B01001_013,116538,1438,Estimate!!Total!!Male!!35 to 39 years
+41,Oregon,B01001_013,127471,1830,Estimate!!Total!!Male!!35 to 39 years
+42,Pennsylvania,B01001_013,400493,3019,Estimate!!Total!!Male!!35 to 39 years
+44,Rhode Island,B01001_013,34001,927,Estimate!!Total!!Male!!35 to 39 years
+45,South Carolina,B01001_013,146442,2220,Estimate!!Total!!Male!!35 to 39 years
+46,South Dakota,B01001_013,23685,780,Estimate!!Total!!Male!!35 to 39 years
+47,Tennessee,B01001_013,212307,2089,Estimate!!Total!!Male!!35 to 39 years
+48,Texas,B01001_013,868481,4593,Estimate!!Total!!Male!!35 to 39 years
+49,Utah,B01001_013,85154,1272,Estimate!!Total!!Male!!35 to 39 years
+50,Vermont,B01001_013,18263,638,Estimate!!Total!!Male!!35 to 39 years
+51,Virginia,B01001_013,271005,2982,Estimate!!Total!!Male!!35 to 39 years
+53,Washington,B01001_013,229944,2600,Estimate!!Total!!Male!!35 to 39 years
+54,West Virginia,B01001_013,58725,1043,Estimate!!Total!!Male!!35 to 39 years
+55,Wisconsin,B01001_013,183898,1963,Estimate!!Total!!Male!!35 to 39 years
+56,Wyoming,B01001_013,17357,721,Estimate!!Total!!Male!!35 to 39 years
+72,Puerto Rico,B01001_013,115608,1690,Estimate!!Total!!Male!!35 to 39 years
+01,Alabama,B01001_014,159477,2381,Estimate!!Total!!Male!!40 to 44 years
+02,Alaska,B01001_014,26441,883,Estimate!!Total!!Male!!40 to 44 years
+04,Arizona,B01001_014,206777,2460,Estimate!!Total!!Male!!40 to 44 years
+05,Arkansas,B01001_014,95610,1761,Estimate!!Total!!Male!!40 to 44 years
+06,California,B01001_014,1335408,5639,Estimate!!Total!!Male!!40 to 44 years
+08,Colorado,B01001_014,177150,2420,Estimate!!Total!!Male!!40 to 44 years
+09,Connecticut,B01001_014,134267,1959,Estimate!!Total!!Male!!40 to 44 years
+10,Delaware,B01001_014,30141,850,Estimate!!Total!!Male!!40 to 44 years
+11,District of Columbia,B01001_014,19930,829,Estimate!!Total!!Male!!40 to 44 years
+12,Florida,B01001_014,653383,4791,Estimate!!Total!!Male!!40 to 44 years
+13,Georgia,B01001_014,352683,3226,Estimate!!Total!!Male!!40 to 44 years
+15,Hawaii,B01001_014,45428,1304,Estimate!!Total!!Male!!40 to 44 years
+16,Idaho,B01001_014,48816,1142,Estimate!!Total!!Male!!40 to 44 years
+17,Illinois,B01001_014,448717,3733,Estimate!!Total!!Male!!40 to 44 years
+18,Indiana,B01001_014,220008,2356,Estimate!!Total!!Male!!40 to 44 years
+19,Iowa,B01001_014,99977,1305,Estimate!!Total!!Male!!40 to 44 years
+20,Kansas,B01001_014,91212,1497,Estimate!!Total!!Male!!40 to 44 years
+21,Kentucky,B01001_014,152733,1970,Estimate!!Total!!Male!!40 to 44 years
+22,Louisiana,B01001_014,146869,1726,Estimate!!Total!!Male!!40 to 44 years
+23,Maine,B01001_014,47739,902,Estimate!!Total!!Male!!40 to 44 years
+24,Maryland,B01001_014,209371,2337,Estimate!!Total!!Male!!40 to 44 years
+25,Massachusetts,B01001_014,241960,2311,Estimate!!Total!!Male!!40 to 44 years
+26,Michigan,B01001_014,350692,2561,Estimate!!Total!!Male!!40 to 44 years
+27,Minnesota,B01001_014,186064,1882,Estimate!!Total!!Male!!40 to 44 years
+28,Mississippi,B01001_014,96410,1680,Estimate!!Total!!Male!!40 to 44 years
+29,Missouri,B01001_014,198214,2086,Estimate!!Total!!Male!!40 to 44 years
+30,Montana,B01001_014,30803,833,Estimate!!Total!!Male!!40 to 44 years
+31,Nebraska,B01001_014,59476,1061,Estimate!!Total!!Male!!40 to 44 years
+32,Nevada,B01001_014,98097,1635,Estimate!!Total!!Male!!40 to 44 years
+33,New Hampshire,B01001_014,51441,1033,Estimate!!Total!!Male!!40 to 44 years
+34,New Jersey,B01001_014,328451,2463,Estimate!!Total!!Male!!40 to 44 years
+35,New Mexico,B01001_014,64871,1121,Estimate!!Total!!Male!!40 to 44 years
+36,New York,B01001_014,694563,4890,Estimate!!Total!!Male!!40 to 44 years
+37,North Carolina,B01001_014,335191,3372,Estimate!!Total!!Male!!40 to 44 years
+38,North Dakota,B01001_014,20762,566,Estimate!!Total!!Male!!40 to 44 years
+39,Ohio,B01001_014,394260,2725,Estimate!!Total!!Male!!40 to 44 years
+40,Oklahoma,B01001_014,117469,1360,Estimate!!Total!!Male!!40 to 44 years
+41,Oregon,B01001_014,127250,1930,Estimate!!Total!!Male!!40 to 44 years
+42,Pennsylvania,B01001_014,437337,2916,Estimate!!Total!!Male!!40 to 44 years
+44,Rhode Island,B01001_014,38009,908,Estimate!!Total!!Male!!40 to 44 years
+45,South Carolina,B01001_014,154610,2232,Estimate!!Total!!Male!!40 to 44 years
+46,South Dakota,B01001_014,25564,757,Estimate!!Total!!Male!!40 to 44 years
+47,Tennessee,B01001_014,219049,2148,Estimate!!Total!!Male!!40 to 44 years
+48,Texas,B01001_014,842975,4804,Estimate!!Total!!Male!!40 to 44 years
+49,Utah,B01001_014,77395,1294,Estimate!!Total!!Male!!40 to 44 years
+50,Vermont,B01001_014,22986,649,Estimate!!Total!!Male!!40 to 44 years
+51,Virginia,B01001_014,293339,3059,Estimate!!Total!!Male!!40 to 44 years
+53,Washington,B01001_014,237041,2600,Estimate!!Total!!Male!!40 to 44 years
+54,West Virginia,B01001_014,63011,1100,Estimate!!Total!!Male!!40 to 44 years
+55,Wisconsin,B01001_014,201182,2064,Estimate!!Total!!Male!!40 to 44 years
+56,Wyoming,B01001_014,17193,637,Estimate!!Total!!Male!!40 to 44 years
+72,Puerto Rico,B01001_014,119608,1685,Estimate!!Total!!Male!!40 to 44 years
+01,Alabama,B01001_015,169012,678,Estimate!!Total!!Male!!45 to 49 years
+02,Alaska,B01001_015,28911,343,Estimate!!Total!!Male!!45 to 49 years
+04,Arizona,B01001_015,210736,449,Estimate!!Total!!Male!!45 to 49 years
+05,Arkansas,B01001_015,100271,500,Estimate!!Total!!Male!!45 to 49 years
+06,California,B01001_015,1338605,587,Estimate!!Total!!Male!!45 to 49 years
+08,Colorado,B01001_015,186461,578,Estimate!!Total!!Male!!45 to 49 years
+09,Connecticut,B01001_015,142477,208,Estimate!!Total!!Male!!45 to 49 years
+10,Delaware,B01001_015,32526,107,Estimate!!Total!!Male!!45 to 49 years
+11,District of Columbia,B01001_015,19199,89,Estimate!!Total!!Male!!45 to 49 years
+12,Florida,B01001_015,682630,1058,Estimate!!Total!!Male!!45 to 49 years
+13,Georgia,B01001_015,344541,1246,Estimate!!Total!!Male!!45 to 49 years
+15,Hawaii,B01001_015,48302,127,Estimate!!Total!!Male!!45 to 49 years
+16,Idaho,B01001_015,52323,390,Estimate!!Total!!Male!!45 to 49 years
+17,Illinois,B01001_015,470262,642,Estimate!!Total!!Male!!45 to 49 years
+18,Indiana,B01001_015,237468,510,Estimate!!Total!!Male!!45 to 49 years
+19,Iowa,B01001_015,110413,447,Estimate!!Total!!Male!!45 to 49 years
+20,Kansas,B01001_015,102488,434,Estimate!!Total!!Male!!45 to 49 years
+21,Kentucky,B01001_015,159250,521,Estimate!!Total!!Male!!45 to 49 years
+22,Louisiana,B01001_015,160285,619,Estimate!!Total!!Male!!45 to 49 years
+23,Maine,B01001_015,54057,242,Estimate!!Total!!Male!!45 to 49 years
+24,Maryland,B01001_015,221201,322,Estimate!!Total!!Male!!45 to 49 years
+25,Massachusetts,B01001_015,250771,290,Estimate!!Total!!Male!!45 to 49 years
+26,Michigan,B01001_015,379491,510,Estimate!!Total!!Male!!45 to 49 years
+27,Minnesota,B01001_015,207161,402,Estimate!!Total!!Male!!45 to 49 years
+28,Mississippi,B01001_015,103219,770,Estimate!!Total!!Male!!45 to 49 years
+29,Missouri,B01001_015,223436,621,Estimate!!Total!!Male!!45 to 49 years
+30,Montana,B01001_015,36735,309,Estimate!!Total!!Male!!45 to 49 years
+31,Nebraska,B01001_015,65647,233,Estimate!!Total!!Male!!45 to 49 years
+32,Nevada,B01001_015,96825,261,Estimate!!Total!!Male!!45 to 49 years
+33,New Hampshire,B01001_015,57346,306,Estimate!!Total!!Male!!45 to 49 years
+34,New Jersey,B01001_015,344260,306,Estimate!!Total!!Male!!45 to 49 years
+35,New Mexico,B01001_015,71061,358,Estimate!!Total!!Male!!45 to 49 years
+36,New York,B01001_015,713646,480,Estimate!!Total!!Male!!45 to 49 years
+37,North Carolina,B01001_015,335658,781,Estimate!!Total!!Male!!45 to 49 years
+38,North Dakota,B01001_015,23985,170,Estimate!!Total!!Male!!45 to 49 years
+39,Ohio,B01001_015,433039,597,Estimate!!Total!!Male!!45 to 49 years
+40,Oklahoma,B01001_015,131258,565,Estimate!!Total!!Male!!45 to 49 years
+41,Oregon,B01001_015,132756,381,Estimate!!Total!!Male!!45 to 49 years
+42,Pennsylvania,B01001_015,479341,547,Estimate!!Total!!Male!!45 to 49 years
+44,Rhode Island,B01001_015,39695,189,Estimate!!Total!!Male!!45 to 49 years
+45,South Carolina,B01001_015,159016,461,Estimate!!Total!!Male!!45 to 49 years
+46,South Dakota,B01001_015,29861,271,Estimate!!Total!!Male!!45 to 49 years
+47,Tennessee,B01001_015,226408,616,Estimate!!Total!!Male!!45 to 49 years
+48,Texas,B01001_015,863986,1374,Estimate!!Total!!Male!!45 to 49 years
+49,Utah,B01001_015,77373,266,Estimate!!Total!!Male!!45 to 49 years
+50,Vermont,B01001_015,25132,186,Estimate!!Total!!Male!!45 to 49 years
+51,Virginia,B01001_015,301883,1037,Estimate!!Total!!Male!!45 to 49 years
+53,Washington,B01001_015,247763,379,Estimate!!Total!!Male!!45 to 49 years
+54,West Virginia,B01001_015,67285,393,Estimate!!Total!!Male!!45 to 49 years
+55,Wisconsin,B01001_015,222979,486,Estimate!!Total!!Male!!45 to 49 years
+56,Wyoming,B01001_015,20755,311,Estimate!!Total!!Male!!45 to 49 years
+72,Puerto Rico,B01001_015,114340,NA,Estimate!!Total!!Male!!45 to 49 years
+01,Alabama,B01001_016,163589,595,Estimate!!Total!!Male!!50 to 54 years
+02,Alaska,B01001_016,28266,286,Estimate!!Total!!Male!!50 to 54 years
+04,Arizona,B01001_016,192574,287,Estimate!!Total!!Male!!50 to 54 years
+05,Arkansas,B01001_016,95786,502,Estimate!!Total!!Male!!50 to 54 years
+06,California,B01001_016,1215471,580,Estimate!!Total!!Male!!50 to 54 years
+08,Colorado,B01001_016,177949,466,Estimate!!Total!!Male!!50 to 54 years
+09,Connecticut,B01001_016,132965,229,Estimate!!Total!!Male!!50 to 54 years
+10,Delaware,B01001_016,30149,71,Estimate!!Total!!Male!!50 to 54 years
+11,District of Columbia,B01001_016,17582,2,Estimate!!Total!!Male!!50 to 54 years
+12,Florida,B01001_016,619932,935,Estimate!!Total!!Male!!50 to 54 years
+13,Georgia,B01001_016,308873,1238,Estimate!!Total!!Male!!50 to 54 years
+15,Hawaii,B01001_016,48171,78,Estimate!!Total!!Male!!50 to 54 years
+16,Idaho,B01001_016,50529,266,Estimate!!Total!!Male!!50 to 54 years
+17,Illinois,B01001_016,440523,572,Estimate!!Total!!Male!!50 to 54 years
+18,Indiana,B01001_016,227018,451,Estimate!!Total!!Male!!50 to 54 years
+19,Iowa,B01001_016,109957,374,Estimate!!Total!!Male!!50 to 54 years
+20,Kansas,B01001_016,99452,396,Estimate!!Total!!Male!!50 to 54 years
+21,Kentucky,B01001_016,151944,508,Estimate!!Total!!Male!!50 to 54 years
+22,Louisiana,B01001_016,156017,467,Estimate!!Total!!Male!!50 to 54 years
+23,Maine,B01001_016,53217,240,Estimate!!Total!!Male!!50 to 54 years
+24,Maryland,B01001_016,202054,300,Estimate!!Total!!Male!!50 to 54 years
+25,Massachusetts,B01001_016,232288,335,Estimate!!Total!!Male!!50 to 54 years
+26,Michigan,B01001_016,368698,460,Estimate!!Total!!Male!!50 to 54 years
+27,Minnesota,B01001_016,194216,479,Estimate!!Total!!Male!!50 to 54 years
+28,Mississippi,B01001_016,97937,485,Estimate!!Total!!Male!!50 to 54 years
+29,Missouri,B01001_016,209621,535,Estimate!!Total!!Male!!50 to 54 years
+30,Montana,B01001_016,38574,239,Estimate!!Total!!Male!!50 to 54 years
+31,Nebraska,B01001_016,63591,218,Estimate!!Total!!Male!!50 to 54 years
+32,Nevada,B01001_016,88418,350,Estimate!!Total!!Male!!50 to 54 years
+33,New Hampshire,B01001_016,53113,180,Estimate!!Total!!Male!!50 to 54 years
+34,New Jersey,B01001_016,313303,290,Estimate!!Total!!Male!!50 to 54 years
+35,New Mexico,B01001_016,68805,348,Estimate!!Total!!Male!!50 to 54 years
+36,New York,B01001_016,663177,508,Estimate!!Total!!Male!!50 to 54 years
+37,North Carolina,B01001_016,309765,746,Estimate!!Total!!Male!!50 to 54 years
+38,North Dakota,B01001_016,24943,183,Estimate!!Total!!Male!!50 to 54 years
+39,Ohio,B01001_016,423426,601,Estimate!!Total!!Male!!50 to 54 years
+40,Oklahoma,B01001_016,125942,465,Estimate!!Total!!Male!!50 to 54 years
+41,Oregon,B01001_016,136324,439,Estimate!!Total!!Male!!50 to 54 years
+42,Pennsylvania,B01001_016,471204,515,Estimate!!Total!!Male!!50 to 54 years
+44,Rhode Island,B01001_016,37986,171,Estimate!!Total!!Male!!50 to 54 years
+45,South Carolina,B01001_016,152000,465,Estimate!!Total!!Male!!50 to 54 years
+46,South Dakota,B01001_016,29408,238,Estimate!!Total!!Male!!50 to 54 years
+47,Tennessee,B01001_016,214960,488,Estimate!!Total!!Male!!50 to 54 years
+48,Texas,B01001_016,782281,1109,Estimate!!Total!!Male!!50 to 54 years
+49,Utah,B01001_016,72766,325,Estimate!!Total!!Male!!50 to 54 years
+50,Vermont,B01001_016,25363,164,Estimate!!Total!!Male!!50 to 54 years
+51,Virginia,B01001_016,278103,881,Estimate!!Total!!Male!!50 to 54 years
+53,Washington,B01001_016,239822,319,Estimate!!Total!!Male!!50 to 54 years
+54,West Virginia,B01001_016,70387,342,Estimate!!Total!!Male!!50 to 54 years
+55,Wisconsin,B01001_016,211255,413,Estimate!!Total!!Male!!50 to 54 years
+56,Wyoming,B01001_016,22182,198,Estimate!!Total!!Male!!50 to 54 years
+72,Puerto Rico,B01001_016,108759,NA,Estimate!!Total!!Male!!50 to 54 years
+01,Alabama,B01001_017,143591,1544,Estimate!!Total!!Male!!55 to 59 years
+02,Alaska,B01001_017,25034,651,Estimate!!Total!!Male!!55 to 59 years
+04,Arizona,B01001_017,172482,2035,Estimate!!Total!!Male!!55 to 59 years
+05,Arkansas,B01001_017,87634,1293,Estimate!!Total!!Male!!55 to 59 years
+06,California,B01001_017,1015856,5075,Estimate!!Total!!Male!!55 to 59 years
+08,Colorado,B01001_017,152691,1712,Estimate!!Total!!Male!!55 to 59 years
+09,Connecticut,B01001_017,111049,1242,Estimate!!Total!!Male!!55 to 59 years
+10,Delaware,B01001_017,26285,727,Estimate!!Total!!Male!!55 to 59 years
+11,District of Columbia,B01001_017,15412,552,Estimate!!Total!!Male!!55 to 59 years
+12,Florida,B01001_017,547809,3774,Estimate!!Total!!Male!!55 to 59 years
+13,Georgia,B01001_017,262677,2520,Estimate!!Total!!Male!!55 to 59 years
+15,Hawaii,B01001_017,43855,986,Estimate!!Total!!Male!!55 to 59 years
+16,Idaho,B01001_017,45393,784,Estimate!!Total!!Male!!55 to 59 years
+17,Illinois,B01001_017,377431,2033,Estimate!!Total!!Male!!55 to 59 years
+18,Indiana,B01001_017,196125,1747,Estimate!!Total!!Male!!55 to 59 years
+19,Iowa,B01001_017,97675,1185,Estimate!!Total!!Male!!55 to 59 years
+20,Kansas,B01001_017,86145,1163,Estimate!!Total!!Male!!55 to 59 years
+21,Kentucky,B01001_017,135860,1499,Estimate!!Total!!Male!!55 to 59 years
+22,Louisiana,B01001_017,131929,1906,Estimate!!Total!!Male!!55 to 59 years
+23,Maine,B01001_017,48494,768,Estimate!!Total!!Male!!55 to 59 years
+24,Maryland,B01001_017,172926,1691,Estimate!!Total!!Male!!55 to 59 years
+25,Massachusetts,B01001_017,199139,1867,Estimate!!Total!!Male!!55 to 59 years
+26,Michigan,B01001_017,324314,2319,Estimate!!Total!!Male!!55 to 59 years
+27,Minnesota,B01001_017,164248,1488,Estimate!!Total!!Male!!55 to 59 years
+28,Mississippi,B01001_017,86733,1255,Estimate!!Total!!Male!!55 to 59 years
+29,Missouri,B01001_017,177687,1653,Estimate!!Total!!Male!!55 to 59 years
+30,Montana,B01001_017,36243,717,Estimate!!Total!!Male!!55 to 59 years
+31,Nebraska,B01001_017,54939,807,Estimate!!Total!!Male!!55 to 59 years
+32,Nevada,B01001_017,76709,1329,Estimate!!Total!!Male!!55 to 59 years
+33,New Hampshire,B01001_017,45865,926,Estimate!!Total!!Male!!55 to 59 years
+34,New Jersey,B01001_017,261358,2262,Estimate!!Total!!Male!!55 to 59 years
+35,New Mexico,B01001_017,63039,1179,Estimate!!Total!!Male!!55 to 59 years
+36,New York,B01001_017,571825,3459,Estimate!!Total!!Male!!55 to 59 years
+37,North Carolina,B01001_017,273989,2420,Estimate!!Total!!Male!!55 to 59 years
+38,North Dakota,B01001_017,22023,590,Estimate!!Total!!Male!!55 to 59 years
+39,Ohio,B01001_017,368958,2580,Estimate!!Total!!Male!!55 to 59 years
+40,Oklahoma,B01001_017,110338,1400,Estimate!!Total!!Male!!55 to 59 years
+41,Oregon,B01001_017,128549,1509,Estimate!!Total!!Male!!55 to 59 years
+42,Pennsylvania,B01001_017,410711,2465,Estimate!!Total!!Male!!55 to 59 years
+44,Rhode Island,B01001_017,32807,846,Estimate!!Total!!Male!!55 to 59 years
+45,South Carolina,B01001_017,137689,1704,Estimate!!Total!!Male!!55 to 59 years
+46,South Dakota,B01001_017,26238,618,Estimate!!Total!!Male!!55 to 59 years
+47,Tennessee,B01001_017,191853,2124,Estimate!!Total!!Male!!55 to 59 years
+48,Texas,B01001_017,647324,3187,Estimate!!Total!!Male!!55 to 59 years
+49,Utah,B01001_017,61062,1021,Estimate!!Total!!Male!!55 to 59 years
+50,Vermont,B01001_017,23357,482,Estimate!!Total!!Male!!55 to 59 years
+51,Virginia,B01001_017,237184,2124,Estimate!!Total!!Male!!55 to 59 years
+53,Washington,B01001_017,210848,1852,Estimate!!Total!!Male!!55 to 59 years
+54,West Virginia,B01001_017,68126,1221,Estimate!!Total!!Male!!55 to 59 years
+55,Wisconsin,B01001_017,184309,1525,Estimate!!Total!!Male!!55 to 59 years
+56,Wyoming,B01001_017,19604,690,Estimate!!Total!!Male!!55 to 59 years
+72,Puerto Rico,B01001_017,101701,1353,Estimate!!Total!!Male!!55 to 59 years
+01,Alabama,B01001_018,55476,1529,Estimate!!Total!!Male!!60 and 61 years
+02,Alaska,B01001_018,7506,461,Estimate!!Total!!Male!!60 and 61 years
+04,Arizona,B01001_018,66296,1749,Estimate!!Total!!Male!!60 and 61 years
+05,Arkansas,B01001_018,31429,1085,Estimate!!Total!!Male!!60 and 61 years
+06,California,B01001_018,359029,3333,Estimate!!Total!!Male!!60 and 61 years
+08,Colorado,B01001_018,53275,1254,Estimate!!Total!!Male!!60 and 61 years
+09,Connecticut,B01001_018,38454,1062,Estimate!!Total!!Male!!60 and 61 years
+10,Delaware,B01001_018,9861,564,Estimate!!Total!!Male!!60 and 61 years
+11,District of Columbia,B01001_018,5899,449,Estimate!!Total!!Male!!60 and 61 years
+12,Florida,B01001_018,209523,3493,Estimate!!Total!!Male!!60 and 61 years
+13,Georgia,B01001_018,93677,1647,Estimate!!Total!!Male!!60 and 61 years
+15,Hawaii,B01001_018,17218,753,Estimate!!Total!!Male!!60 and 61 years
+16,Idaho,B01001_018,17099,746,Estimate!!Total!!Male!!60 and 61 years
+17,Illinois,B01001_018,128344,1771,Estimate!!Total!!Male!!60 and 61 years
+18,Indiana,B01001_018,68224,1532,Estimate!!Total!!Male!!60 and 61 years
+19,Iowa,B01001_018,32431,987,Estimate!!Total!!Male!!60 and 61 years
+20,Kansas,B01001_018,29624,796,Estimate!!Total!!Male!!60 and 61 years
+21,Kentucky,B01001_018,49240,1017,Estimate!!Total!!Male!!60 and 61 years
+22,Louisiana,B01001_018,48089,1347,Estimate!!Total!!Male!!60 and 61 years
+23,Maine,B01001_018,17549,636,Estimate!!Total!!Male!!60 and 61 years
+24,Maryland,B01001_018,61345,1423,Estimate!!Total!!Male!!60 and 61 years
+25,Massachusetts,B01001_018,70883,1597,Estimate!!Total!!Male!!60 and 61 years
+26,Michigan,B01001_018,109289,1712,Estimate!!Total!!Male!!60 and 61 years
+27,Minnesota,B01001_018,55637,988,Estimate!!Total!!Male!!60 and 61 years
+28,Mississippi,B01001_018,31710,885,Estimate!!Total!!Male!!60 and 61 years
+29,Missouri,B01001_018,65443,1411,Estimate!!Total!!Male!!60 and 61 years
+30,Montana,B01001_018,12677,618,Estimate!!Total!!Male!!60 and 61 years
+31,Nebraska,B01001_018,19870,735,Estimate!!Total!!Male!!60 and 61 years
+32,Nevada,B01001_018,30470,1139,Estimate!!Total!!Male!!60 and 61 years
+33,New Hampshire,B01001_018,16674,775,Estimate!!Total!!Male!!60 and 61 years
+34,New Jersey,B01001_018,93829,1827,Estimate!!Total!!Male!!60 and 61 years
+35,New Mexico,B01001_018,23043,922,Estimate!!Total!!Male!!60 and 61 years
+36,New York,B01001_018,204235,2760,Estimate!!Total!!Male!!60 and 61 years
+37,North Carolina,B01001_018,100804,2110,Estimate!!Total!!Male!!60 and 61 years
+38,North Dakota,B01001_018,7529,378,Estimate!!Total!!Male!!60 and 61 years
+39,Ohio,B01001_018,129995,2071,Estimate!!Total!!Male!!60 and 61 years
+40,Oklahoma,B01001_018,39222,1207,Estimate!!Total!!Male!!60 and 61 years
+41,Oregon,B01001_018,45626,1104,Estimate!!Total!!Male!!60 and 61 years
+42,Pennsylvania,B01001_018,145404,2050,Estimate!!Total!!Male!!60 and 61 years
+44,Rhode Island,B01001_018,11547,654,Estimate!!Total!!Male!!60 and 61 years
+45,South Carolina,B01001_018,52469,1565,Estimate!!Total!!Male!!60 and 61 years
+46,South Dakota,B01001_018,8455,485,Estimate!!Total!!Male!!60 and 61 years
+47,Tennessee,B01001_018,73235,1642,Estimate!!Total!!Male!!60 and 61 years
+48,Texas,B01001_018,229801,2814,Estimate!!Total!!Male!!60 and 61 years
+49,Utah,B01001_018,20696,685,Estimate!!Total!!Male!!60 and 61 years
+50,Vermont,B01001_018,8338,394,Estimate!!Total!!Male!!60 and 61 years
+51,Virginia,B01001_018,86381,1889,Estimate!!Total!!Male!!60 and 61 years
+53,Washington,B01001_018,74114,1391,Estimate!!Total!!Male!!60 and 61 years
+54,West Virginia,B01001_018,25568,831,Estimate!!Total!!Male!!60 and 61 years
+55,Wisconsin,B01001_018,62796,1235,Estimate!!Total!!Male!!60 and 61 years
+56,Wyoming,B01001_018,6831,508,Estimate!!Total!!Male!!60 and 61 years
+72,Puerto Rico,B01001_018,40864,1222,Estimate!!Total!!Male!!60 and 61 years
+01,Alabama,B01001_019,67170,1393,Estimate!!Total!!Male!!62 to 64 years
+02,Alaska,B01001_019,8982,498,Estimate!!Total!!Male!!62 to 64 years
+04,Arizona,B01001_019,86209,1853,Estimate!!Total!!Male!!62 to 64 years
+05,Arkansas,B01001_019,43133,1121,Estimate!!Total!!Male!!62 to 64 years
+06,California,B01001_019,441519,4149,Estimate!!Total!!Male!!62 to 64 years
+08,Colorado,B01001_019,65065,1473,Estimate!!Total!!Male!!62 to 64 years
+09,Connecticut,B01001_019,52048,1114,Estimate!!Total!!Male!!62 to 64 years
+10,Delaware,B01001_019,13131,558,Estimate!!Total!!Male!!62 to 64 years
+11,District of Columbia,B01001_019,7007,506,Estimate!!Total!!Male!!62 to 64 years
+12,Florida,B01001_019,292870,3509,Estimate!!Total!!Male!!62 to 64 years
+13,Georgia,B01001_019,117980,2042,Estimate!!Total!!Male!!62 to 64 years
+15,Hawaii,B01001_019,20900,828,Estimate!!Total!!Male!!62 to 64 years
+16,Idaho,B01001_019,21088,754,Estimate!!Total!!Male!!62 to 64 years
+17,Illinois,B01001_019,162886,1971,Estimate!!Total!!Male!!62 to 64 years
+18,Indiana,B01001_019,86251,1573,Estimate!!Total!!Male!!62 to 64 years
+19,Iowa,B01001_019,43158,831,Estimate!!Total!!Male!!62 to 64 years
+20,Kansas,B01001_019,37010,959,Estimate!!Total!!Male!!62 to 64 years
+21,Kentucky,B01001_019,61193,1385,Estimate!!Total!!Male!!62 to 64 years
+22,Louisiana,B01001_019,61041,1483,Estimate!!Total!!Male!!62 to 64 years
+23,Maine,B01001_019,22899,661,Estimate!!Total!!Male!!62 to 64 years
+24,Maryland,B01001_019,76632,1330,Estimate!!Total!!Male!!62 to 64 years
+25,Massachusetts,B01001_019,92032,1581,Estimate!!Total!!Male!!62 to 64 years
+26,Michigan,B01001_019,141668,2006,Estimate!!Total!!Male!!62 to 64 years
+27,Minnesota,B01001_019,69575,1241,Estimate!!Total!!Male!!62 to 64 years
+28,Mississippi,B01001_019,40011,1111,Estimate!!Total!!Male!!62 to 64 years
+29,Missouri,B01001_019,84330,1601,Estimate!!Total!!Male!!62 to 64 years
+30,Montana,B01001_019,16496,654,Estimate!!Total!!Male!!62 to 64 years
+31,Nebraska,B01001_019,23714,678,Estimate!!Total!!Male!!62 to 64 years
+32,Nevada,B01001_019,40193,1177,Estimate!!Total!!Male!!62 to 64 years
+33,New Hampshire,B01001_019,19963,733,Estimate!!Total!!Male!!62 to 64 years
+34,New Jersey,B01001_019,117049,1852,Estimate!!Total!!Male!!62 to 64 years
+35,New Mexico,B01001_019,29480,882,Estimate!!Total!!Male!!62 to 64 years
+36,New York,B01001_019,257560,3001,Estimate!!Total!!Male!!62 to 64 years
+37,North Carolina,B01001_019,133165,2046,Estimate!!Total!!Male!!62 to 64 years
+38,North Dakota,B01001_019,9292,476,Estimate!!Total!!Male!!62 to 64 years
+39,Ohio,B01001_019,160877,2026,Estimate!!Total!!Male!!62 to 64 years
+40,Oklahoma,B01001_019,52236,1192,Estimate!!Total!!Male!!62 to 64 years
+41,Oregon,B01001_019,59015,1328,Estimate!!Total!!Male!!62 to 64 years
+42,Pennsylvania,B01001_019,182865,2248,Estimate!!Total!!Male!!62 to 64 years
+44,Rhode Island,B01001_019,14949,667,Estimate!!Total!!Male!!62 to 64 years
+45,South Carolina,B01001_019,69722,1405,Estimate!!Total!!Male!!62 to 64 years
+46,South Dakota,B01001_019,11170,544,Estimate!!Total!!Male!!62 to 64 years
+47,Tennessee,B01001_019,91636,1732,Estimate!!Total!!Male!!62 to 64 years
+48,Texas,B01001_019,285380,2661,Estimate!!Total!!Male!!62 to 64 years
+49,Utah,B01001_019,27111,1065,Estimate!!Total!!Male!!62 to 64 years
+50,Vermont,B01001_019,10110,460,Estimate!!Total!!Male!!62 to 64 years
+51,Virginia,B01001_019,109777,1937,Estimate!!Total!!Male!!62 to 64 years
+53,Washington,B01001_019,95936,1875,Estimate!!Total!!Male!!62 to 64 years
+54,West Virginia,B01001_019,29623,1026,Estimate!!Total!!Male!!62 to 64 years
+55,Wisconsin,B01001_019,77775,1284,Estimate!!Total!!Male!!62 to 64 years
+56,Wyoming,B01001_019,8436,493,Estimate!!Total!!Male!!62 to 64 years
+72,Puerto Rico,B01001_019,55122,1192,Estimate!!Total!!Male!!62 to 64 years
+01,Alabama,B01001_020,41290,1226,Estimate!!Total!!Male!!65 and 66 years
+02,Alaska,B01001_020,4629,359,Estimate!!Total!!Male!!65 and 66 years
+04,Arizona,B01001_020,52764,1328,Estimate!!Total!!Male!!65 and 66 years
+05,Arkansas,B01001_020,25208,904,Estimate!!Total!!Male!!65 and 66 years
+06,California,B01001_020,252846,2242,Estimate!!Total!!Male!!65 and 66 years
+08,Colorado,B01001_020,35152,1096,Estimate!!Total!!Male!!65 and 66 years
+09,Connecticut,B01001_020,29370,965,Estimate!!Total!!Male!!65 and 66 years
+10,Delaware,B01001_020,7054,457,Estimate!!Total!!Male!!65 and 66 years
+11,District of Columbia,B01001_020,3894,349,Estimate!!Total!!Male!!65 and 66 years
+12,Florida,B01001_020,178150,2810,Estimate!!Total!!Male!!65 and 66 years
+13,Georgia,B01001_020,68705,1421,Estimate!!Total!!Male!!65 and 66 years
+15,Hawaii,B01001_020,12105,534,Estimate!!Total!!Male!!65 and 66 years
+16,Idaho,B01001_020,12449,508,Estimate!!Total!!Male!!65 and 66 years
+17,Illinois,B01001_020,93285,1677,Estimate!!Total!!Male!!65 and 66 years
+18,Indiana,B01001_020,49385,1214,Estimate!!Total!!Male!!65 and 66 years
+19,Iowa,B01001_020,23509,631,Estimate!!Total!!Male!!65 and 66 years
+20,Kansas,B01001_020,20631,717,Estimate!!Total!!Male!!65 and 66 years
+21,Kentucky,B01001_020,35723,1007,Estimate!!Total!!Male!!65 and 66 years
+22,Louisiana,B01001_020,33611,1038,Estimate!!Total!!Male!!65 and 66 years
+23,Maine,B01001_020,12861,553,Estimate!!Total!!Male!!65 and 66 years
+24,Maryland,B01001_020,42888,1100,Estimate!!Total!!Male!!65 and 66 years
+25,Massachusetts,B01001_020,49546,1228,Estimate!!Total!!Male!!65 and 66 years
+26,Michigan,B01001_020,80784,1447,Estimate!!Total!!Male!!65 and 66 years
+27,Minnesota,B01001_020,40393,887,Estimate!!Total!!Male!!65 and 66 years
+28,Mississippi,B01001_020,23627,782,Estimate!!Total!!Male!!65 and 66 years
+29,Missouri,B01001_020,49321,1217,Estimate!!Total!!Male!!65 and 66 years
+30,Montana,B01001_020,9221,521,Estimate!!Total!!Male!!65 and 66 years
+31,Nebraska,B01001_020,13957,491,Estimate!!Total!!Male!!65 and 66 years
+32,Nevada,B01001_020,22732,955,Estimate!!Total!!Male!!65 and 66 years
+33,New Hampshire,B01001_020,11180,499,Estimate!!Total!!Male!!65 and 66 years
+34,New Jersey,B01001_020,66358,1365,Estimate!!Total!!Male!!65 and 66 years
+35,New Mexico,B01001_020,16266,732,Estimate!!Total!!Male!!65 and 66 years
+36,New York,B01001_020,143728,1902,Estimate!!Total!!Male!!65 and 66 years
+37,North Carolina,B01001_020,75331,1507,Estimate!!Total!!Male!!65 and 66 years
+38,North Dakota,B01001_020,5564,328,Estimate!!Total!!Male!!65 and 66 years
+39,Ohio,B01001_020,93610,1532,Estimate!!Total!!Male!!65 and 66 years
+40,Oklahoma,B01001_020,30321,896,Estimate!!Total!!Male!!65 and 66 years
+41,Oregon,B01001_020,32657,1056,Estimate!!Total!!Male!!65 and 66 years
+42,Pennsylvania,B01001_020,107739,1580,Estimate!!Total!!Male!!65 and 66 years
+44,Rhode Island,B01001_020,9009,515,Estimate!!Total!!Male!!65 and 66 years
+45,South Carolina,B01001_020,41549,928,Estimate!!Total!!Male!!65 and 66 years
+46,South Dakota,B01001_020,6174,366,Estimate!!Total!!Male!!65 and 66 years
+47,Tennessee,B01001_020,52822,1213,Estimate!!Total!!Male!!65 and 66 years
+48,Texas,B01001_020,162884,1985,Estimate!!Total!!Male!!65 and 66 years
+49,Utah,B01001_020,15636,678,Estimate!!Total!!Male!!65 and 66 years
+50,Vermont,B01001_020,5694,283,Estimate!!Total!!Male!!65 and 66 years
+51,Virginia,B01001_020,61588,1330,Estimate!!Total!!Male!!65 and 66 years
+53,Washington,B01001_020,52550,1299,Estimate!!Total!!Male!!65 and 66 years
+54,West Virginia,B01001_020,18221,699,Estimate!!Total!!Male!!65 and 66 years
+55,Wisconsin,B01001_020,45127,947,Estimate!!Total!!Male!!65 and 66 years
+56,Wyoming,B01001_020,4360,320,Estimate!!Total!!Male!!65 and 66 years
+72,Puerto Rico,B01001_020,33072,829,Estimate!!Total!!Male!!65 and 66 years
+01,Alabama,B01001_021,50679,1249,Estimate!!Total!!Male!!67 to 69 years
+02,Alaska,B01001_021,5406,319,Estimate!!Total!!Male!!67 to 69 years
+04,Arizona,B01001_021,68952,1468,Estimate!!Total!!Male!!67 to 69 years
+05,Arkansas,B01001_021,32995,854,Estimate!!Total!!Male!!67 to 69 years
+06,California,B01001_021,309867,3114,Estimate!!Total!!Male!!67 to 69 years
+08,Colorado,B01001_021,43027,978,Estimate!!Total!!Male!!67 to 69 years
+09,Connecticut,B01001_021,33560,928,Estimate!!Total!!Male!!67 to 69 years
+10,Delaware,B01001_021,10701,508,Estimate!!Total!!Male!!67 to 69 years
+11,District of Columbia,B01001_021,5270,367,Estimate!!Total!!Male!!67 to 69 years
+12,Florida,B01001_021,243123,2536,Estimate!!Total!!Male!!67 to 69 years
+13,Georgia,B01001_021,82194,1241,Estimate!!Total!!Male!!67 to 69 years
+15,Hawaii,B01001_021,13921,608,Estimate!!Total!!Male!!67 to 69 years
+16,Idaho,B01001_021,15651,604,Estimate!!Total!!Male!!67 to 69 years
+17,Illinois,B01001_021,118557,1746,Estimate!!Total!!Male!!67 to 69 years
+18,Indiana,B01001_021,64623,1331,Estimate!!Total!!Male!!67 to 69 years
+19,Iowa,B01001_021,31695,720,Estimate!!Total!!Male!!67 to 69 years
+20,Kansas,B01001_021,27008,738,Estimate!!Total!!Male!!67 to 69 years
+21,Kentucky,B01001_021,45878,989,Estimate!!Total!!Male!!67 to 69 years
+22,Louisiana,B01001_021,43307,1078,Estimate!!Total!!Male!!67 to 69 years
+23,Maine,B01001_021,15436,589,Estimate!!Total!!Male!!67 to 69 years
+24,Maryland,B01001_021,54266,1008,Estimate!!Total!!Male!!67 to 69 years
+25,Massachusetts,B01001_021,61985,1321,Estimate!!Total!!Male!!67 to 69 years
+26,Michigan,B01001_021,100877,1356,Estimate!!Total!!Male!!67 to 69 years
+27,Minnesota,B01001_021,50365,985,Estimate!!Total!!Male!!67 to 69 years
+28,Mississippi,B01001_021,30053,765,Estimate!!Total!!Male!!67 to 69 years
+29,Missouri,B01001_021,63149,1291,Estimate!!Total!!Male!!67 to 69 years
+30,Montana,B01001_021,12225,499,Estimate!!Total!!Male!!67 to 69 years
+31,Nebraska,B01001_021,16513,530,Estimate!!Total!!Male!!67 to 69 years
+32,Nevada,B01001_021,29091,1087,Estimate!!Total!!Male!!67 to 69 years
+33,New Hampshire,B01001_021,14000,570,Estimate!!Total!!Male!!67 to 69 years
+34,New Jersey,B01001_021,83033,1414,Estimate!!Total!!Male!!67 to 69 years
+35,New Mexico,B01001_021,22203,783,Estimate!!Total!!Male!!67 to 69 years
+36,New York,B01001_021,185064,2036,Estimate!!Total!!Male!!67 to 69 years
+37,North Carolina,B01001_021,96514,1359,Estimate!!Total!!Male!!67 to 69 years
+38,North Dakota,B01001_021,6391,280,Estimate!!Total!!Male!!67 to 69 years
+39,Ohio,B01001_021,117637,1466,Estimate!!Total!!Male!!67 to 69 years
+40,Oklahoma,B01001_021,39891,994,Estimate!!Total!!Male!!67 to 69 years
+41,Oregon,B01001_021,42120,1149,Estimate!!Total!!Male!!67 to 69 years
+42,Pennsylvania,B01001_021,137670,1826,Estimate!!Total!!Male!!67 to 69 years
+44,Rhode Island,B01001_021,9403,545,Estimate!!Total!!Male!!67 to 69 years
+45,South Carolina,B01001_021,50177,1104,Estimate!!Total!!Male!!67 to 69 years
+46,South Dakota,B01001_021,8158,422,Estimate!!Total!!Male!!67 to 69 years
+47,Tennessee,B01001_021,67472,1195,Estimate!!Total!!Male!!67 to 69 years
+48,Texas,B01001_021,203362,2667,Estimate!!Total!!Male!!67 to 69 years
+49,Utah,B01001_021,19286,657,Estimate!!Total!!Male!!67 to 69 years
+50,Vermont,B01001_021,7419,381,Estimate!!Total!!Male!!67 to 69 years
+51,Virginia,B01001_021,77099,1421,Estimate!!Total!!Male!!67 to 69 years
+53,Washington,B01001_021,64701,1134,Estimate!!Total!!Male!!67 to 69 years
+54,West Virginia,B01001_021,23985,786,Estimate!!Total!!Male!!67 to 69 years
+55,Wisconsin,B01001_021,56549,891,Estimate!!Total!!Male!!67 to 69 years
+56,Wyoming,B01001_021,6278,390,Estimate!!Total!!Male!!67 to 69 years
+72,Puerto Rico,B01001_021,43737,881,Estimate!!Total!!Male!!67 to 69 years
+01,Alabama,B01001_022,69396,1327,Estimate!!Total!!Male!!70 to 74 years
+02,Alaska,B01001_022,6452,417,Estimate!!Total!!Male!!70 to 74 years
+04,Arizona,B01001_022,97762,1439,Estimate!!Total!!Male!!70 to 74 years
+05,Arkansas,B01001_022,46453,1033,Estimate!!Total!!Male!!70 to 74 years
+06,California,B01001_022,423247,2927,Estimate!!Total!!Male!!70 to 74 years
+08,Colorado,B01001_022,56161,1217,Estimate!!Total!!Male!!70 to 74 years
+09,Connecticut,B01001_022,47187,1047,Estimate!!Total!!Male!!70 to 74 years
+10,Delaware,B01001_022,13755,518,Estimate!!Total!!Male!!70 to 74 years
+11,District of Columbia,B01001_022,6348,365,Estimate!!Total!!Male!!70 to 74 years
+12,Florida,B01001_022,339200,2864,Estimate!!Total!!Male!!70 to 74 years
+13,Georgia,B01001_022,105176,1603,Estimate!!Total!!Male!!70 to 74 years
+15,Hawaii,B01001_022,18288,657,Estimate!!Total!!Male!!70 to 74 years
+16,Idaho,B01001_022,21358,547,Estimate!!Total!!Male!!70 to 74 years
+17,Illinois,B01001_022,157713,1908,Estimate!!Total!!Male!!70 to 74 years
+18,Indiana,B01001_022,84051,1314,Estimate!!Total!!Male!!70 to 74 years
+19,Iowa,B01001_022,46252,794,Estimate!!Total!!Male!!70 to 74 years
+20,Kansas,B01001_022,37379,844,Estimate!!Total!!Male!!70 to 74 years
+21,Kentucky,B01001_022,61747,1236,Estimate!!Total!!Male!!70 to 74 years
+22,Louisiana,B01001_022,58397,1140,Estimate!!Total!!Male!!70 to 74 years
+23,Maine,B01001_022,21977,587,Estimate!!Total!!Male!!70 to 74 years
+24,Maryland,B01001_022,68586,1082,Estimate!!Total!!Male!!70 to 74 years
+25,Massachusetts,B01001_022,84591,1431,Estimate!!Total!!Male!!70 to 74 years
+26,Michigan,B01001_022,137957,1487,Estimate!!Total!!Male!!70 to 74 years
+27,Minnesota,B01001_022,67521,963,Estimate!!Total!!Male!!70 to 74 years
+28,Mississippi,B01001_022,40080,1008,Estimate!!Total!!Male!!70 to 74 years
+29,Missouri,B01001_022,86690,1436,Estimate!!Total!!Male!!70 to 74 years
+30,Montana,B01001_022,15533,604,Estimate!!Total!!Male!!70 to 74 years
+31,Nebraska,B01001_022,24781,589,Estimate!!Total!!Male!!70 to 74 years
+32,Nevada,B01001_022,38431,1014,Estimate!!Total!!Male!!70 to 74 years
+33,New Hampshire,B01001_022,18276,579,Estimate!!Total!!Male!!70 to 74 years
+34,New Jersey,B01001_022,114575,1409,Estimate!!Total!!Male!!70 to 74 years
+35,New Mexico,B01001_022,30036,884,Estimate!!Total!!Male!!70 to 74 years
+36,New York,B01001_022,255797,2223,Estimate!!Total!!Male!!70 to 74 years
+37,North Carolina,B01001_022,126300,1669,Estimate!!Total!!Male!!70 to 74 years
+38,North Dakota,B01001_022,9720,299,Estimate!!Total!!Male!!70 to 74 years
+39,Ohio,B01001_022,162091,1605,Estimate!!Total!!Male!!70 to 74 years
+40,Oklahoma,B01001_022,54819,1084,Estimate!!Total!!Male!!70 to 74 years
+41,Oregon,B01001_022,52618,1265,Estimate!!Total!!Male!!70 to 74 years
+42,Pennsylvania,B01001_022,185974,1683,Estimate!!Total!!Male!!70 to 74 years
+44,Rhode Island,B01001_022,13731,490,Estimate!!Total!!Male!!70 to 74 years
+45,South Carolina,B01001_022,67308,1091,Estimate!!Total!!Male!!70 to 74 years
+46,South Dakota,B01001_022,11853,419,Estimate!!Total!!Male!!70 to 74 years
+47,Tennessee,B01001_022,91848,1405,Estimate!!Total!!Male!!70 to 74 years
+48,Texas,B01001_022,272817,2588,Estimate!!Total!!Male!!70 to 74 years
+49,Utah,B01001_022,26186,701,Estimate!!Total!!Male!!70 to 74 years
+50,Vermont,B01001_022,9028,376,Estimate!!Total!!Male!!70 to 74 years
+51,Virginia,B01001_022,100392,1525,Estimate!!Total!!Male!!70 to 74 years
+53,Washington,B01001_022,83777,1277,Estimate!!Total!!Male!!70 to 74 years
+54,West Virginia,B01001_022,31764,803,Estimate!!Total!!Male!!70 to 74 years
+55,Wisconsin,B01001_022,77891,1103,Estimate!!Total!!Male!!70 to 74 years
+56,Wyoming,B01001_022,7588,410,Estimate!!Total!!Male!!70 to 74 years
+72,Puerto Rico,B01001_022,58388,1165,Estimate!!Total!!Male!!70 to 74 years
+01,Alabama,B01001_023,50316,979,Estimate!!Total!!Male!!75 to 79 years
+02,Alaska,B01001_023,3972,287,Estimate!!Total!!Male!!75 to 79 years
+04,Arizona,B01001_023,74487,1404,Estimate!!Total!!Male!!75 to 79 years
+05,Arkansas,B01001_023,32795,902,Estimate!!Total!!Male!!75 to 79 years
+06,California,B01001_023,332776,2550,Estimate!!Total!!Male!!75 to 79 years
+08,Colorado,B01001_023,41671,920,Estimate!!Total!!Male!!75 to 79 years
+09,Connecticut,B01001_023,39270,937,Estimate!!Total!!Male!!75 to 79 years
+10,Delaware,B01001_023,10269,403,Estimate!!Total!!Male!!75 to 79 years
+11,District of Columbia,B01001_023,4858,360,Estimate!!Total!!Male!!75 to 79 years
+12,Florida,B01001_023,279115,2965,Estimate!!Total!!Male!!75 to 79 years
+13,Georgia,B01001_023,73554,1309,Estimate!!Total!!Male!!75 to 79 years
+15,Hawaii,B01001_023,15866,672,Estimate!!Total!!Male!!75 to 79 years
+16,Idaho,B01001_023,14687,509,Estimate!!Total!!Male!!75 to 79 years
+17,Illinois,B01001_023,124844,1611,Estimate!!Total!!Male!!75 to 79 years
+18,Indiana,B01001_023,66043,1139,Estimate!!Total!!Male!!75 to 79 years
+19,Iowa,B01001_023,36961,756,Estimate!!Total!!Male!!75 to 79 years
+20,Kansas,B01001_023,29884,750,Estimate!!Total!!Male!!75 to 79 years
+21,Kentucky,B01001_023,44347,839,Estimate!!Total!!Male!!75 to 79 years
+22,Louisiana,B01001_023,42748,897,Estimate!!Total!!Male!!75 to 79 years
+23,Maine,B01001_023,17411,478,Estimate!!Total!!Male!!75 to 79 years
+24,Maryland,B01001_023,53370,885,Estimate!!Total!!Male!!75 to 79 years
+25,Massachusetts,B01001_023,70784,1396,Estimate!!Total!!Male!!75 to 79 years
+26,Michigan,B01001_023,107929,1420,Estimate!!Total!!Male!!75 to 79 years
+27,Minnesota,B01001_023,54937,901,Estimate!!Total!!Male!!75 to 79 years
+28,Mississippi,B01001_023,28922,781,Estimate!!Total!!Male!!75 to 79 years
+29,Missouri,B01001_023,66329,1025,Estimate!!Total!!Male!!75 to 79 years
+30,Montana,B01001_023,12360,477,Estimate!!Total!!Male!!75 to 79 years
+31,Nebraska,B01001_023,20412,543,Estimate!!Total!!Male!!75 to 79 years
+32,Nevada,B01001_023,26540,647,Estimate!!Total!!Male!!75 to 79 years
+33,New Hampshire,B01001_023,14132,534,Estimate!!Total!!Male!!75 to 79 years
+34,New Jersey,B01001_023,92095,1433,Estimate!!Total!!Male!!75 to 79 years
+35,New Mexico,B01001_023,22066,626,Estimate!!Total!!Male!!75 to 79 years
+36,New York,B01001_023,203817,2240,Estimate!!Total!!Male!!75 to 79 years
+37,North Carolina,B01001_023,91759,1342,Estimate!!Total!!Male!!75 to 79 years
+38,North Dakota,B01001_023,7970,309,Estimate!!Total!!Male!!75 to 79 years
+39,Ohio,B01001_023,128451,1553,Estimate!!Total!!Male!!75 to 79 years
+40,Oklahoma,B01001_023,40180,798,Estimate!!Total!!Male!!75 to 79 years
+41,Oregon,B01001_023,40209,969,Estimate!!Total!!Male!!75 to 79 years
+42,Pennsylvania,B01001_023,160213,1827,Estimate!!Total!!Male!!75 to 79 years
+44,Rhode Island,B01001_023,12092,476,Estimate!!Total!!Male!!75 to 79 years
+45,South Carolina,B01001_023,45851,914,Estimate!!Total!!Male!!75 to 79 years
+46,South Dakota,B01001_023,9831,426,Estimate!!Total!!Male!!75 to 79 years
+47,Tennessee,B01001_023,66189,1110,Estimate!!Total!!Male!!75 to 79 years
+48,Texas,B01001_023,201142,1977,Estimate!!Total!!Male!!75 to 79 years
+49,Utah,B01001_023,20230,654,Estimate!!Total!!Male!!75 to 79 years
+50,Vermont,B01001_023,7158,365,Estimate!!Total!!Male!!75 to 79 years
+51,Virginia,B01001_023,74589,1335,Estimate!!Total!!Male!!75 to 79 years
+53,Washington,B01001_023,62685,1065,Estimate!!Total!!Male!!75 to 79 years
+54,West Virginia,B01001_023,24073,724,Estimate!!Total!!Male!!75 to 79 years
+55,Wisconsin,B01001_023,62581,866,Estimate!!Total!!Male!!75 to 79 years
+56,Wyoming,B01001_023,5452,323,Estimate!!Total!!Male!!75 to 79 years
+72,Puerto Rico,B01001_023,40495,987,Estimate!!Total!!Male!!75 to 79 years
+01,Alabama,B01001_024,33096,921,Estimate!!Total!!Male!!80 to 84 years
+02,Alaska,B01001_024,2399,214,Estimate!!Total!!Male!!80 to 84 years
+04,Arizona,B01001_024,48535,1030,Estimate!!Total!!Male!!80 to 84 years
+05,Arkansas,B01001_024,22299,794,Estimate!!Total!!Male!!80 to 84 years
+06,California,B01001_024,243442,2891,Estimate!!Total!!Male!!80 to 84 years
+08,Colorado,B01001_024,28309,907,Estimate!!Total!!Male!!80 to 84 years
+09,Connecticut,B01001_024,30077,1055,Estimate!!Total!!Male!!80 to 84 years
+10,Delaware,B01001_024,6530,389,Estimate!!Total!!Male!!80 to 84 years
+11,District of Columbia,B01001_024,3783,358,Estimate!!Total!!Male!!80 to 84 years
+12,Florida,B01001_024,199446,2294,Estimate!!Total!!Male!!80 to 84 years
+13,Georgia,B01001_024,45930,977,Estimate!!Total!!Male!!80 to 84 years
+15,Hawaii,B01001_024,11667,515,Estimate!!Total!!Male!!80 to 84 years
+16,Idaho,B01001_024,11234,506,Estimate!!Total!!Male!!80 to 84 years
+17,Illinois,B01001_024,90768,1562,Estimate!!Total!!Male!!80 to 84 years
+18,Indiana,B01001_024,46375,1055,Estimate!!Total!!Male!!80 to 84 years
+19,Iowa,B01001_024,27800,722,Estimate!!Total!!Male!!80 to 84 years
+20,Kansas,B01001_024,23014,606,Estimate!!Total!!Male!!80 to 84 years
+21,Kentucky,B01001_024,29334,898,Estimate!!Total!!Male!!80 to 84 years
+22,Louisiana,B01001_024,29133,806,Estimate!!Total!!Male!!80 to 84 years
+23,Maine,B01001_024,11686,483,Estimate!!Total!!Male!!80 to 84 years
+24,Maryland,B01001_024,37397,893,Estimate!!Total!!Male!!80 to 84 years
+25,Massachusetts,B01001_024,53958,1174,Estimate!!Total!!Male!!80 to 84 years
+26,Michigan,B01001_024,78809,1168,Estimate!!Total!!Male!!80 to 84 years
+27,Minnesota,B01001_024,39970,797,Estimate!!Total!!Male!!80 to 84 years
+28,Mississippi,B01001_024,18483,645,Estimate!!Total!!Male!!80 to 84 years
+29,Missouri,B01001_024,46353,997,Estimate!!Total!!Male!!80 to 84 years
+30,Montana,B01001_024,8709,409,Estimate!!Total!!Male!!80 to 84 years
+31,Nebraska,B01001_024,15300,528,Estimate!!Total!!Male!!80 to 84 years
+32,Nevada,B01001_024,16160,680,Estimate!!Total!!Male!!80 to 84 years
+33,New Hampshire,B01001_024,9620,535,Estimate!!Total!!Male!!80 to 84 years
+34,New Jersey,B01001_024,69655,1370,Estimate!!Total!!Male!!80 to 84 years
+35,New Mexico,B01001_024,14991,619,Estimate!!Total!!Male!!80 to 84 years
+36,New York,B01001_024,148193,1891,Estimate!!Total!!Male!!80 to 84 years
+37,North Carolina,B01001_024,61274,1261,Estimate!!Total!!Male!!80 to 84 years
+38,North Dakota,B01001_024,6573,307,Estimate!!Total!!Male!!80 to 84 years
+39,Ohio,B01001_024,95400,1813,Estimate!!Total!!Male!!80 to 84 years
+40,Oklahoma,B01001_024,28333,686,Estimate!!Total!!Male!!80 to 84 years
+41,Oregon,B01001_024,31144,928,Estimate!!Total!!Male!!80 to 84 years
+42,Pennsylvania,B01001_024,119603,1637,Estimate!!Total!!Male!!80 to 84 years
+44,Rhode Island,B01001_024,10015,485,Estimate!!Total!!Male!!80 to 84 years
+45,South Carolina,B01001_024,30224,937,Estimate!!Total!!Male!!80 to 84 years
+46,South Dakota,B01001_024,7524,360,Estimate!!Total!!Male!!80 to 84 years
+47,Tennessee,B01001_024,40226,956,Estimate!!Total!!Male!!80 to 84 years
+48,Texas,B01001_024,133378,1927,Estimate!!Total!!Male!!80 to 84 years
+49,Utah,B01001_024,14574,568,Estimate!!Total!!Male!!80 to 84 years
+50,Vermont,B01001_024,5096,308,Estimate!!Total!!Male!!80 to 84 years
+51,Virginia,B01001_024,47820,1098,Estimate!!Total!!Male!!80 to 84 years
+53,Washington,B01001_024,45460,1030,Estimate!!Total!!Male!!80 to 84 years
+54,West Virginia,B01001_024,16531,605,Estimate!!Total!!Male!!80 to 84 years
+55,Wisconsin,B01001_024,46961,938,Estimate!!Total!!Male!!80 to 84 years
+56,Wyoming,B01001_024,4210,323,Estimate!!Total!!Male!!80 to 84 years
+72,Puerto Rico,B01001_024,27689,743,Estimate!!Total!!Male!!80 to 84 years
+01,Alabama,B01001_025,21339,843,Estimate!!Total!!Male!!85 years and over
+02,Alaska,B01001_025,1354,185,Estimate!!Total!!Male!!85 years and over
+04,Arizona,B01001_025,35513,1110,Estimate!!Total!!Male!!85 years and over
+05,Arkansas,B01001_025,15446,659,Estimate!!Total!!Male!!85 years and over
+06,California,B01001_025,191968,2371,Estimate!!Total!!Male!!85 years and over
+08,Colorado,B01001_025,21716,748,Estimate!!Total!!Male!!85 years and over
+09,Connecticut,B01001_025,25090,648,Estimate!!Total!!Male!!85 years and over
+10,Delaware,B01001_025,5038,389,Estimate!!Total!!Male!!85 years and over
+11,District of Columbia,B01001_025,2600,289,Estimate!!Total!!Male!!85 years and over
+12,Florida,B01001_025,150199,2527,Estimate!!Total!!Male!!85 years and over
+13,Georgia,B01001_025,31010,954,Estimate!!Total!!Male!!85 years and over
+15,Hawaii,B01001_025,10114,599,Estimate!!Total!!Male!!85 years and over
+16,Idaho,B01001_025,8455,419,Estimate!!Total!!Male!!85 years and over
+17,Illinois,B01001_025,68056,1194,Estimate!!Total!!Male!!85 years and over
+18,Indiana,B01001_025,32322,922,Estimate!!Total!!Male!!85 years and over
+19,Iowa,B01001_025,21934,689,Estimate!!Total!!Male!!85 years and over
+20,Kansas,B01001_025,18846,700,Estimate!!Total!!Male!!85 years and over
+21,Kentucky,B01001_025,19914,623,Estimate!!Total!!Male!!85 years and over
+22,Louisiana,B01001_025,19236,672,Estimate!!Total!!Male!!85 years and over
+23,Maine,B01001_025,8613,446,Estimate!!Total!!Male!!85 years and over
+24,Maryland,B01001_025,28359,931,Estimate!!Total!!Male!!85 years and over
+25,Massachusetts,B01001_025,41032,1115,Estimate!!Total!!Male!!85 years and over
+26,Michigan,B01001_025,55965,1085,Estimate!!Total!!Male!!85 years and over
+27,Minnesota,B01001_025,31398,845,Estimate!!Total!!Male!!85 years and over
+28,Mississippi,B01001_025,11918,645,Estimate!!Total!!Male!!85 years and over
+29,Missouri,B01001_025,34541,982,Estimate!!Total!!Male!!85 years and over
+30,Montana,B01001_025,5979,317,Estimate!!Total!!Male!!85 years and over
+31,Nebraska,B01001_025,11737,489,Estimate!!Total!!Male!!85 years and over
+32,Nevada,B01001_025,10154,626,Estimate!!Total!!Male!!85 years and over
+33,New Hampshire,B01001_025,7358,467,Estimate!!Total!!Male!!85 years and over
+34,New Jersey,B01001_025,51559,1245,Estimate!!Total!!Male!!85 years and over
+35,New Mexico,B01001_025,10278,479,Estimate!!Total!!Male!!85 years and over
+36,New York,B01001_025,114567,1861,Estimate!!Total!!Male!!85 years and over
+37,North Carolina,B01001_025,39519,965,Estimate!!Total!!Male!!85 years and over
+38,North Dakota,B01001_025,5281,295,Estimate!!Total!!Male!!85 years and over
+39,Ohio,B01001_025,66437,1400,Estimate!!Total!!Male!!85 years and over
+40,Oklahoma,B01001_025,18969,650,Estimate!!Total!!Male!!85 years and over
+41,Oregon,B01001_025,25518,1049,Estimate!!Total!!Male!!85 years and over
+42,Pennsylvania,B01001_025,89313,1553,Estimate!!Total!!Male!!85 years and over
+44,Rhode Island,B01001_025,6701,382,Estimate!!Total!!Male!!85 years and over
+45,South Carolina,B01001_025,19785,808,Estimate!!Total!!Male!!85 years and over
+46,South Dakota,B01001_025,6162,404,Estimate!!Total!!Male!!85 years and over
+47,Tennessee,B01001_025,26973,904,Estimate!!Total!!Male!!85 years and over
+48,Texas,B01001_025,93855,1654,Estimate!!Total!!Male!!85 years and over
+49,Utah,B01001_025,10283,528,Estimate!!Total!!Male!!85 years and over
+50,Vermont,B01001_025,3730,254,Estimate!!Total!!Male!!85 years and over
+51,Virginia,B01001_025,35068,938,Estimate!!Total!!Male!!85 years and over
+53,Washington,B01001_025,36866,916,Estimate!!Total!!Male!!85 years and over
+54,West Virginia,B01001_025,10794,575,Estimate!!Total!!Male!!85 years and over
+55,Wisconsin,B01001_025,35379,842,Estimate!!Total!!Male!!85 years and over
+56,Wyoming,B01001_025,2771,289,Estimate!!Total!!Male!!85 years and over
+72,Puerto Rico,B01001_025,22514,722,Estimate!!Total!!Male!!85 years and over
+01,Alabama,B01001_026,2426746,956,Estimate!!Total!!Female
+02,Alaska,B01001_026,332270,630,Estimate!!Total!!Female
+04,Arizona,B01001_026,3138582,471,Estimate!!Total!!Female
+05,Arkansas,B01001_026,1463739,1229,Estimate!!Total!!Female
+06,California,B01001_026,18414133,1043,Estimate!!Total!!Female
+08,Colorado,B01001_026,2438569,975,Estimate!!Total!!Female
+09,Connecticut,B01001_026,1821003,357,Estimate!!Total!!Female
+10,Delaware,B01001_026,454060,133,Estimate!!Total!!Female
+11,District of Columbia,B01001_026,308299,147,Estimate!!Total!!Female
+12,Florida,B01001_026,9461465,1400,Estimate!!Total!!Female
+13,Georgia,B01001_026,4841901,2590,Estimate!!Total!!Female
+15,Hawaii,B01001_026,665389,217,Estimate!!Total!!Female
+16,Idaho,B01001_026,762368,734,Estimate!!Total!!Female
+17,Illinois,B01001_026,6495007,1021,Estimate!!Total!!Female
+18,Indiana,B01001_026,3262184,1233,Estimate!!Total!!Female
+19,Iowa,B01001_026,1527269,891,Estimate!!Total!!Female
+20,Kansas,B01001_026,1418319,793,Estimate!!Total!!Female
+21,Kentucky,B01001_026,2180345,1382,Estimate!!Total!!Female
+22,Louisiana,B01001_026,2264484,1094,Estimate!!Total!!Female
+23,Maine,B01001_026,677999,451,Estimate!!Total!!Female
+24,Maryland,B01001_026,2942365,754,Estimate!!Total!!Female
+25,Massachusetts,B01001_026,3344847,563,Estimate!!Total!!Female
+26,Michigan,B01001_026,5068249,892,Estimate!!Total!!Female
+27,Minnesota,B01001_026,2640466,800,Estimate!!Total!!Female
+28,Mississippi,B01001_026,1514148,1089,Estimate!!Total!!Female
+29,Missouri,B01001_026,3026676,1141,Estimate!!Total!!Female
+30,Montana,B01001_026,485780,672,Estimate!!Total!!Female
+31,Nebraska,B01001_026,908567,664,Estimate!!Total!!Female
+32,Nevada,B01001_026,1301706,518,Estimate!!Total!!Female
+33,New Hampshire,B01001_026,665435,455,Estimate!!Total!!Female
+34,New Jersey,B01001_026,4477075,485,Estimate!!Total!!Female
+35,New Mexico,B01001_026,1020289,729,Estimate!!Total!!Female
+36,New York,B01001_026,9928898,1169,Estimate!!Total!!Female
+37,North Carolina,B01001_026,4751889,1429,Estimate!!Total!!Female
+38,North Dakota,B01001_026,326926,529,Estimate!!Total!!Female
+39,Ohio,B01001_026,5895995,1148,Estimate!!Total!!Female
+40,Oklahoma,B01001_026,1858590,1049,Estimate!!Total!!Female
+41,Oregon,B01001_026,1899669,687,Estimate!!Total!!Female
+42,Pennsylvania,B01001_026,6473770,948,Estimate!!Total!!Female
+44,Rhode Island,B01001_026,546530,409,Estimate!!Total!!Female
+45,South Carolina,B01001_026,2315751,910,Estimate!!Total!!Female
+46,South Dakota,B01001_026,399216,557,Estimate!!Total!!Female
+47,Tennessee,B01001_026,3195339,1188,Estimate!!Total!!Female
+48,Texas,B01001_026,12253121,2259,Estimate!!Total!!Female
+49,Utah,B01001_026,1322376,502,Estimate!!Total!!Female
+50,Vermont,B01001_026,316588,297,Estimate!!Total!!Female
+51,Virginia,B01001_026,3992402,1636,Estimate!!Total!!Female
+53,Washington,B01001_026,3293809,716,Estimate!!Total!!Female
+54,West Virginia,B01001_026,936177,747,Estimate!!Total!!Female
+55,Wisconsin,B01001_026,2842039,752,Estimate!!Total!!Female
+56,Wyoming,B01001_026,267729,430,Estimate!!Total!!Female
+72,Puerto Rico,B01001_026,1958404,NA,Estimate!!Total!!Female
+01,Alabama,B01001_027,148372,483,Estimate!!Total!!Female!!Under 5 years
+02,Alaska,B01001_027,24646,245,Estimate!!Total!!Female!!Under 5 years
+04,Arizona,B01001_027,226542,347,Estimate!!Total!!Female!!Under 5 years
+05,Arkansas,B01001_027,95376,667,Estimate!!Total!!Female!!Under 5 years
+06,California,B01001_027,1244216,599,Estimate!!Total!!Female!!Under 5 years
+08,Colorado,B01001_027,166096,577,Estimate!!Total!!Female!!Under 5 years
+09,Connecticut,B01001_027,100161,231,Estimate!!Total!!Female!!Under 5 years
+10,Delaware,B01001_027,27534,89,Estimate!!Total!!Female!!Under 5 years
+11,District of Columbia,B01001_027,15959,96,Estimate!!Total!!Female!!Under 5 years
+12,Florida,B01001_027,528479,815,Estimate!!Total!!Female!!Under 5 years
+13,Georgia,B01001_027,336710,1084,Estimate!!Total!!Female!!Under 5 years
+15,Hawaii,B01001_027,41844,95,Estimate!!Total!!Female!!Under 5 years
+16,Idaho,B01001_027,58198,286,Estimate!!Total!!Female!!Under 5 years
+17,Illinois,B01001_027,413907,464,Estimate!!Total!!Female!!Under 5 years
+18,Indiana,B01001_027,212592,452,Estimate!!Total!!Female!!Under 5 years
+19,Iowa,B01001_027,96793,525,Estimate!!Total!!Female!!Under 5 years
+20,Kansas,B01001_027,98435,529,Estimate!!Total!!Female!!Under 5 years
+21,Kentucky,B01001_027,136071,750,Estimate!!Total!!Female!!Under 5 years
+22,Louisiana,B01001_027,149242,572,Estimate!!Total!!Female!!Under 5 years
+23,Maine,B01001_027,33622,209,Estimate!!Total!!Female!!Under 5 years
+24,Maryland,B01001_027,178868,446,Estimate!!Total!!Female!!Under 5 years
+25,Massachusetts,B01001_027,180330,206,Estimate!!Total!!Female!!Under 5 years
+26,Michigan,B01001_027,300463,507,Estimate!!Total!!Female!!Under 5 years
+27,Minnesota,B01001_027,173098,411,Estimate!!Total!!Female!!Under 5 years
+28,Mississippi,B01001_027,101976,591,Estimate!!Total!!Female!!Under 5 years
+29,Missouri,B01001_027,188870,487,Estimate!!Total!!Female!!Under 5 years
+30,Montana,B01001_027,29191,291,Estimate!!Total!!Female!!Under 5 years
+31,Nebraska,B01001_027,63576,331,Estimate!!Total!!Female!!Under 5 years
+32,Nevada,B01001_027,91863,266,Estimate!!Total!!Female!!Under 5 years
+33,New Hampshire,B01001_027,35525,240,Estimate!!Total!!Female!!Under 5 years
+34,New Jersey,B01001_027,267716,239,Estimate!!Total!!Female!!Under 5 years
+35,New Mexico,B01001_027,70353,374,Estimate!!Total!!Female!!Under 5 years
+36,New York,B01001_027,566415,674,Estimate!!Total!!Female!!Under 5 years
+37,North Carolina,B01001_027,303237,634,Estimate!!Total!!Female!!Under 5 years
+38,North Dakota,B01001_027,20473,254,Estimate!!Total!!Female!!Under 5 years
+39,Ohio,B01001_027,355298,702,Estimate!!Total!!Female!!Under 5 years
+40,Oklahoma,B01001_027,125707,575,Estimate!!Total!!Female!!Under 5 years
+41,Oregon,B01001_027,114208,419,Estimate!!Total!!Female!!Under 5 years
+42,Pennsylvania,B01001_027,355520,453,Estimate!!Total!!Female!!Under 5 years
+44,Rhode Island,B01001_027,28772,300,Estimate!!Total!!Female!!Under 5 years
+45,South Carolina,B01001_027,145046,525,Estimate!!Total!!Female!!Under 5 years
+46,South Dakota,B01001_027,27395,285,Estimate!!Total!!Female!!Under 5 years
+47,Tennessee,B01001_027,197994,690,Estimate!!Total!!Female!!Under 5 years
+48,Texas,B01001_027,931442,1046,Estimate!!Total!!Female!!Under 5 years
+49,Utah,B01001_027,124041,287,Estimate!!Total!!Female!!Under 5 years
+50,Vermont,B01001_027,15557,147,Estimate!!Total!!Female!!Under 5 years
+51,Virginia,B01001_027,247543,899,Estimate!!Total!!Female!!Under 5 years
+53,Washington,B01001_027,208047,334,Estimate!!Total!!Female!!Under 5 years
+54,West Virginia,B01001_027,50532,417,Estimate!!Total!!Female!!Under 5 years
+55,Wisconsin,B01001_027,173266,391,Estimate!!Total!!Female!!Under 5 years
+56,Wyoming,B01001_027,18153,263,Estimate!!Total!!Female!!Under 5 years
+72,Puerto Rico,B01001_027,115027,NA,Estimate!!Total!!Female!!Under 5 years
+01,Alabama,B01001_028,152887,1623,Estimate!!Total!!Female!!5 to 9 years
+02,Alaska,B01001_028,24088,756,Estimate!!Total!!Female!!5 to 9 years
+04,Arizona,B01001_028,217866,2019,Estimate!!Total!!Female!!5 to 9 years
+05,Arkansas,B01001_028,96275,1633,Estimate!!Total!!Female!!5 to 9 years
+06,California,B01001_028,1217582,5152,Estimate!!Total!!Female!!5 to 9 years
+08,Colorado,B01001_028,166220,1721,Estimate!!Total!!Female!!5 to 9 years
+09,Connecticut,B01001_028,109841,1625,Estimate!!Total!!Female!!5 to 9 years
+10,Delaware,B01001_028,27853,808,Estimate!!Total!!Female!!5 to 9 years
+11,District of Columbia,B01001_028,13007,538,Estimate!!Total!!Female!!5 to 9 years
+12,Florida,B01001_028,528784,4197,Estimate!!Total!!Female!!5 to 9 years
+13,Georgia,B01001_028,333804,3372,Estimate!!Total!!Female!!5 to 9 years
+15,Hawaii,B01001_028,38233,900,Estimate!!Total!!Female!!5 to 9 years
+16,Idaho,B01001_028,57616,1138,Estimate!!Total!!Female!!5 to 9 years
+17,Illinois,B01001_028,425138,3542,Estimate!!Total!!Female!!5 to 9 years
+18,Indiana,B01001_028,217095,2336,Estimate!!Total!!Female!!5 to 9 years
+19,Iowa,B01001_028,97588,1263,Estimate!!Total!!Female!!5 to 9 years
+20,Kansas,B01001_028,96501,1265,Estimate!!Total!!Female!!5 to 9 years
+21,Kentucky,B01001_028,137064,1835,Estimate!!Total!!Female!!5 to 9 years
+22,Louisiana,B01001_028,149978,1907,Estimate!!Total!!Female!!5 to 9 years
+23,Maine,B01001_028,36129,947,Estimate!!Total!!Female!!5 to 9 years
+24,Maryland,B01001_028,179979,2120,Estimate!!Total!!Female!!5 to 9 years
+25,Massachusetts,B01001_028,192119,1828,Estimate!!Total!!Female!!5 to 9 years
+26,Michigan,B01001_028,318702,2285,Estimate!!Total!!Female!!5 to 9 years
+27,Minnesota,B01001_028,169518,1742,Estimate!!Total!!Female!!5 to 9 years
+28,Mississippi,B01001_028,99764,1757,Estimate!!Total!!Female!!5 to 9 years
+29,Missouri,B01001_028,188264,2194,Estimate!!Total!!Female!!5 to 9 years
+30,Montana,B01001_028,29321,775,Estimate!!Total!!Female!!5 to 9 years
+31,Nebraska,B01001_028,60777,979,Estimate!!Total!!Female!!5 to 9 years
+32,Nevada,B01001_028,88176,1826,Estimate!!Total!!Female!!5 to 9 years
+33,New Hampshire,B01001_028,39380,1086,Estimate!!Total!!Female!!5 to 9 years
+34,New Jersey,B01001_028,279227,2604,Estimate!!Total!!Female!!5 to 9 years
+35,New Mexico,B01001_028,68573,1724,Estimate!!Total!!Female!!5 to 9 years
+36,New York,B01001_028,573584,4353,Estimate!!Total!!Female!!5 to 9 years
+37,North Carolina,B01001_028,300076,2735,Estimate!!Total!!Female!!5 to 9 years
+38,North Dakota,B01001_028,19095,545,Estimate!!Total!!Female!!5 to 9 years
+39,Ohio,B01001_028,371903,3458,Estimate!!Total!!Female!!5 to 9 years
+40,Oklahoma,B01001_028,123944,1734,Estimate!!Total!!Female!!5 to 9 years
+41,Oregon,B01001_028,116093,1868,Estimate!!Total!!Female!!5 to 9 years
+42,Pennsylvania,B01001_028,370324,2630,Estimate!!Total!!Female!!5 to 9 years
+44,Rhode Island,B01001_028,29874,992,Estimate!!Total!!Female!!5 to 9 years
+45,South Carolina,B01001_028,141272,1966,Estimate!!Total!!Female!!5 to 9 years
+46,South Dakota,B01001_028,25602,815,Estimate!!Total!!Female!!5 to 9 years
+47,Tennessee,B01001_028,201053,2290,Estimate!!Total!!Female!!5 to 9 years
+48,Texas,B01001_028,903098,5493,Estimate!!Total!!Female!!5 to 9 years
+49,Utah,B01001_028,114209,1567,Estimate!!Total!!Female!!5 to 9 years
+50,Vermont,B01001_028,16901,566,Estimate!!Total!!Female!!5 to 9 years
+51,Virginia,B01001_028,242024,2512,Estimate!!Total!!Female!!5 to 9 years
+53,Washington,B01001_028,205515,2409,Estimate!!Total!!Female!!5 to 9 years
+54,West Virginia,B01001_028,51122,1256,Estimate!!Total!!Female!!5 to 9 years
+55,Wisconsin,B01001_028,177790,1927,Estimate!!Total!!Female!!5 to 9 years
+56,Wyoming,B01001_028,17436,635,Estimate!!Total!!Female!!5 to 9 years
+72,Puerto Rico,B01001_028,120923,1632,Estimate!!Total!!Female!!5 to 9 years
+01,Alabama,B01001_029,153908,1634,Estimate!!Total!!Female!!10 to 14 years
+02,Alaska,B01001_029,24651,758,Estimate!!Total!!Female!!10 to 14 years
+04,Arizona,B01001_029,212530,2025,Estimate!!Total!!Female!!10 to 14 years
+05,Arkansas,B01001_029,93648,1627,Estimate!!Total!!Female!!10 to 14 years
+06,California,B01001_029,1269404,5133,Estimate!!Total!!Female!!10 to 14 years
+08,Colorado,B01001_029,156306,1789,Estimate!!Total!!Female!!10 to 14 years
+09,Connecticut,B01001_029,118444,1638,Estimate!!Total!!Female!!10 to 14 years
+10,Delaware,B01001_029,27070,822,Estimate!!Total!!Female!!10 to 14 years
+11,District of Columbia,B01001_029,13223,546,Estimate!!Total!!Female!!10 to 14 years
+12,Florida,B01001_029,547837,4224,Estimate!!Total!!Female!!10 to 14 years
+13,Georgia,B01001_029,328411,3395,Estimate!!Total!!Female!!10 to 14 years
+15,Hawaii,B01001_029,40405,888,Estimate!!Total!!Female!!10 to 14 years
+16,Idaho,B01001_029,54686,1130,Estimate!!Total!!Female!!10 to 14 years
+17,Illinois,B01001_029,429537,3547,Estimate!!Total!!Female!!10 to 14 years
+18,Indiana,B01001_029,218943,2283,Estimate!!Total!!Female!!10 to 14 years
+19,Iowa,B01001_029,96648,1271,Estimate!!Total!!Female!!10 to 14 years
+20,Kansas,B01001_029,95591,1331,Estimate!!Total!!Female!!10 to 14 years
+21,Kentucky,B01001_029,136971,1889,Estimate!!Total!!Female!!10 to 14 years
+22,Louisiana,B01001_029,146626,1962,Estimate!!Total!!Female!!10 to 14 years
+23,Maine,B01001_029,40489,954,Estimate!!Total!!Female!!10 to 14 years
+24,Maryland,B01001_029,186551,2131,Estimate!!Total!!Female!!10 to 14 years
+25,Massachusetts,B01001_029,197763,1805,Estimate!!Total!!Female!!10 to 14 years
+26,Michigan,B01001_029,342056,2298,Estimate!!Total!!Female!!10 to 14 years
+27,Minnesota,B01001_029,174117,1834,Estimate!!Total!!Female!!10 to 14 years
+28,Mississippi,B01001_029,102762,1623,Estimate!!Total!!Female!!10 to 14 years
+29,Missouri,B01001_029,196506,2299,Estimate!!Total!!Female!!10 to 14 years
+30,Montana,B01001_029,29784,766,Estimate!!Total!!Female!!10 to 14 years
+31,Nebraska,B01001_029,60421,981,Estimate!!Total!!Female!!10 to 14 years
+32,Nevada,B01001_029,86780,1792,Estimate!!Total!!Female!!10 to 14 years
+33,New Hampshire,B01001_029,41409,1103,Estimate!!Total!!Female!!10 to 14 years
+34,New Jersey,B01001_029,286125,2629,Estimate!!Total!!Female!!10 to 14 years
+35,New Mexico,B01001_029,68836,1674,Estimate!!Total!!Female!!10 to 14 years
+36,New York,B01001_029,604133,4479,Estimate!!Total!!Female!!10 to 14 years
+37,North Carolina,B01001_029,303384,2733,Estimate!!Total!!Female!!10 to 14 years
+38,North Dakota,B01001_029,19514,573,Estimate!!Total!!Female!!10 to 14 years
+39,Ohio,B01001_029,380888,3523,Estimate!!Total!!Female!!10 to 14 years
+40,Oklahoma,B01001_029,119551,1651,Estimate!!Total!!Female!!10 to 14 years
+41,Oregon,B01001_029,116728,1754,Estimate!!Total!!Female!!10 to 14 years
+42,Pennsylvania,B01001_029,392671,2652,Estimate!!Total!!Female!!10 to 14 years
+44,Rhode Island,B01001_029,32539,994,Estimate!!Total!!Female!!10 to 14 years
+45,South Carolina,B01001_029,145075,1884,Estimate!!Total!!Female!!10 to 14 years
+46,South Dakota,B01001_029,26802,811,Estimate!!Total!!Female!!10 to 14 years
+47,Tennessee,B01001_029,201253,2328,Estimate!!Total!!Female!!10 to 14 years
+48,Texas,B01001_029,886252,5456,Estimate!!Total!!Female!!10 to 14 years
+49,Utah,B01001_029,105191,1551,Estimate!!Total!!Female!!10 to 14 years
+50,Vermont,B01001_029,18946,552,Estimate!!Total!!Female!!10 to 14 years
+51,Virginia,B01001_029,252360,2512,Estimate!!Total!!Female!!10 to 14 years
+53,Washington,B01001_029,212403,2394,Estimate!!Total!!Female!!10 to 14 years
+54,West Virginia,B01001_029,54089,1238,Estimate!!Total!!Female!!10 to 14 years
+55,Wisconsin,B01001_029,186970,1952,Estimate!!Total!!Female!!10 to 14 years
+56,Wyoming,B01001_029,16654,516,Estimate!!Total!!Female!!10 to 14 years
+72,Puerto Rico,B01001_029,141380,1633,Estimate!!Total!!Female!!10 to 14 years
+01,Alabama,B01001_030,97424,454,Estimate!!Total!!Female!!15 to 17 years
+02,Alaska,B01001_030,16287,269,Estimate!!Total!!Female!!15 to 17 years
+04,Arizona,B01001_030,130669,230,Estimate!!Total!!Female!!15 to 17 years
+05,Arkansas,B01001_030,58758,514,Estimate!!Total!!Female!!15 to 17 years
+06,California,B01001_030,820136,606,Estimate!!Total!!Female!!15 to 17 years
+08,Colorado,B01001_030,97726,491,Estimate!!Total!!Female!!15 to 17 years
+09,Connecticut,B01001_030,75030,192,Estimate!!Total!!Female!!15 to 17 years
+10,Delaware,B01001_030,17807,112,Estimate!!Total!!Female!!15 to 17 years
+11,District of Columbia,B01001_030,8844,60,Estimate!!Total!!Female!!15 to 17 years
+12,Florida,B01001_030,354607,695,Estimate!!Total!!Female!!15 to 17 years
+13,Georgia,B01001_030,205341,745,Estimate!!Total!!Female!!15 to 17 years
+15,Hawaii,B01001_030,25497,79,Estimate!!Total!!Female!!15 to 17 years
+16,Idaho,B01001_030,33480,327,Estimate!!Total!!Female!!15 to 17 years
+17,Illinois,B01001_030,273156,479,Estimate!!Total!!Female!!15 to 17 years
+18,Indiana,B01001_030,136157,460,Estimate!!Total!!Female!!15 to 17 years
+19,Iowa,B01001_030,62468,438,Estimate!!Total!!Female!!15 to 17 years
+20,Kansas,B01001_030,58981,358,Estimate!!Total!!Female!!15 to 17 years
+21,Kentucky,B01001_030,85392,646,Estimate!!Total!!Female!!15 to 17 years
+22,Louisiana,B01001_030,94482,472,Estimate!!Total!!Female!!15 to 17 years
+23,Maine,B01001_030,26558,270,Estimate!!Total!!Female!!15 to 17 years
+24,Maryland,B01001_030,121572,346,Estimate!!Total!!Female!!15 to 17 years
+25,Massachusetts,B01001_030,129410,232,Estimate!!Total!!Female!!15 to 17 years
+26,Michigan,B01001_030,220197,358,Estimate!!Total!!Female!!15 to 17 years
+27,Minnesota,B01001_030,110043,468,Estimate!!Total!!Female!!15 to 17 years
+28,Mississippi,B01001_030,66028,545,Estimate!!Total!!Female!!15 to 17 years
+29,Missouri,B01001_030,124001,531,Estimate!!Total!!Female!!15 to 17 years
+30,Montana,B01001_030,20199,415,Estimate!!Total!!Female!!15 to 17 years
+31,Nebraska,B01001_030,37587,249,Estimate!!Total!!Female!!15 to 17 years
+32,Nevada,B01001_030,53307,327,Estimate!!Total!!Female!!15 to 17 years
+33,New Hampshire,B01001_030,27661,219,Estimate!!Total!!Female!!15 to 17 years
+34,New Jersey,B01001_030,183359,270,Estimate!!Total!!Female!!15 to 17 years
+35,New Mexico,B01001_030,44020,361,Estimate!!Total!!Female!!15 to 17 years
+36,New York,B01001_030,396813,489,Estimate!!Total!!Female!!15 to 17 years
+37,North Carolina,B01001_030,185246,746,Estimate!!Total!!Female!!15 to 17 years
+38,North Dakota,B01001_030,12579,192,Estimate!!Total!!Female!!15 to 17 years
+39,Ohio,B01001_030,243945,492,Estimate!!Total!!Female!!15 to 17 years
+40,Oklahoma,B01001_030,75403,557,Estimate!!Total!!Female!!15 to 17 years
+41,Oregon,B01001_030,74492,389,Estimate!!Total!!Female!!15 to 17 years
+42,Pennsylvania,B01001_030,258125,411,Estimate!!Total!!Female!!15 to 17 years
+44,Rhode Island,B01001_030,21144,155,Estimate!!Total!!Female!!15 to 17 years
+45,South Carolina,B01001_030,91782,475,Estimate!!Total!!Female!!15 to 17 years
+46,South Dakota,B01001_030,16771,281,Estimate!!Total!!Female!!15 to 17 years
+47,Tennessee,B01001_030,125381,526,Estimate!!Total!!Female!!15 to 17 years
+48,Texas,B01001_030,538350,932,Estimate!!Total!!Female!!15 to 17 years
+49,Utah,B01001_030,61573,339,Estimate!!Total!!Female!!15 to 17 years
+50,Vermont,B01001_030,12735,124,Estimate!!Total!!Female!!15 to 17 years
+51,Virginia,B01001_030,156909,604,Estimate!!Total!!Female!!15 to 17 years
+53,Washington,B01001_030,134486,319,Estimate!!Total!!Female!!15 to 17 years
+54,West Virginia,B01001_030,34346,308,Estimate!!Total!!Female!!15 to 17 years
+55,Wisconsin,B01001_030,118128,408,Estimate!!Total!!Female!!15 to 17 years
+56,Wyoming,B01001_030,10848,248,Estimate!!Total!!Female!!15 to 17 years
+72,Puerto Rico,B01001_030,85195,NA,Estimate!!Total!!Female!!15 to 17 years
+01,Alabama,B01001_031,70512,806,Estimate!!Total!!Female!!18 and 19 years
+02,Alaska,B01001_031,9970,312,Estimate!!Total!!Female!!18 and 19 years
+04,Arizona,B01001_031,88027,387,Estimate!!Total!!Female!!18 and 19 years
+05,Arkansas,B01001_031,41420,732,Estimate!!Total!!Female!!18 and 19 years
+06,California,B01001_031,536424,1084,Estimate!!Total!!Female!!18 and 19 years
+08,Colorado,B01001_031,65620,775,Estimate!!Total!!Female!!18 and 19 years
+09,Connecticut,B01001_031,47850,270,Estimate!!Total!!Female!!18 and 19 years
+10,Delaware,B01001_031,13734,114,Estimate!!Total!!Female!!18 and 19 years
+11,District of Columbia,B01001_031,14106,548,Estimate!!Total!!Female!!18 and 19 years
+12,Florida,B01001_031,242917,811,Estimate!!Total!!Female!!18 and 19 years
+13,Georgia,B01001_031,143658,2176,Estimate!!Total!!Female!!18 and 19 years
+15,Hawaii,B01001_031,15913,248,Estimate!!Total!!Female!!18 and 19 years
+16,Idaho,B01001_031,23114,474,Estimate!!Total!!Female!!18 and 19 years
+17,Illinois,B01001_031,180287,1299,Estimate!!Total!!Female!!18 and 19 years
+18,Indiana,B01001_031,95887,518,Estimate!!Total!!Female!!18 and 19 years
+19,Iowa,B01001_031,44900,498,Estimate!!Total!!Female!!18 and 19 years
+20,Kansas,B01001_031,40515,537,Estimate!!Total!!Female!!18 and 19 years
+21,Kentucky,B01001_031,59633,734,Estimate!!Total!!Female!!18 and 19 years
+22,Louisiana,B01001_031,68041,862,Estimate!!Total!!Female!!18 and 19 years
+23,Maine,B01001_031,17910,200,Estimate!!Total!!Female!!18 and 19 years
+24,Maryland,B01001_031,79249,663,Estimate!!Total!!Female!!18 and 19 years
+25,Massachusetts,B01001_031,102993,1435,Estimate!!Total!!Female!!18 and 19 years
+26,Michigan,B01001_031,149571,1019,Estimate!!Total!!Female!!18 and 19 years
+27,Minnesota,B01001_031,72960,506,Estimate!!Total!!Female!!18 and 19 years
+28,Mississippi,B01001_031,45747,989,Estimate!!Total!!Female!!18 and 19 years
+29,Missouri,B01001_031,86273,988,Estimate!!Total!!Female!!18 and 19 years
+30,Montana,B01001_031,13676,595,Estimate!!Total!!Female!!18 and 19 years
+31,Nebraska,B01001_031,25875,360,Estimate!!Total!!Female!!18 and 19 years
+32,Nevada,B01001_031,32077,408,Estimate!!Total!!Female!!18 and 19 years
+33,New Hampshire,B01001_031,19864,454,Estimate!!Total!!Female!!18 and 19 years
+34,New Jersey,B01001_031,107412,658,Estimate!!Total!!Female!!18 and 19 years
+35,New Mexico,B01001_031,29334,567,Estimate!!Total!!Female!!18 and 19 years
+36,New York,B01001_031,275700,775,Estimate!!Total!!Female!!18 and 19 years
+37,North Carolina,B01001_031,132463,1232,Estimate!!Total!!Female!!18 and 19 years
+38,North Dakota,B01001_031,10804,237,Estimate!!Total!!Female!!18 and 19 years
+39,Ohio,B01001_031,164374,693,Estimate!!Total!!Female!!18 and 19 years
+40,Oklahoma,B01001_031,53620,705,Estimate!!Total!!Female!!18 and 19 years
+41,Oregon,B01001_031,50458,568,Estimate!!Total!!Female!!18 and 19 years
+42,Pennsylvania,B01001_031,192824,886,Estimate!!Total!!Female!!18 and 19 years
+44,Rhode Island,B01001_031,19253,214,Estimate!!Total!!Female!!18 and 19 years
+45,South Carolina,B01001_031,68452,722,Estimate!!Total!!Female!!18 and 19 years
+46,South Dakota,B01001_031,11678,478,Estimate!!Total!!Female!!18 and 19 years
+47,Tennessee,B01001_031,87063,680,Estimate!!Total!!Female!!18 and 19 years
+48,Texas,B01001_031,356419,1853,Estimate!!Total!!Female!!18 and 19 years
+49,Utah,B01001_031,45993,383,Estimate!!Total!!Female!!18 and 19 years
+50,Vermont,B01001_031,10115,152,Estimate!!Total!!Female!!18 and 19 years
+51,Virginia,B01001_031,115934,1512,Estimate!!Total!!Female!!18 and 19 years
+53,Washington,B01001_031,89971,637,Estimate!!Total!!Female!!18 and 19 years
+54,West Virginia,B01001_031,24858,511,Estimate!!Total!!Female!!18 and 19 years
+55,Wisconsin,B01001_031,80115,533,Estimate!!Total!!Female!!18 and 19 years
+56,Wyoming,B01001_031,7599,250,Estimate!!Total!!Female!!18 and 19 years
+72,Puerto Rico,B01001_031,57260,139,Estimate!!Total!!Female!!18 and 19 years
+01,Alabama,B01001_032,35458,1248,Estimate!!Total!!Female!!20 years
+02,Alaska,B01001_032,4749,445,Estimate!!Total!!Female!!20 years
+04,Arizona,B01001_032,40699,1316,Estimate!!Total!!Female!!20 years
+05,Arkansas,B01001_032,21367,1033,Estimate!!Total!!Female!!20 years
+06,California,B01001_032,274010,3896,Estimate!!Total!!Female!!20 years
+08,Colorado,B01001_032,32999,1580,Estimate!!Total!!Female!!20 years
+09,Connecticut,B01001_032,24165,1052,Estimate!!Total!!Female!!20 years
+10,Delaware,B01001_032,6820,625,Estimate!!Total!!Female!!20 years
+11,District of Columbia,B01001_032,6016,612,Estimate!!Total!!Female!!20 years
+12,Florida,B01001_032,125830,2612,Estimate!!Total!!Female!!20 years
+13,Georgia,B01001_032,71360,2211,Estimate!!Total!!Female!!20 years
+15,Hawaii,B01001_032,7763,519,Estimate!!Total!!Female!!20 years
+16,Idaho,B01001_032,10581,708,Estimate!!Total!!Female!!20 years
+17,Illinois,B01001_032,88594,2038,Estimate!!Total!!Female!!20 years
+18,Indiana,B01001_032,51797,1304,Estimate!!Total!!Female!!20 years
+19,Iowa,B01001_032,23855,998,Estimate!!Total!!Female!!20 years
+20,Kansas,B01001_032,19737,905,Estimate!!Total!!Female!!20 years
+21,Kentucky,B01001_032,31302,1277,Estimate!!Total!!Female!!20 years
+22,Louisiana,B01001_032,35474,1393,Estimate!!Total!!Female!!20 years
+23,Maine,B01001_032,9183,591,Estimate!!Total!!Female!!20 years
+24,Maryland,B01001_032,38464,1442,Estimate!!Total!!Female!!20 years
+25,Massachusetts,B01001_032,50438,1474,Estimate!!Total!!Female!!20 years
+26,Michigan,B01001_032,76070,1781,Estimate!!Total!!Female!!20 years
+27,Minnesota,B01001_032,36263,1310,Estimate!!Total!!Female!!20 years
+28,Mississippi,B01001_032,24513,1158,Estimate!!Total!!Female!!20 years
+29,Missouri,B01001_032,44673,1471,Estimate!!Total!!Female!!20 years
+30,Montana,B01001_032,7464,638,Estimate!!Total!!Female!!20 years
+31,Nebraska,B01001_032,13505,1078,Estimate!!Total!!Female!!20 years
+32,Nevada,B01001_032,17530,990,Estimate!!Total!!Female!!20 years
+33,New Hampshire,B01001_032,9527,735,Estimate!!Total!!Female!!20 years
+34,New Jersey,B01001_032,54651,1564,Estimate!!Total!!Female!!20 years
+35,New Mexico,B01001_032,16239,1017,Estimate!!Total!!Female!!20 years
+36,New York,B01001_032,144604,2473,Estimate!!Total!!Female!!20 years
+37,North Carolina,B01001_032,67571,2214,Estimate!!Total!!Female!!20 years
+38,North Dakota,B01001_032,5892,475,Estimate!!Total!!Female!!20 years
+39,Ohio,B01001_032,83349,2087,Estimate!!Total!!Female!!20 years
+40,Oklahoma,B01001_032,26852,1086,Estimate!!Total!!Female!!20 years
+41,Oregon,B01001_032,25773,1135,Estimate!!Total!!Female!!20 years
+42,Pennsylvania,B01001_032,96273,2167,Estimate!!Total!!Female!!20 years
+44,Rhode Island,B01001_032,10363,794,Estimate!!Total!!Female!!20 years
+45,South Carolina,B01001_032,34291,1559,Estimate!!Total!!Female!!20 years
+46,South Dakota,B01001_032,6431,515,Estimate!!Total!!Female!!20 years
+47,Tennessee,B01001_032,44326,1799,Estimate!!Total!!Female!!20 years
+48,Texas,B01001_032,179431,3397,Estimate!!Total!!Female!!20 years
+49,Utah,B01001_032,25901,1262,Estimate!!Total!!Female!!20 years
+50,Vermont,B01001_032,5538,498,Estimate!!Total!!Female!!20 years
+51,Virginia,B01001_032,59539,1635,Estimate!!Total!!Female!!20 years
+53,Washington,B01001_032,45009,1448,Estimate!!Total!!Female!!20 years
+54,West Virginia,B01001_032,12534,788,Estimate!!Total!!Female!!20 years
+55,Wisconsin,B01001_032,40553,1260,Estimate!!Total!!Female!!20 years
+56,Wyoming,B01001_032,4092,432,Estimate!!Total!!Female!!20 years
+72,Puerto Rico,B01001_032,31761,981,Estimate!!Total!!Female!!20 years
+01,Alabama,B01001_033,34907,1315,Estimate!!Total!!Female!!21 years
+02,Alaska,B01001_033,4660,431,Estimate!!Total!!Female!!21 years
+04,Arizona,B01001_033,42967,1401,Estimate!!Total!!Female!!21 years
+05,Arkansas,B01001_033,20416,1302,Estimate!!Total!!Female!!21 years
+06,California,B01001_033,259442,4542,Estimate!!Total!!Female!!21 years
+08,Colorado,B01001_033,31751,1413,Estimate!!Total!!Female!!21 years
+09,Connecticut,B01001_033,22516,1119,Estimate!!Total!!Female!!21 years
+10,Delaware,B01001_033,6718,675,Estimate!!Total!!Female!!21 years
+11,District of Columbia,B01001_033,4816,550,Estimate!!Total!!Female!!21 years
+12,Florida,B01001_033,122666,2593,Estimate!!Total!!Female!!21 years
+13,Georgia,B01001_033,65445,1846,Estimate!!Total!!Female!!21 years
+15,Hawaii,B01001_033,9511,632,Estimate!!Total!!Female!!21 years
+16,Idaho,B01001_033,10806,770,Estimate!!Total!!Female!!21 years
+17,Illinois,B01001_033,85407,1898,Estimate!!Total!!Female!!21 years
+18,Indiana,B01001_033,47099,1552,Estimate!!Total!!Female!!21 years
+19,Iowa,B01001_033,22571,1024,Estimate!!Total!!Female!!21 years
+20,Kansas,B01001_033,22092,942,Estimate!!Total!!Female!!21 years
+21,Kentucky,B01001_033,28875,1129,Estimate!!Total!!Female!!21 years
+22,Louisiana,B01001_033,33681,1354,Estimate!!Total!!Female!!21 years
+23,Maine,B01001_033,8831,627,Estimate!!Total!!Female!!21 years
+24,Maryland,B01001_033,38029,1270,Estimate!!Total!!Female!!21 years
+25,Massachusetts,B01001_033,48271,1548,Estimate!!Total!!Female!!21 years
+26,Michigan,B01001_033,69843,1826,Estimate!!Total!!Female!!21 years
+27,Minnesota,B01001_033,35680,1402,Estimate!!Total!!Female!!21 years
+28,Mississippi,B01001_033,21880,1161,Estimate!!Total!!Female!!21 years
+29,Missouri,B01001_033,41311,1239,Estimate!!Total!!Female!!21 years
+30,Montana,B01001_033,6758,495,Estimate!!Total!!Female!!21 years
+31,Nebraska,B01001_033,13232,660,Estimate!!Total!!Female!!21 years
+32,Nevada,B01001_033,17083,972,Estimate!!Total!!Female!!21 years
+33,New Hampshire,B01001_033,8702,645,Estimate!!Total!!Female!!21 years
+34,New Jersey,B01001_033,52011,1540,Estimate!!Total!!Female!!21 years
+35,New Mexico,B01001_033,13509,903,Estimate!!Total!!Female!!21 years
+36,New York,B01001_033,136772,2943,Estimate!!Total!!Female!!21 years
+37,North Carolina,B01001_033,63683,2047,Estimate!!Total!!Female!!21 years
+38,North Dakota,B01001_033,6729,510,Estimate!!Total!!Female!!21 years
+39,Ohio,B01001_033,78487,2134,Estimate!!Total!!Female!!21 years
+40,Oklahoma,B01001_033,27676,1055,Estimate!!Total!!Female!!21 years
+41,Oregon,B01001_033,25391,1207,Estimate!!Total!!Female!!21 years
+42,Pennsylvania,B01001_033,89798,2044,Estimate!!Total!!Female!!21 years
+44,Rhode Island,B01001_033,9085,762,Estimate!!Total!!Female!!21 years
+45,South Carolina,B01001_033,31776,1260,Estimate!!Total!!Female!!21 years
+46,South Dakota,B01001_033,5388,515,Estimate!!Total!!Female!!21 years
+47,Tennessee,B01001_033,40513,1415,Estimate!!Total!!Female!!21 years
+48,Texas,B01001_033,172333,2695,Estimate!!Total!!Female!!21 years
+49,Utah,B01001_033,22783,1095,Estimate!!Total!!Female!!21 years
+50,Vermont,B01001_033,4432,357,Estimate!!Total!!Female!!21 years
+51,Virginia,B01001_033,54199,1650,Estimate!!Total!!Female!!21 years
+53,Washington,B01001_033,43301,1721,Estimate!!Total!!Female!!21 years
+54,West Virginia,B01001_033,12591,838,Estimate!!Total!!Female!!21 years
+55,Wisconsin,B01001_033,39401,1530,Estimate!!Total!!Female!!21 years
+56,Wyoming,B01001_033,3832,426,Estimate!!Total!!Female!!21 years
+72,Puerto Rico,B01001_033,28434,1141,Estimate!!Total!!Female!!21 years
+01,Alabama,B01001_034,94515,1604,Estimate!!Total!!Female!!22 to 24 years
+02,Alaska,B01001_034,15236,628,Estimate!!Total!!Female!!22 to 24 years
+04,Arizona,B01001_034,124210,1574,Estimate!!Total!!Female!!22 to 24 years
+05,Arkansas,B01001_034,55421,1524,Estimate!!Total!!Female!!22 to 24 years
+06,California,B01001_034,754013,4674,Estimate!!Total!!Female!!22 to 24 years
+08,Colorado,B01001_034,100075,1768,Estimate!!Total!!Female!!22 to 24 years
+09,Connecticut,B01001_034,60733,1369,Estimate!!Total!!Female!!22 to 24 years
+10,Delaware,B01001_034,16568,813,Estimate!!Total!!Female!!22 to 24 years
+11,District of Columbia,B01001_034,19892,838,Estimate!!Total!!Female!!22 to 24 years
+12,Florida,B01001_034,340682,3480,Estimate!!Total!!Female!!22 to 24 years
+13,Georgia,B01001_034,187339,2461,Estimate!!Total!!Female!!22 to 24 years
+15,Hawaii,B01001_034,26008,853,Estimate!!Total!!Female!!22 to 24 years
+16,Idaho,B01001_034,31668,887,Estimate!!Total!!Female!!22 to 24 years
+17,Illinois,B01001_034,252784,2572,Estimate!!Total!!Female!!22 to 24 years
+18,Indiana,B01001_034,122614,1702,Estimate!!Total!!Female!!22 to 24 years
+19,Iowa,B01001_034,58703,1243,Estimate!!Total!!Female!!22 to 24 years
+20,Kansas,B01001_034,58209,1217,Estimate!!Total!!Female!!22 to 24 years
+21,Kentucky,B01001_034,81212,1444,Estimate!!Total!!Female!!22 to 24 years
+22,Louisiana,B01001_034,95813,1780,Estimate!!Total!!Female!!22 to 24 years
+23,Maine,B01001_034,21517,709,Estimate!!Total!!Female!!22 to 24 years
+24,Maryland,B01001_034,110937,1556,Estimate!!Total!!Female!!22 to 24 years
+25,Massachusetts,B01001_034,130310,1823,Estimate!!Total!!Female!!22 to 24 years
+26,Michigan,B01001_034,181110,2323,Estimate!!Total!!Female!!22 to 24 years
+27,Minnesota,B01001_034,104674,1720,Estimate!!Total!!Female!!22 to 24 years
+28,Mississippi,B01001_034,60337,1732,Estimate!!Total!!Female!!22 to 24 years
+29,Missouri,B01001_034,118758,1694,Estimate!!Total!!Female!!22 to 24 years
+30,Montana,B01001_034,18600,651,Estimate!!Total!!Female!!22 to 24 years
+31,Nebraska,B01001_034,37559,1135,Estimate!!Total!!Female!!22 to 24 years
+32,Nevada,B01001_034,50838,1276,Estimate!!Total!!Female!!22 to 24 years
+33,New Hampshire,B01001_034,22235,728,Estimate!!Total!!Female!!22 to 24 years
+34,New Jersey,B01001_034,147545,2026,Estimate!!Total!!Female!!22 to 24 years
+35,New Mexico,B01001_034,39955,1078,Estimate!!Total!!Female!!22 to 24 years
+36,New York,B01001_034,395784,3244,Estimate!!Total!!Female!!22 to 24 years
+37,North Carolina,B01001_034,180877,2606,Estimate!!Total!!Female!!22 to 24 years
+38,North Dakota,B01001_034,15429,662,Estimate!!Total!!Female!!22 to 24 years
+39,Ohio,B01001_034,212382,2596,Estimate!!Total!!Female!!22 to 24 years
+40,Oklahoma,B01001_034,76953,1333,Estimate!!Total!!Female!!22 to 24 years
+41,Oregon,B01001_034,72509,1302,Estimate!!Total!!Female!!22 to 24 years
+42,Pennsylvania,B01001_034,229692,2547,Estimate!!Total!!Female!!22 to 24 years
+44,Rhode Island,B01001_034,20269,931,Estimate!!Total!!Female!!22 to 24 years
+45,South Carolina,B01001_034,91428,1520,Estimate!!Total!!Female!!22 to 24 years
+46,South Dakota,B01001_034,16048,659,Estimate!!Total!!Female!!22 to 24 years
+47,Tennessee,B01001_034,122404,1872,Estimate!!Total!!Female!!22 to 24 years
+48,Texas,B01001_034,512750,4298,Estimate!!Total!!Female!!22 to 24 years
+49,Utah,B01001_034,65256,1333,Estimate!!Total!!Female!!22 to 24 years
+50,Vermont,B01001_034,11474,546,Estimate!!Total!!Female!!22 to 24 years
+51,Virginia,B01001_034,153654,2310,Estimate!!Total!!Female!!22 to 24 years
+53,Washington,B01001_034,131229,1841,Estimate!!Total!!Female!!22 to 24 years
+54,West Virginia,B01001_034,31825,1004,Estimate!!Total!!Female!!22 to 24 years
+55,Wisconsin,B01001_034,111991,1634,Estimate!!Total!!Female!!22 to 24 years
+56,Wyoming,B01001_034,11305,611,Estimate!!Total!!Female!!22 to 24 years
+72,Puerto Rico,B01001_034,73961,1250,Estimate!!Total!!Female!!22 to 24 years
+01,Alabama,B01001_035,155944,652,Estimate!!Total!!Female!!25 to 29 years
+02,Alaska,B01001_035,23846,327,Estimate!!Total!!Female!!25 to 29 years
+04,Arizona,B01001_035,218218,306,Estimate!!Total!!Female!!25 to 29 years
+05,Arkansas,B01001_035,96539,561,Estimate!!Total!!Female!!25 to 29 years
+06,California,B01001_035,1324205,654,Estimate!!Total!!Female!!25 to 29 years
+08,Colorado,B01001_035,174595,639,Estimate!!Total!!Female!!25 to 29 years
+09,Connecticut,B01001_035,102100,268,Estimate!!Total!!Female!!25 to 29 years
+10,Delaware,B01001_035,29388,114,Estimate!!Total!!Female!!25 to 29 years
+11,District of Columbia,B01001_035,33503,57,Estimate!!Total!!Female!!25 to 29 years
+12,Florida,B01001_035,575387,844,Estimate!!Total!!Female!!25 to 29 years
+13,Georgia,B01001_035,338884,881,Estimate!!Total!!Female!!25 to 29 years
+15,Hawaii,B01001_035,46137,113,Estimate!!Total!!Female!!25 to 29 years
+16,Idaho,B01001_035,51136,473,Estimate!!Total!!Female!!25 to 29 years
+17,Illinois,B01001_035,449487,470,Estimate!!Total!!Female!!25 to 29 years
+18,Indiana,B01001_035,208520,585,Estimate!!Total!!Female!!25 to 29 years
+19,Iowa,B01001_035,92985,449,Estimate!!Total!!Female!!25 to 29 years
+20,Kansas,B01001_035,91957,575,Estimate!!Total!!Female!!25 to 29 years
+21,Kentucky,B01001_035,141987,544,Estimate!!Total!!Female!!25 to 29 years
+22,Louisiana,B01001_035,159543,705,Estimate!!Total!!Female!!25 to 29 years
+23,Maine,B01001_035,36156,210,Estimate!!Total!!Female!!25 to 29 years
+24,Maryland,B01001_035,194826,339,Estimate!!Total!!Female!!25 to 29 years
+25,Massachusetts,B01001_035,216496,354,Estimate!!Total!!Female!!25 to 29 years
+26,Michigan,B01001_035,300943,458,Estimate!!Total!!Female!!25 to 29 years
+27,Minnesota,B01001_035,177366,465,Estimate!!Total!!Female!!25 to 29 years
+28,Mississippi,B01001_035,99713,625,Estimate!!Total!!Female!!25 to 29 years
+29,Missouri,B01001_035,198044,487,Estimate!!Total!!Female!!25 to 29 years
+30,Montana,B01001_035,29224,356,Estimate!!Total!!Female!!25 to 29 years
+31,Nebraska,B01001_035,59294,397,Estimate!!Total!!Female!!25 to 29 years
+32,Nevada,B01001_035,95971,254,Estimate!!Total!!Female!!25 to 29 years
+33,New Hampshire,B01001_035,35317,304,Estimate!!Total!!Female!!25 to 29 years
+34,New Jersey,B01001_035,271672,270,Estimate!!Total!!Female!!25 to 29 years
+35,New Mexico,B01001_035,66789,414,Estimate!!Total!!Female!!25 to 29 years
+36,New York,B01001_035,686677,636,Estimate!!Total!!Female!!25 to 29 years
+37,North Carolina,B01001_035,307222,771,Estimate!!Total!!Female!!25 to 29 years
+38,North Dakota,B01001_035,20702,289,Estimate!!Total!!Female!!25 to 29 years
+39,Ohio,B01001_035,369737,613,Estimate!!Total!!Female!!25 to 29 years
+40,Oklahoma,B01001_035,124633,581,Estimate!!Total!!Female!!25 to 29 years
+41,Oregon,B01001_035,128618,569,Estimate!!Total!!Female!!25 to 29 years
+42,Pennsylvania,B01001_035,384082,505,Estimate!!Total!!Female!!25 to 29 years
+44,Rhode Island,B01001_035,33328,226,Estimate!!Total!!Female!!25 to 29 years
+45,South Carolina,B01001_035,151098,514,Estimate!!Total!!Female!!25 to 29 years
+46,South Dakota,B01001_035,25493,316,Estimate!!Total!!Female!!25 to 29 years
+47,Tennessee,B01001_035,211833,533,Estimate!!Total!!Female!!25 to 29 years
+48,Texas,B01001_035,886042,1049,Estimate!!Total!!Female!!25 to 29 years
+49,Utah,B01001_035,110089,351,Estimate!!Total!!Female!!25 to 29 years
+50,Vermont,B01001_035,17014,174,Estimate!!Total!!Female!!25 to 29 years
+51,Virginia,B01001_035,270016,856,Estimate!!Total!!Female!!25 to 29 years
+53,Washington,B01001_035,229722,413,Estimate!!Total!!Female!!25 to 29 years
+54,West Virginia,B01001_035,55172,323,Estimate!!Total!!Female!!25 to 29 years
+55,Wisconsin,B01001_035,174932,506,Estimate!!Total!!Female!!25 to 29 years
+56,Wyoming,B01001_035,18482,302,Estimate!!Total!!Female!!25 to 29 years
+72,Puerto Rico,B01001_035,132318,NA,Estimate!!Total!!Female!!25 to 29 years
+01,Alabama,B01001_036,147535,609,Estimate!!Total!!Female!!30 to 34 years
+02,Alaska,B01001_036,21167,272,Estimate!!Total!!Female!!30 to 34 years
+04,Arizona,B01001_036,198477,327,Estimate!!Total!!Female!!30 to 34 years
+05,Arkansas,B01001_036,88237,633,Estimate!!Total!!Female!!30 to 34 years
+06,California,B01001_036,1241299,648,Estimate!!Total!!Female!!30 to 34 years
+08,Colorado,B01001_036,166107,509,Estimate!!Total!!Female!!30 to 34 years
+09,Connecticut,B01001_036,103675,248,Estimate!!Total!!Female!!30 to 34 years
+10,Delaware,B01001_036,26676,134,Estimate!!Total!!Female!!30 to 34 years
+11,District of Columbia,B01001_036,26519,68,Estimate!!Total!!Female!!30 to 34 years
+12,Florida,B01001_036,545987,683,Estimate!!Total!!Female!!30 to 34 years
+13,Georgia,B01001_036,330513,1141,Estimate!!Total!!Female!!30 to 34 years
+15,Hawaii,B01001_036,41034,121,Estimate!!Total!!Female!!30 to 34 years
+16,Idaho,B01001_036,47322,299,Estimate!!Total!!Female!!30 to 34 years
+17,Illinois,B01001_036,425067,414,Estimate!!Total!!Female!!30 to 34 years
+18,Indiana,B01001_036,198918,568,Estimate!!Total!!Female!!30 to 34 years
+19,Iowa,B01001_036,88140,361,Estimate!!Total!!Female!!30 to 34 years
+20,Kansas,B01001_036,85162,394,Estimate!!Total!!Female!!30 to 34 years
+21,Kentucky,B01001_036,136203,558,Estimate!!Total!!Female!!30 to 34 years
+22,Louisiana,B01001_036,137654,581,Estimate!!Total!!Female!!30 to 34 years
+23,Maine,B01001_036,36352,226,Estimate!!Total!!Female!!30 to 34 years
+24,Maryland,B01001_036,183773,314,Estimate!!Total!!Female!!30 to 34 years
+25,Massachusetts,B01001_036,203127,318,Estimate!!Total!!Female!!30 to 34 years
+26,Michigan,B01001_036,293859,337,Estimate!!Total!!Female!!30 to 34 years
+27,Minnesota,B01001_036,163261,432,Estimate!!Total!!Female!!30 to 34 years
+28,Mississippi,B01001_036,93104,538,Estimate!!Total!!Female!!30 to 34 years
+29,Missouri,B01001_036,180601,605,Estimate!!Total!!Female!!30 to 34 years
+30,Montana,B01001_036,26700,339,Estimate!!Total!!Female!!30 to 34 years
+31,Nebraska,B01001_036,56101,333,Estimate!!Total!!Female!!30 to 34 years
+32,Nevada,B01001_036,89734,361,Estimate!!Total!!Female!!30 to 34 years
+33,New Hampshire,B01001_036,36705,227,Estimate!!Total!!Female!!30 to 34 years
+34,New Jersey,B01001_036,278066,245,Estimate!!Total!!Female!!30 to 34 years
+35,New Mexico,B01001_036,59689,436,Estimate!!Total!!Female!!30 to 34 years
+36,New York,B01001_036,635922,557,Estimate!!Total!!Female!!30 to 34 years
+37,North Carolina,B01001_036,310201,819,Estimate!!Total!!Female!!30 to 34 years
+38,North Dakota,B01001_036,18418,218,Estimate!!Total!!Female!!30 to 34 years
+39,Ohio,B01001_036,341280,653,Estimate!!Total!!Female!!30 to 34 years
+40,Oklahoma,B01001_036,112468,503,Estimate!!Total!!Female!!30 to 34 years
+41,Oregon,B01001_036,122525,444,Estimate!!Total!!Female!!30 to 34 years
+42,Pennsylvania,B01001_036,357106,494,Estimate!!Total!!Female!!30 to 34 years
+44,Rhode Island,B01001_036,30825,265,Estimate!!Total!!Female!!30 to 34 years
+45,South Carolina,B01001_036,140387,599,Estimate!!Total!!Female!!30 to 34 years
+46,South Dakota,B01001_036,22786,333,Estimate!!Total!!Female!!30 to 34 years
+47,Tennessee,B01001_036,200811,682,Estimate!!Total!!Female!!30 to 34 years
+48,Texas,B01001_036,848766,976,Estimate!!Total!!Female!!30 to 34 years
+49,Utah,B01001_036,97623,371,Estimate!!Total!!Female!!30 to 34 years
+50,Vermont,B01001_036,17253,220,Estimate!!Total!!Female!!30 to 34 years
+51,Virginia,B01001_036,256610,773,Estimate!!Total!!Female!!30 to 34 years
+53,Washington,B01001_036,212182,395,Estimate!!Total!!Female!!30 to 34 years
+54,West Virginia,B01001_036,54322,326,Estimate!!Total!!Female!!30 to 34 years
+55,Wisconsin,B01001_036,168541,388,Estimate!!Total!!Female!!30 to 34 years
+56,Wyoming,B01001_036,16213,281,Estimate!!Total!!Female!!30 to 34 years
+72,Puerto Rico,B01001_036,127381,NA,Estimate!!Total!!Female!!30 to 34 years
+01,Alabama,B01001_037,158203,2100,Estimate!!Total!!Female!!35 to 39 years
+02,Alaska,B01001_037,21734,921,Estimate!!Total!!Female!!35 to 39 years
+04,Arizona,B01001_037,206507,2500,Estimate!!Total!!Female!!35 to 39 years
+05,Arkansas,B01001_037,92521,1526,Estimate!!Total!!Female!!35 to 39 years
+06,California,B01001_037,1311223,5899,Estimate!!Total!!Female!!35 to 39 years
+08,Colorado,B01001_037,171330,2006,Estimate!!Total!!Female!!35 to 39 years
+09,Connecticut,B01001_037,123293,1779,Estimate!!Total!!Female!!35 to 39 years
+10,Delaware,B01001_037,30051,879,Estimate!!Total!!Female!!35 to 39 years
+11,District of Columbia,B01001_037,21817,792,Estimate!!Total!!Female!!35 to 39 years
+12,Florida,B01001_037,605657,4673,Estimate!!Total!!Female!!35 to 39 years
+13,Georgia,B01001_037,359739,3162,Estimate!!Total!!Female!!35 to 39 years
+15,Hawaii,B01001_037,43008,1110,Estimate!!Total!!Female!!35 to 39 years
+16,Idaho,B01001_037,47076,1073,Estimate!!Total!!Female!!35 to 39 years
+17,Illinois,B01001_037,435816,3052,Estimate!!Total!!Female!!35 to 39 years
+18,Indiana,B01001_037,209426,2037,Estimate!!Total!!Female!!35 to 39 years
+19,Iowa,B01001_037,91516,1486,Estimate!!Total!!Female!!35 to 39 years
+20,Kansas,B01001_037,86754,1437,Estimate!!Total!!Female!!35 to 39 years
+21,Kentucky,B01001_037,144635,1990,Estimate!!Total!!Female!!35 to 39 years
+22,Louisiana,B01001_037,139867,1967,Estimate!!Total!!Female!!35 to 39 years
+23,Maine,B01001_037,42969,1124,Estimate!!Total!!Female!!35 to 39 years
+24,Maryland,B01001_037,205853,2546,Estimate!!Total!!Female!!35 to 39 years
+25,Massachusetts,B01001_037,224111,2519,Estimate!!Total!!Female!!35 to 39 years
+26,Michigan,B01001_037,329139,2710,Estimate!!Total!!Female!!35 to 39 years
+27,Minnesota,B01001_037,169287,1791,Estimate!!Total!!Female!!35 to 39 years
+28,Mississippi,B01001_037,94792,1704,Estimate!!Total!!Female!!35 to 39 years
+29,Missouri,B01001_037,188730,2243,Estimate!!Total!!Female!!35 to 39 years
+30,Montana,B01001_037,26718,879,Estimate!!Total!!Female!!35 to 39 years
+31,Nebraska,B01001_037,54077,1043,Estimate!!Total!!Female!!35 to 39 years
+32,Nevada,B01001_037,94570,1632,Estimate!!Total!!Female!!35 to 39 years
+33,New Hampshire,B01001_037,45352,1003,Estimate!!Total!!Female!!35 to 39 years
+34,New Jersey,B01001_037,315698,2821,Estimate!!Total!!Female!!35 to 39 years
+35,New Mexico,B01001_037,62814,1363,Estimate!!Total!!Female!!35 to 39 years
+36,New York,B01001_037,663870,3865,Estimate!!Total!!Female!!35 to 39 years
+37,North Carolina,B01001_037,334106,3000,Estimate!!Total!!Female!!35 to 39 years
+38,North Dakota,B01001_037,17861,512,Estimate!!Total!!Female!!35 to 39 years
+39,Ohio,B01001_037,377108,3204,Estimate!!Total!!Female!!35 to 39 years
+40,Oklahoma,B01001_037,115428,1750,Estimate!!Total!!Female!!35 to 39 years
+41,Oregon,B01001_037,125804,1650,Estimate!!Total!!Female!!35 to 39 years
+42,Pennsylvania,B01001_037,407340,2786,Estimate!!Total!!Female!!35 to 39 years
+44,Rhode Island,B01001_037,35180,1039,Estimate!!Total!!Female!!35 to 39 years
+45,South Carolina,B01001_037,153191,2249,Estimate!!Total!!Female!!35 to 39 years
+46,South Dakota,B01001_037,22285,759,Estimate!!Total!!Female!!35 to 39 years
+47,Tennessee,B01001_037,216590,2392,Estimate!!Total!!Female!!35 to 39 years
+48,Texas,B01001_037,876063,5708,Estimate!!Total!!Female!!35 to 39 years
+49,Utah,B01001_037,84755,1390,Estimate!!Total!!Female!!35 to 39 years
+50,Vermont,B01001_037,19004,680,Estimate!!Total!!Female!!35 to 39 years
+51,Virginia,B01001_037,278655,2868,Estimate!!Total!!Female!!35 to 39 years
+53,Washington,B01001_037,224282,2615,Estimate!!Total!!Female!!35 to 39 years
+54,West Virginia,B01001_037,57755,1172,Estimate!!Total!!Female!!35 to 39 years
+55,Wisconsin,B01001_037,177896,1459,Estimate!!Total!!Female!!35 to 39 years
+56,Wyoming,B01001_037,15203,613,Estimate!!Total!!Female!!35 to 39 years
+72,Puerto Rico,B01001_037,124478,1872,Estimate!!Total!!Female!!35 to 39 years
+01,Alabama,B01001_038,164358,2086,Estimate!!Total!!Female!!40 to 44 years
+02,Alaska,B01001_038,24910,891,Estimate!!Total!!Female!!40 to 44 years
+04,Arizona,B01001_038,202300,2506,Estimate!!Total!!Female!!40 to 44 years
+05,Arkansas,B01001_038,95495,1416,Estimate!!Total!!Female!!40 to 44 years
+06,California,B01001_038,1313909,5954,Estimate!!Total!!Female!!40 to 44 years
+08,Colorado,B01001_038,173746,1907,Estimate!!Total!!Female!!40 to 44 years
+09,Connecticut,B01001_038,139569,1779,Estimate!!Total!!Female!!40 to 44 years
+10,Delaware,B01001_038,31704,882,Estimate!!Total!!Female!!40 to 44 years
+11,District of Columbia,B01001_038,18427,784,Estimate!!Total!!Female!!40 to 44 years
+12,Florida,B01001_038,656206,4778,Estimate!!Total!!Female!!40 to 44 years
+13,Georgia,B01001_038,361136,3079,Estimate!!Total!!Female!!40 to 44 years
+15,Hawaii,B01001_038,45648,1118,Estimate!!Total!!Female!!40 to 44 years
+16,Idaho,B01001_038,48263,1182,Estimate!!Total!!Female!!40 to 44 years
+17,Illinois,B01001_038,458238,3008,Estimate!!Total!!Female!!40 to 44 years
+18,Indiana,B01001_038,224656,2044,Estimate!!Total!!Female!!40 to 44 years
+19,Iowa,B01001_038,96181,1422,Estimate!!Total!!Female!!40 to 44 years
+20,Kansas,B01001_038,91185,1379,Estimate!!Total!!Female!!40 to 44 years
+21,Kentucky,B01001_038,151741,1807,Estimate!!Total!!Female!!40 to 44 years
+22,Louisiana,B01001_038,154908,1928,Estimate!!Total!!Female!!40 to 44 years
+23,Maine,B01001_038,49767,1115,Estimate!!Total!!Female!!40 to 44 years
+24,Maryland,B01001_038,226553,2573,Estimate!!Total!!Female!!40 to 44 years
+25,Massachusetts,B01001_038,252210,2444,Estimate!!Total!!Female!!40 to 44 years
+26,Michigan,B01001_038,353939,2634,Estimate!!Total!!Female!!40 to 44 years
+27,Minnesota,B01001_038,185284,1898,Estimate!!Total!!Female!!40 to 44 years
+28,Mississippi,B01001_038,102749,1878,Estimate!!Total!!Female!!40 to 44 years
+29,Missouri,B01001_038,203754,2214,Estimate!!Total!!Female!!40 to 44 years
+30,Montana,B01001_038,31432,911,Estimate!!Total!!Female!!40 to 44 years
+31,Nebraska,B01001_038,57900,1032,Estimate!!Total!!Female!!40 to 44 years
+32,Nevada,B01001_038,91285,1614,Estimate!!Total!!Female!!40 to 44 years
+33,New Hampshire,B01001_038,52054,977,Estimate!!Total!!Female!!40 to 44 years
+34,New Jersey,B01001_038,344049,2828,Estimate!!Total!!Female!!40 to 44 years
+35,New Mexico,B01001_038,65534,1411,Estimate!!Total!!Female!!40 to 44 years
+36,New York,B01001_038,728259,3865,Estimate!!Total!!Female!!40 to 44 years
+37,North Carolina,B01001_038,342613,2860,Estimate!!Total!!Female!!40 to 44 years
+38,North Dakota,B01001_038,19953,510,Estimate!!Total!!Female!!40 to 44 years
+39,Ohio,B01001_038,402836,3075,Estimate!!Total!!Female!!40 to 44 years
+40,Oklahoma,B01001_038,118039,1632,Estimate!!Total!!Female!!40 to 44 years
+41,Oregon,B01001_038,122638,1717,Estimate!!Total!!Female!!40 to 44 years
+42,Pennsylvania,B01001_038,444977,2783,Estimate!!Total!!Female!!40 to 44 years
+44,Rhode Island,B01001_038,39787,997,Estimate!!Total!!Female!!40 to 44 years
+45,South Carolina,B01001_038,158164,2297,Estimate!!Total!!Female!!40 to 44 years
+46,South Dakota,B01001_038,25174,692,Estimate!!Total!!Female!!40 to 44 years
+47,Tennessee,B01001_038,224257,2377,Estimate!!Total!!Female!!40 to 44 years
+48,Texas,B01001_038,845566,5638,Estimate!!Total!!Female!!40 to 44 years
+49,Utah,B01001_038,72068,1382,Estimate!!Total!!Female!!40 to 44 years
+50,Vermont,B01001_038,23473,645,Estimate!!Total!!Female!!40 to 44 years
+51,Virginia,B01001_038,299587,2650,Estimate!!Total!!Female!!40 to 44 years
+53,Washington,B01001_038,232182,2668,Estimate!!Total!!Female!!40 to 44 years
+54,West Virginia,B01001_038,63443,1167,Estimate!!Total!!Female!!40 to 44 years
+55,Wisconsin,B01001_038,200249,1523,Estimate!!Total!!Female!!40 to 44 years
+56,Wyoming,B01001_038,16882,594,Estimate!!Total!!Female!!40 to 44 years
+72,Puerto Rico,B01001_038,134887,1875,Estimate!!Total!!Female!!40 to 44 years
+01,Alabama,B01001_039,178775,509,Estimate!!Total!!Female!!45 to 49 years
+02,Alaska,B01001_039,26906,281,Estimate!!Total!!Female!!45 to 49 years
+04,Arizona,B01001_039,212304,271,Estimate!!Total!!Female!!45 to 49 years
+05,Arkansas,B01001_039,103498,509,Estimate!!Total!!Female!!45 to 49 years
+06,California,B01001_039,1342390,574,Estimate!!Total!!Female!!45 to 49 years
+08,Colorado,B01001_039,187728,419,Estimate!!Total!!Female!!45 to 49 years
+09,Connecticut,B01001_039,149826,239,Estimate!!Total!!Female!!45 to 49 years
+10,Delaware,B01001_039,34397,112,Estimate!!Total!!Female!!45 to 49 years
+11,District of Columbia,B01001_039,19153,49,Estimate!!Total!!Female!!45 to 49 years
+12,Florida,B01001_039,702085,800,Estimate!!Total!!Female!!45 to 49 years
+13,Georgia,B01001_039,360500,891,Estimate!!Total!!Female!!45 to 49 years
+15,Hawaii,B01001_039,48071,89,Estimate!!Total!!Female!!45 to 49 years
+16,Idaho,B01001_039,52606,325,Estimate!!Total!!Female!!45 to 49 years
+17,Illinois,B01001_039,483506,449,Estimate!!Total!!Female!!45 to 49 years
+18,Indiana,B01001_039,242097,552,Estimate!!Total!!Female!!45 to 49 years
+19,Iowa,B01001_039,111309,368,Estimate!!Total!!Female!!45 to 49 years
+20,Kansas,B01001_039,104450,462,Estimate!!Total!!Female!!45 to 49 years
+21,Kentucky,B01001_039,164513,490,Estimate!!Total!!Female!!45 to 49 years
+22,Louisiana,B01001_039,166585,491,Estimate!!Total!!Female!!45 to 49 years
+23,Maine,B01001_039,55952,237,Estimate!!Total!!Female!!45 to 49 years
+24,Maryland,B01001_039,238386,348,Estimate!!Total!!Female!!45 to 49 years
+25,Massachusetts,B01001_039,262893,285,Estimate!!Total!!Female!!45 to 49 years
+26,Michigan,B01001_039,388703,467,Estimate!!Total!!Female!!45 to 49 years
+27,Minnesota,B01001_039,206334,425,Estimate!!Total!!Female!!45 to 49 years
+28,Mississippi,B01001_039,108305,514,Estimate!!Total!!Female!!45 to 49 years
+29,Missouri,B01001_039,227165,491,Estimate!!Total!!Female!!45 to 49 years
+30,Montana,B01001_039,37745,285,Estimate!!Total!!Female!!45 to 49 years
+31,Nebraska,B01001_039,65882,250,Estimate!!Total!!Female!!45 to 49 years
+32,Nevada,B01001_039,92211,305,Estimate!!Total!!Female!!45 to 49 years
+33,New Hampshire,B01001_039,57761,185,Estimate!!Total!!Female!!45 to 49 years
+34,New Jersey,B01001_039,359707,283,Estimate!!Total!!Female!!45 to 49 years
+35,New Mexico,B01001_039,73685,375,Estimate!!Total!!Female!!45 to 49 years
+36,New York,B01001_039,751922,379,Estimate!!Total!!Female!!45 to 49 years
+37,North Carolina,B01001_039,351393,711,Estimate!!Total!!Female!!45 to 49 years
+38,North Dakota,B01001_039,23968,214,Estimate!!Total!!Female!!45 to 49 years
+39,Ohio,B01001_039,447571,646,Estimate!!Total!!Female!!45 to 49 years
+40,Oklahoma,B01001_039,133743,524,Estimate!!Total!!Female!!45 to 49 years
+41,Oregon,B01001_039,135746,359,Estimate!!Total!!Female!!45 to 49 years
+42,Pennsylvania,B01001_039,495240,477,Estimate!!Total!!Female!!45 to 49 years
+44,Rhode Island,B01001_039,42447,224,Estimate!!Total!!Female!!45 to 49 years
+45,South Carolina,B01001_039,169148,490,Estimate!!Total!!Female!!45 to 49 years
+46,South Dakota,B01001_039,29413,255,Estimate!!Total!!Female!!45 to 49 years
+47,Tennessee,B01001_039,237608,620,Estimate!!Total!!Female!!45 to 49 years
+48,Texas,B01001_039,870266,1000,Estimate!!Total!!Female!!45 to 49 years
+49,Utah,B01001_039,77286,274,Estimate!!Total!!Female!!45 to 49 years
+50,Vermont,B01001_039,26186,171,Estimate!!Total!!Female!!45 to 49 years
+51,Virginia,B01001_039,312463,777,Estimate!!Total!!Female!!45 to 49 years
+53,Washington,B01001_039,248707,396,Estimate!!Total!!Female!!45 to 49 years
+54,West Virginia,B01001_039,69175,293,Estimate!!Total!!Female!!45 to 49 years
+55,Wisconsin,B01001_039,222722,366,Estimate!!Total!!Female!!45 to 49 years
+56,Wyoming,B01001_039,20885,288,Estimate!!Total!!Female!!45 to 49 years
+72,Puerto Rico,B01001_039,132285,NA,Estimate!!Total!!Female!!45 to 49 years
+01,Alabama,B01001_040,174038,554,Estimate!!Total!!Female!!50 to 54 years
+02,Alaska,B01001_040,26399,265,Estimate!!Total!!Female!!50 to 54 years
+04,Arizona,B01001_040,204648,340,Estimate!!Total!!Female!!50 to 54 years
+05,Arkansas,B01001_040,100164,351,Estimate!!Total!!Female!!50 to 54 years
+06,California,B01001_040,1250984,454,Estimate!!Total!!Female!!50 to 54 years
+08,Colorado,B01001_040,180440,426,Estimate!!Total!!Female!!50 to 54 years
+09,Connecticut,B01001_040,138945,224,Estimate!!Total!!Female!!50 to 54 years
+10,Delaware,B01001_040,32753,113,Estimate!!Total!!Female!!50 to 54 years
+11,District of Columbia,B01001_040,19054,2,Estimate!!Total!!Female!!50 to 54 years
+12,Florida,B01001_040,663687,601,Estimate!!Total!!Female!!50 to 54 years
+13,Georgia,B01001_040,329370,844,Estimate!!Total!!Female!!50 to 54 years
+15,Hawaii,B01001_040,48681,92,Estimate!!Total!!Female!!50 to 54 years
+16,Idaho,B01001_040,51907,322,Estimate!!Total!!Female!!50 to 54 years
+17,Illinois,B01001_040,460047,394,Estimate!!Total!!Female!!50 to 54 years
+18,Indiana,B01001_040,231358,431,Estimate!!Total!!Female!!50 to 54 years
+19,Iowa,B01001_040,109035,347,Estimate!!Total!!Female!!50 to 54 years
+20,Kansas,B01001_040,100694,358,Estimate!!Total!!Female!!50 to 54 years
+21,Kentucky,B01001_040,158493,450,Estimate!!Total!!Female!!50 to 54 years
+22,Louisiana,B01001_040,162424,418,Estimate!!Total!!Female!!50 to 54 years
+23,Maine,B01001_040,55603,183,Estimate!!Total!!Female!!50 to 54 years
+24,Maryland,B01001_040,220845,352,Estimate!!Total!!Female!!50 to 54 years
+25,Massachusetts,B01001_040,245086,276,Estimate!!Total!!Female!!50 to 54 years
+26,Michigan,B01001_040,381959,422,Estimate!!Total!!Female!!50 to 54 years
+27,Minnesota,B01001_040,193185,359,Estimate!!Total!!Female!!50 to 54 years
+28,Mississippi,B01001_040,104718,406,Estimate!!Total!!Female!!50 to 54 years
+29,Missouri,B01001_040,218584,581,Estimate!!Total!!Female!!50 to 54 years
+30,Montana,B01001_040,39307,235,Estimate!!Total!!Female!!50 to 54 years
+31,Nebraska,B01001_040,63895,279,Estimate!!Total!!Female!!50 to 54 years
+32,Nevada,B01001_040,88285,276,Estimate!!Total!!Female!!50 to 54 years
+33,New Hampshire,B01001_040,53945,162,Estimate!!Total!!Female!!50 to 54 years
+34,New Jersey,B01001_040,331306,281,Estimate!!Total!!Female!!50 to 54 years
+35,New Mexico,B01001_040,74130,335,Estimate!!Total!!Female!!50 to 54 years
+36,New York,B01001_040,707820,447,Estimate!!Total!!Female!!50 to 54 years
+37,North Carolina,B01001_040,332014,670,Estimate!!Total!!Female!!50 to 54 years
+38,North Dakota,B01001_040,24236,184,Estimate!!Total!!Female!!50 to 54 years
+39,Ohio,B01001_040,441191,551,Estimate!!Total!!Female!!50 to 54 years
+40,Oklahoma,B01001_040,129713,372,Estimate!!Total!!Female!!50 to 54 years
+41,Oregon,B01001_040,141484,390,Estimate!!Total!!Female!!50 to 54 years
+42,Pennsylvania,B01001_040,486568,443,Estimate!!Total!!Female!!50 to 54 years
+44,Rhode Island,B01001_040,40746,216,Estimate!!Total!!Female!!50 to 54 years
+45,South Carolina,B01001_040,165084,391,Estimate!!Total!!Female!!50 to 54 years
+46,South Dakota,B01001_040,28983,263,Estimate!!Total!!Female!!50 to 54 years
+47,Tennessee,B01001_040,229849,500,Estimate!!Total!!Female!!50 to 54 years
+48,Texas,B01001_040,806368,859,Estimate!!Total!!Female!!50 to 54 years
+49,Utah,B01001_040,73704,268,Estimate!!Total!!Female!!50 to 54 years
+50,Vermont,B01001_040,26401,143,Estimate!!Total!!Female!!50 to 54 years
+51,Virginia,B01001_040,292674,681,Estimate!!Total!!Female!!50 to 54 years
+53,Washington,B01001_040,244774,386,Estimate!!Total!!Female!!50 to 54 years
+54,West Virginia,B01001_040,72105,274,Estimate!!Total!!Female!!50 to 54 years
+55,Wisconsin,B01001_040,211327,448,Estimate!!Total!!Female!!50 to 54 years
+56,Wyoming,B01001_040,21305,210,Estimate!!Total!!Female!!50 to 54 years
+72,Puerto Rico,B01001_040,127505,NA,Estimate!!Total!!Female!!50 to 54 years
+01,Alabama,B01001_041,157575,1838,Estimate!!Total!!Female!!55 to 59 years
+02,Alaska,B01001_041,22410,599,Estimate!!Total!!Female!!55 to 59 years
+04,Arizona,B01001_041,188448,1815,Estimate!!Total!!Female!!55 to 59 years
+05,Arkansas,B01001_041,90408,1450,Estimate!!Total!!Female!!55 to 59 years
+06,California,B01001_041,1077437,5266,Estimate!!Total!!Female!!55 to 59 years
+08,Colorado,B01001_041,155086,1431,Estimate!!Total!!Female!!55 to 59 years
+09,Connecticut,B01001_041,118050,1434,Estimate!!Total!!Female!!55 to 59 years
+10,Delaware,B01001_041,28773,790,Estimate!!Total!!Female!!55 to 59 years
+11,District of Columbia,B01001_041,18277,616,Estimate!!Total!!Female!!55 to 59 years
+12,Florida,B01001_041,614584,4204,Estimate!!Total!!Female!!55 to 59 years
+13,Georgia,B01001_041,285995,2453,Estimate!!Total!!Female!!55 to 59 years
+15,Hawaii,B01001_041,44614,953,Estimate!!Total!!Female!!55 to 59 years
+16,Idaho,B01001_041,46754,1024,Estimate!!Total!!Female!!55 to 59 years
+17,Illinois,B01001_041,402439,2748,Estimate!!Total!!Female!!55 to 59 years
+18,Indiana,B01001_041,206476,1662,Estimate!!Total!!Female!!55 to 59 years
+19,Iowa,B01001_041,97511,1133,Estimate!!Total!!Female!!55 to 59 years
+20,Kansas,B01001_041,87252,1187,Estimate!!Total!!Female!!55 to 59 years
+21,Kentucky,B01001_041,143592,1499,Estimate!!Total!!Female!!55 to 59 years
+22,Louisiana,B01001_041,142830,1843,Estimate!!Total!!Female!!55 to 59 years
+23,Maine,B01001_041,49989,904,Estimate!!Total!!Female!!55 to 59 years
+24,Maryland,B01001_041,190969,2024,Estimate!!Total!!Female!!55 to 59 years
+25,Massachusetts,B01001_041,214905,2108,Estimate!!Total!!Female!!55 to 59 years
+26,Michigan,B01001_041,336568,2333,Estimate!!Total!!Female!!55 to 59 years
+27,Minnesota,B01001_041,166067,1344,Estimate!!Total!!Female!!55 to 59 years
+28,Mississippi,B01001_041,94725,1278,Estimate!!Total!!Female!!55 to 59 years
+29,Missouri,B01001_041,193537,1843,Estimate!!Total!!Female!!55 to 59 years
+30,Montana,B01001_041,36006,825,Estimate!!Total!!Female!!55 to 59 years
+31,Nebraska,B01001_041,56773,865,Estimate!!Total!!Female!!55 to 59 years
+32,Nevada,B01001_041,80257,1345,Estimate!!Total!!Female!!55 to 59 years
+33,New Hampshire,B01001_041,45836,958,Estimate!!Total!!Female!!55 to 59 years
+34,New Jersey,B01001_041,282217,2409,Estimate!!Total!!Female!!55 to 59 years
+35,New Mexico,B01001_041,67494,1069,Estimate!!Total!!Female!!55 to 59 years
+36,New York,B01001_041,630194,3544,Estimate!!Total!!Female!!55 to 59 years
+37,North Carolina,B01001_041,299149,2477,Estimate!!Total!!Female!!55 to 59 years
+38,North Dakota,B01001_041,20578,508,Estimate!!Total!!Female!!55 to 59 years
+39,Ohio,B01001_041,387735,2541,Estimate!!Total!!Female!!55 to 59 years
+40,Oklahoma,B01001_041,117700,1337,Estimate!!Total!!Female!!55 to 59 years
+41,Oregon,B01001_041,135756,1386,Estimate!!Total!!Female!!55 to 59 years
+42,Pennsylvania,B01001_041,430892,3098,Estimate!!Total!!Female!!55 to 59 years
+44,Rhode Island,B01001_041,34873,823,Estimate!!Total!!Female!!55 to 59 years
+45,South Carolina,B01001_041,154212,1720,Estimate!!Total!!Female!!55 to 59 years
+46,South Dakota,B01001_041,25515,568,Estimate!!Total!!Female!!55 to 59 years
+47,Tennessee,B01001_041,206224,1836,Estimate!!Total!!Female!!55 to 59 years
+48,Texas,B01001_041,685131,3424,Estimate!!Total!!Female!!55 to 59 years
+49,Utah,B01001_041,63078,923,Estimate!!Total!!Female!!55 to 59 years
+50,Vermont,B01001_041,23657,537,Estimate!!Total!!Female!!55 to 59 years
+51,Virginia,B01001_041,253529,1906,Estimate!!Total!!Female!!55 to 59 years
+53,Washington,B01001_041,220084,2117,Estimate!!Total!!Female!!55 to 59 years
+54,West Virginia,B01001_041,69026,1230,Estimate!!Total!!Female!!55 to 59 years
+55,Wisconsin,B01001_041,184419,1393,Estimate!!Total!!Female!!55 to 59 years
+56,Wyoming,B01001_041,18701,590,Estimate!!Total!!Female!!55 to 59 years
+72,Puerto Rico,B01001_041,117857,1367,Estimate!!Total!!Female!!55 to 59 years
+01,Alabama,B01001_042,57891,1414,Estimate!!Total!!Female!!60 and 61 years
+02,Alaska,B01001_042,6812,468,Estimate!!Total!!Female!!60 and 61 years
+04,Arizona,B01001_042,71845,1725,Estimate!!Total!!Female!!60 and 61 years
+05,Arkansas,B01001_042,35821,1148,Estimate!!Total!!Female!!60 and 61 years
+06,California,B01001_042,381558,3858,Estimate!!Total!!Female!!60 and 61 years
+08,Colorado,B01001_042,54390,1311,Estimate!!Total!!Female!!60 and 61 years
+09,Connecticut,B01001_042,43502,1210,Estimate!!Total!!Female!!60 and 61 years
+10,Delaware,B01001_042,11077,609,Estimate!!Total!!Female!!60 and 61 years
+11,District of Columbia,B01001_042,6735,475,Estimate!!Total!!Female!!60 and 61 years
+12,Florida,B01001_042,238017,3103,Estimate!!Total!!Female!!60 and 61 years
+13,Georgia,B01001_042,102944,1869,Estimate!!Total!!Female!!60 and 61 years
+15,Hawaii,B01001_042,16670,827,Estimate!!Total!!Female!!60 and 61 years
+16,Idaho,B01001_042,17219,745,Estimate!!Total!!Female!!60 and 61 years
+17,Illinois,B01001_042,139173,2321,Estimate!!Total!!Female!!60 and 61 years
+18,Indiana,B01001_042,72641,1219,Estimate!!Total!!Female!!60 and 61 years
+19,Iowa,B01001_042,34408,799,Estimate!!Total!!Female!!60 and 61 years
+20,Kansas,B01001_042,30552,899,Estimate!!Total!!Female!!60 and 61 years
+21,Kentucky,B01001_042,52068,1116,Estimate!!Total!!Female!!60 and 61 years
+22,Louisiana,B01001_042,51101,1262,Estimate!!Total!!Female!!60 and 61 years
+23,Maine,B01001_042,17895,644,Estimate!!Total!!Female!!60 and 61 years
+24,Maryland,B01001_042,70496,1716,Estimate!!Total!!Female!!60 and 61 years
+25,Massachusetts,B01001_042,79128,1534,Estimate!!Total!!Female!!60 and 61 years
+26,Michigan,B01001_042,118632,1994,Estimate!!Total!!Female!!60 and 61 years
+27,Minnesota,B01001_042,56759,1119,Estimate!!Total!!Female!!60 and 61 years
+28,Mississippi,B01001_042,32537,1099,Estimate!!Total!!Female!!60 and 61 years
+29,Missouri,B01001_042,68805,1505,Estimate!!Total!!Female!!60 and 61 years
+30,Montana,B01001_042,12144,668,Estimate!!Total!!Female!!60 and 61 years
+31,Nebraska,B01001_042,19271,525,Estimate!!Total!!Female!!60 and 61 years
+32,Nevada,B01001_042,31403,1075,Estimate!!Total!!Female!!60 and 61 years
+33,New Hampshire,B01001_042,16822,734,Estimate!!Total!!Female!!60 and 61 years
+34,New Jersey,B01001_042,103756,1823,Estimate!!Total!!Female!!60 and 61 years
+35,New Mexico,B01001_042,25191,860,Estimate!!Total!!Female!!60 and 61 years
+36,New York,B01001_042,231250,2767,Estimate!!Total!!Female!!60 and 61 years
+37,North Carolina,B01001_042,115156,1650,Estimate!!Total!!Female!!60 and 61 years
+38,North Dakota,B01001_042,6926,417,Estimate!!Total!!Female!!60 and 61 years
+39,Ohio,B01001_042,141140,2210,Estimate!!Total!!Female!!60 and 61 years
+40,Oklahoma,B01001_042,42401,1057,Estimate!!Total!!Female!!60 and 61 years
+41,Oregon,B01001_042,47931,1052,Estimate!!Total!!Female!!60 and 61 years
+42,Pennsylvania,B01001_042,154233,2034,Estimate!!Total!!Female!!60 and 61 years
+44,Rhode Island,B01001_042,12729,631,Estimate!!Total!!Female!!60 and 61 years
+45,South Carolina,B01001_042,58470,1373,Estimate!!Total!!Female!!60 and 61 years
+46,South Dakota,B01001_042,8120,417,Estimate!!Total!!Female!!60 and 61 years
+47,Tennessee,B01001_042,77678,1556,Estimate!!Total!!Female!!60 and 61 years
+48,Texas,B01001_042,242693,2713,Estimate!!Total!!Female!!60 and 61 years
+49,Utah,B01001_042,21755,680,Estimate!!Total!!Female!!60 and 61 years
+50,Vermont,B01001_042,7850,444,Estimate!!Total!!Female!!60 and 61 years
+51,Virginia,B01001_042,96169,1646,Estimate!!Total!!Female!!60 and 61 years
+53,Washington,B01001_042,78486,1767,Estimate!!Total!!Female!!60 and 61 years
+54,West Virginia,B01001_042,25546,1000,Estimate!!Total!!Female!!60 and 61 years
+55,Wisconsin,B01001_042,62339,1015,Estimate!!Total!!Female!!60 and 61 years
+56,Wyoming,B01001_042,6579,521,Estimate!!Total!!Female!!60 and 61 years
+72,Puerto Rico,B01001_042,48578,1088,Estimate!!Total!!Female!!60 and 61 years
+01,Alabama,B01001_043,75343,1777,Estimate!!Total!!Female!!62 to 64 years
+02,Alaska,B01001_043,7857,467,Estimate!!Total!!Female!!62 to 64 years
+04,Arizona,B01001_043,97110,1813,Estimate!!Total!!Female!!62 to 64 years
+05,Arkansas,B01001_043,47676,1284,Estimate!!Total!!Female!!62 to 64 years
+06,California,B01001_043,489451,4558,Estimate!!Total!!Female!!62 to 64 years
+08,Colorado,B01001_043,69368,1387,Estimate!!Total!!Female!!62 to 64 years
+09,Connecticut,B01001_043,56154,1233,Estimate!!Total!!Female!!62 to 64 years
+10,Delaware,B01001_043,15572,650,Estimate!!Total!!Female!!62 to 64 years
+11,District of Columbia,B01001_043,8596,492,Estimate!!Total!!Female!!62 to 64 years
+12,Florida,B01001_043,323181,3329,Estimate!!Total!!Female!!62 to 64 years
+13,Georgia,B01001_043,135970,2089,Estimate!!Total!!Female!!62 to 64 years
+15,Hawaii,B01001_043,21913,855,Estimate!!Total!!Female!!62 to 64 years
+16,Idaho,B01001_043,20762,723,Estimate!!Total!!Female!!62 to 64 years
+17,Illinois,B01001_043,177447,2165,Estimate!!Total!!Female!!62 to 64 years
+18,Indiana,B01001_043,93401,1584,Estimate!!Total!!Female!!62 to 64 years
+19,Iowa,B01001_043,44179,942,Estimate!!Total!!Female!!62 to 64 years
+20,Kansas,B01001_043,39197,887,Estimate!!Total!!Female!!62 to 64 years
+21,Kentucky,B01001_043,67502,1357,Estimate!!Total!!Female!!62 to 64 years
+22,Louisiana,B01001_043,65571,1423,Estimate!!Total!!Female!!62 to 64 years
+23,Maine,B01001_043,23898,730,Estimate!!Total!!Female!!62 to 64 years
+24,Maryland,B01001_043,84601,1450,Estimate!!Total!!Female!!62 to 64 years
+25,Massachusetts,B01001_043,100556,1897,Estimate!!Total!!Female!!62 to 64 years
+26,Michigan,B01001_043,151824,1877,Estimate!!Total!!Female!!62 to 64 years
+27,Minnesota,B01001_043,72991,1110,Estimate!!Total!!Female!!62 to 64 years
+28,Mississippi,B01001_043,44244,1163,Estimate!!Total!!Female!!62 to 64 years
+29,Missouri,B01001_043,92459,1429,Estimate!!Total!!Female!!62 to 64 years
+30,Montana,B01001_043,15655,727,Estimate!!Total!!Female!!62 to 64 years
+31,Nebraska,B01001_043,24756,775,Estimate!!Total!!Female!!62 to 64 years
+32,Nevada,B01001_043,40405,1225,Estimate!!Total!!Female!!62 to 64 years
+33,New Hampshire,B01001_043,21575,712,Estimate!!Total!!Female!!62 to 64 years
+34,New Jersey,B01001_043,134262,2012,Estimate!!Total!!Female!!62 to 64 years
+35,New Mexico,B01001_043,31596,987,Estimate!!Total!!Female!!62 to 64 years
+36,New York,B01001_043,295017,2591,Estimate!!Total!!Female!!62 to 64 years
+37,North Carolina,B01001_043,146423,2061,Estimate!!Total!!Female!!62 to 64 years
+38,North Dakota,B01001_043,9258,495,Estimate!!Total!!Female!!62 to 64 years
+39,Ohio,B01001_043,175698,2104,Estimate!!Total!!Female!!62 to 64 years
+40,Oklahoma,B01001_043,55850,1174,Estimate!!Total!!Female!!62 to 64 years
+41,Oregon,B01001_043,60016,1225,Estimate!!Total!!Female!!62 to 64 years
+42,Pennsylvania,B01001_043,201760,2428,Estimate!!Total!!Female!!62 to 64 years
+44,Rhode Island,B01001_043,16307,752,Estimate!!Total!!Female!!62 to 64 years
+45,South Carolina,B01001_043,76333,1632,Estimate!!Total!!Female!!62 to 64 years
+46,South Dakota,B01001_043,10989,489,Estimate!!Total!!Female!!62 to 64 years
+47,Tennessee,B01001_043,101282,1823,Estimate!!Total!!Female!!62 to 64 years
+48,Texas,B01001_043,312947,2728,Estimate!!Total!!Female!!62 to 64 years
+49,Utah,B01001_043,27969,911,Estimate!!Total!!Female!!62 to 64 years
+50,Vermont,B01001_043,10940,424,Estimate!!Total!!Female!!62 to 64 years
+51,Virginia,B01001_043,117915,1865,Estimate!!Total!!Female!!62 to 64 years
+53,Washington,B01001_043,98891,2183,Estimate!!Total!!Female!!62 to 64 years
+54,West Virginia,B01001_043,31942,896,Estimate!!Total!!Female!!62 to 64 years
+55,Wisconsin,B01001_043,81020,1179,Estimate!!Total!!Female!!62 to 64 years
+56,Wyoming,B01001_043,7847,491,Estimate!!Total!!Female!!62 to 64 years
+72,Puerto Rico,B01001_043,67112,1275,Estimate!!Total!!Female!!62 to 64 years
+01,Alabama,B01001_044,44496,1183,Estimate!!Total!!Female!!65 and 66 years
+02,Alaska,B01001_044,4271,346,Estimate!!Total!!Female!!65 and 66 years
+04,Arizona,B01001_044,59096,1401,Estimate!!Total!!Female!!65 and 66 years
+05,Arkansas,B01001_044,27573,893,Estimate!!Total!!Female!!65 and 66 years
+06,California,B01001_044,281295,2911,Estimate!!Total!!Female!!65 and 66 years
+08,Colorado,B01001_044,36698,1004,Estimate!!Total!!Female!!65 and 66 years
+09,Connecticut,B01001_044,32597,824,Estimate!!Total!!Female!!65 and 66 years
+10,Delaware,B01001_044,8872,407,Estimate!!Total!!Female!!65 and 66 years
+11,District of Columbia,B01001_044,4755,409,Estimate!!Total!!Female!!65 and 66 years
+12,Florida,B01001_044,202328,2828,Estimate!!Total!!Female!!65 and 66 years
+13,Georgia,B01001_044,77741,1692,Estimate!!Total!!Female!!65 and 66 years
+15,Hawaii,B01001_044,11869,584,Estimate!!Total!!Female!!65 and 66 years
+16,Idaho,B01001_044,12864,642,Estimate!!Total!!Female!!65 and 66 years
+17,Illinois,B01001_044,106826,1726,Estimate!!Total!!Female!!65 and 66 years
+18,Indiana,B01001_044,55812,1269,Estimate!!Total!!Female!!65 and 66 years
+19,Iowa,B01001_044,27048,776,Estimate!!Total!!Female!!65 and 66 years
+20,Kansas,B01001_044,22909,776,Estimate!!Total!!Female!!65 and 66 years
+21,Kentucky,B01001_044,39389,1221,Estimate!!Total!!Female!!65 and 66 years
+22,Louisiana,B01001_044,39066,1044,Estimate!!Total!!Female!!65 and 66 years
+23,Maine,B01001_044,13372,551,Estimate!!Total!!Female!!65 and 66 years
+24,Maryland,B01001_044,49243,1301,Estimate!!Total!!Female!!65 and 66 years
+25,Massachusetts,B01001_044,57181,1304,Estimate!!Total!!Female!!65 and 66 years
+26,Michigan,B01001_044,87824,1417,Estimate!!Total!!Female!!65 and 66 years
+27,Minnesota,B01001_044,42648,990,Estimate!!Total!!Female!!65 and 66 years
+28,Mississippi,B01001_044,27117,936,Estimate!!Total!!Female!!65 and 66 years
+29,Missouri,B01001_044,55181,1169,Estimate!!Total!!Female!!65 and 66 years
+30,Montana,B01001_044,9657,402,Estimate!!Total!!Female!!65 and 66 years
+31,Nebraska,B01001_044,14405,544,Estimate!!Total!!Female!!65 and 66 years
+32,Nevada,B01001_044,24159,931,Estimate!!Total!!Female!!65 and 66 years
+33,New Hampshire,B01001_044,12123,545,Estimate!!Total!!Female!!65 and 66 years
+34,New Jersey,B01001_044,78105,1541,Estimate!!Total!!Female!!65 and 66 years
+35,New Mexico,B01001_044,17968,757,Estimate!!Total!!Female!!65 and 66 years
+36,New York,B01001_044,174669,2463,Estimate!!Total!!Female!!65 and 66 years
+37,North Carolina,B01001_044,86198,1674,Estimate!!Total!!Female!!65 and 66 years
+38,North Dakota,B01001_044,5391,329,Estimate!!Total!!Female!!65 and 66 years
+39,Ohio,B01001_044,104351,1699,Estimate!!Total!!Female!!65 and 66 years
+40,Oklahoma,B01001_044,34226,1014,Estimate!!Total!!Female!!65 and 66 years
+41,Oregon,B01001_044,35752,1008,Estimate!!Total!!Female!!65 and 66 years
+42,Pennsylvania,B01001_044,121476,1984,Estimate!!Total!!Female!!65 and 66 years
+44,Rhode Island,B01001_044,9248,613,Estimate!!Total!!Female!!65 and 66 years
+45,South Carolina,B01001_044,45292,1319,Estimate!!Total!!Female!!65 and 66 years
+46,South Dakota,B01001_044,6532,391,Estimate!!Total!!Female!!65 and 66 years
+47,Tennessee,B01001_044,59834,1323,Estimate!!Total!!Female!!65 and 66 years
+48,Texas,B01001_044,179306,2074,Estimate!!Total!!Female!!65 and 66 years
+49,Utah,B01001_044,16501,633,Estimate!!Total!!Female!!65 and 66 years
+50,Vermont,B01001_044,5617,346,Estimate!!Total!!Female!!65 and 66 years
+51,Virginia,B01001_044,67494,1485,Estimate!!Total!!Female!!65 and 66 years
+53,Washington,B01001_044,54606,1357,Estimate!!Total!!Female!!65 and 66 years
+54,West Virginia,B01001_044,19096,891,Estimate!!Total!!Female!!65 and 66 years
+55,Wisconsin,B01001_044,47774,1057,Estimate!!Total!!Female!!65 and 66 years
+56,Wyoming,B01001_044,4287,350,Estimate!!Total!!Female!!65 and 66 years
+72,Puerto Rico,B01001_044,38095,932,Estimate!!Total!!Female!!65 and 66 years
+01,Alabama,B01001_045,60733,1167,Estimate!!Total!!Female!!67 to 69 years
+02,Alaska,B01001_045,4921,380,Estimate!!Total!!Female!!67 to 69 years
+04,Arizona,B01001_045,77440,1556,Estimate!!Total!!Female!!67 to 69 years
+05,Arkansas,B01001_045,37749,899,Estimate!!Total!!Female!!67 to 69 years
+06,California,B01001_045,357910,3346,Estimate!!Total!!Female!!67 to 69 years
+08,Colorado,B01001_045,47660,1120,Estimate!!Total!!Female!!67 to 69 years
+09,Connecticut,B01001_045,40001,1017,Estimate!!Total!!Female!!67 to 69 years
+10,Delaware,B01001_045,11487,534,Estimate!!Total!!Female!!67 to 69 years
+11,District of Columbia,B01001_045,6283,415,Estimate!!Total!!Female!!67 to 69 years
+12,Florida,B01001_045,273603,2858,Estimate!!Total!!Female!!67 to 69 years
+13,Georgia,B01001_045,96920,1506,Estimate!!Total!!Female!!67 to 69 years
+15,Hawaii,B01001_045,14996,706,Estimate!!Total!!Female!!67 to 69 years
+16,Idaho,B01001_045,16732,675,Estimate!!Total!!Female!!67 to 69 years
+17,Illinois,B01001_045,137529,1708,Estimate!!Total!!Female!!67 to 69 years
+18,Indiana,B01001_045,72397,1461,Estimate!!Total!!Female!!67 to 69 years
+19,Iowa,B01001_045,35657,854,Estimate!!Total!!Female!!67 to 69 years
+20,Kansas,B01001_045,30126,774,Estimate!!Total!!Female!!67 to 69 years
+21,Kentucky,B01001_045,52123,1060,Estimate!!Total!!Female!!67 to 69 years
+22,Louisiana,B01001_045,49682,1011,Estimate!!Total!!Female!!67 to 69 years
+23,Maine,B01001_045,17980,631,Estimate!!Total!!Female!!67 to 69 years
+24,Maryland,B01001_045,60395,1233,Estimate!!Total!!Female!!67 to 69 years
+25,Massachusetts,B01001_045,71735,1583,Estimate!!Total!!Female!!67 to 69 years
+26,Michigan,B01001_045,116073,1443,Estimate!!Total!!Female!!67 to 69 years
+27,Minnesota,B01001_045,55872,1063,Estimate!!Total!!Female!!67 to 69 years
+28,Mississippi,B01001_045,35636,1089,Estimate!!Total!!Female!!67 to 69 years
+29,Missouri,B01001_045,72297,1297,Estimate!!Total!!Female!!67 to 69 years
+30,Montana,B01001_045,11494,462,Estimate!!Total!!Female!!67 to 69 years
+31,Nebraska,B01001_045,19270,589,Estimate!!Total!!Female!!67 to 69 years
+32,Nevada,B01001_045,29902,1081,Estimate!!Total!!Female!!67 to 69 years
+33,New Hampshire,B01001_045,14970,546,Estimate!!Total!!Female!!67 to 69 years
+34,New Jersey,B01001_045,100957,1511,Estimate!!Total!!Female!!67 to 69 years
+35,New Mexico,B01001_045,24973,772,Estimate!!Total!!Female!!67 to 69 years
+36,New York,B01001_045,223741,2560,Estimate!!Total!!Female!!67 to 69 years
+37,North Carolina,B01001_045,110931,1817,Estimate!!Total!!Female!!67 to 69 years
+38,North Dakota,B01001_045,7302,349,Estimate!!Total!!Female!!67 to 69 years
+39,Ohio,B01001_045,138516,1866,Estimate!!Total!!Female!!67 to 69 years
+40,Oklahoma,B01001_045,45204,864,Estimate!!Total!!Female!!67 to 69 years
+41,Oregon,B01001_045,43683,951,Estimate!!Total!!Female!!67 to 69 years
+42,Pennsylvania,B01001_045,157680,2088,Estimate!!Total!!Female!!67 to 69 years
+44,Rhode Island,B01001_045,11622,611,Estimate!!Total!!Female!!67 to 69 years
+45,South Carolina,B01001_045,59120,1277,Estimate!!Total!!Female!!67 to 69 years
+46,South Dakota,B01001_045,8759,372,Estimate!!Total!!Female!!67 to 69 years
+47,Tennessee,B01001_045,77566,1486,Estimate!!Total!!Female!!67 to 69 years
+48,Texas,B01001_045,232325,2376,Estimate!!Total!!Female!!67 to 69 years
+49,Utah,B01001_045,20855,707,Estimate!!Total!!Female!!67 to 69 years
+50,Vermont,B01001_045,7875,318,Estimate!!Total!!Female!!67 to 69 years
+51,Virginia,B01001_045,88044,1647,Estimate!!Total!!Female!!67 to 69 years
+53,Washington,B01001_045,69091,1455,Estimate!!Total!!Female!!67 to 69 years
+54,West Virginia,B01001_045,25852,851,Estimate!!Total!!Female!!67 to 69 years
+55,Wisconsin,B01001_045,63773,1087,Estimate!!Total!!Female!!67 to 69 years
+56,Wyoming,B01001_045,6229,395,Estimate!!Total!!Female!!67 to 69 years
+72,Puerto Rico,B01001_045,51252,1029,Estimate!!Total!!Female!!67 to 69 years
+01,Alabama,B01001_046,86640,1277,Estimate!!Total!!Female!!70 to 74 years
+02,Alaska,B01001_046,6340,416,Estimate!!Total!!Female!!70 to 74 years
+04,Arizona,B01001_046,106396,1523,Estimate!!Total!!Female!!70 to 74 years
+05,Arkansas,B01001_046,53353,842,Estimate!!Total!!Female!!70 to 74 years
+06,California,B01001_046,510382,3316,Estimate!!Total!!Female!!70 to 74 years
+08,Colorado,B01001_046,65092,1299,Estimate!!Total!!Female!!70 to 74 years
+09,Connecticut,B01001_046,57412,1161,Estimate!!Total!!Female!!70 to 74 years
+10,Delaware,B01001_046,16022,518,Estimate!!Total!!Female!!70 to 74 years
+11,District of Columbia,B01001_046,8687,512,Estimate!!Total!!Female!!70 to 74 years
+12,Florida,B01001_046,396610,3199,Estimate!!Total!!Female!!70 to 74 years
+13,Georgia,B01001_046,130029,1660,Estimate!!Total!!Female!!70 to 74 years
+15,Hawaii,B01001_046,22617,760,Estimate!!Total!!Female!!70 to 74 years
+16,Idaho,B01001_046,21767,577,Estimate!!Total!!Female!!70 to 74 years
+17,Illinois,B01001_046,196769,2034,Estimate!!Total!!Female!!70 to 74 years
+18,Indiana,B01001_046,103353,1612,Estimate!!Total!!Female!!70 to 74 years
+19,Iowa,B01001_046,53267,1043,Estimate!!Total!!Female!!70 to 74 years
+20,Kansas,B01001_046,43775,823,Estimate!!Total!!Female!!70 to 74 years
+21,Kentucky,B01001_046,75456,1187,Estimate!!Total!!Female!!70 to 74 years
+22,Louisiana,B01001_046,71863,1081,Estimate!!Total!!Female!!70 to 74 years
+23,Maine,B01001_046,24475,613,Estimate!!Total!!Female!!70 to 74 years
+24,Maryland,B01001_046,86846,1207,Estimate!!Total!!Female!!70 to 74 years
+25,Massachusetts,B01001_046,105375,1594,Estimate!!Total!!Female!!70 to 74 years
+26,Michigan,B01001_046,162231,1505,Estimate!!Total!!Female!!70 to 74 years
+27,Minnesota,B01001_046,77058,1134,Estimate!!Total!!Female!!70 to 74 years
+28,Mississippi,B01001_046,49507,1128,Estimate!!Total!!Female!!70 to 74 years
+29,Missouri,B01001_046,102484,1297,Estimate!!Total!!Female!!70 to 74 years
+30,Montana,B01001_046,16714,492,Estimate!!Total!!Female!!70 to 74 years
+31,Nebraska,B01001_046,29231,701,Estimate!!Total!!Female!!70 to 74 years
+32,Nevada,B01001_046,38309,1113,Estimate!!Total!!Female!!70 to 74 years
+33,New Hampshire,B01001_046,19981,631,Estimate!!Total!!Female!!70 to 74 years
+34,New Jersey,B01001_046,141620,1816,Estimate!!Total!!Female!!70 to 74 years
+35,New Mexico,B01001_046,33193,810,Estimate!!Total!!Female!!70 to 74 years
+36,New York,B01001_046,322080,2616,Estimate!!Total!!Female!!70 to 74 years
+37,North Carolina,B01001_046,155372,1937,Estimate!!Total!!Female!!70 to 74 years
+38,North Dakota,B01001_046,11122,371,Estimate!!Total!!Female!!70 to 74 years
+39,Ohio,B01001_046,200137,2125,Estimate!!Total!!Female!!70 to 74 years
+40,Oklahoma,B01001_046,64255,991,Estimate!!Total!!Female!!70 to 74 years
+41,Oregon,B01001_046,60225,1002,Estimate!!Total!!Female!!70 to 74 years
+42,Pennsylvania,B01001_046,230976,2407,Estimate!!Total!!Female!!70 to 74 years
+44,Rhode Island,B01001_046,17650,639,Estimate!!Total!!Female!!70 to 74 years
+45,South Carolina,B01001_046,79212,1656,Estimate!!Total!!Female!!70 to 74 years
+46,South Dakota,B01001_046,13483,409,Estimate!!Total!!Female!!70 to 74 years
+47,Tennessee,B01001_046,108620,1564,Estimate!!Total!!Female!!70 to 74 years
+48,Texas,B01001_046,323728,2393,Estimate!!Total!!Female!!70 to 74 years
+49,Utah,B01001_046,30096,732,Estimate!!Total!!Female!!70 to 74 years
+50,Vermont,B01001_046,10460,407,Estimate!!Total!!Female!!70 to 74 years
+51,Virginia,B01001_046,119780,1559,Estimate!!Total!!Female!!70 to 74 years
+53,Washington,B01001_046,93730,1543,Estimate!!Total!!Female!!70 to 74 years
+54,West Virginia,B01001_046,38120,979,Estimate!!Total!!Female!!70 to 74 years
+55,Wisconsin,B01001_046,88699,1202,Estimate!!Total!!Female!!70 to 74 years
+56,Wyoming,B01001_046,7957,390,Estimate!!Total!!Female!!70 to 74 years
+72,Puerto Rico,B01001_046,72599,1055,Estimate!!Total!!Female!!70 to 74 years
+01,Alabama,B01001_047,70133,1322,Estimate!!Total!!Female!!75 to 79 years
+02,Alaska,B01001_047,4307,299,Estimate!!Total!!Female!!75 to 79 years
+04,Arizona,B01001_047,86945,1556,Estimate!!Total!!Female!!75 to 79 years
+05,Arkansas,B01001_047,43020,1002,Estimate!!Total!!Female!!75 to 79 years
+06,California,B01001_047,427617,3385,Estimate!!Total!!Female!!75 to 79 years
+08,Colorado,B01001_047,52730,1208,Estimate!!Total!!Female!!75 to 79 years
+09,Connecticut,B01001_047,53014,1124,Estimate!!Total!!Female!!75 to 79 years
+10,Delaware,B01001_047,12794,557,Estimate!!Total!!Female!!75 to 79 years
+11,District of Columbia,B01001_047,7117,449,Estimate!!Total!!Female!!75 to 79 years
+12,Florida,B01001_047,336771,2950,Estimate!!Total!!Female!!75 to 79 years
+13,Georgia,B01001_047,103053,1520,Estimate!!Total!!Female!!75 to 79 years
+15,Hawaii,B01001_047,20355,774,Estimate!!Total!!Female!!75 to 79 years
+16,Idaho,B01001_047,18535,630,Estimate!!Total!!Female!!75 to 79 years
+17,Illinois,B01001_047,170994,1987,Estimate!!Total!!Female!!75 to 79 years
+18,Indiana,B01001_047,90719,1609,Estimate!!Total!!Female!!75 to 79 years
+19,Iowa,B01001_047,49543,918,Estimate!!Total!!Female!!75 to 79 years
+20,Kansas,B01001_047,39537,980,Estimate!!Total!!Female!!75 to 79 years
+21,Kentucky,B01001_047,60252,1226,Estimate!!Total!!Female!!75 to 79 years
+22,Louisiana,B01001_047,57810,1079,Estimate!!Total!!Female!!75 to 79 years
+23,Maine,B01001_047,22622,641,Estimate!!Total!!Female!!75 to 79 years
+24,Maryland,B01001_047,73495,1419,Estimate!!Total!!Female!!75 to 79 years
+25,Massachusetts,B01001_047,97123,1553,Estimate!!Total!!Female!!75 to 79 years
+26,Michigan,B01001_047,142715,1587,Estimate!!Total!!Female!!75 to 79 years
+27,Minnesota,B01001_047,70416,1124,Estimate!!Total!!Female!!75 to 79 years
+28,Mississippi,B01001_047,39465,1052,Estimate!!Total!!Female!!75 to 79 years
+29,Missouri,B01001_047,87695,1382,Estimate!!Total!!Female!!75 to 79 years
+30,Montana,B01001_047,14670,500,Estimate!!Total!!Female!!75 to 79 years
+31,Nebraska,B01001_047,26073,658,Estimate!!Total!!Female!!75 to 79 years
+32,Nevada,B01001_047,28762,832,Estimate!!Total!!Female!!75 to 79 years
+33,New Hampshire,B01001_047,17059,563,Estimate!!Total!!Female!!75 to 79 years
+34,New Jersey,B01001_047,130832,2042,Estimate!!Total!!Female!!75 to 79 years
+35,New Mexico,B01001_047,26366,784,Estimate!!Total!!Female!!75 to 79 years
+36,New York,B01001_047,285202,2401,Estimate!!Total!!Female!!75 to 79 years
+37,North Carolina,B01001_047,128357,1905,Estimate!!Total!!Female!!75 to 79 years
+38,North Dakota,B01001_047,10512,390,Estimate!!Total!!Female!!75 to 79 years
+39,Ohio,B01001_047,177266,2289,Estimate!!Total!!Female!!75 to 79 years
+40,Oklahoma,B01001_047,53708,955,Estimate!!Total!!Female!!75 to 79 years
+41,Oregon,B01001_047,50388,1239,Estimate!!Total!!Female!!75 to 79 years
+42,Pennsylvania,B01001_047,222232,2020,Estimate!!Total!!Female!!75 to 79 years
+44,Rhode Island,B01001_047,16775,673,Estimate!!Total!!Female!!75 to 79 years
+45,South Carolina,B01001_047,62631,1318,Estimate!!Total!!Female!!75 to 79 years
+46,South Dakota,B01001_047,12547,455,Estimate!!Total!!Female!!75 to 79 years
+47,Tennessee,B01001_047,88533,1474,Estimate!!Total!!Female!!75 to 79 years
+48,Texas,B01001_047,262706,2318,Estimate!!Total!!Female!!75 to 79 years
+49,Utah,B01001_047,24916,748,Estimate!!Total!!Female!!75 to 79 years
+50,Vermont,B01001_047,9409,434,Estimate!!Total!!Female!!75 to 79 years
+51,Virginia,B01001_047,100490,1610,Estimate!!Total!!Female!!75 to 79 years
+53,Washington,B01001_047,78378,1572,Estimate!!Total!!Female!!75 to 79 years
+54,West Virginia,B01001_047,32660,884,Estimate!!Total!!Female!!75 to 79 years
+55,Wisconsin,B01001_047,82156,1247,Estimate!!Total!!Female!!75 to 79 years
+56,Wyoming,B01001_047,6543,326,Estimate!!Total!!Female!!75 to 79 years
+72,Puerto Rico,B01001_047,53974,1055,Estimate!!Total!!Female!!75 to 79 years
+01,Alabama,B01001_048,54602,1203,Estimate!!Total!!Female!!80 to 84 years
+02,Alaska,B01001_048,3371,263,Estimate!!Total!!Female!!80 to 84 years
+04,Arizona,B01001_048,66022,1399,Estimate!!Total!!Female!!80 to 84 years
+05,Arkansas,B01001_048,34571,894,Estimate!!Total!!Female!!80 to 84 years
+06,California,B01001_048,363155,3030,Estimate!!Total!!Female!!80 to 84 years
+08,Colorado,B01001_048,43476,1292,Estimate!!Total!!Female!!80 to 84 years
+09,Connecticut,B01001_048,47724,1075,Estimate!!Total!!Female!!80 to 84 years
+10,Delaware,B01001_048,9862,541,Estimate!!Total!!Female!!80 to 84 years
+11,District of Columbia,B01001_048,6499,468,Estimate!!Total!!Female!!80 to 84 years
+12,Florida,B01001_048,273208,2652,Estimate!!Total!!Female!!80 to 84 years
+13,Georgia,B01001_048,78842,1623,Estimate!!Total!!Female!!80 to 84 years
+15,Hawaii,B01001_048,17373,740,Estimate!!Total!!Female!!80 to 84 years
+16,Idaho,B01001_048,14257,633,Estimate!!Total!!Female!!80 to 84 years
+17,Illinois,B01001_048,144769,1944,Estimate!!Total!!Female!!80 to 84 years
+18,Indiana,B01001_048,75159,1293,Estimate!!Total!!Female!!80 to 84 years
+19,Iowa,B01001_048,43633,923,Estimate!!Total!!Female!!80 to 84 years
+20,Kansas,B01001_048,35215,967,Estimate!!Total!!Female!!80 to 84 years
+21,Kentucky,B01001_048,47443,1069,Estimate!!Total!!Female!!80 to 84 years
+22,Louisiana,B01001_048,47393,1010,Estimate!!Total!!Female!!80 to 84 years
+23,Maine,B01001_048,18212,654,Estimate!!Total!!Female!!80 to 84 years
+24,Maryland,B01001_048,61585,1340,Estimate!!Total!!Female!!80 to 84 years
+25,Massachusetts,B01001_048,86953,1508,Estimate!!Total!!Female!!80 to 84 years
+26,Michigan,B01001_048,122155,1709,Estimate!!Total!!Female!!80 to 84 years
+27,Minnesota,B01001_048,59359,988,Estimate!!Total!!Female!!80 to 84 years
+28,Mississippi,B01001_048,32579,921,Estimate!!Total!!Female!!80 to 84 years
+29,Missouri,B01001_048,72619,1273,Estimate!!Total!!Female!!80 to 84 years
+30,Montana,B01001_048,11551,526,Estimate!!Total!!Female!!80 to 84 years
+31,Nebraska,B01001_048,23690,724,Estimate!!Total!!Female!!80 to 84 years
+32,Nevada,B01001_048,21118,730,Estimate!!Total!!Female!!80 to 84 years
+33,New Hampshire,B01001_048,15882,589,Estimate!!Total!!Female!!80 to 84 years
+34,New Jersey,B01001_048,111372,1682,Estimate!!Total!!Female!!80 to 84 years
+35,New Mexico,B01001_048,20014,789,Estimate!!Total!!Female!!80 to 84 years
+36,New York,B01001_048,245246,2473,Estimate!!Total!!Female!!80 to 84 years
+37,North Carolina,B01001_048,100687,1790,Estimate!!Total!!Female!!80 to 84 years
+38,North Dakota,B01001_048,9074,452,Estimate!!Total!!Female!!80 to 84 years
+39,Ohio,B01001_048,149617,1827,Estimate!!Total!!Female!!80 to 84 years
+40,Oklahoma,B01001_048,40238,1034,Estimate!!Total!!Female!!80 to 84 years
+41,Oregon,B01001_048,44818,1063,Estimate!!Total!!Female!!80 to 84 years
+42,Pennsylvania,B01001_048,197331,2011,Estimate!!Total!!Female!!80 to 84 years
+44,Rhode Island,B01001_048,15477,680,Estimate!!Total!!Female!!80 to 84 years
+45,South Carolina,B01001_048,49073,1270,Estimate!!Total!!Female!!80 to 84 years
+46,South Dakota,B01001_048,10613,469,Estimate!!Total!!Female!!80 to 84 years
+47,Tennessee,B01001_048,67383,1239,Estimate!!Total!!Female!!80 to 84 years
+48,Texas,B01001_048,205612,2508,Estimate!!Total!!Female!!80 to 84 years
+49,Utah,B01001_048,18588,646,Estimate!!Total!!Female!!80 to 84 years
+50,Vermont,B01001_048,8048,423,Estimate!!Total!!Female!!80 to 84 years
+51,Virginia,B01001_048,79546,1284,Estimate!!Total!!Female!!80 to 84 years
+53,Washington,B01001_048,67648,1160,Estimate!!Total!!Female!!80 to 84 years
+54,West Virginia,B01001_048,25698,836,Estimate!!Total!!Female!!80 to 84 years
+55,Wisconsin,B01001_048,71064,1245,Estimate!!Total!!Female!!80 to 84 years
+56,Wyoming,B01001_048,5408,338,Estimate!!Total!!Female!!80 to 84 years
+72,Puerto Rico,B01001_048,38528,819,Estimate!!Total!!Female!!80 to 84 years
+01,Alabama,B01001_049,52497,1176,Estimate!!Total!!Female!!85 years and over
+02,Alaska,B01001_049,2732,239,Estimate!!Total!!Female!!85 years and over
+04,Arizona,B01001_049,59316,1355,Estimate!!Total!!Female!!85 years and over
+05,Arkansas,B01001_049,34433,893,Estimate!!Total!!Female!!85 years and over
+06,California,B01001_049,366091,3399,Estimate!!Total!!Female!!85 years and over
+08,Colorado,B01001_049,43330,1242,Estimate!!Total!!Female!!85 years and over
+09,Connecticut,B01001_049,56401,1069,Estimate!!Total!!Female!!85 years and over
+10,Delaware,B01001_049,10528,549,Estimate!!Total!!Female!!85 years and over
+11,District of Columbia,B01001_049,7014,431,Estimate!!Total!!Female!!85 years and over
+12,Florida,B01001_049,262352,3271,Estimate!!Total!!Female!!85 years and over
+13,Georgia,B01001_049,78197,1523,Estimate!!Total!!Female!!85 years and over
+15,Hawaii,B01001_049,17229,606,Estimate!!Total!!Female!!85 years and over
+16,Idaho,B01001_049,15019,612,Estimate!!Total!!Female!!85 years and over
+17,Illinois,B01001_049,158090,1899,Estimate!!Total!!Female!!85 years and over
+18,Indiana,B01001_049,75067,1682,Estimate!!Total!!Female!!85 years and over
+19,Iowa,B01001_049,49331,861,Estimate!!Total!!Female!!85 years and over
+20,Kansas,B01001_049,39493,790,Estimate!!Total!!Female!!85 years and over
+21,Kentucky,B01001_049,48428,962,Estimate!!Total!!Female!!85 years and over
+22,Louisiana,B01001_049,44850,1101,Estimate!!Total!!Female!!85 years and over
+23,Maine,B01001_049,18518,684,Estimate!!Total!!Female!!85 years and over
+24,Maryland,B01001_049,60850,1304,Estimate!!Total!!Female!!85 years and over
+25,Massachusetts,B01001_049,96334,1669,Estimate!!Total!!Female!!85 years and over
+26,Michigan,B01001_049,123673,1820,Estimate!!Total!!Female!!85 years and over
+27,Minnesota,B01001_049,68226,1188,Estimate!!Total!!Female!!85 years and over
+28,Mississippi,B01001_049,31950,1014,Estimate!!Total!!Female!!85 years and over
+29,Missouri,B01001_049,76065,1358,Estimate!!Total!!Female!!85 years and over
+30,Montana,B01001_049,11770,449,Estimate!!Total!!Female!!85 years and over
+31,Nebraska,B01001_049,25417,699,Estimate!!Total!!Female!!85 years and over
+32,Nevada,B01001_049,17681,758,Estimate!!Total!!Female!!85 years and over
+33,New Hampshire,B01001_049,15750,668,Estimate!!Total!!Female!!85 years and over
+34,New Jersey,B01001_049,115410,1742,Estimate!!Total!!Female!!85 years and over
+35,New Mexico,B01001_049,20034,817,Estimate!!Total!!Female!!85 years and over
+36,New York,B01001_049,253224,2723,Estimate!!Total!!Female!!85 years and over
+37,North Carolina,B01001_049,95530,1747,Estimate!!Total!!Female!!85 years and over
+38,North Dakota,B01001_049,11110,438,Estimate!!Total!!Female!!85 years and over
+39,Ohio,B01001_049,151186,2084,Estimate!!Total!!Female!!85 years and over
+40,Oklahoma,B01001_049,41278,1007,Estimate!!Total!!Female!!85 years and over
+41,Oregon,B01001_049,48633,1203,Estimate!!Total!!Female!!85 years and over
+42,Pennsylvania,B01001_049,196650,1966,Estimate!!Total!!Female!!85 years and over
+44,Rhode Island,B01001_049,18237,640,Estimate!!Total!!Female!!85 years and over
+45,South Carolina,B01001_049,45214,1156,Estimate!!Total!!Female!!85 years and over
+46,South Dakota,B01001_049,12409,467,Estimate!!Total!!Female!!85 years and over
+47,Tennessee,B01001_049,67284,1421,Estimate!!Total!!Female!!85 years and over
+48,Texas,B01001_049,195527,1932,Estimate!!Total!!Female!!85 years and over
+49,Utah,B01001_049,18146,684,Estimate!!Total!!Female!!85 years and over
+50,Vermont,B01001_049,7703,407,Estimate!!Total!!Female!!85 years and over
+51,Virginia,B01001_049,77268,1707,Estimate!!Total!!Female!!85 years and over
+53,Washington,B01001_049,71085,1552,Estimate!!Total!!Female!!85 years and over
+54,West Virginia,B01001_049,24368,851,Estimate!!Total!!Female!!85 years and over
+55,Wisconsin,B01001_049,76914,1470,Estimate!!Total!!Female!!85 years and over
+56,Wyoming,B01001_049,5289,311,Estimate!!Total!!Female!!85 years and over
+72,Puerto Rico,B01001_049,37614,859,Estimate!!Total!!Female!!85 years and over
