@@ -24,7 +24,7 @@ knitr::include_graphics("./images/rstudio/panels-3.PNG")
 ```
 
 The **Console** on the left side is where you can input R code to be executed and results are output.
-However, running code in this fashion does not give us the ability to **save**
+However, running code in this fashion does **not** give us the ability to **save**
 the code we write to later use.
 
 If we go to `File > New File > R Script`, a 4th empty panel will appear;
@@ -37,12 +37,12 @@ knitr::include_graphics("./images/rstudio/panels-4.PNG")
 
 The top right panel has a few tabs:
 
-- Environment: When you start programming the data sets you load up and the variables you create will be displayed here.
+- Environment: When you start programming, the data sets you load up and the variables you create will be displayed here.
 - History: The commands you run in the console, by either typing them directly or sent from the source panel,
   will be logged here.
 - Connections, Build, Git: Other tabs that will be more useful as we use R more often.
-  Do not worry if those tabs do not show up in your RStudio instance.
-- Tutorial: A new feature that allows other R developers to create tutorials that can be run within RStudio
+  Do not worry if any of those tabs do not show up in your RStudio instance.
+- Tutorial: A new feature that allows other R developers to create tutorials that can be run within RStudio.
 
 The bottom right panel also has a few tabs.
 We will be 
@@ -51,15 +51,15 @@ We will be
 
 There are a few ways we can run R code.
 In the toolbar on the top, under `Code`, towards the bottom,
-you will see a section that talk about `Run`ing code.
+you will see a section that talks about running code.
 There will be a line that says `Run Selected Line(s)  Ctrl+Enter`
 which tells us we can select lines in the source panel and use the `Ctrl+Enter` keyboard short cut
 to send the selected lines into the console,
-where it will be executed.
+where it will be executed. `Command+Enter` also works for Mac.
 
 In the top right corner of the source panel quadrant,
 there are also buttons for `Run` which will do the same thing as the `Ctrl+Enter` keyboard shortcut
-along with the `Source` button, which will run the current source file from top to bottom.
+along with the `Source` button which will run the current source file from top to bottom.
 
 ## Global settings
 
@@ -80,7 +80,7 @@ Also, when working with large datasets, these options will cause RStudio to take
 since it will try to load these large datasets.
 Making sure start up settings are disabled will make sure your R environment will quickly load an empty environment every time you start RStudio.
 
-Other options to consider is to also **uncheck** the first 2 options, "Restore most recently opened project at start up" and "Restore previously open source documents at start up",
+Other options to consider are to also **uncheck** the first 2 options, "Restore most recently opened project at start up" and "Restore previously open source documents at start up",
 as those options will make sure RStudio starts off completely empty without loading *anything*,
 including previously opened projects and documents.
 
