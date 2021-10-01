@@ -13,12 +13,12 @@ understanding the way data can be manipulated and having a plan for your own dat
 will go a long ways when leaning and doing the analysis on your own,
 and/or working with collegues and collaborators on a project.
 
-## A glossery of terms
+## A glossary of terms
 
 The Carpentries have started a multilingual glossary of terms at [glossario](https://glosario.carpentries.org),
 to help learn a lot of the technical jargon used in data science and programming.
-We will try to link to as many of these terms throughout the book,
-if there is a term that you do not know (or always wanted a more formal definition),
+We will try to link to as many of these terms throughout the book.
+If there is a term that you do not know (or always wanted a more formal definition),
 you can either contact the book authors and we can help define it for you (and maybe even submit the definition on your behalf)!
 
 
@@ -33,7 +33,7 @@ knitr::include_graphics("https://raw.githubusercontent.com/allisonhorst/stats-il
 ```
 
 Programming itself involves breaking down your steps into small linear pieces.
-Do not try to do all of your analysis in a single step, and usually when you get stuck for a while,
+Do not try to do all of your analysis in a single step. Usually, when you get stuck for a while,
 a simple walk to clear your head may be all you need to successfully approach the problem.
 
 ```{r, fig.cap="\"Debugging\" by Allison Horst. The 10 stages of debugging (1) I got this. (2) Huh. really thought that was it. (3) ... (4) Fine. Restarting. (5) OH WTF. (6) Zombie meltdown. (7) Sleep exhaustion (8) An idea, a new hope. (9) [insert awesome theme song] (10) I <3 CODING!."}
@@ -49,8 +49,8 @@ knitr::include_graphics("https://raw.githubusercontent.com/allisonhorst/stats-il
 The main take away is to learn about formatting your data set,
 and planning how your data sets may be useful in the future.
 When you are starting to learn how to program,
-you do not need to jump into it completely,
-if this book shows you a technique that makes your data pipeline easier,
+you do not need to jump into it completely.
+If this book shows you a technique that makes your data pipeline easier,
 there is nothing wrong with writing the few lines of code to read in, manipulate, and save out the dataset for something else.
 Your programming skills will build over time, and there is no need to rush it.
 
