@@ -1,0 +1,182 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# Functions
+
+```{r}
+library(tidyverse)
+
+tb <- read_csv("data/tb_long.csv")
+```
+
+```{r}
+tb_tidy <- tb %>%
+  pivot_longer(starts_with(c('m', 'f')))
+tb_tidy
+```
+
+```{r}
+tb_tidy <- tb_tidy %>%
+  separate(name, into = c("sex", "age_group"), sep = 1)
+tb_tidy
+```
+
+```{r}
+tb_tidy %>%
+  distinct(age_group)
+```
+
+## Breakdown the problem
+
+```{r}
+str_starts("014", "0")
+```
+
+```{r}
+str_sub("014", start = 1, end = 1)
+```
+
+```{r}
+str_sub("014", start = 2, end = -1)
+```
+
+### Partial solution
+
+```{r}
+clean_age_group <- function(age_group_string) {
+  if (age_group_string == "u") {
+    return("Unknown")
+  }
+}
+```
+
+```{r}
+clean_age_group("u")
+```
+
+```{r}
+clean_age_group("u") == "Unknown"
+```
+
+### Complete solution
+
+```{r}
+clean_age_group <- function(age_group_string) {
+  if (age_group_string == "u") {
+    return("Unknown")
+  } else if (str_starts(age_group_string, "0")) {
+    age_cat = paste0(str_sub(age_group_string, start = 1, end = 1), "-", str_sub(age_group_string, start = 2, end = -1))
+    return(age_cat)
+  } else if (age_group_string == "65") {
+    return("65+")
+  } else if (str_length(age_group_string) == 4) {
+    age_cat = paste0(str_sub(age_group_string, start = 1, end = 2), "-", str_sub(age_group_string, start = 3, end = -1))
+    return(age_cat)
+  }
+}
+```
+
+```{r}
+str_length("014")
+```
+
+## Test your code
+
+```{r}
+stopifnot(clean_age_group("014") == "0-14")
+stopifnot(clean_age_group("024") == "0-24")
+stopifnot(clean_age_group("64") == "64+")
+stopifnot(clean_age_group("4554") == "45-54")
+```
+
+## Use the glue package
+
+```{r}
+library(glue)
+```
+
+
+```{r}
+clean_age_group <- function(age_group_string) {
+  if (age_group_string == "u") {
+    return("Unknown")
+  } else if (str_starts(age_group_string, "0")) {
+    p1 = str_sub(age_group_string, start = 1, end = 1)
+    p2 = str_sub(age_group_string, start = 2, end = -1)
+    #age_cat = paste0(p1, "-", p2)
+    age_cat = glue("{p1}-{p2}")
+    return(age_cat)
+  } else if (age_group_string == "65") {
+    return("65+")
+  } else if (nchar(age_group_string) == 4) {
+    age_cat = paste0(str_sub(age_group_string, start = 1, end = 2), "-", str_sub(age_group_string, start = 3, end = -1))
+    return(age_cat)
+  }
+}
+```
+
+```{r}
+stopifnot(clean_age_group("014") == "0-14")
+stopifnot(clean_age_group("024") == "0-24")
+stopifnot(clean_age_group("64") == "64+")
+stopifnot(clean_age_group("4554") == "45-54")
+```
+
+## Apply functions to data (purrr)
+
+```{r}
+tb_tidy
+```
+
+```{r, error=TRUE}
+tb_tidy %>%
+  clean_age_group(age_group)
+```
+
+```{r, error=TRUE}
+tb_tidy %>%
+  mutate(age_cat = clean_age_group(age_group))
+```
+
+```{r}
+library(purrr)
+```
+
+```{r}
+map_chr(tb_tidy$age_group, clean_age_group)
+```
+
+```{r}
+tb_tidy %>%
+  pull(age_group) %>%
+  map_chr(clean_age_group)
+```
+
+```{r}
+tb_tidy <- tb_tidy %>%
+  mutate(age_cat = map_chr(age_group, clean_age_group))
+
+tb_tidy
+```
+
+## Use processed columns
+
+```{r}
+library(ggplot2)
+```
+
+```{r}
+year_sex_age_count <-tb_tidy %>%
+  group_by(year, sex, age_cat) %>%
+  summarize(sum = sum(value, na.rm = TRUE)) %>%
+  ungroup()
+year_sex_age_count
+```
+
+```{r}
+ggplot(year_sex_age_count, aes(x = age_cat, y = sum, fill = sex)) +
+  geom_bar(stat="identity", position = "dodge")
+```
+

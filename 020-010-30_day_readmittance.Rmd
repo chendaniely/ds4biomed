@@ -1,0 +1,350 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# 30-Day Readmittance
+
+::::: {.rBlock}
+###### R {-}
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+
+encounters <- read_csv("data/synthea//encounters.csv")
+```
+:::::
+
+<button class="accordion" id="question">Exercise 1 Question</button>
+:::{.panel-question}
+1. Look at the description column in the `encounters` dataset.
+   How many encounters were there for each unique value of `DESCRIPTION`
+
+```r
+encounters %>%
+    _____(_____) %>%
+    _____(count = n()) %>%
+    arrange(-count)
+```
+
+2. Look at the `REASONDESCRIPTION` column.
+   How many encounters were there for each unique value of `REASONDESCRIPTION.`
+   
+```r
+encounters %>%
+  _____(_____) %>%
+  _____(count = n()) %>%
+  arrange(-count)
+```
+
+3. Look at the `DESCRIPTION` and `REASONDESCRIPTION` column
+
+```r
+encounters %>%
+  _____(_____) %>%
+  _____(count = n()) %>%
+  arrange(-count)
+```
+:::
+
+<button class="accordion" id="solution">Exercise 1 Possible Results</button>
+:::{.panel-solution}
+
+```{r}
+encounters %>%
+  group_by(DESCRIPTION) %>%
+  summarise(count = n()) %>%
+  arrange(-count)
+
+encounters %>%
+  count(DESCRIPTION) %>%
+  arrange(-n)
+
+encounters %>%
+  count(REASONDESCRIPTION) %>%
+  arrange(-n)
+
+encounter_description_reason <- encounters %>%
+  count(DESCRIPTION, REASONDESCRIPTION) %>%
+  arrange(-n)
+
+encounter_description_reason
+```
+
+:::
+
+## Data Filtering
+
+We want to count and find the patients who have
+come to the emergency department for a heart attack
+and came back to the ED for a heart attack within 30 days.
+
+1. How is a "heart attack" define in the data?
+2. What columns do we need to answer that question?
+
+::::: {.rBlock}
+###### R {-}
+
+```{r}
+names(encounters)
+```
+
+```{r}
+library(janitor)
+```
+
+```{r}
+encounters <- clean_names(encounters)
+```
+
+```{r}
+names(encounters)
+```
+
+```{r}
+encounters %>%
+  select(id, start, stop, patient, encounterclass, description, reasondescription)
+```
+
+```{r}
+encounters_col_sub <- encounters %>%
+  select(id:patient, encounterclass, description, reasondescription)
+```
+:::::
+
+3. Filter encounters by "heat attack"
+
+::::: {.rBlock}
+###### R {-}
+
+```{r}
+encounters_col_sub %>%
+  filter(description == "Cardiac Arrest" | description == "Myocardial Infarction")
+```
+
+```{r}
+# more robust and easier to change + read
+mi_terms <- c("Cardiac Arrest", "Myocardial Infarction") %>%
+  str_to_lower()
+```
+
+```{r}
+mi_terms
+```
+
+
+```{r}
+mi_encounters <- encounters_col_sub %>%
+  filter(str_to_lower(description) %in% mi_terms)
+```
+
+```{r}
+mi_encounters
+```
+:::::
+
+4. Count the number of patients to get number of "heart attack" encounters
+
+::::: {.rBlock}
+###### R {-}
+
+```{r}
+mi_encounters %>%
+  count(patient) %>%
+  arrange(-n)
+```
+:::::
+
+5. We only want patients who have multiple ED "heart attack" encounters
+
+::::: {.rBlock}
+###### R {-}
+```{r}
+mi_encounters %>%
+  count(patient) %>%
+  arrange(-n) %>%
+  filter(n > 1)
+```
+
+```{r}
+pt_mi_repeat_ids <- mi_encounters %>%
+  count(patient) %>%
+  arrange(-n) %>%
+  filter(n > 1) %>%
+  pull(patient)
+```
+
+```{r}
+pt_mi_repeat_ids
+```
+:::::
+
+6. Filter the encounters for patients of interest.
+
+::::: {.rBlock}
+###### R {-}
+```{r}
+pt_encounter_mi <- encounters_col_sub %>%
+  filter(patient %in% pt_mi_repeat_ids) %>%
+  arrange(patient, start, stop)
+pt_encounter_mi
+```
+:::::
+
+7. Only care about the "heart attack" events.
+
+There's 2 ways you might think of doing this.
+
+7a. Filter on "emergency" and "urgentcare" `encounterclass`
+
+::::: {.rBlock}
+###### R {-}
+
+```{r}
+pt_encounter_mi %>% distinct(encounterclass)
+```
+
+```{r}
+pt_encounter_mi %>%
+  filter(encounterclass == "emergency" | encounterclass == "urgentcare")
+```
+:::::
+
+7b. Filter `description` on our "heart attack" terms.
+
+::::: {.rBlock}
+###### R {-}
+```{r}
+mi_terms
+```
+
+```{r}
+pt_enconter_mi_only <- pt_encounter_mi %>%
+  filter(str_to_lower(description) %in% mi_terms)
+pt_enconter_mi_only
+```
+:::::
+
+## Working with dates
+
+::::: {.rBlock}
+###### R {-}
+
+```{r, warning=FALSE, message=FALSE}
+library(lubridate)
+```
+
+"today" is the date the Synthea data was generated.
+
+```{r}
+ymd("2020-04-28")
+```
+:::::
+
+### Converting to datetime objects
+
+::::: {.rBlock}
+###### R {-}
+```{r}
+pt_enconter_mi_only %>%
+  mutate(stop_dt = ymd_hms(stop),
+         start_dt = ymd_hms(start))
+```
+:::::
+
+### Datetime calculations
+
+8. Calculate time of ED visits.
+
+::::: {.rBlock}
+###### R {-}
+
+```{r}
+pt_enconter_mi_only %>%
+  mutate(stop_dt = ymd_hms(stop),
+         start_dt = ymd_hms(start)) %>%
+  select(-start, -stop) %>%
+  mutate(entounter_length = stop_dt - start_dt)
+```
+:::::
+
+### Lead and lag time
+
+9. Calculate time between ED visits.
+
+Keep in mind if you are going to a `lead` or a `lag`.
+
+::::: {.rBlock}
+###### R {-}
+
+```{r}
+pt_enconter_mi_only %>%
+  mutate(stop_dt = ymd_hms(stop),
+         start_dt = ymd_hms(start)) %>%
+  select(-start, -stop) %>%
+  mutate(entounter_length = stop_dt - start_dt,
+         next_encounter_start = lead(start_dt),
+         next_encounter_time = next_encounter_start - stop_dt)
+```
+:::::
+
+## Grouped column mutations
+
+We want the calculations to happen for each patient separately.
+
+::::: {.rBlock}
+###### R {-}
+
+```{r}
+pt_enconter_mi_only <- pt_enconter_mi_only %>%
+  mutate(stop_dt = ymd_hms(stop),
+         start_dt = ymd_hms(start)) %>%
+  select(-start, -stop) %>%
+  mutate(entounter_length = stop_dt - start_dt)
+```
+
+```{r}
+mi_reencounter <- pt_enconter_mi_only %>%
+  group_by(patient) %>%
+  mutate(next_encounter_start = lead(start_dt),
+         next_encounter_time = next_encounter_start - stop_dt) %>%
+  ungroup()
+
+```
+
+```{r}
+mi_reencounter
+```
+:::::
+
+## Find 30-day readmittance
+
+::::: {.rBlock}
+###### R {-}
+```{r}
+mi_reencounter %>%
+  filter(next_encounter_time < 30)
+```
+:::::
+
+5 years:
+
+::::: {.rBlock}
+###### R {-}
+
+```{r}
+mi_reencounter %>%
+  filter(next_encounter_time < 365.25 * 5)
+```
+:::::
+
+10 years
+
+::::: {.rBlock}
+###### R {-}
+
+```{r}
+mi_reencounter %>%
+  filter(next_encounter_time < 365.25 * 10)
+```
+:::::

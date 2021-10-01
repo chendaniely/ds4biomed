@@ -7,13 +7,16 @@
 Loading data into R is the first step!
 
 First we need to load up a package to make loading data sets easier.
-We will be using the `tidyverse` set of packages for all of our data processing needs in R.
+We will be using the `tidyverse` set of packages for all of our data processing needs in R
 ^[This is not the only way you can process data in R, but from experience, it seems to be the easier way to learn R due to its consistency, community, and learning materials.]
+and the `pandas` library in Python.
 
 ```{r, echo=FALSE, fig.cap="\"Tidyverse Celestial\" by Allison Horst. \"tidyverse\" hex sticker in space surrounded by other tidyverse package hex logos."}
 knitr::include_graphics("https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/tidyverse_celestial.png")
 ```
 
+::::: {.rBlock}
+###### R {-}
 We first will load up the `tidyverse` packages using the `library` function.
 
 ```{r}
@@ -29,6 +32,15 @@ you can ignore this output for now.
 Now we can use all the functions within the Tidyverse to do our data processing.
 If you are following along and you run a piece of code and end up with an `could not find function` error,
 make sure you typed `library(tidyverse)` correctly and executed the line of code.
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+
+```{python}
+import pandas as pd
+```
+:::::
 
 ## Find your files
 
@@ -146,7 +158,9 @@ However, you can still use the regular `/` in Windows to refer to folders just l
 So far, we have been talking about a "starting point" or "working directory",
 when we have been referring to files around our computer.
 In order to quickly and reliably set your working directory,
-we use **RStudio Projects** (Section \@ref(rstudio-projects)).
+
+we use **RStudio Projects** (Section \@ref(rstudio-projects)),
+or Jupyter Lab
 
 
 ## Reading text files (CSV)
@@ -156,9 +170,22 @@ When trying to type in a file path,
 you can hit the `<TAB>` key to autocomplete the files.
 This will help you with a lot of potential spelling mistakes.
 
+::::: {.rBlock}
+###### R {-}
+
 ```{r}
 read_csv("data/medicaldata_tumorgrowth.csv")
 ```
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+
+```{python}
+pd.read_csv("data/medicaldata_tumorgrowth.csv")
+```
+:::::
+
 
 **Debug help:**
 - If the above code returns a `could not find function "read_csv"`
@@ -177,9 +204,21 @@ We can do this with the **assignment** **operator**, `<-`.
 Note the way it is typed, a less than symbol (`<`) followed immediately by the dash (`-`) without any spaces in between.
 The right side of the assignment operator, `<-`, will be executed and then **assigned** to the variable on the left.
 
+::::: {.rBlock}
+###### R {-}
+
 ```{r}
 tumor <- read_csv("data/medicaldata_tumorgrowth.csv")
 ```
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+
+```{python}
+tumor = pd.read_csv("data/medicaldata_tumorgrowth.csv")
+```
+:::::
 
 Notice this time we no longer see the dataset being printed.
 The "Environment" tab in the RStudio panel will now have an entry for the variable you used.
@@ -188,9 +227,21 @@ clicking on the arrow will show you the column-by-column text representation (te
 
 To look at our dataset we can execute *just* the variable we assigned the dataset to.
 
+::::: {.rBlock}
+###### R {-}
+
 ```{r}
 tumor
 ```
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+
+```{python}
+tumor
+```
+:::::
 
 This tabular dataset that has now been loaded into R is called a **data frame** **object** (or simply **dataframe**),
 the `tidyverse` uses a `tibble`.
@@ -198,6 +249,8 @@ For the most part, a `data.frame` object will behave like a `tibble` object.
 
 ## Reading Excel files
 
+::::: {.rBlock}
+###### R {-}
 To read an excel file we will need a separate library that can handle Excel files, `readxl`.
 
 ```{r}
@@ -209,15 +262,36 @@ The `readxl` library gives us access to the `read_excel` function which we can u
 ```{r}
 tumor_xl <- read_excel("data/medicaldata_tumorgrowth.xlsx")
 ```
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tumor_xl = pd.read_excel("data/medicaldata_tumorgrowth.xlsx")
+```
+:::::
 
 And we can view the loaded Excel file just like before.
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 tumor_xl
 ```
+:::::
 
-If you are ever lost as to what object you are working with, you can use the `class` function in R to tell you.
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tumor_xl
+```
+:::::
 
+If you are ever lost as to what object you are working with, you can use the `class` function in R
+or the `type` function in Python to tell you.
+
+::::: {.rBlock}
+###### R {-}
 ```{r}
 class(tumor)
 ```
@@ -225,8 +299,28 @@ class(tumor)
 ```{r}
 class(tumor_xl)
 ```
+:::::
 
-Once you have see a `"tbl_df"` or `"data.frame"` you can be sure that the dataframe processing functions
+::::: {.pyBlock}
+###### Python {-}
+```{python, eval=FALSE}
+type(tumor)
+```
+
+```
+<class 'pandas.core.frame.DataFrame'>
+```
+
+```{python, eval=FALSE}
+type(tumor_xl)
+```
+
+```
+<class 'pandas.core.frame.DataFrame'>
+```
+:::::
+
+Once you have see a `"tbl_df"` or `"data.frame"` (R) or `<class 'pandas.core.frame.DataFrame'>` (Python) you can be sure that the dataframe processing functions
 we'll learn will work.
 
 Take away: Once you load a dataset and end up with either a `data.frame` or `tibble` object you can continue using
@@ -250,10 +344,22 @@ spreadsheet_df <- read_csv("data/spreadsheets/exercise-010-050.csv")
 
 Here is the tumor dataset we are working with.
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 tumor
 ```
+:::::
 
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tumor
+```
+:::::
+
+::::: {.rBlock}
+###### R {-}
 In order to subset the columns of our dataset, we can use the `select` function.
 The **first** **argument** of the `select` function is the dataset we want to select columns from.
 Then, the other arguments are the columns we want to select.
@@ -268,7 +374,25 @@ If we want multiple columns (or to re-order columns) we can specify each column 
 ```{r}
 select(tumor, Group, Day, Size)
 ```
+:::::
 
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tumor["Size"]
+```
+
+```{python}
+tumor[["Group", "Day", "Size"]]
+```
+
+```{python}
+tumor[["Size"]]
+```
+:::::
+
+::::: {.rBlock}
+###### R {-}
 ### The `%>%` pipe operator
 
 A common way `tidyverse` code gets written is using the `%>%` operator.
@@ -292,12 +416,15 @@ tumor %>%
 The benefits of the pipe may not be as apparent now,
 but when we start chaining multiple data sets together,
 it'll make the code a little more readable.
+:::::
 
 ## Filtering rows
 
 Now that we know how to select columns on our dataframe,
 we can now learn how to filter the rows.
 
+::::: {.rBlock}
+###### R {-}
 To filter rows, we can use the `filter` function.
 The first argument of `filter` is the dataframe object (the same pattern as the `select` function),
 and the other arguments are statements that return some `TRUE` or `FALSE` value (this is known as a **boolean** condition).
@@ -314,32 +441,69 @@ We can write the "pipe" version as such:
 tumor %>%
   filter(Group == 1)
 ```
+:::::
 
-If we want to combine multiple conditions, where `Group` is `1` **and** `Day` is `0`,
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tumor.loc[tumor["Group"] == 1]
+```
+:::::
+
+If we want to combine multiple conditions, where `Group` is `1` **and** `Day` is `0`.
+
+::::: {.rBlock}
+###### R {-}
 we can put each statement as a separate parameter into the `filter` function.
 
 ```{r}
 tumor %>%
   filter(Group == 1, Day == 0)
 ```
+:::::
 
 We can also use the `&` for the **and** operator.
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 tumor %>%
   filter(Group == 1 & Day == 0)
 ```
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+In pandas,
+if you have multiple conditions you must put each condition around a pair of round brackets `( )`.
+
+```{python}
+tumor.loc[(tumor["Group"] == 1) & (tumor["Day"] == 0)]
+```
+:::::
 
 Or use the `|` for the **or** operator.
+
+::::: {.rBlock}
+###### R {-}
 
 ```{r}
 tumor %>%
   filter(Day == 0 | Day == 13)
 ```
+:::::
 
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+tumor.loc[(tumor["Day"] == 0) | (tumor["Day"] == 13)]
+```
+:::::
 
 ## Subsetting columns and rows
 
+::::: {.rBlock}
+###### R {-}
 To subset on both columns **and** rows,
 we call the corresponding subseting function one after the other.
 Here we are taking the `tumor` column, then `select`ing the `Group`, `Day` and `Size` columns, then
@@ -357,7 +521,17 @@ We can "un-pipe" our code and  it looks like this:
 ```{r}
 filter(select(tumor, Group, Day, Size), Size > 2000)
 ```
+:::::
 
+::::: {.pyBlock}
+###### Python {-}
+the `.loc` notation actually has 2 parts, and looks like `.loc[rows columns]`.
+So in order to specifiy rows and columns, we separate how we want to select columns with a comma.
+
+```{python}
+tumor.loc[tumor["Size"] > 2000, ["Group", "Day", "Size"]]
+```
+:::::
 
 ## Saving out data
 
@@ -369,6 +543,8 @@ Now, you have a repeatable way of performing the same action when your input dat
 Let's say we want to work with a filtered version of our `tumor` dataset,
 we can first write the code to subset the data we want.
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 filtered <- tumor %>%
   select(Group, ID, Day, Size) %>%
@@ -378,13 +554,35 @@ filtered <- tumor %>%
 ```{r}
 filtered
 ```
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+filtered = tumor.loc[(tumor["Day"] == 0) | (tumor["Day"] == 13), ["Group", "ID", "Day", "Size"]]
+```
+
+```{python}
+filtered
+```
+:::::
 
 We can then write out the datafrme to a file (in this case a CSV text file),
 using the same file pathing string format as we loaded a dataset earlier.
 
+::::: {.rBlock}
+###### R {-}
 ```{r}
 write_csv(filtered, "data/tumor_filtered.csv")
 ```
+:::::
+
+::::: {.pyBlock}
+###### Python {-}
+```{python}
+filtered.to_csv("data/tumor_filtered_py.csv")
+```
+:::::
 
 One thing to be mindful of is most programs and computer languages don't like having spaces in file names.
 In general, you'll end up typing more characters dealing with spaces in file names,

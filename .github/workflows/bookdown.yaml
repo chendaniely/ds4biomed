@@ -18,6 +18,27 @@ jobs:
       - name: Setup R
         uses: r-lib/actions/setup-r@v1
 
+      - name: Setup Python
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: ds4biomed
+          environment-file: environment.yml
+          python-version: 3.9
+          channels: conda-forge
+          allow-softlinks: true
+          channel-priority: flexible
+          show-channel-urls: true
+          use-only-tar-bz2: true # IMPORTANT: This needs to be set for caching to work properly!
+          auto-update-conda: true
+
+      - name: Conda info
+        shell: bash -l {0}
+        run: |
+          conda info
+          conda list
+          conda config --show-sources
+          conda config --show
+
       - name: Install pandoc
         run: |
           brew install pandoc
@@ -26,8 +47,20 @@ jobs:
         uses: actions/cache@v2
         with:
           path: $HOME/.local/share/renv
-          key: r-${{ hashFiles('renv.lock') }}
-          restore-keys: r-
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+
+      - name: Cache conda
+        uses: actions/cache@v2
+        env:
+          # Increase this value to reset cache if environment.yml has not changed
+          CACHE_NUMBER: 0
+        with:
+          path: ~/conda_pkgs_dir
+          key:
+            ${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{
+            hashFiles('environment.yml') }}
 
       - name: Cache bookdown results
         uses: actions/cache@v2
@@ -37,9 +70,10 @@ jobs:
           restore-keys: bookdown-
 
       - name: Install packages
+        shell: Rscript {0}
         run: |
-          R -e 'install.packages("renv")'
-          R -e 'renv::restore()'
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::restore()
 
       - name: Build site
         run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE, new_session = TRUE)'

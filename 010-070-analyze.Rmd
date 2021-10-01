@@ -133,6 +133,43 @@ mod3_factor %>%
 That is, the **odds** of earlier biochemical recurrence of prostate cancer after prostatectomy increases by 22.6 times when the patient has a `TVol` (tumor volume) of "Extensive" when compared to "Low".
 All else equal.
 
+```{r}
+# save the above table
+mod_3_or_table <- mod3_factor %>%
+  tidy() %>%
+  mutate(odds = exp(estimate))
+```
+
+
+```{r}
+#plot the coefficients
+ggplot(data = mod_3_or_table, aes(x = term, y = odds)) +
+  geom_point() +
+  geom_hline(yintercept = 1) +
+  coord_flip()
+```
+
+```{r}
+# add in confidence intervals
+ci <- confint(mod3_factor, level = 0.95) %>%
+  as.data.frame()
+ci
+
+exp(ci)
+
+mod3_or_ci <- mod_3_or_table %>%
+  mutate(ci_lower = exp(estimate - (1.96 * std.error)),
+         ci_upper = exp(estimate + (1.96 * std.error)))
+```
+
+```{r}
+ggplot(mod3_or_ci) +
+  geom_point(aes(x = term, y = odds)) +
+  geom_errorbar(aes(x = term, ymin = ci_lower, ymax = ci_upper)) +
+  coord_flip()
+```
+
+
 $y = mx + b$
 
 $y = \text{intercept} + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4 + e + \beta_5x_5 + e$

@@ -5,6 +5,7 @@ library(readr)
 library(reactable)
 library(dplyr)
 library(readxl)
+library(lubridate)
 
 knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
 
@@ -23,14 +24,14 @@ my_reacttable <- function(data, ...) {
 
 ## Introduction {#spreadsheets-intro}
 
-If you worked with data, chances are you have used spreadsheets before.
+If you have worked with data, chances are you have used spreadsheets before.
 In an introductory data analytics class,
 spreadsheet programs give the learners a visual of the dataset encased around
 a program that lets the user manipulate the data.
 That is, spreadsheet programs create a graphical user interface
 (GUI, pronounced like "gooey") for one's data.
 
-A GUI allows the user to quickly explore and look at their data;
+A GUI allows the user to quickly explore and look at their data.
 The ability to click on things can never be underestimated.
 However, the convenience of clickable graphical elements come at the price
 of flexibility when more complex and nuanced tasks are needed.
@@ -43,7 +44,7 @@ Hepatitis C.
 You have 3 patients who need to have their blood drawn and various vitals recorded:
 
 1. **Gemma Dunn**:
-    - Blood drawn at **8am**
+    - Blood drawn at **8:00am**
     - Heart rate **65bpm**
     - Respiratory rate: **12bpm**
     - Blood pressure **128/78 mmHg**
@@ -92,9 +93,9 @@ readr::read_csv("./data/spreadsheets/exercise-010-020.csv") %>%
 One way to incorporate units would be to place them directly with the value.
 This would make sure you do not forget logging the unit in a different column,
 and would make the individual values more self sufficient.
-The downside here is the unit information turns the value in the cell into a charactr/string/text value
+The downside here is the unit information turns the value in the cell into a character/string/text value
 and you won't be able to do any numeric calculations without removing the unit from the value.
-Also the column will hold 2 bits of information,
+Also, the column will hold 2 bits of information,
 the value and the unit.
 In general, you want each cell to only hold 1 bit of information.
 
@@ -121,7 +122,7 @@ You can choose to place the unit information in the column names themselves.
 This would make it clearer what the units for a particular value are without having to look up and log a separate column.
 Chances are that the units will not change across values,
 so it would be highly repetitive to keep the information in a separate column.
-However, be ware of making the column names too pretty.
+However, be aware of making the column names too pretty.
 In general, you want to avoid special characters and spaces in your column names,
 and if possible keep everything in a single case (e.g., all lower case).
 This prevents having errors with leading and trailing spaces (e.g., "last name " and " last name ") when searching for column names,
@@ -192,7 +193,7 @@ does knowing what you want to look at change how you setup your data collection?
 Taken on **same** day 12 hours from the first reading:
 
 1. **Gemma Dunn**:
-    - Blood drawn at **8pm**
+    - Blood drawn at **8:00pm**
     - Heart rate **65bpm**
     - Respiratory rate: **12bpm**
     - Blood pressure **128/78 mmHg**
@@ -218,7 +219,7 @@ Taken on **same** day 12 hours from the first reading:
 Taken on the **next** day 24 hours from the first reading:
 
 1. **Gemma Dunn**:
-    - Blood drawn at **8am**
+    - Blood drawn at **8:00am**
     - Heart rate **65bpm**
     - Respiratory rate: **12bpm**
     - Blood pressure **128/78 mmHg**
@@ -274,6 +275,16 @@ but you would need to process the data to get overall summaries.
 **2. Multiple sections in the same table**
 
 ```{r}
+# make sure all time cols are date formatted before binding
+e2t1 <- e2t1 %>%
+  dplyr::mutate(time = format(time, format="%H:%M:%S"))
+
+e2t2 <- e2t2 %>%
+  dplyr::mutate(time = format(time, format="%H:%M:%S"))
+
+e2t3 <- e2t3 %>%
+  dplyr::mutate(time = format(time, format="%H:%M:%S"))
+
 all <- dplyr::bind_rows(e2t1, e2t2, e2t3) %>%
   dplyr::arrange(day, time)
 
@@ -355,7 +366,7 @@ Elevated vitals include:
 - Resting heart rate greater than or equal to 90
 - Resting respiratory rate over 20
 - Pulse ox under 95
-- temperature over 100 degress Farenheight
+- Temperature over 100 degress Fahrenheit
 
 Note that the language is specific about "greater than or equal to" versus "over".
 :::
@@ -421,15 +432,15 @@ all %>%
 
 Using colors to make values of interest stand out is a common way to "flag" cells.
 It can be done either manually in a spread sheet program,
-or by writing a conditional statement to color values.
+or by using code to write a conditional statement to color values.
 In essence, you are turning the spreadsheet of data into a data visualization that behave similarly to a heatmap diagram.
 However, one of the main takeaways from Exercise 1,
-was to not have multiple bits of information encoded into a single cell.
+was to not have multiple bits of information encoded into a single data entry cell.
 By putting a color value representing a "good" or "bad" value,
-we now assigned multiple bits of information to a single cell.
+we now have assigned multiple bits of information to a single cell.
 
 This may further problems later on when loading Excel spreadsheets since the color information may show up as additional
-characters or not.
+characters or may not.
 At best you have to process the color information from the stored value in your dataset,
 and at worst, you have also lost a bit of information in your dataset that you tried to encode.
 
@@ -472,7 +483,7 @@ This means it's very easy to add colors and other visual markers to data values 
 However, one of the takeaways in exercise 1 was to be mindful of storing multiple bits of information in a single cell.
 If we add colors to a cell, we know have multiple bits of information stored in a single cell,
 the value, and the color that represents something else.
-A better approach in this case to make a more "shareable" dataset,
+A better approach in this case in order to make a more "shareable" dataset,
 would be to create a separate column that indicates
 a "bad" or "good" value.
 This would be easier when each row is a separate patient reading,
@@ -509,20 +520,32 @@ or values in the dataset get interpreted in the wrong way.
 As long as you are consistent *within a particular column* (and ideally within the entire dataset),
 moden programming langauges can work with data encoded as `"yes"`/`"no"` or `"true"`/`"false"` or
 `"< 18"`/`"18-25`"/`"26-30"`/`"31+"` etc and do not need to be numerically encoded as `0`, `1`, `2`, etc.
-This makes the dataset much more self-documenting and does not need to rely on a separate codebook file.
+This makes the dataset much more self-sufficient and does not need to rely on a separate codebook file.
 
 
 ## Summary {#spreadsheets-summary}
 
-- Spreadsheet programs serve as a graphical user interface to ones data
+- Spreadsheet programs serve as a graphical user interface to one's data
 - GUIs are very convenient, but come at the cost of flexibility
 - Spreadsheets have a legitimate place in the data science process
 - Not all tasks are best suited in a spreadsheet program
 
 ## Additional resources {#spreadsheets-resources}
 
-- Data carpentry spreadsheet lesson: https://datacarpentry.org/spreadsheet-ecology-lesson/
-- Data Organization in Spreadsheets, Karl W. Broman & Kara H. Woo: https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989
+- [Data carpentry spreadsheet lesson](https://datacarpentry.org/spreadsheet-ecology-lesson/)
+- [Data Organization in Spreadsheets, Karl W. Broman & Kara H. Woo](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989): 
+  1. Be consistent
+  2. Choose good names for things
+  3. Write dates as YYYY-MM-DD
+  4. No empty cells
+  5. Put just one thing in a cell
+  6. Make it a rectangle
+  7. Create a data dictionary
+  8. No calculations in the raw data files
+  9. Do not use font color or highlighting as data
+  10. Make backups
+  11. Use data validation to avoid errors
+  12. Save the data in plain text files
 
 <script>
 var acc = document.getElementsByClassName("accordion");

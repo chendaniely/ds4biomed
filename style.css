@@ -8,6 +8,8 @@ p code {
 pre {
   word-break: normal;
   word-wrap: normal;
+  max-height: 350px;
+  overflow-y: auto;
 }
 pre code {
   white-space: inherit;
@@ -95,4 +97,20 @@ p.tldr {
   content: "";
   display: table;
   clear: both;
+}
+
+.rBlock {
+  background-color: #e6f7ff;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.pyBlock {
+  background-color: #ffffe6;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
 }
