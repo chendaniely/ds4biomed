@@ -36,7 +36,7 @@ which you can use to follow along.
 
 ## Programming language {-}
 
-Below you will find the installation instructions for setting up the programming language we will be using (e.g., R, Python) along with its programming environment (e.g., RStudio, Jupyter)
+Below you will find the installation instructions for setting up the programming language we will be using (e.g., R, Python) along with its programming environment (e.g., RStudio, Jupyter) which can be downloaded for free.
 
 ::::: {.rBlock}
 ### R {-}
@@ -54,7 +54,7 @@ Navigate to the correct operating system.
 knitr::include_graphics("./images/setup/website-r_download.PNG")
 ```
 
-For mac users, download the `.pkg` file under the "Latest release" section
+For Mac users, download the `.pkg` file under the "Latest release" section.
 
 ```{r, fig.cap="Section of the Mac download page to download the Mac .pkg file."}
 knitr::include_graphics("./images/setup/website-r_download-mac.PNG")
@@ -78,11 +78,11 @@ Once we have
 Within RStudio, there will be a "Packages" tab in the bottom right panel.
 Click on the "Install" button.
 
-```{r, fig.cap="Zoom of the Rstudio Packages tab in the bottom right quadrant showing the Install button."}
+```{r, fig.cap="Zoomed in image of the Rstudio Packages tab in the bottom right quadrant showing the Install button."}
 knitr::include_graphics("./images/setup/rstudio-packages_tab.PNG")
 ```
 
-In the pop-up window type in "tidyverse remotes" and click "install".
+In the pop-up window type in "tidyverse remotes" and click "Install".
 
 ```{r, fig.cap="Install Packages dialog box after clicking the Install button showing how to install tidyverse library."}
 knitr::include_graphics("./images/setup/rstudio-install_packages.PNG")
@@ -103,8 +103,8 @@ knitr::include_graphics("./images/binder/binder-install-medicaldata.PNG")
 
 #### Testing your R installation {-}
 
-When the installation is finished, you can check if the package was installed properly and will load
-by scrolling down the "Packages" tab and clicking the check-box next to "tidyverse".
+When the installation is finished, you can check if the package was installed properly and load the package
+by scrolling down the "Packages" tab and clicking the checkbox next to "tidyverse".
 
 ```{r, fig.cap="RStudio Packages tab in the bottom right quadrant with the tidyverse library checked off."}
 knitr::include_graphics("./images/setup/rstudio-check_tidyverse.PNG")
